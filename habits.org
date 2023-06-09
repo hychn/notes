@@ -12,9 +12,17 @@
 + add termux properties to yotfiles
 + emacs em shorten
 
+
+* questions
++ how do you measure if you are doing good job questioning? or if you need to adjust/improve?
+  + if the questions has depth
+  + if the question adds breadth
+  + if the question generates more questions?
+
 * Study habit
 + how does this method work when you are not trying to read the proofs?
-+ how do you measure if you are doing good job questioning? or if you need to adjust/improve?
++ or I want to discover the connects by myself?
+
 + Stage 1: 3 times
   + lower the cost of studying and burden
   + underline
