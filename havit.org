@@ -1,0 +1,28 @@
+* Think positive
++ Dont stress dont rush
++ Even if your surroundings and neighbors are
+
+* Stress
++ Affects digestion and sleep
+
+
+* Todo
++ emacs init orgfold save to.hidde 
++ create note repo, ignore orgfold
++ add termux properties to yotfiles
++ emacs em shorten
+
+* Study habit
++ how does this method work when you are not trying to read the proofs?
++ how do you measure if you are doing good job questioning? or if you need to adjust/improve?
++ Stage 1: 3 times
+  + lower the cost of studying and burden
+  + underline
+  + carefree
+  + dont go back
+  + dont try to memorize, understand
++ Stage 2: 2 times
+  + highlight key
++ Stage 3: 5 times
+  + focus underline, highlight
+  
