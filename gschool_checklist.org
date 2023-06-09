@@ -20,3 +20,5 @@
 + Tuberculosis Screening Hold - Blocks initial enrollment. 
 + For release, go to Watkins Health Center or call 785-864-9533
 
+
+
