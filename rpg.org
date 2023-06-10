@@ -1,0 +1,3 @@
++ collision code c
++ active only during nearby
++ passive simulation

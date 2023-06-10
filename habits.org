@@ -1,16 +1,35 @@
+* subconcious awareness board
++ rpg-proto
+
+
+* organization
++ bb_panda project
+  + achieved alot
+  + but it was disorganized
+  + i think could have been done better with mapping question board and git release branch
 * Think positive
 + Dont stress dont rush
 + Even if your surroundings and neighbors are
 
+
+* studying dizzy
++ write out a map of the project & questions
+  + dont keep too much in your head
++ find a specific goal or a problem you need to solve
++ and the solutions/strategies
++ have principles which are useful
+
 * Stress
 + Affects digestion and sleep
++ dont rush enjoy life
++ chew food throughly
++ dont let your surroundings affect you
 
 
 * Todo
-+ emacs init orgfold save to.hidde 
-+ create note repo, ignore orgfold
-+ add termux properties to yotfiles
-+ emacs em shorten
++ pdf bookmark app
++ pull on open emacs, push on exit emacs
+
 
 
 * questions
