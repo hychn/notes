@@ -1,6 +1,10 @@
 * subconcious awareness board
 + rpg-proto
 
+* cardio
++ need it to improve lifts
++ running, soccer
+  + endorphin rush?
 
 * organization
 + bb_panda project
