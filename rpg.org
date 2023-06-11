@@ -1,3 +1,33 @@
+* Improvements
++ improve shd manager predfined objects
+  + Find way to auto complete id var names
 + collision code c
+  + clean up debug stuck on slope top
++ inventory
++ buff netcode (alterations to default state)
++ crafting
++ interactable objects
+
+
 + active only during nearby
+
 + passive simulation
++ active ant simulation
+
++ steam netcode
+
+* game design
++ simplicity
++ combat
+  + ability/cooldown based
++ encounters & events
+  + wave survival
+  + farm, scavenge, mine
+  + exterminate
+  + build
+  + move: walk, ride, glide, racing
++ an alive procedural world
++ survival, needs
++ novelty?
++ scaling?
++ quick start?
