@@ -1,4 +1,7 @@
 * Improvements
++ make code more efficient
++ define and complete a game loop
+
 + improve shd manager predfined objects
   + Find way to auto complete id var names
 + collision code c
