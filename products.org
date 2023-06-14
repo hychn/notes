@@ -1,7 +1,7 @@
 # 1.7 Categories Free Object
 
 * Category
-** Definition
+** Def
 + objects
 + morphisms for pair of objects
 + composition of morphisms: associative, identity
@@ -16,7 +16,14 @@
   + Is commutative a critical property?
 
 
+
 * Product
+** Def
++ Product (object) for family of objects $\{A_i | i \in S\}$
++ with family of morphisms $\{\pi_i | i \in S \}$ with $\pi_i: P \rightarrow A_i$
++ such that for any object B with family of morphism $\{f_i | i \in S\}$ with $f_i: B \rightarrow A_i$
+  + exists unique morphism $\psi: B \rightarrow P$
+  + commute $\pi_i \circ \psi = f_i$
 * Coproduct
 * Free Object
 

@@ -1,0 +1,3 @@
+* Export to html using custom css
+* Convert structure of the file to github.io
+* only export new files that haven't been updated yet
