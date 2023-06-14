@@ -5,6 +5,7 @@
 + composition of morphisms: associative, identity
 
 + ?can you form identity morphism?
++ if there is invertible morphism from A B
 
 ** Product
 ** Coproduct
