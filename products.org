@@ -1,0 +1,8 @@
+* 1.7 Categories Free Object
+** Categories
+** Product
+** Coproduct
+** Free Object
+
+* 1.8 Direct Product and Direct Sum
+** 
