@@ -5,8 +5,8 @@
 + composition of morphisms: associative, identity
 
 + ?can you form identity morphism?
-
-+ morphism
++ ??
++ ??
 
 ** Product
 ** Coproduct
