@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-06-14 수 16:28 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="ychnh" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgfd9dc3b">1. Study Guide</a></li>
+<li><a href="#org2ed7df8">2. Mottos</a></li>
+<li><a href="#orgba85f46">3. Key words</a></li>
+<li><a href="#org122cac9">4. Symptom.Stuck</a></li>
+<li><a href="#orgd36349e">5. Me</a></li>
+<li><a href="#orgf37d725">6. Skill</a></li>
+<li><a href="#orgcc43c9c">7. Time</a></li>
+<li><a href="#org717a677">8. Memory</a></li>
+<li><a href="#orga4c48f4">9. Fresh Start</a></li>
+<li><a href="#orgac6b132">10. Internal Motivation</a></li>
+<li><a href="#org56c317b">11. Problem.Difficulty</a></li>
+<li><a href="#org63cf399">12. Research</a></li>
+<li><a href="#orge45b52b">13. Recall</a></li>
+<li><a href="#org4ab2984">14. Skill.Exercise</a></li>
+<li><a href="#orgeef091f">15. Research</a></li>
+<li><a href="#orgb5be956">16. Symptom.Understanding.Stuck</a></li>
+<li><a href="#org4ca0874">17. Mood.Frustration, Burnout</a></li>
+<li><a href="#org2de47d4">18. How can we increase the rate at which we are familiar with the material?</a></li>
+<li><a href="#orge7151fd">19. Generators (Asking Questions)</a></li>
+<li><a href="#org7deb3f5">20. Do a little bit get into the routine again.</a></li>
+<li><a href="#org8cf6d1b">21. Rest</a></li>
+<li><a href="#org80120b0">22. Instead of a flat list, maybe you can incorporate routines/practices that satisfy/optimize.</a></li>
+<li><a href="#org9e844e1">23. Graph search</a></li>
+<li><a href="#org10564ec">24. In life in general, when faced with anything stuck or bothering you</a></li>
+<li><a href="#org3a6a7ab">25. Prayer &amp; Meditation</a></li>
+<li><a href="#org60a7bdd">26. Just do it.</a></li>
+<li><a href="#orga55b72b">27. Studying Habit: Key Terms</a></li>
+<li><a href="#org950c874">28. Woman, Loneliness, Family</a></li>
+<li><a href="#org6f863a3">29. Start</a></li>
+<li><a href="#orgcd2b385">30. During</a></li>
+<li><a href="#org447a572">31. Stuck</a></li>
+<li><a href="#org4fa85a6">32. Consolidate</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfd9dc3b" class="outline-2">
+<h2 id="orgfd9dc3b"><span class="section-number-2">1</span> Study Guide</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>you really need to rest</li>
+
+<li>everything has cost
+<ul class="org-ul">
+<li>you would not buy something stupid</li>
+<li>so, analogously</li>
+<li>playing games is too expensive
+<ul class="org-ul">
+<li>nervous system</li>
+<li>rest</li>
+<li>time</li>
+</ul></li>
+<li>social media has cost
+<ul class="org-ul">
+<li>it depletes novelty excitement</li>
+<li></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>
+watch documentary to rest?
+</p>
+
+<p>
+endorphins?
+</p>
+
+<p>
+TODO
+</p>
+
+<ul class="org-ul">
+<li>key points ↔ less is more</li>
+<li>Summarize and Connect
+<ul class="org-ul">
+<li>After each point summarize key finding. A simple story of what you did. And how it connects to the overall story.</li>
+</ul></li>
+<li>Unstuck
+<ul class="org-ul">
+<li>Take good simple notes
+<ul class="org-ul">
+<li>Key paper, Outline, Scratch paper</li>
+</ul></li>
+<li>Start anew</li>
+<li>What environment is good for me to study? what lowers cost?</li>
+</ul></li>
+<li>Notes.Purpose.Structure
+<ul class="org-ul">
+<li>These notes are a manual for helping you develop skills
+<ul class="org-ul">
+<li>recall, research, solve</li>
+</ul></li>
+<li>Help me when I get stuck and lost</li>
+<li>Make observations</li>
+<li>Reminder</li>
+<li>What should be the structure of these notes?
+<ul class="org-ul">
+<li>1 symptom → solution</li>
+<li>3 key ideas</li>
+<li>2 write down in scratch board</li>
+</ul></li>
+<li>It should be a description of how you
+<ul class="org-ul">
+<li>recall, research, solve</li>
+<li>And details of the objects involved in this process</li>
+<li>Maybe a collection of notes on different topics
+<ul class="org-ul">
+<li>Key notes</li>
+<li>Map outline</li>
+<li>Scratch Pad</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2ed7df8" class="outline-2">
+<h2 id="org2ed7df8"><span class="section-number-2">2</span> Mottos</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>Less is more
+<ul class="org-ul">
+<li>constraint on words</li>
+</ul></li>
+<li>To improve at X, you need to do X
+<ul class="org-ul">
+<li>Asking questions</li>
+<li>Solving problems</li>
+<li>Branching, Mapping, Researching</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgba85f46" class="outline-2">
+<h2 id="orgba85f46"><span class="section-number-2">3</span> Key words</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li>Importance</li>
+<li>Exhaustive</li>
+<li>Meaning</li>
+<li>Motivations</li>
+</ul>
+<ul class="org-ul">
+<li>Visual Thinking
+<ul class="org-ul">
+<li>Memory costs energy</li>
+<li>Make a plan
+<ul class="org-ul">
+<li>Write, see and follow the train of thought</li>
+</ul></li>
+<li>Effective, simple writing</li>
+<li>Raw Notes
+<ul class="org-ul">
+<li>Don’t commit energy to memory</li>
+<li>See what you write and see where it leads you</li>
+<li>Use visual structure to guide your thoughts</li>
+<li>This means that it is important to organize things at a high level.</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org122cac9" class="outline-2">
+<h2 id="org122cac9"><span class="section-number-2">4</span> Symptom.Stuck</h2>
+<div class="outline-text-2" id="text-4">
+<ul class="org-ul">
+<li>Start anew, with a fresh mind.</li>
+<li>Feeling bad about regression
+<ul class="org-ul">
+<li>You used to think, going back to relook at a lecture you have already learned is bad</li>
+<li>This is not true. It is parting of learning</li>
+</ul></li>
+<li>Wanted to use my notes for regression
+<ul class="org-ul">
+<li>But was too messy</li>
+</ul></li>
+<li>I kept forgetting the key properties and definitions</li>
+<li>I wasn’t sure were I was</li>
+<li><b><b>Key Take Away</b></b>
+<ul class="org-ul">
+<li>Take good simple notes
+<ul class="org-ul">
+<li>Key paper, Outline, Scratch paper</li>
+</ul></li>
+<li>Start anew</li>
+</ul></li>
+</ul>
+
+<p>
+I think I am making a study routine. Organized into how I can spend my time?
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd36349e" class="outline-2">
+<h2 id="orgd36349e"><span class="section-number-2">5</span> Me</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>Values</li>
+<li>Belief
+<ul class="org-ul">
+<li>God</li>
+</ul></li>
+<li>Rest</li>
+<li>Energy
+<ul class="org-ul">
+<li>Cost
+<ul class="org-ul">
+<li>Small Significant &amp; Meaningful Step</li>
+</ul></li>
+</ul></li>
+<li>Mood</li>
+<li>Mentality</li>
+<li>Principals</li>
+<li>Objective Goals</li>
+<li></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf37d725" class="outline-2">
+<h2 id="orgf37d725"><span class="section-number-2">6</span> Skill</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>Recall</li>
+<li>Problem Solving &amp; Management</li>
+<li>Research
+<ul class="org-ul">
+<li>Developing an understanding and awareness of the subject matter</li>
+<li>Map outline</li>
+<li>Key Topic/Object Paper</li>
+<li>Scratch Paper</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgcc43c9c" class="outline-2">
+<h2 id="orgcc43c9c"><span class="section-number-2">7</span> Time</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>Iteration, Frequency</li>
+<li>Distraction</li>
+<li>Bottlenecks</li>
+<li>Finish what you need to finish today</li>
+<li>Loosing the train of thought</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org717a677" class="outline-2">
+<h2 id="org717a677"><span class="section-number-2">8</span> Memory</h2>
+<div class="outline-text-2" id="text-8">
+<ul class="org-ul">
+<li>What secondary memories can you use to remember?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga4c48f4" class="outline-2">
+<h2 id="orga4c48f4"><span class="section-number-2">9</span> Fresh Start</h2>
+</div>
+<div id="outline-container-orgac6b132" class="outline-2">
+<h2 id="orgac6b132"><span class="section-number-2">10</span> Internal Motivation</h2>
+<div class="outline-text-2" id="text-10">
+<ul class="org-ul">
+<li>Fight for what you believe in</li>
+<li>A strong why</li>
+<li>Fire, will, fury</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org56c317b" class="outline-2">
+<h2 id="org56c317b"><span class="section-number-2">11</span> Problem.Difficulty</h2>
+<div class="outline-text-2" id="text-11">
+<ul class="org-ul">
+<li>Why are some more difficult?</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org63cf399" class="outline-2">
+<h2 id="org63cf399"><span class="section-number-2">12</span> Research</h2>
+<div class="outline-text-2" id="text-12">
+<ul class="org-ul">
+<li>Key points</li>
+<li>Motivations</li>
+<li>graph: vertex, edge</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge45b52b" class="outline-2">
+<h2 id="orge45b52b"><span class="section-number-2">13</span> Recall</h2>
+<div class="outline-text-2" id="text-13">
+<ul class="org-ul">
+<li>Blank paper exercise</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4ab2984" class="outline-2">
+<h2 id="org4ab2984"><span class="section-number-2">14</span> Skill.Exercise</h2>
+<div class="outline-text-2" id="text-14">
+<ul class="org-ul">
+<li>Spend time producing, doing and working
+<ul class="org-ul">
+<li>Not memorizing or passively reading</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgeef091f" class="outline-2">
+<h2 id="orgeef091f"><span class="section-number-2">15</span> Research</h2>
+<div class="outline-text-2" id="text-15">
+<ul class="org-ul">
+<li>Sure footing
+<ul class="org-ul">
+<li>Ironclad</li>
+<li>Make sure you come to solid, grounded conclusions</li>
+<li>Re-check your conclusions. Everyone makes mistakes.</li>
+</ul></li>
+<li>Branching</li>
+<li>Showing Some Branches are False</li>
+<li>Path finding a→b</li>
+<li>Re-organizing &amp; Simplify graph</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb5be956" class="outline-2">
+<h2 id="orgb5be956"><span class="section-number-2">16</span> Symptom.Understanding.Stuck</h2>
+<div class="outline-text-2" id="text-16">
+<ul class="org-ul">
+<li>Not Stuck
+<ul class="org-ul">
+<li>Already know the material</li>
+<li>Familiar with concepts</li>
+</ul></li>
+<li>Stuck
+<ul class="org-ul">
+<li>New material</li>
+<li>Encounter difficult</li>
+<li>Process of researching</li>
+</ul></li>
+<li>Solutions?
+<ul class="org-ul">
+<li>Overcome this situation by mapping &amp; navigation</li>
+<li>Write proofs, retrace steps to see what the key idea &amp; motivations are</li>
+<li>Start again from the beginning, where you are confused, with a fresh start</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4ca0874" class="outline-2">
+<h2 id="org4ca0874"><span class="section-number-2">17</span> Mood.Frustration, Burnout</h2>
+<div class="outline-text-2" id="text-17">
+<ul class="org-ul">
+<li>Indication of something seriously wrong</li>
+<li>Recent burnout
+<ul class="org-ul">
+<li>Negative Environment</li>
+<li>Giving up what was important to me</li>
+<li>Not fighting &amp; standing up for myself</li>
+<li>Getting stuck and disorganized</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2de47d4" class="outline-2">
+<h2 id="org2de47d4"><span class="section-number-2">18</span> How can we increase the rate at which we are familiar with the material?</h2>
+<div class="outline-text-2" id="text-18">
+<ul class="org-ul">
+<li>Repetition</li>
+<li>Do the same thing again</li>
+</ul>
+
+<p>
+&#x2014;
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge7151fd" class="outline-2">
+<h2 id="orge7151fd"><span class="section-number-2">19</span> Generators (Asking Questions)</h2>
+<div class="outline-text-2" id="text-19">
+<ul class="org-ul">
+<li>What I do?</li>
+<li>How?</li>
+<li>What?</li>
+<li>Where?</li>
+</ul>
+
+<p>
+Notes
+</p>
+
+<ul class="org-ul">
+<li>Organize the notes so that many ideas can be represented with a single word</li>
+<li>Create the generators</li>
+</ul>
+
+<p>
+goal, time, bottlenecks
+</p>
+
+<p>
+1 sentence summary
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7deb3f5" class="outline-2">
+<h2 id="org7deb3f5"><span class="section-number-2">20</span> Do a little bit get into the routine again.</h2>
+<div class="outline-text-2" id="text-20">
+<ul class="org-ul">
+<li>Everything starts with doing</li>
+<li>What is possible must have an initial step.
+<ul class="org-ul">
+<li>What initial step do you need to take?</li>
+<li>Note: I feel like this conclusion should be automatic &amp; natural with just the idea, jnitial step
+<ul class="org-ul">
+<li>What can i do? what do i need to do</li>
+<li>how to make notes less verbose</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>
+Mood
+</p>
+
+<p>
+Note Taking
+</p>
+
+<p>
+Recall
+</p>
+
+<ul class="org-ul">
+<li>Time Management
+<ul class="org-ul">
+<li>Distractions
+<ul class="org-ul">
+<li>Phone</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>
+Study Skills
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8cf6d1b" class="outline-2">
+<h2 id="org8cf6d1b"><span class="section-number-2">21</span> Rest</h2>
+<div class="outline-text-2" id="text-21">
+<ul class="org-ul">
+<li>Movies</li>
+<li>Books</li>
+<li>Music</li>
+<li>Hike</li>
+<li>Lifting</li>
+<li>Sports</li>
+<li>Meditation</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org80120b0" class="outline-2">
+<h2 id="org80120b0"><span class="section-number-2">22</span> Instead of a flat list, maybe you can incorporate routines/practices that satisfy/optimize.</h2>
+<div class="outline-text-2" id="text-22">
+<ul class="org-ul">
+<li>kind of like building a workout routine</li>
+</ul>
+
+<p>
+??? Maybe can reduce some of these
+</p>
+
+<p>
+Learning
+</p>
+
+<p>
+Discovery
+</p>
+
+<p>
+Problem Solving Management
+</p>
+
+<p>
+Problem Solving
+</p>
+
+<p>
+Learning 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9e844e1" class="outline-2">
+<h2 id="org9e844e1"><span class="section-number-2">23</span> Graph search</h2>
+<div class="outline-text-2" id="text-23">
+<ul class="org-ul">
+<li>What kind of graph, what are the vertex and edges?
+<ul class="org-ul">
+<li>V is the ideas</li>
+<li>E is if the idea can be derieved the Vs</li>
+</ul></li>
+<li>What can you do in this graph?
+<ul class="org-ul">
+<li>Create a new graph</li>
+<li>Find pattern among V and reorder, recreate v</li>
+<li>see if edges can/cannot connect to another V</li>
+<li>Find a path from A to B
+<ul class="org-ul">
+<li>And maybe find more subpaths</li>
+</ul></li>
+<li>Find new V to branch out and test</li>
+<li>See if edges are related</li>
+<li>Find V that have alot of connections</li>
+<li>Reorganize &amp; prune the V,E</li>
+</ul></li>
+</ul>
+
+
+<p>
+Distractions, phone internet computer youtube
+</p>
+</div>
+</div>
+
+<div id="outline-container-org10564ec" class="outline-2">
+<h2 id="org10564ec"><span class="section-number-2">24</span> In life in general, when faced with anything stuck or bothering you</h2>
+<div class="outline-text-2" id="text-24">
+<ul class="org-ul">
+<li>Write it down</li>
+<li>Abstract it, find key things,</li>
+<li>Form guess and try suggest solutions</li>
+</ul>
+
+<p>
+10 minute scouting, 50 note taking in depth
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3a6a7ab" class="outline-2">
+<h2 id="org3a6a7ab"><span class="section-number-2">25</span> Prayer &amp; Meditation</h2>
+<div class="outline-text-2" id="text-25">
+<p>
+Focusing your consciousness
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org60a7bdd" class="outline-2">
+<h2 id="org60a7bdd"><span class="section-number-2">26</span> Just do it.</h2>
+<div class="outline-text-2" id="text-26">
+<p>
+Dont try to understand it.
+</p>
+
+<p>
+Understanding will come later.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orga55b72b" class="outline-2">
+<h2 id="orga55b72b"><span class="section-number-2">27</span> Studying Habit: Key Terms</h2>
+<div class="outline-text-2" id="text-27">
+<ul class="org-ul">
+<li>Branching
+<ul class="org-ul">
+<li>Connecting Existing Ideas</li>
+<li>Key Questions</li>
+</ul></li>
+<li>Memory
+<ul class="org-ul">
+<li>Key points</li>
+<li>Questions</li>
+<li>Motivations</li>
+</ul></li>
+<li>Problem Solving Process
+<ul class="org-ul">
+<li>Understand</li>
+<li>Plan: A → B
+<ul class="org-ul">
+<li>Sub Plan</li>
+</ul></li>
+<li>Execute Plan</li>
+<li>Review Plan: Success or Fail</li>
+</ul></li>
+</ul>
+
+<p>
+In A → B is B what you need? Are you proving more than what you need?
+</p>
+</div>
+</div>
+
+<div id="outline-container-org950c874" class="outline-2">
+<h2 id="org950c874"><span class="section-number-2">28</span> Woman, Loneliness, Family</h2>
+<div class="outline-text-2" id="text-28">
+<ul class="org-ul">
+<li>What kind of traits do you look in a woman
+<ul class="org-ul">
+<li>Faith in God</li>
+<li>Faithful</li>
+<li>Wisdom</li>
+</ul></li>
+<li>What can you provide?
+<ul class="org-ul">
+<li>good father?</li>
+<li>sacrifice</li>
+</ul></li>
+<li><b><b>love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control.</b></b></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6f863a3" class="outline-2">
+<h2 id="org6f863a3"><span class="section-number-2">29</span> Start</h2>
+<div class="outline-text-2" id="text-29">
+<ul class="org-ul">
+<li>Strong why you need to learn
+<ul class="org-ul">
+<li>I want to face difficult problems and learn from my mistakes</li>
+<li>Enjoy the process, not the end result</li>
+</ul></li>
+<li>Reduce start cost</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgcd2b385" class="outline-2">
+<h2 id="orgcd2b385"><span class="section-number-2">30</span> During</h2>
+<div class="outline-text-2" id="text-30">
+<ul class="org-ul">
+<li>Develop a routine/habits/patterns 70%</li>
+<li>When it is difficult, not clear &amp; confusing, be patient.
+<ul class="org-ul">
+<li>You are learning</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org447a572" class="outline-2">
+<h2 id="org447a572"><span class="section-number-2">31</span> Stuck</h2>
+<div class="outline-text-2" id="text-31">
+<ul class="org-ul">
+<li>overflow go for walk empty handed
+<ul class="org-ul">
+<li>take the most difficult part</li>
+<li>rythynm while moving</li>
+</ul></li>
+</ul>
+
+<p>
+Read a fun book?
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4fa85a6" class="outline-2">
+<h2 id="org4fa85a6"><span class="section-number-2">32</span> Consolidate</h2>
+<div class="outline-text-2" id="text-32">
+<ul class="org-ul">
+<li>Close book and explain, recall</li>
+<li>To remember something you need some past memory.
+<ul class="org-ul">
+<li>You need starting, key points, to link memories</li>
+</ul></li>
+</ul>
+<ul class="org-ul">
+<li>Develop skills and tools to map/search independently,</li>
+<li>Develop skills and tools to prove the theorems and problems on my own,</li>
+<li>Maybe if I get stuck I need to learn from what the book or others is doing.</li>
+
+<li>Need to have small discrete simple tasks</li>
+<li>Right now I feel like I have to do too much for one day.</li>
+</ul>
+
+<p>
+I want to progress and try different ideas without things getting to cluttered and without me having to write down things again and again?
+</p>
+
+<p>
+But maybe writing things down again and again is important?
+</p>
+
+<p>
+Asking questions. Saving these questions for later
+</p>
+
+<p>
+Maybe I need to arrive at good conclusions.
+</p>
+
+<p>
+Have a problem solving session → What are you trying to get out of it?
+</p>
+
+<p>
+Directions
+</p>
+
+<p>
+Questions
+</p>
+
+<p>
+Useful/related definitions and their properties
+</p>
+
+<p>
+The main goal is to have 
+</p>
+
+<p>
+some outline of well known, key facts, definitions
+</p>
+
+<p>
+and ability to answer, question, and navigate capillary results
+</p>
+
+<p>
+The document provides a study guide with tips for taking good notes, developing recall and problem-solving skills, managing time and distractions, and incorporating rest and meditation. It also includes personal reflections on motivation and goal-setting, as well as tips for graph search and branching. The main goal is to have an outline of key facts and definitions, and the ability to answer questions and navigate capillary results.
+</p>
+
+<ul class="org-ul">
+<li>Develop skills and tools to prove theorems and problems independently</li>
+<li>Use discrete, simple tasks to reduce start-up cost</li>
+<li>Use small, significant, and meaningful steps to conserve energy</li>
+</ul>
+
+<p>
+In addition to the above, the document emphasizes the importance of having a strong motivation for studying and a clear understanding of one's goals. It encourages the reader to write down any distractions or issues that arise during studying, and to abstract key points and suggest solutions in order to overcome them.
+</p>
+
+<p>
+The document also offers tips for managing mood and burnout, including incorporating activities like movies, books, music, hiking, lifting, and sports into one's routine. It suggests building a routine similar to a workout routine, with practices that optimize learning and problem-solving.
+</p>
+
+<p>
+Overall, the document provides a comprehensive guide to developing effective study skills and habits, with a focus on developing the ability to recall information, solve problems independently, and manage time and distractions. By following the tips and suggestions provided, readers can build a strong foundation for continued learning and growth.
+</p>
+
+<ul class="org-ul">
+<li>Use different types of notes: key paper, outline, scratch paper</li>
+<li>Develop recall and problem-solving skills</li>
+<li>Manage time and distractions</li>
+<li>Incorporate rest and meditation to manage mood and burnout</li>
+<li>Create a routine with practices that optimize learning and problem-solving</li>
+</ul>
+
+<p>
+The document also suggests building a strong foundation of skills that will support continued learning and growth. This includes developing the ability to recall information, solve problems independently, manage time and distractions, and incorporate rest and meditation to manage mood and burnout.
+</p>
+
+<p>
+One key tip for developing recall and problem-solving skills is to use different types of notes, such as key paper, outline, and scratch paper. This helps to organize information and make it easier to remember and understand.
+</p>
+
+<p>
+In addition, managing time and distractions is essential for effective studying. The document suggests reducing start-up costs by breaking tasks into discrete, simple steps and conserving energy by taking small, significant, and meaningful steps. It also offers tips for managing distractions, including turning off phones and other electronic devices during study sessions.
+</p>
+
+<p>
+To manage mood and burnout, the document recommends incorporating rest and meditation into one's routine. This can include activities like movies, books, music, hiking, lifting, and sports, which can help to reduce stress and increase motivation.
+</p>
+
+<p>
+Overall, the document provides a comprehensive guide to developing effective study skills and habits, with a focus on building a strong foundation of skills that will support continued learning and growth. By following the tips and suggestions provided, readers can develop the ability to recall information, solve problems independently, manage time and distractions, and incorporate rest and meditation to manage mood and burnout.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: ychnh</p>
+<p class="date">Created: 2023-06-14 수 16:28</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
