@@ -1,0 +1,370 @@
+# Study Guide
+
+- you really need to rest
+
+- everything has cost
+    - you would not buy something stupid
+    - so, analogously
+    - playing games is too expensive
+        - nervous system
+        - rest
+        - time
+    - social media has cost
+        - it depletes novelty excitement
+        - 
+
+watch documentary to rest?
+
+endorphins?
+
+TODO
+
+- key points ↔ less is more
+- Summarize and Connect
+    - After each point summarize key finding. A simple story of what you did. And how it connects to the overall story.
+- Unstuck
+    - Take good simple notes
+        - Key paper, Outline, Scratch paper
+    - Start anew
+    - What environment is good for me to study? what lowers cost?
+- Notes.Purpose.Structure
+    - These notes are a manual for helping you develop skills
+        - recall, research, solve
+    1. Help me when I get stuck and lost
+    2. Make observations
+    3. Reminder
+    - What should be the structure of these notes?
+        - 1 symptom → solution
+        - 3 key ideas
+        - 2 write down in scratch board
+    - It should be a description of how you
+        - recall, research, solve
+        - And details of the objects involved in this process
+        - Maybe a collection of notes on different topics
+            - Key notes
+            - Map outline
+            - Scratch Pad
+
+- Mottos
+    - Less is more
+        - constraint on words
+    - To improve at X, you need to do X
+        - Asking questions
+        - Solving problems
+        - Branching, Mapping, Researching
+- Key words
+    - Importance
+    - Exhaustive
+    - Meaning
+    - Motivations
+
+- Visual Thinking
+    - Memory costs energy
+    - Make a plan
+        - Write, see and follow the train of thought
+    - Effective, simple writing
+    - Raw Notes
+        - Don’t commit energy to memory
+        - See what you write and see where it leads you
+        - Use visual structure to guide your thoughts
+        - This means that it is important to organize things at a high level.
+
+- Symptom.Stuck
+    - Start anew, with a fresh mind.
+    - Feeling bad about regression
+        - You used to think, going back to relook at a lecture you have already learned is bad
+        - This is not true. It is parting of learning
+    - Wanted to use my notes for regression
+        - But was too messy
+    - I kept forgetting the key properties and definitions
+    - I wasn’t sure were I was
+    - **Key Take Away**
+        - Take good simple notes
+            - Key paper, Outline, Scratch paper
+        - Start anew
+
+I think I am making a study routine. Organized into how I can spend my time?
+
+- Me
+    - Values
+    - Belief
+        - God
+    - Rest
+    - Energy
+        - Cost
+            - Small Significant & Meaningful Step
+    - Mood
+    - Mentality
+    - Principals
+    - Objective Goals
+    - 
+- Skill
+    - Recall
+    - Problem Solving & Management
+    - Research
+        - Developing an understanding and awareness of the subject matter
+        - Map outline
+        - Key Topic/Object Paper
+        - Scratch Paper
+- Time
+    - Iteration, Frequency
+    - Distraction
+    - Bottlenecks
+    - Finish what you need to finish today
+    - Loosing the train of thought
+- Memory
+    - What secondary memories can you use to remember?
+
+- Fresh Start
+- Internal Motivation
+    - Fight for what you believe in
+    - A strong why
+    - Fire, will, fury
+- Problem.Difficulty
+    - Why are some more difficult?
+- Research
+    - Key points
+    - Motivations
+    - graph: vertex, edge
+- Recall
+    - Blank paper exercise
+- Skill.Exercise
+    - Spend time producing, doing and working
+        - Not memorizing or passively reading
+- Research
+    - Sure footing
+        - Ironclad
+        - Make sure you come to solid, grounded conclusions
+        - Re-check your conclusions. Everyone makes mistakes.
+    - Branching
+    - Showing Some Branches are False
+    - Path finding a→b
+    - Re-organizing & Simplify graph
+
+- Symptom.Understanding.Stuck
+    - Not Stuck
+        - Already know the material
+        - Familiar with concepts
+    - Stuck
+        - New material
+        - Encounter difficult
+        - Process of researching
+    - Solutions?
+        - Overcome this situation by mapping & navigation
+        - Write proofs, retrace steps to see what the key idea & motivations are
+        - Start again from the beginning, where you are confused, with a fresh start
+
+- Mood.Frustration, Burnout
+    - Indication of something seriously wrong
+    - Recent burnout
+        - Negative Environment
+        - Giving up what was important to me
+        - Not fighting & standing up for myself
+        - Getting stuck and disorganized
+
+- How can we increase the rate at which we are familiar with the material?
+    - Repetition
+    - Do the same thing again
+
+---
+
+- Generators (Asking Questions)
+    - What I do?
+    - How?
+    - What?
+    - Where?
+
+Notes
+
+- Organize the notes so that many ideas can be represented with a single word
+- Create the generators
+
+goal, time, bottlenecks
+
+1 sentence summary
+
+- Do a little bit get into the routine again.
+    - Everything starts with doing
+    - What is possible must have an initial step.
+        - What initial step do you need to take?
+        - Note: I feel like this conclusion should be automatic & natural with just the idea, jnitial step
+            - What can i do? what do i need to do
+            - how to make notes less verbose
+
+Mood
+
+Note Taking
+
+Recall
+
+- Time Management
+    - Distractions
+        - Phone
+
+Study Skills
+
+- Rest
+    - Movies
+    - Books
+    - Music
+    - Hike
+    - Lifting
+    - Sports
+    - Meditation
+
+- Instead of a flat list, maybe you can incorporate routines/practices that satisfy/optimize.
+    - kind of like building a workout routine
+
+??? Maybe can reduce some of these
+
+Learning
+
+Discovery
+
+Problem Solving Management
+
+Problem Solving
+
+Learning 
+
+- Graph search
+    - What kind of graph, what are the vertex and edges?
+        - V is the ideas
+        - E is if the idea can be derieved the Vs
+    - What can you do in this graph?
+        - Create a new graph
+        - Find pattern among V and reorder, recreate v
+        - see if edges can/cannot connect to another V
+        - Find a path from A to B
+            - And maybe find more subpaths
+        - Find new V to branch out and test
+        - See if edges are related
+        - Find V that have alot of connections
+        - Reorganize & prune the V,E
+        
+
+Distractions, phone internet computer youtube
+
+- In life in general, when faced with anything stuck or bothering you
+    - Write it down
+    - Abstract it, find key things,
+    - Form guess and try suggest solutions
+
+10 minute scouting, 50 note taking in depth
+
+- Prayer & Meditation
+    
+    Focusing your consciousness
+    
+
+- Just do it.
+    
+    Dont try to understand it.
+    
+    Understanding will come later.
+    
+
+- Studying Habit: Key Terms
+    - Branching
+        - Connecting Existing Ideas
+        - Key Questions
+    - Memory
+        - Key points
+        - Questions
+        - Motivations
+    - Problem Solving Process
+        - Understand
+        - Plan: A → B
+            - Sub Plan
+        - Execute Plan
+        - Review Plan: Success or Fail
+
+In A → B is B what you need? Are you proving more than what you need?
+
+- Woman, Loneliness, Family
+    - What kind of traits do you look in a woman
+        - Faith in God
+        - Faithful
+        - Wisdom
+    - What can you provide?
+        - good father?
+        - sacrifice
+    - **love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control.**
+
+- Start
+    - Strong why you need to learn
+        - I want to face difficult problems and learn from my mistakes
+        - Enjoy the process, not the end result
+    - Reduce start cost
+- During
+    - Develop a routine/habits/patterns 70%
+    - When it is difficult, not clear & confusing, be patient.
+        - You are learning
+- Stuck
+    - overflow go for walk empty handed
+        - take the most difficult part
+        - rythynm while moving
+    
+    Read a fun book?
+    
+- Consolidate
+    - Close book and explain, recall
+    - To remember something you need some past memory.
+        - You need starting, key points, to link memories
+    
+- Develop skills and tools to map/search independently,
+- Develop skills and tools to prove the theorems and problems on my own,
+- Maybe if I get stuck I need to learn from what the book or others is doing.
+
+- Need to have small discrete simple tasks
+- Right now I feel like I have to do too much for one day.
+
+I want to progress and try different ideas without things getting to cluttered and without me having to write down things again and again?
+
+But maybe writing things down again and again is important?
+
+Asking questions. Saving these questions for later
+
+Maybe I need to arrive at good conclusions.
+
+Have a problem solving session → What are you trying to get out of it?
+
+Directions
+
+Questions
+
+Useful/related definitions and their properties
+
+The main goal is to have 
+
+some outline of well known, key facts, definitions
+
+and ability to answer, question, and navigate capillary results
+
+The document provides a study guide with tips for taking good notes, developing recall and problem-solving skills, managing time and distractions, and incorporating rest and meditation. It also includes personal reflections on motivation and goal-setting, as well as tips for graph search and branching. The main goal is to have an outline of key facts and definitions, and the ability to answer questions and navigate capillary results.
+
+- Develop skills and tools to prove theorems and problems independently
+- Use discrete, simple tasks to reduce start-up cost
+- Use small, significant, and meaningful steps to conserve energy
+
+In addition to the above, the document emphasizes the importance of having a strong motivation for studying and a clear understanding of one's goals. It encourages the reader to write down any distractions or issues that arise during studying, and to abstract key points and suggest solutions in order to overcome them.
+
+The document also offers tips for managing mood and burnout, including incorporating activities like movies, books, music, hiking, lifting, and sports into one's routine. It suggests building a routine similar to a workout routine, with practices that optimize learning and problem-solving.
+
+Overall, the document provides a comprehensive guide to developing effective study skills and habits, with a focus on developing the ability to recall information, solve problems independently, and manage time and distractions. By following the tips and suggestions provided, readers can build a strong foundation for continued learning and growth.
+
+- Use different types of notes: key paper, outline, scratch paper
+- Develop recall and problem-solving skills
+- Manage time and distractions
+- Incorporate rest and meditation to manage mood and burnout
+- Create a routine with practices that optimize learning and problem-solving
+
+The document also suggests building a strong foundation of skills that will support continued learning and growth. This includes developing the ability to recall information, solve problems independently, manage time and distractions, and incorporate rest and meditation to manage mood and burnout.
+
+One key tip for developing recall and problem-solving skills is to use different types of notes, such as key paper, outline, and scratch paper. This helps to organize information and make it easier to remember and understand.
+
+In addition, managing time and distractions is essential for effective studying. The document suggests reducing start-up costs by breaking tasks into discrete, simple steps and conserving energy by taking small, significant, and meaningful steps. It also offers tips for managing distractions, including turning off phones and other electronic devices during study sessions.
+
+To manage mood and burnout, the document recommends incorporating rest and meditation into one's routine. This can include activities like movies, books, music, hiking, lifting, and sports, which can help to reduce stress and increase motivation.
+
+Overall, the document provides a comprehensive guide to developing effective study skills and habits, with a focus on building a strong foundation of skills that will support continued learning and growth. By following the tips and suggestions provided, readers can develop the ability to recall information, solve problems independently, manage time and distractions, and incorporate rest and meditation to manage mood and burnout.

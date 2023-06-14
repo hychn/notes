@@ -1,19 +1,22 @@
-* 1.7 Categories Free Object
-** Category
+# 1.7 Categories Free Object
+
+* Category
+** Definition
 + objects
 + morphisms for pair of objects
 + composition of morphisms: associative, identity
 
+** Questions
 + ?can you form identity morphism?
-+ if there is invertible morphism f A B
 + ?is it similar to concept of being of same cardinality?
++ ?Why is commutativity so important?
 
-*** Example
-
-** Product
-** Coproduct
-** Free Object
+** Example
++ commutes
+  + Is commutative a critical property?
 
 
-* 1.8 Direct Product and Direct Sum
-** 
+* Product
+* Coproduct
+* Free Object
+
