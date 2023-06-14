@@ -6,7 +6,7 @@
 
 + ?can you form identity morphism?
 + if there is invertible morphism f A B
-+
++ ?is it similar to concept of being of same cardinality?
 
 ** Product
 ** Coproduct
