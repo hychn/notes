@@ -1,8 +1,18 @@
 * 1.7 Categories Free Object
-** Categories
+** Category
++ objects
++ morphisms for pair of objects
++ composition of morphisms: associative, identity
+
++ ?can you form identity morphism?
+
++ morphism:q
+:
+
 ** Product
 ** Coproduct
 ** Free Object
+
 
 * 1.8 Direct Product and Direct Sum
 ** 
