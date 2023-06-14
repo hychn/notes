@@ -1,4 +1,4 @@
-# Study Guide
+* Study Guide
 
 - you really need to rest
 
@@ -45,14 +45,14 @@ TODO
             - Map outline
             - Scratch Pad
 
-- Mottos
+* Mottos
     - Less is more
         - constraint on words
     - To improve at X, you need to do X
         - Asking questions
         - Solving problems
         - Branching, Mapping, Researching
-- Key words
+* Key words
     - Importance
     - Exhaustive
     - Meaning
@@ -69,7 +69,7 @@ TODO
         - Use visual structure to guide your thoughts
         - This means that it is important to organize things at a high level.
 
-- Symptom.Stuck
+* Symptom.Stuck
     - Start anew, with a fresh mind.
     - Feeling bad about regression
         - You used to think, going back to relook at a lecture you have already learned is bad
@@ -85,7 +85,7 @@ TODO
 
 I think I am making a study routine. Organized into how I can spend my time?
 
-- Me
+* Me
     - Values
     - Belief
         - God
@@ -98,7 +98,7 @@ I think I am making a study routine. Organized into how I can spend my time?
     - Principals
     - Objective Goals
     - 
-- Skill
+* Skill
     - Recall
     - Problem Solving & Management
     - Research
@@ -106,32 +106,32 @@ I think I am making a study routine. Organized into how I can spend my time?
         - Map outline
         - Key Topic/Object Paper
         - Scratch Paper
-- Time
+* Time
     - Iteration, Frequency
     - Distraction
     - Bottlenecks
     - Finish what you need to finish today
     - Loosing the train of thought
-- Memory
+* Memory
     - What secondary memories can you use to remember?
 
-- Fresh Start
-- Internal Motivation
+* Fresh Start
+* Internal Motivation
     - Fight for what you believe in
     - A strong why
     - Fire, will, fury
-- Problem.Difficulty
+* Problem.Difficulty
     - Why are some more difficult?
-- Research
+* Research
     - Key points
     - Motivations
     - graph: vertex, edge
-- Recall
+* Recall
     - Blank paper exercise
-- Skill.Exercise
+* Skill.Exercise
     - Spend time producing, doing and working
         - Not memorizing or passively reading
-- Research
+* Research
     - Sure footing
         - Ironclad
         - Make sure you come to solid, grounded conclusions
@@ -141,7 +141,7 @@ I think I am making a study routine. Organized into how I can spend my time?
     - Path finding a→b
     - Re-organizing & Simplify graph
 
-- Symptom.Understanding.Stuck
+* Symptom.Understanding.Stuck
     - Not Stuck
         - Already know the material
         - Familiar with concepts
@@ -154,7 +154,7 @@ I think I am making a study routine. Organized into how I can spend my time?
         - Write proofs, retrace steps to see what the key idea & motivations are
         - Start again from the beginning, where you are confused, with a fresh start
 
-- Mood.Frustration, Burnout
+* Mood.Frustration, Burnout
     - Indication of something seriously wrong
     - Recent burnout
         - Negative Environment
@@ -162,13 +162,13 @@ I think I am making a study routine. Organized into how I can spend my time?
         - Not fighting & standing up for myself
         - Getting stuck and disorganized
 
-- How can we increase the rate at which we are familiar with the material?
+* How can we increase the rate at which we are familiar with the material?
     - Repetition
     - Do the same thing again
 
 ---
 
-- Generators (Asking Questions)
+* Generators (Asking Questions)
     - What I do?
     - How?
     - What?
@@ -183,7 +183,7 @@ goal, time, bottlenecks
 
 1 sentence summary
 
-- Do a little bit get into the routine again.
+* Do a little bit get into the routine again.
     - Everything starts with doing
     - What is possible must have an initial step.
         - What initial step do you need to take?
@@ -203,7 +203,7 @@ Recall
 
 Study Skills
 
-- Rest
+* Rest
     - Movies
     - Books
     - Music
@@ -212,7 +212,7 @@ Study Skills
     - Sports
     - Meditation
 
-- Instead of a flat list, maybe you can incorporate routines/practices that satisfy/optimize.
+* Instead of a flat list, maybe you can incorporate routines/practices that satisfy/optimize.
     - kind of like building a workout routine
 
 ??? Maybe can reduce some of these
@@ -227,7 +227,7 @@ Problem Solving
 
 Learning 
 
-- Graph search
+* Graph search
     - What kind of graph, what are the vertex and edges?
         - V is the ideas
         - E is if the idea can be derieved the Vs
@@ -245,26 +245,26 @@ Learning
 
 Distractions, phone internet computer youtube
 
-- In life in general, when faced with anything stuck or bothering you
+* In life in general, when faced with anything stuck or bothering you
     - Write it down
     - Abstract it, find key things,
     - Form guess and try suggest solutions
 
 10 minute scouting, 50 note taking in depth
 
-- Prayer & Meditation
+* Prayer & Meditation
     
     Focusing your consciousness
     
 
-- Just do it.
+* Just do it.
     
     Dont try to understand it.
     
     Understanding will come later.
     
 
-- Studying Habit: Key Terms
+* Studying Habit: Key Terms
     - Branching
         - Connecting Existing Ideas
         - Key Questions
@@ -281,7 +281,7 @@ Distractions, phone internet computer youtube
 
 In A → B is B what you need? Are you proving more than what you need?
 
-- Woman, Loneliness, Family
+* Woman, Loneliness, Family
     - What kind of traits do you look in a woman
         - Faith in God
         - Faithful
@@ -291,23 +291,23 @@ In A → B is B what you need? Are you proving more than what you need?
         - sacrifice
     - **love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control.**
 
-- Start
+* Start
     - Strong why you need to learn
         - I want to face difficult problems and learn from my mistakes
         - Enjoy the process, not the end result
     - Reduce start cost
-- During
+* During
     - Develop a routine/habits/patterns 70%
     - When it is difficult, not clear & confusing, be patient.
         - You are learning
-- Stuck
+* Stuck
     - overflow go for walk empty handed
         - take the most difficult part
         - rythynm while moving
     
     Read a fun book?
     
-- Consolidate
+* Consolidate
     - Close book and explain, recall
     - To remember something you need some past memory.
         - You need starting, key points, to link memories
