@@ -8,7 +8,7 @@
 + if there is invertible morphism f A B
 + ?is it similar to concept of being of same cardinality?
 
-+ Example
+*** Example
 
 ** Product
 ** Coproduct
