@@ -6,8 +6,7 @@
 
 + ?can you form identity morphism?
 
-+ morphism:q
-:
++ morphism
 
 ** Product
 ** Coproduct
