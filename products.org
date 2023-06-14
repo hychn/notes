@@ -3,6 +3,6 @@
 ** Product
 ** Coproduct
 ** Free Object
-this is new commit.
+this is new commit 2.
 * 1.8 Direct Product and Direct Sum
 ** 
