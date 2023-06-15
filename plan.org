@@ -7,4 +7,4 @@ this is a minimal note of your goals and plans
 + improve my diet
 + improve the survival sim
 + improve my lifts, dead 180, squat 140, bench 140
-+ improve note taking, git.io
++ improve note taking, git.io, c-U update without quitting em
