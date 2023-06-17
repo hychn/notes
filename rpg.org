@@ -1,5 +1,7 @@
 * Improvements
 + make code more efficient
+  + load, unload, save obj
+  + passive simulation
 + define and complete a game loop
 
 + improve shd manager predfined objects
