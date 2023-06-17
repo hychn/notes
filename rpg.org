@@ -1,4 +1,7 @@
 * Improvements
++ sustain the activites you enjoy
+  + fuel:movement bandage:healing drink:energy food:buff
+  + dont  
 + make code more efficient
   + load, unload, save obj
   + passive simulation
