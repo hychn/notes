@@ -20,6 +20,7 @@
 * problem solutiok structure
 + life guide
 * problem motivation
++ reward the harder steps
 + doing it while you dont want to is badass
 + dopamine is a powerful system to overcome stress and depression
 + be very careful about focusing on goal
@@ -28,6 +29,13 @@
   + dont overhype your dopamine during and after goals
 + reset your dopamine system, be bored, be sad, be calm
 + huge gap between end goal
+** What is reward?
++ [andrew huberman](https://www.youtube.com/watch?v=FEuYRb4j1_M)
++ How you feel and how you allow yourself to feel
++ Find the wall, push yourself through the wall, and reward yourself
++ Can you buffer the stress
++ Need to recover adrenaline
+
 * be logical and plan ahead
 * principals guide you
 + be ambitious be a man
