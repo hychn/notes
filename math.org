@@ -1,7 +1,15 @@
 + proof are just checking idea right?
-+ consider the opposite definition
-+ method of proof
-+ ideas proven
++ ideas proven relationship to method of proof
+
+* study method
++ write out definitions
++ find equivalents
++ opposite definitions
++ repeat many times until comfortable
+
+* rest
++ defocus
++ periphery vision
 
 * red herring
 + forget assumptions
