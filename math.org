@@ -6,6 +6,7 @@
 + find equivalents
 + opposite definitions
 + repeat many times until comfortable
++ training in searching exhausting finding solutions
 
 * rest
 + defocus
