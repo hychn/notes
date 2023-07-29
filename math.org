@@ -2,11 +2,16 @@
 + ideas proven relationship to method of proof
 
 * study method
-+ write out definitions
-+ find equivalents
-+ opposite definitions
-+ repeat many times until comfortable
++ definitions
+  + write out definitions
+  + find equivalents
+  + opposite definitions
+  + repeat many times until comfortable
+  + need to know definitions by heart
 + training in searching exhausting finding solutions
++ ask questions
+ + to guide search
+ + to explore defintions
 
 * rest
 + defocus
