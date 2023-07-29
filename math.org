@@ -6,12 +6,17 @@
   + write out definitions
   + find equivalents
   + opposite definitions
+  + each component of definition
+    + what if component changes, is opposite?
+    + what are those things? how do they behave?
   + repeat many times until comfortable
   + need to know definitions by heart
 + training in searching exhausting finding solutions
-+ ask questions
++ ask good questions
  + to guide search
  + to explore defintions
+ + can we find x?
+   + if not for all cases, a subset of the cases?
 
 * rest
 + defocus
