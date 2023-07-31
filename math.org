@@ -13,10 +13,15 @@
   + need to know definitions by heart
 + training in searching exhausting finding solutions
 + ask good questions
- + to guide search
- + to explore defintions
- + can we find x?
-   + if not for all cases, a subset of the cases?
+  + to guide search
+  + to explore defintions
+  + what do i need to try this idea?
+  + can we find x?
+    + if not for all cases, a subset of the cases?
++ mindful of possibility of given
++ Recognize stuck, find other approaches
++ Prune certain paths early
+  + by proof or counter example
 
 * rest
 + defocus
