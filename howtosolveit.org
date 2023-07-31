@@ -5,6 +5,11 @@
   
  + 4 phases
    + understand problem
+     + what is unknown
+     + what are the data
+     + introduce suitable notation
+     + is it a reasonable problem
+     + is the condition sufficient to determine the unknown?
    + see how various items connect
      + see the main connection
    + carry out our plan
