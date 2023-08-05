@@ -36,7 +36,6 @@
   + Could you restate it still differently?
   + Go back to defintions
   
-  
 + If you cannot solve the proposed problem, solve some related problem
 + Could you imagine a more accessible related problem?
 + A more general problem?
@@ -66,7 +65,7 @@
 + Can you see it at a glance?
 + Can you use the result, or the method, for some other problems?
 
-* ESC
+* ESC OLD
 + what is unknown
 + what are the data
 + introduce suitable notation
