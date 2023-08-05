@@ -32,6 +32,7 @@
   + Could you use its result?
   + Could you use its method?
   + Should you introduce some auxilary element in order to make its use possible?
+    + aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaa
   + Could you restate the problem?
   + Could you restate it still differently?
   + Go back to defintions
