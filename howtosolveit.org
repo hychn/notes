@@ -33,6 +33,7 @@
   + Could you use its method?
   + Should you introduce some auxilary element in order to make its use possible?
     + aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaa
+      + This is a test long sentence to check if the solution has been correctly applied and it does indeed seem like the case
   + Could you restate the problem?
   + Could you restate it still differently?
   + Go back to defintions
