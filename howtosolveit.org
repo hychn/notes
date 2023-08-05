@@ -3,16 +3,78 @@
   + acquire by imitation and practice
   + plenty of opportunity
   
- + 4 phases
-   + understand problem
-     + what is unknown
-     + what are the data
-     + introduce suitable notation
-     + is it a reasonable problem
-     + is the condition sufficient to determine the unknown?
-   + see how various items connect
-     + see the main connection
-   + carry out our plan
-     + check each step
-   + look back, review discuss
-     + re-examine reconsider
+* Understand problem
++ What is the unknown?
++ What are the data?
++ What is the condition?
++ Is it possible to satisfy the condition?
++ Is the condition sufficient to determine the unknown?
++ Is it insufficient, redudant, contradictory?
++ Is it a reasonable problem?
++ Draw a figure
++ Introduce a suitable notation
++ Separate the various parts of the condition. Can you write them down?
+
+** Getting Acquainted
+
+* Devising a plan
++ Find the connection between the data and the unknown
++ Obliged to consider auxilary problems if an immediate connection cannot be found
++ You should obtain eventually a plan of the solution
++ Have you seen it before?
++ Have you seen the same problem in a slightly different form?
++ Do you know a related problem?
++ Do you know a theorem that could be useful?
++ Look at the unknown 
+  + Try to think of a familiar problem having the same or a similar unknown
++ Here is a problem related to yours and solved before.
+  + Could you use it?
+  + Could you use its result?
+  + Could you use its method?
+  + Should you introduce some auxilary element in order to make its use possible?
+  + Could you restate the problem?
+  + Could you restate it still differently?
+  + Go back to defintions
+  
+  
++ If you cannot solve the proposed problem, solve some related problem
++ Could you imagine a more accessible related problem?
++ A more general problem?
++ A more special problem?
++ An analogous problem?
++ Could you solve a part of the problem?
++ Keep only a part of the condition, drop the other part; 
+  + How far is the unknown then determined, how could it vary?
++ Could you derive something useful from the data?
++ Could you think of other data appropriate to determine the unknown?
++ Could you change the unknown or the data, or both if neccesary 
+  + So that the new unknown and the new data are nearer to each other?
++ Use all the data?
+  + Did you use the whole condition?
+  + Have you taken into account all essential notion involved int he problem?
+
+* Carrying out the plan
++ Carrying out your plan of the solution.
++ Check each step.
++ Can you see clearly that the step is correct?
++ Can you prove that it is correct?
+
+* Looking back
++ Can you check the result?
++ Can you check the argument?
++ Can you derive the result differently?
++ Can you see it at a glance?
++ Can you use the result, or the method, for some other problems?
+
+* ESC
++ what is unknown
++ what are the data
++ introduce suitable notation
++ is it a reasonable problem
++ is the condition sufficient to determine the unknown?
++ see how various items connect
++ see the main connection
++ carry out our plan
++ check each step
++ look back, review discuss
++ re-examine reconsider
