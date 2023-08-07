@@ -1,23 +1,45 @@
-+ solving problem is practical skill
-  + like swimming
-  + acquire by imitation and practice
-  + plenty of opportunity
-  
-* Understand problem
-+ What is the unknown?
-+ What are the data?
-+ What is the condition?
-+ Is it possible to satisfy the condition?
-+ Is the condition sufficient to determine the unknown?
-+ Is it insufficient, redudant, contradictory?
+Here is a subset of the how to solve it list, to focus on things I need to work on.
+
+* Getting Acquainted
+* Working for Better Understanding (Be more patient, impress it on your mind, work when memory i)
++ Need to check if the problem is feasible, reasonable, through counter examples etc
++ Need to make sure I fully understand the problem
++ Comfortable with having the problem in my memory, looking away from it without fear of losing it altogether
+
+
+* Devising a plan (When memory seems responsive, Manage, try various sides, be enduring, be patient, be grateful)
++ Make sure you understand principal parts are distinctly arranged and clearly concieved
++ Carefully consider each part of the principal parts, considering them in various combinations
++ be grateful for hazy ideas
++ manage and explore the different options, not losing track
++ 
+
+* Carrying out the plan (Need to be more through here)
++ Scrutinize, carefully, checking the step
++ divide small steps and big steps
++ What can I gain by doing so? A presentation of the solution each step which is correct beyond doubt.
+
+* Looking Back (Need to focus here, have value)
++ See the solution at a glance, see it's point
++ Simpler intuitive solution
++ Fit into former knowledge
++ Scrutinize
++ Making extensive parts shorter
++ What can I gain by doing so? You may find a new and better solution, you may discover new and intersting facts. Get into the habit of surveying and scrutinizing your solutions in this way, you will acquire knowledge well ordered and reasy to use, and you will develop your ability of solving problems.
+
+
+* How to Solve it List 
+** Understand problem
++ What is the unknown, data, condition?
 + Is it a reasonable problem?
+  + Is it possible to satisfy the condition?
+  + Is the condition sufficient to determine the unknown?
+  + Is it insufficient, redudant, contradictory?
 + Draw a figure
 + Introduce a suitable notation
 + Separate the various parts of the condition. Can you write them down?
 
-** Getting Acquainted
-
-* Devising a plan
+** Devising a plan
 + Find the connection between the data and the unknown
 + Obliged to consider auxilary problems if an immediate connection cannot be found
 + You should obtain eventually a plan of the solution
@@ -28,9 +50,7 @@
 + Look at the unknown 
   + Try to think of a familiar problem having the same or a similar unknown
 + Here is a problem related to yours and solved before.
-  + Could you use it?
-  + Could you use its result?
-  + Could you use its method?
+  + Could you use it, it's result, it's method?
   + Should you introduce some auxilary element in order to make its use possible?
   + Could you restate the problem?
   + Could you restate it still differently?
@@ -38,34 +58,42 @@
   
 + If you cannot solve the proposed problem, solve some related problem
 + Could you imagine a more accessible related problem?
-+ A more general problem?
-+ A more special problem?
-+ An analogous problem?
-+ Could you solve a part of the problem?
++ A more general, more special, analogous
++ Could you solve a part of problem?
 + Keep only a part of the condition, drop the other part; 
   + How far is the unknown then determined, how could it vary?
 + Could you derive something useful from the data?
 + Could you think of other data appropriate to determine the unknown?
-+ Could you change the unknown or the data, or both if neccesary 
++ Could you change the unknown or the data, or both if neccesary?
   + So that the new unknown and the new data are nearer to each other?
 + Use all the data?
   + Did you use the whole condition?
   + Have you taken into account all essential notion involved int he problem?
 
-* Carrying out the plan
+** Carrying out the plan
 + Carrying out your plan of the solution.
 + Check each step.
 + Can you see clearly that the step is correct?
 + Can you prove that it is correct?
 
-* Looking back
+** Looking back
 + Can you check the result?
 + Can you check the argument?
 + Can you derive the result differently?
 + Can you see it at a glance?
 + Can you use the result, or the method, for some other problems?
 
-* ESC OLD
+
+* Quotes I like
++ solving problem is practical skill
+  + like swimming
+  + acquire by imitation and practice
+  + plenty of opportunity
++ Acquire a taste for mathematics like a fast game of tennis
+
+
+
+* ESC
 + what is unknown
 + what are the data
 + introduce suitable notation
@@ -77,3 +105,4 @@
 + check each step
 + look back, review discuss
 + re-examine reconsider
+
