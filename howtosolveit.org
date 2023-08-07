@@ -1,25 +1,54 @@
-Here is a subset of the how to solve it list, to focus on things I need to work on.
+Here is a subset of the how to solve it list, to focus on things I need to work on. like workout notes
 
-* Getting Acquainted
-* Working for Better Understanding (Be more patient, impress it on your mind, work when memory i)
+* Personal Notes
+** Getting Acquainted
++ visualize problem as a whole as clearly and vividly
++ dont concern yourself with details at the moment
++ What can I gain doing so?
+  + Understand, familiarize the problem.
+  + Impress the problem's purpose on your mind.
+  + Attention bestowed on the problem may stimulate your memory and prepare for recollection
+
+** Working for Better Understanding 
++ (Be more patient, impress it on your min)
 + Need to check if the problem is feasible, reasonable, through counter examples etc
 + Need to make sure I fully understand the problem
 + Comfortable with having the problem in my memory, looking away from it without fear of losing it altogether
++ Isolate the principal parts of the problem
++ Consider, one-by-one, in various combinations.
++ What can I gain by doing so?
+  + Prepare and clarify details which are likely to play a role afterward
 
-
-* Devising a plan (When memory seems responsive, Manage, try various sides, be enduring, be patient, be grateful)
+** Devising a plan
++ (When memory seems responsive, Manage, try various sides, be enduring, be patient, be grateful)
 + Make sure you understand principal parts are distinctly arranged and clearly concieved
 + Carefully consider each part of the principal parts, considering them in various combinations
 + be grateful for hazy ideas
 + manage and explore the different options, not losing track
-+ 
++ What could i perceive?
+  + a helpful idea, a decisive idea that shows at a glance the way to the very end
++ How can an idea be helpful?
+  + show the whole or a part of the way
+  + suggests how you can proceed
++ What could I do with an incomplete idea
+  + consider it. If it looks advatangeous you should consider it longer. If it looks reliable, ascertain how far it leads you and reconsider the situation
++ What can I gain doing so?
+  + have another idea
+  + perhaos the next idea will lead to the solution right away
+  + perhaps you need a few more helpful ideas
+  + perhaps younwill be led astray by some ideas
+  + nevertheless be grateful for all new ideas, also for the lesser, hazy, supplementary ideas adding precision to a hazy one
+  + even if you
 
-* Carrying out the plan (Need to be more through here)
+** Carrying out the plan
++ (Need to be more through here)
 + Scrutinize, carefully, checking the step
 + divide small steps and big steps
-+ What can I gain by doing so? A presentation of the solution each step which is correct beyond doubt.
++ What can I gain by doing so?
+  + A presentation of the solution each step which is correct beyond doubt.
 
-* Looking Back (Need to focus here, have value)
+** Looking Back
++ (Need to focus here, have value)
 + See the solution at a glance, see it's point
 + Simpler intuitive solution
 + Fit into former knowledge
