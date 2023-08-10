@@ -1,5 +1,13 @@
 Here is a subset of the how to solve it list, to focus on things I need to work on. like workout notes.
 If also gives good mentality and values and expectations to have at each step.
+* points to improve
++ try using an existing method to get a tangible result
++ trying to prove an idea that is false can be time consuming
++ Dont assume the answer to a complex problem
++ you need more precision at critical steps
+  + identify the critical steps
+* ahas
++ consider various sides of principal components and see if there are connections
 
 * Personal Notes
 ** Getting Acquainted
