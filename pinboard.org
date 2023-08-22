@@ -49,10 +49,7 @@
 * Groceries
 ** now
 + lens solution
-+ minox 
 + eggs
-+ chia seeds
-+ oatmeal
 
 ** future
 + eucslytpus ess oil vs handcream
