@@ -2,6 +2,8 @@
 + The course is a course. Focus on the broad principles that can be applied to all the courses.
 + It is painful and slow, but you must have faith!
 + If stuck... sometimes work backwards, glance at the solution for an idea, or a hint.
++ Create an environment or situation that will make you work
+  + disorganized notes will make structure the notes
 
 * Note Taking
 + First write everything. See if a pattern emerges, and group accordingly.
