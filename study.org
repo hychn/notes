@@ -1,0 +1,38 @@
+* Mentality
++ The course is a course. Focus on the broad principles that can be applied to all the courses.
++ It is painful and slow, but you must have faith!
++ If stuck... sometimes work backwards, glance at the solution for an idea, or a hint.
+
+* Note Taking
++ First write everything. See if a pattern emerges, and group accordingly.
+
+* Time management
++ I am sleeping naps after dinner. I really shouldn't do that.
+
+* Reading
++ During each reading session, try to take away a main, simple idea from each topic
+  + So you can get something meaningful out of reading
++ Looking for similar points when you revisit to study later
++ Polya: 1 See that the step is correct. 2 See the purpose of the step.
+  + See how humanely possible it is to find such an argument
+  + Use the same questions to understand the author's reasoning and feel that he could have discovered it himself by asking the same questions.
+
+* Problem Solving
+** Deriving Taylor series
++ Is there a reasonable way to naturally guide myself to the solution?
++ Work with a simpler, subset of the original condition
+  + Mindful what variables you can modify to create a simpler problem.
+  + a=0, n=1, n=0
+  + Can we simplify the problem further?
++ How can you extend the simpler case to the general case?
++ What is it that we are trying to do? What is the goal?
+  + Can you explicitly state an relationship, condition, or equation of the goal?
++ Compare your work with existing methods
+  + MVT
++ Inspect the interesting properties and requirements and ask how can you use them to solve? or how can you satistfy them?
+  + Rolle's requirement f(a)=0, f(b)=0
+  + Reduction due to derivative
++ Use these general questions, (work with simpler problem, n=1, n=0, a=0) to as starting points for your work.
++ Have you really understood the problem?
+  + I dont think I was completely mindful of the variables a, b
+
