@@ -1,0 +1,76 @@
+* Routine
+  + Reading Ahead
+    + 
+  + Understanding
+    + 
+    + Asking questions, collecting small properties
+ 
+* Reflections
++ Some people do proofs to relax, to get excited
+  + If you master it, it becomes trivial and not exciting
+  
++ Not getting lost. Confidence going down a path of thinking.
+  + make your thoughts and conclusions precise. 
+  + Know what you do not know!
+  + Have no assumptions! difference in what you think is promising, and what is true
+  + As long as you have clear starting point, idea, motivation; you will not be lost
+  + precise, sharp, no fear. If confused, return to starting point
+  
+  
++ Mathematics is an accumilation, not replacement
+  + Strong foundation, broader
+  + Your efforts will be rewarded
+
++ Put the situation in your mind and see them manipulate form in your mind
+
++ How can I remember small properties and traits of certain definitions?
+  + Where should I commit them in memory? probably following the definition
+  
+  
+ + Teaching yourself
+
++ How to get a clear view of the situation
+  + brain works better at manipulating things looking at a clear view
+  + put the situation in your mind and see them manipulate form in your mind
+ 
++ What is the minimal requirement?
+
++ Come to a conclusion after an encounter and a thinking session
++ Impress the significance of discoveries to remember
++ Know it so well, almost like a fact
+
++ Consider all of this as your training
+  + What if I drop 1 condition, what can I conclude
+  + How come this theorem stays, what is it's significance? Look at the big picture.
+  + Can I get guess the result, find it?
+  
+  
++ Work smart, from different angles
++ Ask yourself, do I understand this concept
+  
++ Good intuition, basic understanding, a correct idea, a rigourous proof
+
++ Maybe you need 1 small hint
+
+
++ Developed to understand real life phenomina
++ Stick with 1 book in the beginning. It will prevent unneccesary confusion
+
++ Some things I remember, somethings I cannot. What is the difference?
+  + The significance is not impressed on you
+  + ex: remember things said during lecture
+  + ex: dont remember continuous hypothesis conditions of theorem
+  + ex: dont remember properties of sequences and functions
+
++ Stuck: confusing notation, misreading/misunderstanding
+  + How can I not get stuck in the future
+  + Read carefully if you do not understand
+  + Try to see what it is saying
+  + Remember the statement exactly and your memory and try to see what it is trying to do.
+  
++ How to get a clear view of the situation
+  + brain works better at manipulating things looking at a clear view
+  + put the situation in your mind and see them manipulate form in your mind
+  
++ Conserve your effort with writing
++ Draw a picture
