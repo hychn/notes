@@ -18,98 +18,130 @@
 + Think in more powerful, general ways
 + Art of setting of the problem so that the answer can be obtained easily?
  
-* Reflections
 
+* Reflections ==========================================================
 
-+ Train of thought navigation
-  + quickly test your idea? before spending too much time on it?
-    + Assume the thing you are trying to prove is true and follow the chain of conclusions
-    + Find a counter example
-    + Will the idea guarantee a solution reasonably?
+* trust in the Lord
++ Peace be with you
++ Face your trauma with problem solving
++ Relax, breathe
++ Worry about what you can improve 
+
+* Make the most of each encounter with an idea
++ You cannot learn everything but when given an opportunity to look at an idea
++ devote all you can and perhaps return to it later
++ when you can & organize your findings
+
+* Practice in going in every direction: Problem <-> Motivation <-> work
++ This will help you increase in speed
+
+* Train of thought navigation
++ quickly test your idea? before spending too much time on it?
+  + Assume the thing you are trying to prove is true and follow the chain of conclusions
+  + Find a counter example
+  + Will the idea guarantee a solution reasonably?
++ Try to find a reasonable method assuming the theorem or thing you are trying to find exists
+
+* How to sit for long times
++ Support spine with core and glutes and hamstring
++ Dont support it all with neck... you'll get neck pain
++ Go on walks hill/flat descent to get blood flow
   
-+ How to get a clear view of the situation
-  + brain works better at manipulating things looking at a clear view
-  + put the situation in your memory and see them manipulate form in your mind
+* Need to develop isolating my mind to think very clearly about a specific setting
++ Without assumptions
++ Blacking out your mind, forgetting
 
-+ Treat each statement as alive, transforming at the adjustable parts
-+ Refine, Mininmize the essence of each idea you encounter
+* Always ask yourself, how can I become effective, efficient at what I am doing?
 
-+ Dealing with frustration
+* How to get a clear view of the situation
++ brain works better at manipulating things looking at a clear view
++ put the situation in your memory and see them manipulate form in your mind
 
-+ Note the key relationships you discover
-  + Treat them as signficant discoveries
-  + Familiarize yourself with their significance
-+ A particular view, a vista, a perspective: recognize abstractly what perspective it is?
+* Treat each statement as alive, transforming at the adjustable parts
+* Refine, Mininmize the essence of each idea you encounter
 
-+ Some people do proofs to relax, to get excited
-  + If you master it, it becomes trivial and not exciting
-  + My brain is wired to like easy problems
-    + Rewire myself to appreciate a good challenge, a puzzle
-    + Draw to more difficult things
+* Dealing with frustration
+
+* Note the key relationships you discover
++ Treat them as signficant discoveries
++ Familiarize yourself with their significance
+* A particular view, a vista, a perspective: recognize abstractly what perspective it is?
+
+* Some people do proofs to relax, to get excited
++ If you master it, it becomes trivial and not exciting
++ My brain is wired to like easy problems
+  + Rewire myself to appreciate a good challenge, a puzzle
+  + Draw to more difficult things
+
+* Not getting lost. Confidence going down a path of thinking.
++ make your thoughts and conclusions precise. 
++ Know what you do not know!
++ Have no assumptions! difference in what you think is promising, and what is true
++ As long as you have clear starting point, idea, motivation; you will not be lost
++ precise, sharp, no fear. If confused, return to starting point
+
+* Stuck: confusing notation, misreading/misunderstanding
++ How can I not get stuck in the future
++ Read carefully if you do not understand
++ Try to see what it is saying
++ Remember the statement exactly and your memory and try to see what it is trying to do.
++ If it is not making alot of sense, probably you are understanding it wrong
+
+
+
+* How can I think more on the fly?
+
+* Write the sub problems clearly
++ starting point, idea, motivation 
+
+* Mathematics is an accumilation, not replacement
++ Strong foundation, broader
++ Your efforts will be rewarded
+
+* Put the situation in your mind and see them manipulate form in your mind
+
+* How can I remember small properties and traits of certain definitions?
++ Where should I commit them in memory? probably following the definition
   
-+ Not getting lost. Confidence going down a path of thinking.
-  + make your thoughts and conclusions precise. 
-  + Know what you do not know!
-  + Have no assumptions! difference in what you think is promising, and what is true
-  + As long as you have clear starting point, idea, motivation; you will not be lost
-  + precise, sharp, no fear. If confused, return to starting point
   
-+ Write the sub problems clearly
-  + starting point, idea, motivation 
-
-+ Mathematics is an accumilation, not replacement
-  + Strong foundation, broader
-  + Your efforts will be rewarded
-
-+ Put the situation in your mind and see them manipulate form in your mind
-
-+ How can I remember small properties and traits of certain definitions?
-  + Where should I commit them in memory? probably following the definition
-  
-  
-+ Look for questions, objectives, patterns that repeat
+* Look for questions, objectives, patterns that repeat
  
-+ What is the minimal requirement?
+* What is the minimal requirement?
 
-+ Come to a conclusion after an encounter and a thinking session
+* Come to a conclusion after an encounter and a thinking session
 
-+ Impress the significance of discoveries to remember
-+ Be confident in the tangible consequences, conclusions of your work
+* Impress the significance of discoveries to remember
+* Be confident in the tangible consequences, conclusions of your work
 
-+ Know it so well, almost like a fact
+* Know it so well, almost like a fact
 
-+ Consider all of this as your training
-  + What if I drop 1 condition, what can I conclude
-  + How come this theorem stays, what is it's significance? Look at the big picture.
-  + Can I get guess the result, find it?
+* Consider all of this as your training
++ What if I drop 1 condition, what can I conclude
++ How come this theorem stays, what is it's significance? Look at the big picture.
++ Can I get guess the result, find it?
   
   
-+ Work smart, from different angles
-+ Ask yourself, do I understand this concept
+* Work smart, from different angles
+* Ask yourself, do I understand this concept
   
-+ Good intuition, basic understanding, a correct idea, a rigourous proof
+* Good intuition, basic understanding, a correct idea, a rigourous proof
 
-+ Maybe you need 1 small hint
+* Maybe you need 1 small hint
 
 
-+ Developed to understand real life phenomina
-+ Stick with 1 book in the beginning. It will prevent unneccesary confusion
+* Developed to understand real life phenomina
+* Stick with 1 book in the beginning. It will prevent unneccesary confusion
 
-+ Some things I remember, somethings I cannot. What is the difference?
-  + The significance is not impressed on you
-  + ex: remember things said during lecture
-  + ex: dont remember continuous hypothesis conditions of theorem
-  + ex: dont remember properties of sequences and functions
+* Some things I remember, somethings I cannot. What is the difference?
++ The significance is not impressed on you
++ ex: remember things said during lecture
++ ex: dont remember continuous hypothesis conditions of theorem
++ ex: dont remember properties of sequences and functions
 
-+ Stuck: confusing notation, misreading/misunderstanding
-  + How can I not get stuck in the future
-  + Read carefully if you do not understand
-  + Try to see what it is saying
-  + Remember the statement exactly and your memory and try to see what it is trying to do.
   
-+ How to get a clear view of the situation
-  + brain works better at manipulating things looking at a clear view
-  + put the situation in your mind and see them manipulate form in your mind
+* How to get a clear view of the situation
++ brain works better at manipulating things looking at a clear view
++ put the situation in your mind and see them manipulate form in your mind
   
-+ Conserve your effort with writing
-+ Draw a picture
+* Conserve your effort with writing
+* Draw a picture
