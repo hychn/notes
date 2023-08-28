@@ -96,6 +96,7 @@
 + precise, sharp, no fear. If confused, return to starting point
 
 * Stuck: confusing notation, misreading/misunderstanding
++ by writing it down you can practice your memory of the statement
 + How can I not get stuck in the future
 + Read carefully if you do not understand
 + Try to see what it is saying
