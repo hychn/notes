@@ -1,23 +1,32 @@
 * Routine
-+ Read Ahead: Scouting ahead
-  + Build outline
-+ UnderstandLecture
-  + Read
-  + Ask questions
-  + Solve questions
-  + Collect useful properties
-  + Create teaching notes
-+ Qual Prep
-  + Solve problems
++ Clearly define what it means to finish a task
+  + Develop finishing instict, the kill drive
++ Make sure each task contributes to your goal
++ Seek to be consistant
++ Do a daily, weekly review
++ Break down tasks into small bite chunks
+  + Allows the task to be easily revised
++ Order the reflections with respect to the task to be completed
+
+
+** Read Ahead: Scouting ahead
++ Build outline
+
+** Understand a Topic
++ Read
++ Ask questions
++ Solve questions
++ Collect useful properties
++ Create teaching notes
+
+** Qual Prep
++ Solve problems
   
 * Asking Questions
 * Solving Questions
 
 
-+ Does it make snese, is it reasonable?
-+ Think in more powerful, general ways
-+ Art of setting of the problem so that the answer can be obtained easily?
- 
+
 
 * Reflections ==========================================================
 
@@ -26,6 +35,12 @@
 + Face your trauma with problem solving
 + Relax, breathe
 + Worry about what you can improve 
+
+* Problem solving
++ Does it make sense, is it reasonable?
++ Think in more powerful, general ways
++ Art of setting of the problem so that the answer can be obtained easily?
+ 
 
 * Make the most of each encounter with an idea
 + You cannot learn everything but when given an opportunity to look at an idea
@@ -86,6 +101,8 @@
 + Try to see what it is saying
 + Remember the statement exactly and your memory and try to see what it is trying to do.
 + If it is not making alot of sense, probably you are understanding it wrong
++ Sometimes you need to get the general idea by yourself, it may not be written or communicated.
+  + Find out what the equation or the theorem is saying in a broad, general sense
 
 
 
