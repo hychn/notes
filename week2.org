@@ -1,0 +1,31 @@
++ do not rush
++ do not do random search
++ recognize when you're stuck or lost
+
++ difficult problems provide an opportunity for growth
+** what things did I do well?
++ try to understand the simpler problem well
+  + revisited the simpler problem to understand it better
+  + in this specific case the statement is true
+  + can we use this to get what we need
+
++ we stopped ourselves randomly searching
+  + identified when we were lost
+  + we were proceeding without a good direction
+  
++ I made a grid, enumerating the possible cases
++ look for frequently appearing things and show that they follow a certain behavior
+  + it has powerful consequences
+  
++ don't be afraid of searching for a solution in different ways
++ managing your time and being wise about how you spend your timetime
++ prove a smaller helper theorem
++ use finite or simpler situations to test an idea
++ check if a proposed theorem is reasonable or not
+  + counterexamples, or an example that works
+
+** how to generalize
++ extract common, significant variables.
++ model system of relationship between the variable
++ see common themes values
++ time, energy, persistence
