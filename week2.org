@@ -13,6 +13,7 @@
     + properties of key objects
     + relationships between key objects
   +  see the essential, summarize, teach yourself
+    + can you shorten the summary?
   + repeat 
 + problem solving
   + finding paths to take
@@ -24,6 +25,32 @@
 + understand the background before doing the problems
 background
   + do reading comprehension before problems
+
+** in class notes
+probability 
++ insight is the ability to see complicated things from
++ see the truth
++ don't freeze. set yourself loose on the problem
++ secrets to doing good math
+  + get enough sleep
+  + remove distractions so that you get bored to do math
++ study a lot of examples and combine them
++ come up with examples
++ can you write things in a way so that your brain can interchange symbols
++ can the letters change around on the paper?
+
+analysis
++ you need to preread and prepare
++ the significance of characterizations
++ understand contrapositive
++ under which condition is there a characterization
+
+num analysis 
++ summarize after each chapter & section
++ get a global picture
++ see if you can shorten a summary
++ when counting find things to enumerate with
+  + do not do it in your head
 
 ** week notes
 + see the same fact from many sides
