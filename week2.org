@@ -3,7 +3,71 @@
 + recognize when you're stuck or lost
 
 + difficult problems provide an opportunity for growth
-** what things did I do well?
+
++ break down your tasks to simpler, smaller, repeatable tasks
++ organizing notesessential
+
++ reading comprehension
+  + small paper
+    + understand key objects in section
+    + properties of key objects
+    + relationships between key objects
+  +  see the essential, summarize, teach yourself
+  + repeat 
++ problem solving
+  + finding paths to take
+  + evaluating promising paths
+  + understand meaning of the solution
+  + look for improvements
+  + practice consistency
+  
++ understand the background before doing the problems
+background
+  + do reading comprehension before problems
+
+** week notes
++ see the same fact from many sides
+  + see the variables in the statements and how those variables can change
++ see the reverse negation of the statement
++ treat it like movement, navigation of your thoughts
++ treat it like exploration, carefully strategically mapping and traveling
+
++ when stuck for a long time see if you can identify a shorter path to the solution
++ be careful when you write and speak at all times, even in your daily life apply to principles that you have learned, practice them at all times
++ each step that you take should be logical and must have reason because the step costs time
+
++ see how you can effectively rest and refresh yourself
+
++ come up with good questions and solutions for those questions
++ draw an accurate diagram that represents the order of the natural world
++ make it a habit this is who a mathematician is
+
++ don't lose sight of the forest because of the trees
+  + don't get lost in bunch of small details see the big picture theorems
++ recognize that different paths lead to different solutions.
+  + and they're very real and they exist
+  + you can manage how to take good paths over others
+  + you must study how to take effective pets assess paths
+  + there are bad paths of thought
+  
++ summarize what you did write the key points down
++ be careful of each every step it must be correct and precise
+
++ solve the problem again to make sure that you aren't lucky
+  + be consistent in your ability to find a solution
+  
++ don't feel burden that you have to learn many things
+  + as a graduate student you must do this
+  + learn the things that scale very well
+
++ you need to practice reading comprehension
+  + things that you look at twice three times four times are much easier to understand
+  + if you're reading comprehension improves then you can revisit the same material many times
+  
++ some books are like dictionaries such as hungerford
+
+
+** battle notes 3hr what things did I do well?
 + try to understand the simpler problem well
   + revisited the simpler problem to understand it better
   + in this specific case the statement is true
@@ -25,6 +89,10 @@
   + counterexamples, or an example that works
 
 ** how to generalize
++ how can I distill what works well
++ how can I verify if something works well or not
++ how can I gain the skill more quickly
+
 + extract common, significant variables.
 + model system of relationship between the variable
 + see common themes values
