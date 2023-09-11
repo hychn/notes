@@ -4,6 +4,9 @@
 
 + difficult problems provide an opportunity for growth
 
+try to see how you can break up a larger task into smaller pieces but you can do
+identify the concrete key repeating pieces that you need to do as you study
+
 + break down your tasks to simpler, smaller, repeatable tasks
 + organizing notesessential
 
@@ -14,6 +17,7 @@
     + relationships between key objects
   +  see the essential, summarize, teach yourself
     + can you shorten the summary?
+    + summarize often. summarize as your reading. summarize as the class ends. summarize as the end of the chapter
   + repeat 
 + problem solving
   + finding paths to take
