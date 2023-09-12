@@ -1,0 +1,2 @@
++ explore the different possibilities when encountering a simple statement with a variable
++ plug in different values for the variable
