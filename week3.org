@@ -1,2 +1,6 @@
 + explore the different possibilities when encountering a simple statement with a variable
 + plug in different values for the variable
+
+
++ what does it mean to learn the essence of an idea
++ how can I do this more effectively when I'm learning new topics
