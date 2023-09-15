@@ -12,3 +12,27 @@
   
 + can you use audio, alternative forms to help you study
   + teaching, talking, listening, writing, drawing
+  
+  
++ mathematics is an accumulation.
+  + strong, broad foundation
+  + I have faith God will deliver
+    + though my efforts are not enough
+
++ logically chose paths that make sense, if the conclusion is true.
+  + ex. pick the smallest element required for our problem. if the inequality is true, the smallest element should be sufficient.
+
++ triangle inequality. a natural inequality that is true in general. gives rise to useful properties
++ A=bt you can get an inequality by solving for b
+  + however if you can find a inf. minimal form of A, over all possible values of A defined in our problem, you get the best possible inequality. something that must hold true in all cases.
+
+
++ as you solve problems following a plan, ask yourself and inspect what is going on?
+  + see if you can generalize what is going on, or find the useful property
+
++ when you cannot come to a conclusion it does not necessarily mean that the approach is wrong
+
++ just as you think before you speak, think before you do anything, think before you write
+
+
+  + when there's a problem take care of it right away
