@@ -1,6 +1,14 @@
 + explore the different possibilities when encountering a simple statement with a variable
 + plug in different values for the variable
 
++ reading, working through the material
+  + ask questions see how you can arrive
+  + be thankful for an incomplete understanding
+  + come back and try again
+  + when note taking write the main ideas and key questions
+    + so that you can re-explore this topic much quicker next time
+    + and log other key paths and questions
+
 
 + what does it mean to learn the essence of an idea
 + how can I do this more effectively when I'm learning new topics
@@ -36,3 +44,22 @@
 
 
   + when there's a problem take care of it right away
+
++ proof writing is an important skill
+  + being concise and precise
+  + otherwise how would you know if anything is true at all
+
++ understanding the intuition is important
+
++ find the balance
+  + need to practice in office setting
+  + need to rest and think comfortably
+
++ two different mindset when looking for the big idea vs proving a specific nitty detail
+
++ when solving problems try to do it a limited amount of time
+
++ be very critical in writing your own proof
+  + if something is confusing, think of counter examples to each statement you have made
+
++ what is the problem? what is difficult? what is the hard part to manage
