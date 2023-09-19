@@ -1,0 +1,24 @@
++ I need to be more structured when I am writing, speaking, and thinking.
++ I need to get into the habit of doing this, while switching back and forth between my mind wandering
+
++ as you learn something new, try to become well versed in the subject
+  + extracting useful and commonly used qualities
+  + understanding connection between different concepts
+  + practicing it until you get better
+  + even redoing old problems
+ 
+ 
++ think of learning as having a nicely organized collection of programs
+  + rebuiling and refactored
+  + seeing common patterns and extracting
+
++ finding counter examples to see the direction you are thinking is true
+
++ try to search for the simplest solutions first
+  + before doing something more complicated
+  
++ see what kind of works
+  + how can you alter it to get the solution?
+  
++ can you see the big picture from skim reading?
+
