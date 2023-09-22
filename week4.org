@@ -1,5 +1,35 @@
++ eat, drink whatever you do, do it for the glory of god
++ test every spirit, Jesus Christ is Lord
++ offer your life as living sacrifices, holy and pleasing to the Lord
++ have no idol before God
+
 + need to do more with a limited amount of time
 + need to be more explosive, decisive
+
++ Improving reading
+  + Gain a high level summary of the section
+  + Naturally see where the material is going
+  + You must work through the book
+    + You must treat the theorem as a problem you are trying to prove
+  + (Increase Frequency) You must try to revisit the same material many times
+
++ When stuck, recognize it.
+  + Prove that you are stuck.
+    + counter example/proof
+  + Go back to the foundation.
+    + Given and desired conclusion.
+    + Have no assumptions!
+    + Stubborn when stuck is not good
+
+  + Searching at a broader level
+    + Example
+    + What do you need? A cover over E using Q
+    + Why do we need a cover over E using Q? What properties of Q are we using?
+    + for each e in E can we find a ball centered around q?
+      + can we adjust it?
+      + is it okay if we adjust it? What are we trying to do?
+      + build a collection of countable cover of E? Why? To use sequences
+        + $e_n$ converges to e in E which means after some n, all of e_n is contained in one of our countable balls
 
 
 + why didnt i see that step?
@@ -12,6 +42,8 @@
 + do not rush through!
 
 + counter example, prove false
++ contrapositive
++ contradiction
 
 
 
