@@ -9,6 +9,8 @@
 
 + review when tired of reading something new
 + make your breaks bring value
++ when you're distracted go for a walk or exercise
+  + much better than looking at your phone
 
 + Improving reading
   + Gain a high level summary of the section
@@ -18,7 +20,6 @@
   + (Increase Frequency) You must try to revisit the same material many times
   + why when i write the math002 material once, it is much easier?
     + you must go through the material. otherwise you wont remember
-  + balance between trusting and requiring proof every time
     
 + book proof/definitions may be written in concise formal way
   + when you solve problem you work from conclusion and rewrite from start to end
