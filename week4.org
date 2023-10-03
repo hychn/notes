@@ -4,12 +4,60 @@
 + have no idol before God
 + give me wisdom to study. ask God for what to do. inquire of God
 
++ when you have an idea sketch of the proof be prepared to go through several revisions 
+  + work in a way that facilitate this
+  
++ praise your effort, not your intelligence
+  + you work harder to be engaged in effort
+  + instead of trying to be validated in your intelligence
+  
++ how we feel about prev. day performance and future performance can increase our energy levels
+  
++ 30 min 3 hr 11hr after waking up
+
+
++ reinforce good behavior that aligns with your goals
+
++ let the adrenaline, anxiety, discomfort move you
+  + start with behavior changes, instead of wishing things to be different
+  + hard to control the mind, control your behavior
+  + place yourself into discomfort, let it move you
+  + slog through the discomfort, doubts
+  
+
++ be very careful at distractions. 
+  + such as using your phone
+  + it weakens your mind
+  
+  
+  
+
++ lessons from exam
+  + be mindful of time
+  + when you write solution be absolutely sure it is true
+  + read the question carefully 
+
++ test yourself
+  + be willing to test yourself put yourself through the fire
+  + ask questions try to answer them
+  + work on problems try to answer them. earnestly and honestly
+  + as if you were in exam room
 + learning takes time
   + spread out your learning over wide period of time
   + do a little bit of learning. digest and repeat again.
-  + do more in small bites of time
+  + do more in small bites of time. 1hr, 30min
     + dont drag things out
     + give 1hr to study a topic or chapter. try to get as much as you can out.
+    + makes each bit of time meaningful
+    + danger of looking for something that isn't there
+      + rabbit hole too deep going nowhere
+      + write it down, come back to it later
+      
+  + orient yourself to develop an intuition
+  + recall/learning exercises
+    + teach yourself feyman scratch
+    + dont give up easily. 10 min timer additional time
+    + practice often over period of time
 
 + be comfortable for writing the things out and searching for a solution
   + write things that must be true first.
@@ -27,6 +75,7 @@
 
 + need to do more with a limited amount of time
 + need to be more explosive, decisive
++ treat reading book like a lecture, given by the author. 1hr
 
 
 + review when tired of reading something new
@@ -131,3 +180,17 @@
   
 + can you see the big picture from skim reading?
 
++ be mindful of the parameters of a definition
+  + create different examples by adjusting parameters
+  + ex. an open cover. $/union B_r(c)$ we can adjust r, c.
+    + with c=0, and r ranging over all, you can bound elements 
+    + with r smaller than distance btw center and a point, you can exclude a point from a cove ar
+ 
+ + go over each word, what it means, what it can do. Do not hastly skip over something you do not understand. listen to your inner voice
+   + ex. why the word closed
+   
+   
++ look at the questions in the book. see why those questions are important
+  + see how you can discover similar questions
+  + ex: E < K compact. Is E compact?
+  
