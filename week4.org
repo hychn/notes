@@ -36,6 +36,9 @@
   + be mindful of time
   + when you write solution be absolutely sure it is true
   + read the question carefully 
+  
++ look for independent properties
+  + be mindful of related/ unrelated properties
 
 + test yourself
   + be willing to test yourself put yourself through the fire
