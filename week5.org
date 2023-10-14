@@ -1,6 +1,42 @@
++ proverbs 28 the wicked flea though no one pursues but the righteous are as bold as a lion
+
++ don't create an unnecessary measure
+
++ time management
+  + don't search for things that are not there. you may end up wasting time. before you look make sure that it's reasonable
+  
++ don't be afraid of the question do I suck at math?
+  + this question occurs a lot when I'm solving a problem and I got stuck
+  + or when I am afraid of a problem
+  
++ don't assume a particular path to a solution
++ do not prove what is not possible to prove
+  + always check for feasibility
+  + always make sure you understand the problem and the definitions correctly
+  + it is possible that there's a typo or that you misunderstand and what you're trying to prove is not possible
+
++ how to better use time without feeling anxious?
+  + how can I use 1 hour 30 minutes effectively?
+
++ how to search and navigate the problem without getting lost?
+  + management techniques trees
+  + what can we control, see the parameters of each object you're working with
+  + when you're done with the problem look at the path to the solution. see if it is good or if it can be improved
+    + see how you can discover the path to the solution
+  + don't do stuff randomly hoping to get across a good idea
+    + have purpose to each step and time spent. be deliberate
+  + is there a important object or property that you can find or need to be true?
+    + which can be used to direct the search
+  + contrapositive is a great way to look at a problem differently
+  
+
++ pay attention to your voice. I often talk to myself when I'm going through the problem.
+
+    
 + close eyes nap to relearn all the stuff at 20x speed
   + can you do this while studying? on the fly?
   + meditate
+  + when anxious also do this
   
 + study each topic 2hr each day
   + get up at 6
