@@ -7,6 +7,9 @@
   + change topic if stuck
   + study over many days
   
++ work hard in a natural, smart, logical way
++ build a scaffold when learning
+  
 + try to improve your visual memory
   + meditation
   + focus your mind on a specific object for an extended time
@@ -35,3 +38,30 @@
 + why do you say you are slow
   + dont accept it as truth
   + try to improve
+
++ linear comb of indicator function
+  + increasing
+  + integral
+
++ find a scaffold to build on your knowledge
+  + how to effectively use time
+  + make it natural
+  + be able to prove basic theorems in your head
+
++ when you do problems what should you look for?
+  + insights to the objects dealing with the problems
+  + how to approach problems in general
+  + keep some problems to come back to
+  
++ work on things naturally
+  + find a natural rythmn in studying
+
++ on exams
+  + dont artificially impose a time limit
+    + adds unneccessary stress
+  + work on many problems
+  + distractions are good sometimed
+
+  
++ inner measure outer measure coincide
+  + what kind of sets can guarantee inner measure and outer measure are the same?
