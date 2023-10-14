@@ -1,5 +1,36 @@
 + proverbs 28 the wicked flea though no one pursues but the righteous are as bold as a lion
 
++ you have to really want to solve the problem
+  + you have to really wish to search
+  
++ is it problem searching or problem solving
+  
++ when you're really stuck try some other task
+
++ keep a list of problems to work on
++ as questions arise when you're studying keep a list
+
++ some problems are too hard to work on with your current background
+
+
++ read the book and try to visualize in your mind what the book said
+
++ repetition will develop skill
+  + repeat problem searching and also proving the theorems material learned
+  + repetition in reading comprehension
+  + repetition and problem searching
+  
+  
++ as you're solving the problem visualize in your mind where you are in the search
+  + keep track of the alternate pads that you can take
+  + be mindful of where you are at the moment
++ build a scaffold to learn a new material quickly
+  + understand where you are in the scaffold
+  + visualize in your mind where it could be
+  
+
+
+
 + don't create an unnecessary measure
 
 + time management
@@ -14,11 +45,21 @@
   + always check for feasibility
   + always make sure you understand the problem and the definitions correctly
   + it is possible that there's a typo or that you misunderstand and what you're trying to prove is not possible
+  
++ you need practice both. proving statement truth and the false 
+
++ if you're stuck try to prove the negation
++ if you're stuck look for counter examples to what you're trying to prove
++ if you're stuck check if you are proving something that is not possible to prove
+    
 
 + how to better use time without feeling anxious?
   + how can I use 1 hour 30 minutes effectively?
 
 + how to search and navigate the problem without getting lost?
+  + try to get the big picture of what you're doing
+  + use your intuition to guide yourself to the solution
+    + sketch out the big idea fill in the details later
   + management techniques trees
   + what can we control, see the parameters of each object you're working with
   + when you're done with the problem look at the path to the solution. see if it is good or if it can be improved
@@ -27,7 +68,18 @@
     + have purpose to each step and time spent. be deliberate
   + is there a important object or property that you can find or need to be true?
     + which can be used to direct the search
+    + is there an example that makes the conclusion true
+    + what is the property of this example?
   + contrapositive is a great way to look at a problem differently
+  + keep the conclusion and your goal in mind
++ look for counter examples if you wish to prove something false
++ after proving a theorem check the converse
+  + see if some conditions can be dropped
+  + see if a condition is dropped why it is false
+  + see the key techniques used in the theorem
+  + see the key relationships using the theorem
+  
+    
   
 
 + pay attention to your voice. I often talk to myself when I'm going through the problem.
@@ -101,3 +153,25 @@
   
 + inner measure outer measure coincide
   + what kind of sets can guarantee inner measure and outer measure are the same?
+
++ reading
+  + put statements in your mind. understand and visualize in your mind.
+  + teach to someone who doesn't understand
+  + don't fool yourself into thinking you understand
+  + ask key questions as you learn
+  + come up with concrete examples
+  + summarize what you have learned
+    + iterate the summarization can you make it shorter
+  + Orient your learning to develop an intuition
+  + try to find a natural path and idea
+  + learn it properly the first time
+    + it will save time in the long run
+  + recall the things that you have learned
+    + recall is essential for learning
+    
++ problem searching solving
+  + how to develop an intuition to search
+    + practice, repetition
+    + recall
+  + explain the key steps, intuitions
+  + summarize the promise searching process
