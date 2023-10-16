@@ -175,3 +175,5 @@
     + recall
   + explain the key steps, intuitions
   + summarize the promise searching process
+    + see why each condition was necessary
+    + compare your solutions with others
