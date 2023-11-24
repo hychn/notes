@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-11-23 Thu 21:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="termux" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org0cdc4fe">1. how to lift it</a>
+<ul>
+<li><a href="#org60b1851">1.1. Form</a></li>
+<li><a href="#orgb433ed7">1.2. Compound movements</a></li>
+<li><a href="#org4dc02cf">1.3. minor muscle stability</a></li>
+</ul>
+</li>
+<li><a href="#org3142184">2. forearm pain</a></li>
+<li><a href="#orgc10734f">3. lift</a></li>
+<li><a href="#org94b6500">4. General Tips</a></li>
+<li><a href="#org7effb24">5. running</a></li>
+<li><a href="#org822fe4a">6. How to make the knee area more stable?</a></li>
+<li><a href="#org7c27c3a">7. PULL</a>
+<ul>
+<li><a href="#org4ba0ca3">7.1. Deadlift +7.5</a></li>
+<li><a href="#orga010aee">7.2. Row +5</a></li>
+<li><a href="#org73a26ef">7.3. Pullups +2.5</a></li>
+<li><a href="#orgcd57ad9">7.4. Rear Delt Rows</a></li>
+<li><a href="#orga9f5074">7.5. Bicep curl</a></li>
+<li><a href="#orga390060">7.6. rack pulls</a></li>
+</ul>
+</li>
+<li><a href="#org5abb07e">8. PUSH</a>
+<ul>
+<li><a href="#org0efdf1f">8.1. Bench press 7.5</a></li>
+<li><a href="#org54b63f2">8.2. Overhead press +2.5/5</a></li>
+<li><a href="#org33dd933">8.3. Dips</a></li>
+</ul>
+</li>
+<li><a href="#orge9e5173">9. LEGS</a>
+<ul>
+<li><a href="#org3188431">9.1. Squat +35</a></li>
+<li><a href="#org9652861">9.2. Leg Curl</a></li>
+<li><a href="#orgad7c599">9.3. Leg Press</a></li>
+</ul>
+</li>
+<li><a href="#orgdf7d515">10. Warmup</a></li>
+<li><a href="#org1a41222">11. isolated</a></li>
+<li><a href="#org6915f04">12. REFORMS</a>
+<ul>
+<li><a href="#org464d89b">12.1. supporting muscle groups and restructure</a></li>
+<li><a href="#org86c2e5f">12.2. Sore stronger</a></li>
+</ul>
+</li>
+<li><a href="#orge5ca07f">13. RDL</a></li>
+</ul>
+</div>
+</div>
+<p>
+When an important exercise you are doing isnt going well, forego the other lifts, focus in getting that fixed 
+Focus on this only. what will.help you get better? proper technique, form and intensity 
+importance of brisk walking, running around cardio
+</p>
+
+<p>
+internal rotate shoulder pulled back down
+</p>
+
+<p>
+novelty stimulus
+blood flow cardio
+obsession with progression to things you suck at
+</p>
+<ul class="org-ul">
+<li>isolate hard parts of an exercise and work on them separately
+<ul class="org-ul">
+<li>example pin squats rack pulls rdls</li>
+</ul></li>
+<li>when learning form 5 reps is not bad</li>
+<li>make sure muscle is support weight</li>
+<li>negativevsets</li>
+</ul>
+
+<div id="outline-container-org0cdc4fe" class="outline-2">
+<h2 id="org0cdc4fe"><span class="section-number-2">1.</span> how to lift it</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org60b1851" class="outline-3">
+<h3 id="org60b1851"><span class="section-number-3">1.1.</span> Form</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>go slow</li>
+<li>are you spending enough time under tension?</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb433ed7" class="outline-3">
+<h3 id="orgb433ed7"><span class="section-number-3">1.2.</span> Compound movements</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>are going to get you strong</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4dc02cf" class="outline-3">
+<h3 id="org4dc02cf"><span class="section-number-3">1.3.</span> minor muscle stability</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>upper arm stability bicep tricep</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3142184" class="outline-2">
+<h2 id="org3142184"><span class="section-number-2">2.</span> forearm pain</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>sypport/absorb shock eoth lats?</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc10734f" class="outline-2">
+<h2 id="orgc10734f"><span class="section-number-2">3.</span> lift</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li>Treat lifting like a combat</li>
+<li>give it your all squeeze ouy every last
+<ul class="org-ul">
+<li>internal rotation of.shoulders</li>
+<li>place it behind chair for support</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org94b6500" class="outline-2">
+<h2 id="org94b6500"><span class="section-number-2">4.</span> General Tips</h2>
+<div class="outline-text-2" id="text-4">
+<ul class="org-ul">
+<li>6 sets of 10, 2 min rest, lower weight if cant complete 10</li>
+<li>build up lactic acid</li>
+<li>every set rep should.be precious, challeneging, meaningful</li>
+<li>step 888 -&gt; 889 later sets more reps</li>
+<li>3 week rep 3 week weight 1 week deload</li>
+<li>increase time under tension</li>
+<li>need to train rotator cuffs</li>
+<li>right shoulder down and back
+<ul class="org-ul">
+<li>elbow pain</li>
+</ul></li>
+<li>dont fold the forearm for vertical support
+<ul class="org-ul">
+<li>use tricep to balance out and support</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org7effb24" class="outline-2">
+<h2 id="org7effb24"><span class="section-number-2">5.</span> running</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>breathing</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org822fe4a" class="outline-2">
+<h2 id="org822fe4a"><span class="section-number-2">6.</span> How to make the knee area more stable?</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>awesome bliss Copenhagen plank</li>
+<li>Laydown and raise legs and see what muscles are keeping knee stable</li>
+<li>Why is knee stable in deadlift? (because the knees are straight)</li>
+<li>Right now my guess is that there are some stabizing muscles that are weak or that you are not aware of</li>
+<li>Why is the knee not stable?</li>
+<li>Why is it fine when you drop down?</li>
+<li>I guess that my knees are not in the proper position to press up. I'm loosing slack somewher</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7c27c3a" class="outline-2">
+<h2 id="org7c27c3a"><span class="section-number-2">7.</span> PULL</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>leg curls as you hip hinge, glutes pushing forward</li>
+</ul>
+</div>
+<div id="outline-container-org4ba0ca3" class="outline-3">
+<h3 id="org4ba0ca3"><span class="section-number-3">7.1.</span> Deadlift +7.5</h3>
+<div class="outline-text-3" id="text-7-1">
+<ul class="org-ul">
+<li>slight right arm unstable why?
+<ul class="org-ul">
+<li>internal rotate shoulder? shoulder stabil,</li>
+</ul></li>
+<li>knee wide and in stable using muscles</li>
+<li>5 step deadlift (lock hips, brace, tight push)
+<ul class="org-ul">
+<li>bar 1 inch from shin</li>
+<li>lock hips in position, by bending knees</li>
+<li>chest down, brace</li>
+<li>glutes ham tight, knees outward then push
+<ul class="org-ul">
+<li>glutes hamstring tight</li>
+</ul></li>
+</ul></li>
+<li>drop bar down slow for form</li>
+<li>drag bar up knees for weight near hinge</li>
+<li>work more on lower back stability, push with hips to finish
+<ul class="org-ul">
+<li>legs gotta be angled to drive hips forward</li>
+<li>save hip drive for the end, practice paused lifts, downwards and upwards</li>
+</ul></li>
+
+<li>shins straight</li>
+<li>bar over mid foot</li>
+<li>rotate around bar so rear delts over bar</li>
+<li>hip and ham tight</li>
+<li>push with legs</li>
+<li>it is harder tonlift from lower point. how can i over come this? reinspect starting point of lift</li>
+<li>Hamstring hips tight lats tight</li>
+<li>stomach between thighs before brace</li>
+<li>use psoas (ham muscles) to stabilize</li>
+<li>foot weight distribution
+<ul class="org-ul">
+<li>right shoulder joint loose keep it tight</li>
+<li>bend bar</li>
+<li>[<a href="https://www.youtube.com/watch?v=s0iR6lBlU3w">https://www.youtube.com/watch?v=s0iR6lBlU3w</a>](<a href="https://www.youtube.com/watch?v=s0iR6lBlU3w">https://www.youtube.com/watch?v=s0iR6lBlU3w</a>)</li>
+<li>Pause deadlift at 3 points, as soon as bar lifts, below knee, above knee
+<ul class="org-ul">
+<li>initial lift off ground with hamstring hips</li>
+<li>lats and triceps, arms tight</li>
+</ul></li>
+<li>lift lower half with leg press
+<ul class="org-ul">
+<li>upper with hip hinge drive</li>
+<li>do not pull initial with back</li>
+</ul></li>
+<li><b><b>Neck down!!! DURING THE ENTIRE LIFT,</b></b> breathe lock</li>
+<li>Arms go down to tighten back</li>
+<li>Feel the hips after making sure back is straight</li>
+<li>Practice Good Mornings/ barbell row</li>
+<li>[<a href="https://www.youtube.com/watch?v=xoWsyPiYqAw">https://www.youtube.com/watch?v=xoWsyPiYqAw</a>](<a href="https://www.youtube.com/watch?v=xoWsyPiYqAw">https://www.youtube.com/watch?v=xoWsyPiYqAw</a>)
+<ul class="org-ul">
+<li>Straighten back hip drive</li>
+<li>bracing</li>
+<li>Make sure back is straight/neck down during entire lift or else you are lifting with back</li>
+</ul></li>
+<li>Hips and chest aligned
+<ul class="org-ul">
+<li>alignted while standing</li>
+<li>alligned at bottom of lift</li>
+</ul></li>
+<li>Hips and chest rise at same time</li>
+<li>create wedge, slightly rotate hips outwards</li>
+<li>Need hips to be going down/ mechanically working to align</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga010aee" class="outline-3">
+<h3 id="orga010aee"><span class="section-number-3">7.2.</span> Row +5</h3>
+<div class="outline-text-3" id="text-7-2">
+<ul class="org-ul">
+<li>hold weight  bit at top, squeeze lats to init row</li>
+<li>initial tension with quads ham for support</li>
+<li>taught leg press slightly below knee</li>
+<li>row</li>
+<li>right shoulder unstable?
+<ul class="org-ul">
+<li>inward rotation?</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org73a26ef" class="outline-3">
+<h3 id="org73a26ef"><span class="section-number-3">7.3.</span> Pullups +2.5</h3>
+<div class="outline-text-3" id="text-7-3">
+<ul class="org-ul">
+<li>elbow pain, do reps slow</li>
+<li>press up as going down</li>
+<li>row the bar going up</li>
+<li>get a good grip, dont flex wrist, grab tight palm inner base of wrist</li>
+<li>right arm forearm pain, shoulder unstable?
+<ul class="org-ul">
+<li>happens with heavier weights</li>
+</ul></li>
+<li>rotate arm inward! elbow inward</li>
+<li>lock biceps and pull
+<ul class="org-ul">
+<li>tight bicep triceps stability</li>
+</ul></li>
+<li>slow dropping down at end</li>
+<li>target teres major minor &amp; lat
+<ul class="org-ul">
+<li>깔작 pullup</li>
+</ul></li>
+<li><a href="https://www.youtube.com/watch?v=kPz6ha3-hbg">vid</a></li>
+<li>Slow drop</li>
+<li>Elbow to the front, lean back
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=kPz6ha3-hbg">vid</a></li>
+</ul></li>
+<li>grip very important use last 2 fingers (4,pinky)</li>
+<li>Use pecs to stabilize shoulder when lats are streched</li>
+<li>move in a / movement under the bar</li>
+<li>Keep lats taught</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgcd57ad9" class="outline-3">
+<h3 id="orgcd57ad9"><span class="section-number-3">7.4.</span> Rear Delt Rows</h3>
+</div>
+
+<div id="outline-container-orga9f5074" class="outline-3">
+<h3 id="orga9f5074"><span class="section-number-3">7.5.</span> Bicep curl</h3>
+<div class="outline-text-3" id="text-7-5">
+<ul class="org-ul">
+<li>flex wrist inward towards body</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga390060" class="outline-3">
+<h3 id="orga390060"><span class="section-number-3">7.6.</span> rack pulls</h3>
+<div class="outline-text-3" id="text-7-6">
+<ul class="org-ul">
+<li>target glutes</li>
+<li>hip thrust</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org5abb07e" class="outline-2">
+<h2 id="org5abb07e"><span class="section-number-2">8.</span> PUSH</h2>
+<div class="outline-text-2" id="text-8">
+<ul class="org-ul">
+<li>internally externally stabilize shoulder socket</li>
+<li>practice upright row for shoulder stability</li>
+</ul>
+</div>
+<div id="outline-container-org0efdf1f" class="outline-3">
+<h3 id="org0efdf1f"><span class="section-number-3">8.1.</span> Bench press 7.5</h3>
+<div class="outline-text-3" id="text-8-1">
+<ul class="org-ul">
+<li>biceps tight stabilize elbow</li>
+<li>turn wrist inward as pushing (esp right) for elbow stable
+<ul class="org-ul">
+<li>also means turn elbow outward and locking shoulder</li>
+</ul></li>
+<li>arch back, really feel chest as push</li>
+<li>neck off, back driven</li>
+<li>leg drive
+<ul class="org-ul">
+<li>same principal, drive bidyninto bench lift head off bench</li>
+</ul></li>
+<li>work the primary mover, chest fly and tri extend</li>
+<li>dont fight against use antagonizing muscles</li>
+<li>use lats to keep the bar balanced. not biceps/forearm</li>
+<li>feel triceps</li>
+<li>internally rotate shoulder socket
+<ul class="org-ul">
+<li>does this make sense to you from a mechanical perspective?</li>
+</ul></li>
+<li>thumbless grip</li>
+<li>row bar toward for stability</li>
+<li>right should blade unstable
+<ul class="org-ul">
+<li>there is some muscle that keeps shoulder stable</li>
+<li>i tend to do it better with sleeveless</li>
+</ul></li>
+<li>wider grip</li>
+<li>brace hard as you go down hard, lats arms, chest</li>
+<li>go down slow</li>
+<li>keep shoulder locked whole time</li>
+
+<li>notice wheb you contraxt without bar how you can squeeze chest better
+<ul class="org-ul">
+<li>can youbdo something similar with bar</li>
+<li>the bicep rotates toward chest</li>
+</ul></li>
+<li>go down slow, load &amp; stretch the chest muscles and contract</li>
+<li>maybe need to refigure how to contract chest
+<ul class="org-ul">
+<li>internally rotate shoulder?</li>
+<li>get a better squeeze</li>
+</ul></li>
+<li>pain while bending elbow, get better at bending at the elbow
+<ul class="org-ul">
+<li>curls</li>
+</ul></li>
+<li>use lats to.push weight off from.chest?</li>
+<li>maybe a little.bit wider grip</li>
+<li>lats need to pull to support the push</li>
+<li>push weight straight up. right now too towards head. or bench higher up?</li>
+<li>keep everything tight</li>
+<li>shoulder packing</li>
+<li>curve back</li>
+<li>weight on index thumb
+<ul class="org-ul">
+<li>rotate wrist outward</li>
+</ul></li>
+<li>move weight slow to feel</li>
+<li>Pull bar before lifting</li>
+<li>elbow pain? align bar at nippple level</li>
+<li>Row/Pull bar towards you</li>
+<li>tippy toe?</li>
+<li>wider grip</li>
+<li>bend bar</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org54b63f2" class="outline-3">
+<h3 id="org54b63f2"><span class="section-number-3">8.2.</span> Overhead press +2.5/5</h3>
+<div class="outline-text-3" id="text-8-2">
+<ul class="org-ul">
+<li>lock wrist inward, along front and up axis?</li>
+<li>try lifting ina V?</li>
+<li>tripod feet hips tight</li>
+<li>head move forward</li>
+<li>tight vertical wrist grip to unleash explosive power</li>
+<li>lift from delt connect point on arm</li>
+<li>make sure bar is going straight up. not forward</li>
+<li>right shoulder more stable</li>
+<li>more about shoulder arm contact shrinking
+<ul class="org-ul">
+<li>right shoulder shoulder.flare out same as.left?</li>
+</ul></li>
+<li>Pull shld blades back to form w with arms</li>
+<li>wrist not bent, in straight line</li>
+<li>Make sure pushing with shoulder muscle only</li>
+<li>hips press forward for lower back support</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org33dd933" class="outline-3">
+<h3 id="org33dd933"><span class="section-number-3">8.3.</span> Dips</h3>
+<div class="outline-text-3" id="text-8-3">
+<ul class="org-ul">
+<li>chest down body leaning forward</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge9e5173" class="outline-2">
+<h2 id="orge9e5173"><span class="section-number-2">9.</span> LEGS</h2>
+<div class="outline-text-2" id="text-9">
+<ul class="org-ul">
+<li></li>
+
+<li>turn upper leg inward (by leg abduct contract)
+<ul class="org-ul">
+<li>to generate force and push</li>
+<li>just like turn wrist inward to push in bench</li>
+</ul></li>
+<li>grab the floor</li>
+<li>explode</li>
+<li>balance
+<ul class="org-ul">
+<li>too far forward
+<ul class="org-ul">
+<li>pull weight down your back</li>
+<li>squeeze hams to maintain balance</li>
+</ul></li>
+</ul></li>
+<li>align rib, brace</li>
+<li>open hips and turn inward? (chest out and wrist inward)</li>
+<li>use hips drive?</li>
+
+<li>how does the hamstring contract contribute to weight balance of foot</li>
+<li>leg curls as you hip hinge, glutes pushing forward</li>
+<li>keep abduction moderate and tight with inner pull</li>
+<li>quad activation better when knee not to outward</li>
+<li>feel all leg muscles, quad, ham, hip work as you walk</li>
+</ul>
+</div>
+<div id="outline-container-org3188431" class="outline-3">
+<h3 id="org3188431"><span class="section-number-3">9.1.</span> Squat +35</h3>
+<div class="outline-text-3" id="text-9-1">
+<ul class="org-ul">
+<li>open up hips. right side esp</li>
+<li>what is the difference between squatting with hamstring curl and without is it the position of the hip angle</li>
+<li>mantain balance just like you maintain balance and bench press through transmitted from opposing sides</li>
+<li>tension created through the hip adduction and hamstring squeeze and hip drive</li>
+<li>stabilize the knee through abduction and abduction</li>
+<li>lock tension at top. keep pushing forward tension hips as you go down</li>
+<li>wider leg than deadlifts</li>
+<li>keep tensions tight
+<ul class="org-ul">
+<li>lower back pain keep an eye out</li>
+<li>i dont feel the power out of the hole</li>
+</ul></li>
+<li>keep elvows up and rotated back
+<ul class="org-ul">
+<li>care dont put weight in arm unracking</li>
+<li>no weight should be on your arms</li>
+</ul></li>
+<li>external rotation feel the muscle</li>
+<li>Hip drive
+<ul class="org-ul">
+<li>dont fall back too much, maybe thats why the weight isnin your toes</li>
+</ul></li>
+<li>Squeeze hams
+<ul class="org-ul">
+<li>when weight is on heel hamstrings need to squeeze more?</li>
+</ul></li>
+<li>drop belly/spine in space bewteen legs</li>
+<li>slow first</li>
+<li>hip add abductions? role in squating</li>
+<li>foot distrivution</li>
+<li>initial unrack tight</li>
+<li>keep chest down and algin spine and hip</li>
+<li>lats tight</li>
+<li>drive the hips inside, train this level by level as you go down</li>
+<li>go down slow.
+<ul class="org-ul">
+<li>i keep running outnof breadth</li>
+</ul></li>
+<li>2 exercise, side plank and ankle stretch</li>
+<li>dont look at mirror keep neck spine align</li>
+<li>leg press at bottom (like deadlift)</li>
+<li><a href="https://www.youtube.com/shorts/RGb4Di4Dk_k">vid</a></li>
+<li>spread knees and drop your stomach to the hole created there</li>
+<li><a href="https://www.youtube.com/watch?v=Rv822dMvKT0">awesomebliss squat vid</a></li>
+<li>Tighten all areas of the legs</li>
+<li>Make sure hip and chest and spine straight</li>
+<li>Brace</li>
+<li><a href="https://www.youtube.com/watch?v=6llv0WNK7W8">vid</a></li>
+<li>laydown and raise legs in squat position to find good squad width</li>
+<li>pull the bar down on yourself</li>
+<li><a href="https://www.youtube.com/watch?v=IbUqxi4Yjfo">vid</a></li>
+<li>Spread legs out as you lift up to use hip at the end?</li>
+<li>Put weight on heels so you can drive with hip starting from bottom</li>
+<li>Lat pulldown?</li>
+<li>Chest down and put alot of strength on stomach. lock the stomach?</li>
+<li>As your hips move back, move your knees forward b//c hips should be close to centerline</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9652861" class="outline-3">
+<h3 id="org9652861"><span class="section-number-3">9.2.</span> Leg Curl</h3>
+</div>
+<div id="outline-container-orgad7c599" class="outline-3">
+<h3 id="orgad7c599"><span class="section-number-3">9.3.</span> Leg Press</h3>
+<div class="outline-text-3" id="text-9-3">
+<ul class="org-ul">
+<li>something feels off about spine alignment lower back stabiliry</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgdf7d515" class="outline-2">
+<h2 id="orgdf7d515"><span class="section-number-2">10.</span> Warmup</h2>
+<div class="outline-text-2" id="text-10">
+<ul class="org-ul">
+<li>Muscle mind connection</li>
+<li>Make sure sqeeuze at start and end range of motions are good</li>
+<li>release slowly</li>
+</ul>
+
+<p>
+Be calm and command your body wherever you are. feel the muscle mind connection.
+</p>
+</div>
+</div>
+<div id="outline-container-org1a41222" class="outline-2">
+<h2 id="org1a41222"><span class="section-number-2">11.</span> isolated</h2>
+<div class="outline-text-2" id="text-11">
+<ul class="org-ul">
+<li>reverse fly 15</li>
+<li>pulldown close</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6915f04" class="outline-2">
+<h2 id="org6915f04"><span class="section-number-2">12.</span> REFORMS</h2>
+<div class="outline-text-2" id="text-12">
+</div>
+<div id="outline-container-org464d89b" class="outline-3">
+<h3 id="org464d89b"><span class="section-number-3">12.1.</span> supporting muscle groups and restructure</h3>
+<div class="outline-text-3" id="text-12-1">
+<ul class="org-ul">
+<li>the other guy was hitting supoorting muscle groups</li>
+<li>leg extension etc&#x2026;</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org86c2e5f" class="outline-3">
+<h3 id="org86c2e5f"><span class="section-number-3">12.2.</span> Sore stronger</h3>
+<div class="outline-text-3" id="text-12-2">
+<ul class="org-ul">
+<li>it has been a while since i felt the muscle get sore and then stronger. how can i make this happen more often</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orge5ca07f" class="outline-2">
+<h2 id="orge5ca07f"><span class="section-number-2">13.</span> RDL</h2>
+<div class="outline-text-2" id="text-13">
+<ul class="org-ul">
+<li>feel stretch from ground position</li>
+<li>focus on the hinge</li>
+<li>how to feel hamstring better</li>
+<li>flex internal rotation of hips
+<ul class="org-ul">
+<li>right now exterbal rotation of hips is stronger</li>
+</ul></li>
+<li>just push your butt back</li>
+<li>while keeping tight core</li>
+<li>trouble going down low on RDL</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: termux</p>
+<p class="date">Created: 2023-11-23 Thu 21:42</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-11-23 Thu 21:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="termux" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<ul class="org-ul">
+<li>proverbs 28 the wicked flea though no one pursues but the righteous are as bold as a lion</li>
+
+<li>keep questions in the back of your mind as you learn. try to answer them
+<ul class="org-ul">
+<li>extra 2 conditions in cubix spline</li>
+</ul></li>
+<li>simplify and organize and summarize notes</li>
+<li>organize using key principles and ideas
+<ul class="org-ul">
+<li>create exercises and questions to answer</li>
+</ul></li>
+
+<li>you have to really want to solve the problem
+<ul class="org-ul">
+<li>you have to really wish to search</li>
+</ul></li>
+
+<li>is it problem searching or problem solving</li>
+
+<li>when you're really stuck try some other task</li>
+
+<li>keep a list of problems to work on</li>
+<li>as questions arise when you're studying keep a list</li>
+
+<li>some problems are too hard to work on with your current background</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>read the book and try to visualize in your mind what the book said</li>
+<li>write the whole chapter as your read - cps
+<ul class="org-ul">
+<li>writing is a way to help you focus - charlie</li>
+</ul></li>
+
+<li>repetition will develop skill
+<ul class="org-ul">
+<li>repeat problem searching and also proving the theorems material learned</li>
+<li>repetition in reading comprehension</li>
+<li>repetition and problem searching</li>
+</ul></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>as you're solving the problem visualize in your mind where you are in the search
+<ul class="org-ul">
+<li>keep track of the alternate pads that you can take</li>
+<li>be mindful of where you are at the moment</li>
+</ul></li>
+<li>build a scaffold to learn a new material quickly
+<ul class="org-ul">
+<li>understand where you are in the scaffold</li>
+<li>visualize in your mind where it could be</li>
+</ul></li>
+</ul>
+
+
+
+
+<ul class="org-ul">
+<li>don't create an unnecessary measure</li>
+
+<li>time management
+<ul class="org-ul">
+<li>don't search for things that are not there. you may end up wasting time. before you look make sure that it's reasonable</li>
+</ul></li>
+
+<li>don't be afraid of the question do I suck at math?
+<ul class="org-ul">
+<li>this question occurs a lot when I'm solving a problem and I got stuck</li>
+<li>or when I am afraid of a problem</li>
+</ul></li>
+
+<li>don't assume a particular path to a solution</li>
+<li>do not prove what is not possible to prove
+<ul class="org-ul">
+<li>always check for feasibility</li>
+<li>always make sure you understand the problem and the definitions correctly</li>
+<li>it is possible that there's a typo or that you misunderstand and what you're trying to prove is not possible</li>
+</ul></li>
+
+<li>you need practice both. proving statement truth and the false</li>
+
+<li>if you're stuck try to prove the negation</li>
+<li>if you're stuck look for counter examples to what you're trying to prove</li>
+<li>if you're stuck check if you are proving something that is not possible to prove</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>how to better use time without feeling anxious?
+<ul class="org-ul">
+<li>how can I use 1 hour 30 minutes effectively?</li>
+</ul></li>
+
+<li>how to search and navigate the problem without getting lost?
+<ul class="org-ul">
+<li>try to get the big picture of what you're doing</li>
+<li>use your intuition to guide yourself to the solution
+<ul class="org-ul">
+<li>sketch out the big idea fill in the details later</li>
+</ul></li>
+<li>management techniques trees</li>
+<li>what can we control, see the parameters of each object you're working with</li>
+<li>when you're done with the problem look at the path to the solution. see if it is good or if it can be improved
+<ul class="org-ul">
+<li>see how you can discover the path to the solution</li>
+</ul></li>
+<li>don't do stuff randomly hoping to get across a good idea
+<ul class="org-ul">
+<li>have purpose to each step and time spent. be deliberate</li>
+</ul></li>
+<li>is there a important object or property that you can find or need to be true?
+<ul class="org-ul">
+<li>which can be used to direct the search</li>
+<li>is there an example that makes the conclusion true</li>
+<li>what is the property of this example?</li>
+</ul></li>
+<li>contrapositive is a great way to look at a problem differently</li>
+<li>keep the conclusion and your goal in mind</li>
+</ul></li>
+<li>look for counter examples if you wish to prove something false</li>
+<li>after proving a theorem check the converse
+<ul class="org-ul">
+<li>see if some conditions can be dropped</li>
+<li>see if a condition is dropped why it is false</li>
+<li>see the key techniques used in the theorem</li>
+<li>see the key relationships using the theorem</li>
+</ul></li>
+</ul>
+
+
+
+
+<ul class="org-ul">
+<li>pay attention to your voice. I often talk to myself when I'm going through the problem.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>close eyes nap to relearn all the stuff at 20x speed
+<ul class="org-ul">
+<li>can you do this while studying? on the fly?</li>
+<li>meditate</li>
+<li>when anxious also do this</li>
+</ul></li>
+
+<li>study each topic 2hr each day
+<ul class="org-ul">
+<li>get up at 6</li>
+<li>change topic if stuck</li>
+<li>study over many days</li>
+</ul></li>
+
+<li>work hard in a natural, smart, logical way</li>
+<li>build a scaffold when learning</li>
+
+<li>try to improve your visual memory
+<ul class="org-ul">
+<li>meditation</li>
+<li>focus your mind on a specific object for an extended time</li>
+</ul></li>
+
+<li>love your neighbor
+<ul class="org-ul">
+<li>wish the best for them, be earnest</li>
+</ul></li>
+<li>value your time</li>
+
+<li>numerical exam
+<ul class="org-ul">
+<li>how can i prepare better for exams in the future?</li>
+</ul></li>
+
+<li>ask questions that are meaningful and relvant
+<ul class="org-ul">
+<li>questions when answered will solve your problem for sure</li>
+<li>similar to thinking in a direction that will guarantee or is likely to give you the solution</li>
+<li>apply this in your daily life</li>
+</ul></li>
+<li>keep in mind the original purpose of what we are doing</li>
+
+<li>loosening up relaxing during exam
+<ul class="org-ul">
+<li>believing that you have already passed</li>
+<li>do not do this! it is not true</li>
+</ul></li>
+
+<li>panic exam
+<ul class="org-ul">
+<li>keep thinking about bad things</li>
+<li>use that energy to think about a solution</li>
+</ul></li>
+
+<li>why do you say you are slow
+<ul class="org-ul">
+<li>dont accept it as truth</li>
+<li>try to improve</li>
+</ul></li>
+
+<li>linear comb of indicator function
+<ul class="org-ul">
+<li>increasing</li>
+<li>integral</li>
+</ul></li>
+
+<li>find a scaffold to build on your knowledge
+<ul class="org-ul">
+<li>how to effectively use time</li>
+<li>make it natural</li>
+<li>be able to prove basic theorems in your head</li>
+</ul></li>
+
+<li>when you do problems what should you look for?
+<ul class="org-ul">
+<li>insights to the objects dealing with the problems</li>
+<li>how to approach problems in general</li>
+<li>keep some problems to come back to</li>
+</ul></li>
+
+<li>work on things naturally
+<ul class="org-ul">
+<li>find a natural rythmn in studying</li>
+</ul></li>
+
+<li>on exams
+<ul class="org-ul">
+<li>dont artificially impose a time limit
+<ul class="org-ul">
+<li>adds unneccessary stress</li>
+</ul></li>
+<li>work on many problems</li>
+<li>distractions are good sometimed</li>
+</ul></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>inner measure outer measure coincide
+<ul class="org-ul">
+<li>what kind of sets can guarantee inner measure and outer measure are the same?</li>
+</ul></li>
+
+<li>reading
+<ul class="org-ul">
+<li>put statements in your mind. understand and visualize in your mind.</li>
+<li>teach to someone who doesn't understand</li>
+<li>don't fool yourself into thinking you understand</li>
+<li>ask key questions as you learn</li>
+<li>come up with concrete examples</li>
+<li>summarize what you have learned
+<ul class="org-ul">
+<li>iterate the summarization can you make it shorter</li>
+</ul></li>
+<li>Orient your learning to develop an intuition</li>
+<li>try to find a natural path and idea</li>
+<li>learn it properly the first time
+<ul class="org-ul">
+<li>it will save time in the long run</li>
+</ul></li>
+<li>recall the things that you have learned
+<ul class="org-ul">
+<li>recall is essential for learning</li>
+</ul></li>
+</ul></li>
+
+<li>problem searching solving
+<ul class="org-ul">
+<li>how to develop an intuition to search
+<ul class="org-ul">
+<li>practice, repetition</li>
+<li>recall</li>
+</ul></li>
+<li>explain the key steps, intuitions</li>
+<li>summarize the promise searching process
+<ul class="org-ul">
+<li>see why each condition was necessary</li>
+<li>compare your solutions with others</li>
+</ul></li>
+<li>considered the other paths</li>
+</ul></li>
+</ul>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: termux</p>
+<p class="date">Created: 2023-11-23 Thu 21:42</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
