@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-11-25 Sat 11:38 -->
+<!-- 2023-11-25 Sat 11:41 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -269,186 +269,92 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org25ed6bf">1. epsilon - close to</a></li>
-<li><a href="#org5cb2448">2. Dont lose sight of forest because of trees</a></li>
-<li><a href="#orga16ff4d">3. Look and figure out the conditions</a></li>
-<li><a href="#org87499d2">4. Relax the hypothesis</a></li>
-<li><a href="#org75c0d25">5. 5.1 Riemann Integral</a>
-<ul>
-<li><a href="#orgc567eda">5.1. Precondition: assume f is bounded</a></li>
-<li><a href="#orgb019ba9">5.2. Partition: Ordering</a></li>
-<li><a href="#org4bce44d">5.3. UL Riemann Sum \(U(f,P)\), \(L(f,P)\): Existance, Ordering, Converge</a></li>
-<li><a href="#orgb949943">5.4. Continous =&gt; ULRS Converge</a></li>
-<li><a href="#org2f4a172">5.5. Examples of ULRS Converge</a></li>
-<li><a href="#orgfc3fbb9">5.6. UL Integral \(U\int_a^bf(x) dx\), \(L\int_a^bf(x) dx\): Existance, Ordering, Converge</a></li>
-<li><a href="#org25bd88d">5.7. ULRS Converge &lt;=&gt; ULI Converge</a></li>
-</ul>
-</li>
-<li><a href="#org9ce7e7f">6. 5.2 Riemann Sums</a>
-<ul>
-<li><a href="#org1827c01">6.1. Riemman Sum \(S(f,P,t_j)\): Existance, Convergence</a></li>
-<li><a href="#org5ed485e">6.2. RS Converge &lt;=&gt; ULRS Converge Define all 3 as Rieman Integrable (Are the RS UL values equal?)</a></li>
-<li><a href="#orgf86e4a8">6.3. Linearity of RI \(\int_a^b f(x)+g(x) = \int_a^b f(x) + \int_a^b g(x)\), \(\int_a^b k*f(x) = k* \int_a^b f(x)\)</a></li>
-<li><a href="#orgc9463a4">6.4. Triangle Equality \(\int_a^b f(x) = \int_a^c f(x) + \int_c^b f(x)\)</a></li>
-<li><a href="#orgb02492f">6.5. Comparison \(f(x) \leq g(x)\) =&gt; \(\int_a^b f(x) \leq \int_a^b g(x)\)</a></li>
-<li><a href="#orgd0527b1">6.6. Product RI</a></li>
-<li><a href="#orge6041cb">6.7. Consider simple case \(g(x)=1\) \(f(x)\geq 0\)</a></li>
-<li><a href="#org2a93f6d">6.8. Mean Value Theorem Integral (g&gt;0) \(\int_a^b f(x)g(x)\) \(= c*\int_a^b g(x)\)</a></li>
-<li><a href="#org80173db">6.9. Mean Value Theorem Integral (g&gt;0) \(\int_a^b f(x)g(x) = m\int_a^c g(x) + M\int_c^b g(x)\)</a></li>
-</ul>
-</li>
-<li><a href="#org78a1258">7. 5.3 Fundamental Theorem</a>
-<ul>
-<li><a href="#orgd491012">7.1. Fundamental Theorem \(F(x) = \int_a^x f(t) dt\)</a></li>
-<li><a href="#org7fc0b14">7.2. Fundamental Theorem \(\int_a^b f'(x) = f(b) - f(a)\)</a></li>
-<li><a href="#org6d569ca">7.3. Hypothesis cannot be relaxed</a></li>
-<li><a href="#org2b91a87">7.4. Integration by Parts \(f(b)g(b)-f(a)g(a) = \int_a^b f'(x)g(x) + \int_a^b f(x)g'(x)\)</a></li>
-<li><a href="#org64e81b5">7.5. Change of Variables ??</a></li>
-<li><a href="#org411b1b2">7.6. Change of Variables for Continouse Integrand ??</a></li>
-</ul>
-</li>
-<li><a href="#org22f50d1">8. Improper Integral</a>
-<ul>
-<li><a href="#org2ecc1d4">8.1. Locally Integrable (a,b)</a></li>
-<li><a href="#org67c9d9c">8.2. Improperly Integrable on (a,b) II\(\lim\limits_{x \to a} \lim\limits_{y \to b} \int_x^y f(x)dx\)</a></li>
-<li><a href="#orgce4bd76">8.3. Integral equals Improper Integral</a></li>
-<li><a href="#org8e8e5c4">8.4. Change order of limits</a></li>
-<li><a href="#org6f4ca0d">8.5. Comparison Thm for Improper Integral</a></li>
-<li><a href="#orgfc55302">8.6. Absolutely Integrable on (a,b) := Locally Integrable, |f| improperly integrable on (a,b)</a></li>
-<li><a href="#orgba9dcb3">8.7. Conditionally Integrable on (a,b)</a></li>
-<li><a href="#orgea0c35d">8.8. Absolutely Integrable on (a,b) =&gt; Improperly Integrable on (a,b)</a></li>
-</ul>
-</li>
-<li><a href="#org39e78ff">9. 5.4 Functions of Bounded Variation</a></li>
+<li><a href="#org3d160c2">1. epsilon - close to</a></li>
+<li><a href="#orge958151">2. Dont lose sight of forest because of trees</a></li>
+<li><a href="#orge5df800">3. Look and figure out the conditions</a></li>
+<li><a href="#orgd72eb85">4. Relax the hypothesis</a></li>
+<li><a href="#org63e45f4">5. 5.1 Riemann Integral</a></li>
+<li><a href="#orgce7842c">6. 5.2 Riemann Sums</a></li>
+<li><a href="#org98235eb">7. 5.3 Fundamental Theorem</a></li>
+<li><a href="#orgc4380ce">8. Improper Integral</a></li>
+<li><a href="#orgad96c2a">9. 5.4 Functions of Bounded Variation</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org25ed6bf" class="outline-2">
-<h2 id="org25ed6bf"><span class="section-number-2">1</span> epsilon - close to</h2>
+<div id="outline-container-org3d160c2" class="outline-2">
+<h2 id="org3d160c2"><span class="section-number-2">1</span> epsilon - close to</h2>
 </div>
-<div id="outline-container-org5cb2448" class="outline-2">
-<h2 id="org5cb2448"><span class="section-number-2">2</span> Dont lose sight of forest because of trees</h2>
+<div id="outline-container-orge958151" class="outline-2">
+<h2 id="orge958151"><span class="section-number-2">2</span> Dont lose sight of forest because of trees</h2>
 </div>
-<div id="outline-container-orga16ff4d" class="outline-2">
-<h2 id="orga16ff4d"><span class="section-number-2">3</span> Look and figure out the conditions</h2>
+<div id="outline-container-orge5df800" class="outline-2">
+<h2 id="orge5df800"><span class="section-number-2">3</span> Look and figure out the conditions</h2>
 </div>
-<div id="outline-container-org87499d2" class="outline-2">
-<h2 id="org87499d2"><span class="section-number-2">4</span> Relax the hypothesis</h2>
+<div id="outline-container-orgd72eb85" class="outline-2">
+<h2 id="orgd72eb85"><span class="section-number-2">4</span> Relax the hypothesis</h2>
 </div>
 
-<div id="outline-container-org75c0d25" class="outline-2">
-<h2 id="org75c0d25"><span class="section-number-2">5</span> 5.1 Riemann Integral</h2>
+<div id="outline-container-org63e45f4" class="outline-2">
+<h2 id="org63e45f4"><span class="section-number-2">5</span> 5.1 Riemann Integral</h2>
 <div class="outline-text-2" id="text-5">
-</div>
-<div id="outline-container-orgc567eda" class="outline-3">
-<h3 id="orgc567eda"><span class="section-number-3">5.1</span> Precondition: assume f is bounded</h3>
-</div>
-<div id="outline-container-orgb019ba9" class="outline-3">
-<h3 id="orgb019ba9"><span class="section-number-3">5.2</span> Partition: Ordering</h3>
-</div>
-<div id="outline-container-org4bce44d" class="outline-3">
-<h3 id="org4bce44d"><span class="section-number-3">5.3</span> UL Riemann Sum \(U(f,P)\), \(L(f,P)\): Existance, Ordering, Converge</h3>
-</div>
-<div id="outline-container-orgb949943" class="outline-3">
-<h3 id="orgb949943"><span class="section-number-3">5.4</span> Continous =&gt; ULRS Converge</h3>
-</div>
-<div id="outline-container-org2f4a172" class="outline-3">
-<h3 id="org2f4a172"><span class="section-number-3">5.5</span> Examples of ULRS Converge</h3>
-</div>
-<div id="outline-container-orgfc3fbb9" class="outline-3">
-<h3 id="orgfc3fbb9"><span class="section-number-3">5.6</span> UL Integral \(U\int_a^bf(x) dx\), \(L\int_a^bf(x) dx\): Existance, Ordering, Converge</h3>
-</div>
-<div id="outline-container-org25bd88d" class="outline-3">
-<h3 id="org25bd88d"><span class="section-number-3">5.7</span> ULRS Converge &lt;=&gt; ULI Converge</h3>
+<ul class="org-ul">
+<li>Precondition: assume f is bounded</li>
+<li>Partition: Ordering</li>
+<li>UL Riemann Sum \(U(f,P)\), \(L(f,P)\): Existance, Ordering, Converge</li>
+<li>Continous =&gt; ULRS Converge</li>
+<li>Examples of ULRS Converge</li>
+<li>UL Integral \(U\int_a^bf(x) dx\), \(L\int_a^bf(x) dx\): Existance, Ordering, Converge</li>
+<li>ULRS Converge &lt;=&gt; ULI Converge</li>
+</ul>
 </div>
 </div>
-<div id="outline-container-org9ce7e7f" class="outline-2">
-<h2 id="org9ce7e7f"><span class="section-number-2">6</span> 5.2 Riemann Sums</h2>
+<div id="outline-container-orgce7842c" class="outline-2">
+<h2 id="orgce7842c"><span class="section-number-2">6</span> 5.2 Riemann Sums</h2>
 <div class="outline-text-2" id="text-6">
-</div>
-<div id="outline-container-org1827c01" class="outline-3">
-<h3 id="org1827c01"><span class="section-number-3">6.1</span> Riemman Sum \(S(f,P,t_j)\): Existance, Convergence</h3>
-</div>
-<div id="outline-container-org5ed485e" class="outline-3">
-<h3 id="org5ed485e"><span class="section-number-3">6.2</span> RS Converge &lt;=&gt; ULRS Converge Define all 3 as Rieman Integrable (Are the RS UL values equal?)</h3>
-</div>
-<div id="outline-container-orgf86e4a8" class="outline-3">
-<h3 id="orgf86e4a8"><span class="section-number-3">6.3</span> Linearity of RI \(\int_a^b f(x)+g(x) = \int_a^b f(x) + \int_a^b g(x)\), \(\int_a^b k*f(x) = k* \int_a^b f(x)\)</h3>
-</div>
-<div id="outline-container-orgc9463a4" class="outline-3">
-<h3 id="orgc9463a4"><span class="section-number-3">6.4</span> Triangle Equality \(\int_a^b f(x) = \int_a^c f(x) + \int_c^b f(x)\)</h3>
-</div>
-<div id="outline-container-orgb02492f" class="outline-3">
-<h3 id="orgb02492f"><span class="section-number-3">6.5</span> Comparison \(f(x) \leq g(x)\) =&gt; \(\int_a^b f(x) \leq \int_a^b g(x)\)</h3>
-</div>
-<div id="outline-container-orgd0527b1" class="outline-3">
-<h3 id="orgd0527b1"><span class="section-number-3">6.6</span> Product RI</h3>
-</div>
-<div id="outline-container-orge6041cb" class="outline-3">
-<h3 id="orge6041cb"><span class="section-number-3">6.7</span> Consider simple case \(g(x)=1\) \(f(x)\geq 0\)</h3>
-</div>
-<div id="outline-container-org2a93f6d" class="outline-3">
-<h3 id="org2a93f6d"><span class="section-number-3">6.8</span> Mean Value Theorem Integral (g&gt;0) \(\int_a^b f(x)g(x)\) \(= c*\int_a^b g(x)\)</h3>
-</div>
-<div id="outline-container-org80173db" class="outline-3">
-<h3 id="org80173db"><span class="section-number-3">6.9</span> Mean Value Theorem Integral (g&gt;0) \(\int_a^b f(x)g(x) = m\int_a^c g(x) + M\int_c^b g(x)\)</h3>
+<ul class="org-ul">
+<li>Riemman Sum \(S(f,P,t_j)\): Existance, Convergence</li>
+<li>RS Converge &lt;=&gt; ULRS Converge Define all 3 as Rieman Integrable (Are the RS UL values equal?)</li>
+<li>Linearity of RI \(\int_a^b f(x)+g(x) = \int_a^b f(x) + \int_a^b g(x)\), \(\int_a^b k*f(x) = k* \int_a^b f(x)\)</li>
+<li>Triangle Equality \(\int_a^b f(x) = \int_a^c f(x) + \int_c^b f(x)\)</li>
+<li>Comparison \(f(x) \leq g(x)\) =&gt; \(\int_a^b f(x) \leq \int_a^b g(x)\)</li>
+<li>Product RI</li>
+<li>Consider simple case \(g(x)=1\) \(f(x)\geq 0\)</li>
+<li>Mean Value Theorem Integral (g&gt;0) \(\int_a^b f(x)g(x)\) \(= c*\int_a^b g(x)\)</li>
+<li>Mean Value Theorem Integral (g&gt;0) \(\int_a^b f(x)g(x) = m\int_a^c g(x) + M\int_c^b g(x)\)</li>
+</ul>
 </div>
 </div>
-<div id="outline-container-org78a1258" class="outline-2">
-<h2 id="org78a1258"><span class="section-number-2">7</span> 5.3 Fundamental Theorem</h2>
+<div id="outline-container-org98235eb" class="outline-2">
+<h2 id="org98235eb"><span class="section-number-2">7</span> 5.3 Fundamental Theorem</h2>
 <div class="outline-text-2" id="text-7">
-</div>
-<div id="outline-container-orgd491012" class="outline-3">
-<h3 id="orgd491012"><span class="section-number-3">7.1</span> Fundamental Theorem \(F(x) = \int_a^x f(t) dt\)</h3>
-</div>
-<div id="outline-container-org7fc0b14" class="outline-3">
-<h3 id="org7fc0b14"><span class="section-number-3">7.2</span> Fundamental Theorem \(\int_a^b f'(x) = f(b) - f(a)\)</h3>
-</div>
-<div id="outline-container-org6d569ca" class="outline-3">
-<h3 id="org6d569ca"><span class="section-number-3">7.3</span> Hypothesis cannot be relaxed</h3>
-</div>
-<div id="outline-container-org2b91a87" class="outline-3">
-<h3 id="org2b91a87"><span class="section-number-3">7.4</span> Integration by Parts \(f(b)g(b)-f(a)g(a) = \int_a^b f'(x)g(x) + \int_a^b f(x)g'(x)\)</h3>
-</div>
-<div id="outline-container-org64e81b5" class="outline-3">
-<h3 id="org64e81b5"><span class="section-number-3">7.5</span> Change of Variables ??</h3>
-</div>
-<div id="outline-container-org411b1b2" class="outline-3">
-<h3 id="org411b1b2"><span class="section-number-3">7.6</span> Change of Variables for Continouse Integrand ??</h3>
+<ul class="org-ul">
+<li>Fundamental Theorem \(F(x) = \int_a^x f(t) dt\)</li>
+<li>Fundamental Theorem \(\int_a^b f'(x) = f(b) - f(a)\)</li>
+<li>Hypothesis cannot be relaxed</li>
+<li>Integration by Parts \(f(b)g(b)-f(a)g(a) = \int_a^b f'(x)g(x) + \int_a^b f(x)g'(x)\)</li>
+<li>Change of Variables ??</li>
+<li>Change of Variables for Continouse Integrand ??</li>
+</ul>
 </div>
 </div>
-<div id="outline-container-org22f50d1" class="outline-2">
-<h2 id="org22f50d1"><span class="section-number-2">8</span> Improper Integral</h2>
+<div id="outline-container-orgc4380ce" class="outline-2">
+<h2 id="orgc4380ce"><span class="section-number-2">8</span> Improper Integral</h2>
 <div class="outline-text-2" id="text-8">
-</div>
-<div id="outline-container-org2ecc1d4" class="outline-3">
-<h3 id="org2ecc1d4"><span class="section-number-3">8.1</span> Locally Integrable (a,b)</h3>
-</div>
-<div id="outline-container-org67c9d9c" class="outline-3">
-<h3 id="org67c9d9c"><span class="section-number-3">8.2</span> Improperly Integrable on (a,b) II\(\lim\limits_{x \to a} \lim\limits_{y \to b} \int_x^y f(x)dx\)</h3>
-</div>
-<div id="outline-container-orgce4bd76" class="outline-3">
-<h3 id="orgce4bd76"><span class="section-number-3">8.3</span> Integral equals Improper Integral</h3>
-</div>
-<div id="outline-container-org8e8e5c4" class="outline-3">
-<h3 id="org8e8e5c4"><span class="section-number-3">8.4</span> Change order of limits</h3>
-</div>
-<div id="outline-container-org6f4ca0d" class="outline-3">
-<h3 id="org6f4ca0d"><span class="section-number-3">8.5</span> Comparison Thm for Improper Integral</h3>
-</div>
-<div id="outline-container-orgfc55302" class="outline-3">
-<h3 id="orgfc55302"><span class="section-number-3">8.6</span> Absolutely Integrable on (a,b) := Locally Integrable, |f| improperly integrable on (a,b)</h3>
-</div>
-<div id="outline-container-orgba9dcb3" class="outline-3">
-<h3 id="orgba9dcb3"><span class="section-number-3">8.7</span> Conditionally Integrable on (a,b)</h3>
-</div>
-<div id="outline-container-orgea0c35d" class="outline-3">
-<h3 id="orgea0c35d"><span class="section-number-3">8.8</span> Absolutely Integrable on (a,b) =&gt; Improperly Integrable on (a,b)</h3>
+<ul class="org-ul">
+<li>Locally Integrable (a,b)</li>
+<li>Improperly Integrable on (a,b) \(\lim\limits_{x \to a} \lim\limits_{y \to b} \int_x^y f(x)dx\)</li>
+<li>Integral equals Improper Integral</li>
+<li>Change order of limits</li>
+<li>Comparison Thm for Improper Integral</li>
+<li>Absolutely Integrable on (a,b) := Locally Integrable, |f| improperly integrable on (a,b)</li>
+<li>Conditionally Integrable on (a,b)</li>
+<li>Absolutely Integrable on (a,b) =&gt; Improperly Integrable on (a,b)</li>
+</ul>
 </div>
 </div>
-<div id="outline-container-org39e78ff" class="outline-2">
-<h2 id="org39e78ff"><span class="section-number-2">9</span> 5.4 Functions of Bounded Variation</h2>
+<div id="outline-container-orgad96c2a" class="outline-2">
+<h2 id="orgad96c2a"><span class="section-number-2">9</span> 5.4 Functions of Bounded Variation</h2>
 </div>
 </div>
 </body>
