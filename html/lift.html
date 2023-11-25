@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-11-23 Thu 21:44 -->
+<!-- 2023-11-25 Sat 11:38 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
-<meta name="author" content="termux" />
-<meta name="generator" content="Org Mode" />
-<style>
-  #content { max-width: 60em; margin: auto; }
+<meta name="generator" content="Org mode" />
+<meta name="author" content="ychnh" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,9 +31,8 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #e6e6e6;
-    border-radius: 3px;
-    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -41,22 +40,22 @@
   }
   pre.src {
     position: relative;
-    overflow: auto;
+    overflow: visible;
+    padding-top: 1.2em;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    top: -8px;
-    right: 12px;
+    background-color: white;
+    top: -10px;
+    right: 10px;
     padding: 3px;
-    color: #555;
-    background-color: #f2f2f299;
+    border: 1px solid black;
   }
-  pre.src:hover:before { display: inline; margin-top: 14px;}
+  pre.src:hover:before { display: inline;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
-  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -191,60 +190,107 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
 </style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
 </head>
 <body>
-<div id="content" class="content">
-<div id="table-of-contents" role="doc-toc">
+<div id="content">
+<div id="table-of-contents">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents" role="doc-toc">
+<div id="text-table-of-contents">
 <ul>
-<li><a href="#orgf66b1df">1. how to lift it</a>
+<li><a href="#orga7c0348">1. how to lift it</a>
 <ul>
-<li><a href="#orgc031f1b">1.1. Form</a></li>
-<li><a href="#orgd0288e2">1.2. Compound movements</a></li>
-<li><a href="#org871185a">1.3. minor muscle stability</a></li>
+<li><a href="#orga078d9b">1.1. Form</a></li>
+<li><a href="#org4f873b6">1.2. Compound movements</a></li>
+<li><a href="#org5e56b14">1.3. minor muscle stability</a></li>
 </ul>
 </li>
-<li><a href="#orgdfdf895">2. forearm pain</a></li>
-<li><a href="#org8c373e0">3. lift</a></li>
-<li><a href="#org409538e">4. General Tips</a></li>
-<li><a href="#org70da7a4">5. running</a></li>
-<li><a href="#org94e5fcd">6. How to make the knee area more stable?</a></li>
-<li><a href="#orge0783dc">7. PULL</a>
+<li><a href="#org0ecf8bd">2. forearm pain</a></li>
+<li><a href="#orgbfc6c05">3. lift</a></li>
+<li><a href="#org8a95b8f">4. General Tips</a></li>
+<li><a href="#org08e41a2">5. running</a></li>
+<li><a href="#org02fcb82">6. How to make the knee area more stable?</a></li>
+<li><a href="#orgffe7238">7. PULL</a>
 <ul>
-<li><a href="#org9c643ad">7.1. Deadlift +7.5</a></li>
-<li><a href="#org15308ac">7.2. Row +5</a></li>
-<li><a href="#org29ab8af">7.3. Pullups +2.5</a></li>
-<li><a href="#org2a5501b">7.4. Rear Delt Rows</a></li>
-<li><a href="#org024fa22">7.5. Bicep curl</a></li>
-<li><a href="#org93f9856">7.6. rack pulls</a></li>
+<li><a href="#org32c5369">7.1. Deadlift +7.5</a></li>
+<li><a href="#org2d16d25">7.2. Row +5</a></li>
+<li><a href="#orga59a69a">7.3. Pullups +2.5</a></li>
+<li><a href="#org0855583">7.4. Rear Delt Rows</a></li>
+<li><a href="#org5c4d38f">7.5. Bicep curl</a></li>
+<li><a href="#orgdd57517">7.6. rack pulls</a></li>
 </ul>
 </li>
-<li><a href="#orgecf5f1b">8. PUSH</a>
+<li><a href="#orge5d7232">8. PUSH</a>
 <ul>
-<li><a href="#orgc3dee09">8.1. Bench press 7.5</a></li>
-<li><a href="#orgb8e05e5">8.2. Overhead press +2.5/5</a></li>
-<li><a href="#org91335a4">8.3. Dips</a></li>
+<li><a href="#org70932fe">8.1. Bench press 7.5</a></li>
+<li><a href="#org2bb553a">8.2. Overhead press +2.5/5</a></li>
+<li><a href="#org0315139">8.3. Dips</a></li>
 </ul>
 </li>
-<li><a href="#orgf67c36c">9. LEGS</a>
+<li><a href="#org146302c">9. LEGS</a>
 <ul>
-<li><a href="#orgda049b6">9.1. Squat +35</a></li>
-<li><a href="#org2350d47">9.2. Leg Curl</a></li>
-<li><a href="#org925470c">9.3. Leg Press</a></li>
+<li><a href="#org7573cff">9.1. Squat +35</a></li>
+<li><a href="#orga5fe527">9.2. Leg Curl</a></li>
+<li><a href="#org0c3dcef">9.3. Leg Press</a></li>
 </ul>
 </li>
-<li><a href="#orgb1672d6">10. Warmup</a></li>
-<li><a href="#orga4296b6">11. isolated</a></li>
-<li><a href="#org29ef601">12. REFORMS</a>
+<li><a href="#org062110e">10. Warmup</a></li>
+<li><a href="#org5759749">11. isolated</a></li>
+<li><a href="#org3597478">12. REFORMS</a>
 <ul>
-<li><a href="#org0e6040a">12.1. supporting muscle groups and restructure</a></li>
-<li><a href="#orgf6abb4b">12.2. Sore stronger</a></li>
+<li><a href="#org83ea452">12.1. supporting muscle groups and restructure</a></li>
+<li><a href="#orgfc178a0">12.2. Sore stronger</a></li>
 </ul>
 </li>
-<li><a href="#orgf6b74de">13. RDL</a></li>
+<li><a href="#org6ab68c2">13. RDL</a></li>
 </ul>
 </div>
 </div>
@@ -273,12 +319,12 @@ obsession with progression to things you suck at
 <li>negativevsets</li>
 </ul>
 
-<div id="outline-container-orgf66b1df" class="outline-2">
-<h2 id="orgf66b1df"><span class="section-number-2">1.</span> how to lift it</h2>
+<div id="outline-container-orga7c0348" class="outline-2">
+<h2 id="orga7c0348"><span class="section-number-2">1</span> how to lift it</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-orgc031f1b" class="outline-3">
-<h3 id="orgc031f1b"><span class="section-number-3">1.1.</span> Form</h3>
+<div id="outline-container-orga078d9b" class="outline-3">
+<h3 id="orga078d9b"><span class="section-number-3">1.1</span> Form</h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
 <li>go slow</li>
@@ -286,16 +332,16 @@ obsession with progression to things you suck at
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd0288e2" class="outline-3">
-<h3 id="orgd0288e2"><span class="section-number-3">1.2.</span> Compound movements</h3>
+<div id="outline-container-org4f873b6" class="outline-3">
+<h3 id="org4f873b6"><span class="section-number-3">1.2</span> Compound movements</h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
 <li>are going to get you strong</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org871185a" class="outline-3">
-<h3 id="org871185a"><span class="section-number-3">1.3.</span> minor muscle stability</h3>
+<div id="outline-container-org5e56b14" class="outline-3">
+<h3 id="org5e56b14"><span class="section-number-3">1.3</span> minor muscle stability</h3>
 <div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
 <li>upper arm stability bicep tricep</li>
@@ -304,16 +350,16 @@ obsession with progression to things you suck at
 </div>
 </div>
 
-<div id="outline-container-orgdfdf895" class="outline-2">
-<h2 id="orgdfdf895"><span class="section-number-2">2.</span> forearm pain</h2>
+<div id="outline-container-org0ecf8bd" class="outline-2">
+<h2 id="org0ecf8bd"><span class="section-number-2">2</span> forearm pain</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>sypport/absorb shock eoth lats?</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org8c373e0" class="outline-2">
-<h2 id="org8c373e0"><span class="section-number-2">3.</span> lift</h2>
+<div id="outline-container-orgbfc6c05" class="outline-2">
+<h2 id="orgbfc6c05"><span class="section-number-2">3</span> lift</h2>
 <div class="outline-text-2" id="text-3">
 <ul class="org-ul">
 <li>Treat lifting like a combat</li>
@@ -325,8 +371,8 @@ obsession with progression to things you suck at
 </ul>
 </div>
 </div>
-<div id="outline-container-org409538e" class="outline-2">
-<h2 id="org409538e"><span class="section-number-2">4.</span> General Tips</h2>
+<div id="outline-container-org8a95b8f" class="outline-2">
+<h2 id="org8a95b8f"><span class="section-number-2">4</span> General Tips</h2>
 <div class="outline-text-2" id="text-4">
 <ul class="org-ul">
 <li>6 sets of 10, 2 min rest, lower weight if cant complete 10</li>
@@ -351,16 +397,16 @@ obsession with progression to things you suck at
 
 
 
-<div id="outline-container-org70da7a4" class="outline-2">
-<h2 id="org70da7a4"><span class="section-number-2">5.</span> running</h2>
+<div id="outline-container-org08e41a2" class="outline-2">
+<h2 id="org08e41a2"><span class="section-number-2">5</span> running</h2>
 <div class="outline-text-2" id="text-5">
 <ul class="org-ul">
 <li>breathing</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org94e5fcd" class="outline-2">
-<h2 id="org94e5fcd"><span class="section-number-2">6.</span> How to make the knee area more stable?</h2>
+<div id="outline-container-org02fcb82" class="outline-2">
+<h2 id="org02fcb82"><span class="section-number-2">6</span> How to make the knee area more stable?</h2>
 <div class="outline-text-2" id="text-6">
 <ul class="org-ul">
 <li>awesome bliss Copenhagen plank</li>
@@ -374,15 +420,15 @@ obsession with progression to things you suck at
 </div>
 </div>
 
-<div id="outline-container-orge0783dc" class="outline-2">
-<h2 id="orge0783dc"><span class="section-number-2">7.</span> PULL</h2>
+<div id="outline-container-orgffe7238" class="outline-2">
+<h2 id="orgffe7238"><span class="section-number-2">7</span> PULL</h2>
 <div class="outline-text-2" id="text-7">
 <ul class="org-ul">
 <li>leg curls as you hip hinge, glutes pushing forward</li>
 </ul>
 </div>
-<div id="outline-container-org9c643ad" class="outline-3">
-<h3 id="org9c643ad"><span class="section-number-3">7.1.</span> Deadlift +7.5</h3>
+<div id="outline-container-org32c5369" class="outline-3">
+<h3 id="org32c5369"><span class="section-number-3">7.1</span> Deadlift +7.5</h3>
 <div class="outline-text-3" id="text-7-1">
 <ul class="org-ul">
 <li>slight right arm unstable why?
@@ -454,8 +500,8 @@ obsession with progression to things you suck at
 </ul>
 </div>
 </div>
-<div id="outline-container-org15308ac" class="outline-3">
-<h3 id="org15308ac"><span class="section-number-3">7.2.</span> Row +5</h3>
+<div id="outline-container-org2d16d25" class="outline-3">
+<h3 id="org2d16d25"><span class="section-number-3">7.2</span> Row +5</h3>
 <div class="outline-text-3" id="text-7-2">
 <ul class="org-ul">
 <li>hold weight  bit at top, squeeze lats to init row</li>
@@ -470,8 +516,8 @@ obsession with progression to things you suck at
 </div>
 </div>
 
-<div id="outline-container-org29ab8af" class="outline-3">
-<h3 id="org29ab8af"><span class="section-number-3">7.3.</span> Pullups +2.5</h3>
+<div id="outline-container-orga59a69a" class="outline-3">
+<h3 id="orga59a69a"><span class="section-number-3">7.3</span> Pullups +2.5</h3>
 <div class="outline-text-3" id="text-7-3">
 <ul class="org-ul">
 <li>elbow pain, do reps slow</li>
@@ -505,20 +551,20 @@ obsession with progression to things you suck at
 </ul>
 </div>
 </div>
-<div id="outline-container-org2a5501b" class="outline-3">
-<h3 id="org2a5501b"><span class="section-number-3">7.4.</span> Rear Delt Rows</h3>
+<div id="outline-container-org0855583" class="outline-3">
+<h3 id="org0855583"><span class="section-number-3">7.4</span> Rear Delt Rows</h3>
 </div>
 
-<div id="outline-container-org024fa22" class="outline-3">
-<h3 id="org024fa22"><span class="section-number-3">7.5.</span> Bicep curl</h3>
+<div id="outline-container-org5c4d38f" class="outline-3">
+<h3 id="org5c4d38f"><span class="section-number-3">7.5</span> Bicep curl</h3>
 <div class="outline-text-3" id="text-7-5">
 <ul class="org-ul">
 <li>flex wrist inward towards body</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org93f9856" class="outline-3">
-<h3 id="org93f9856"><span class="section-number-3">7.6.</span> rack pulls</h3>
+<div id="outline-container-orgdd57517" class="outline-3">
+<h3 id="orgdd57517"><span class="section-number-3">7.6</span> rack pulls</h3>
 <div class="outline-text-3" id="text-7-6">
 <ul class="org-ul">
 <li>target glutes</li>
@@ -527,16 +573,16 @@ obsession with progression to things you suck at
 </div>
 </div>
 </div>
-<div id="outline-container-orgecf5f1b" class="outline-2">
-<h2 id="orgecf5f1b"><span class="section-number-2">8.</span> PUSH</h2>
+<div id="outline-container-orge5d7232" class="outline-2">
+<h2 id="orge5d7232"><span class="section-number-2">8</span> PUSH</h2>
 <div class="outline-text-2" id="text-8">
 <ul class="org-ul">
 <li>internally externally stabilize shoulder socket</li>
 <li>practice upright row for shoulder stability</li>
 </ul>
 </div>
-<div id="outline-container-orgc3dee09" class="outline-3">
-<h3 id="orgc3dee09"><span class="section-number-3">8.1.</span> Bench press 7.5</h3>
+<div id="outline-container-org70932fe" class="outline-3">
+<h3 id="org70932fe"><span class="section-number-3">8.1</span> Bench press 7.5</h3>
 <div class="outline-text-3" id="text-8-1">
 <ul class="org-ul">
 <li>biceps tight stabilize elbow</li>
@@ -606,8 +652,8 @@ obsession with progression to things you suck at
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb8e05e5" class="outline-3">
-<h3 id="orgb8e05e5"><span class="section-number-3">8.2.</span> Overhead press +2.5/5</h3>
+<div id="outline-container-org2bb553a" class="outline-3">
+<h3 id="org2bb553a"><span class="section-number-3">8.2</span> Overhead press +2.5/5</h3>
 <div class="outline-text-3" id="text-8-2">
 <ul class="org-ul">
 <li>lock wrist inward, along front and up axis?</li>
@@ -629,8 +675,8 @@ obsession with progression to things you suck at
 </ul>
 </div>
 </div>
-<div id="outline-container-org91335a4" class="outline-3">
-<h3 id="org91335a4"><span class="section-number-3">8.3.</span> Dips</h3>
+<div id="outline-container-org0315139" class="outline-3">
+<h3 id="org0315139"><span class="section-number-3">8.3</span> Dips</h3>
 <div class="outline-text-3" id="text-8-3">
 <ul class="org-ul">
 <li>chest down body leaning forward</li>
@@ -639,8 +685,8 @@ obsession with progression to things you suck at
 </div>
 </div>
 
-<div id="outline-container-orgf67c36c" class="outline-2">
-<h2 id="orgf67c36c"><span class="section-number-2">9.</span> LEGS</h2>
+<div id="outline-container-org146302c" class="outline-2">
+<h2 id="org146302c"><span class="section-number-2">9</span> LEGS</h2>
 <div class="outline-text-2" id="text-9">
 <ul class="org-ul">
 <li></li>
@@ -671,8 +717,8 @@ obsession with progression to things you suck at
 <li>feel all leg muscles, quad, ham, hip work as you walk</li>
 </ul>
 </div>
-<div id="outline-container-orgda049b6" class="outline-3">
-<h3 id="orgda049b6"><span class="section-number-3">9.1.</span> Squat +35</h3>
+<div id="outline-container-org7573cff" class="outline-3">
+<h3 id="org7573cff"><span class="section-number-3">9.1</span> Squat +35</h3>
 <div class="outline-text-3" id="text-9-1">
 <ul class="org-ul">
 <li>open up hips. right side esp</li>
@@ -734,11 +780,11 @@ obsession with progression to things you suck at
 </ul>
 </div>
 </div>
-<div id="outline-container-org2350d47" class="outline-3">
-<h3 id="org2350d47"><span class="section-number-3">9.2.</span> Leg Curl</h3>
+<div id="outline-container-orga5fe527" class="outline-3">
+<h3 id="orga5fe527"><span class="section-number-3">9.2</span> Leg Curl</h3>
 </div>
-<div id="outline-container-org925470c" class="outline-3">
-<h3 id="org925470c"><span class="section-number-3">9.3.</span> Leg Press</h3>
+<div id="outline-container-org0c3dcef" class="outline-3">
+<h3 id="org0c3dcef"><span class="section-number-3">9.3</span> Leg Press</h3>
 <div class="outline-text-3" id="text-9-3">
 <ul class="org-ul">
 <li>something feels off about spine alignment lower back stabiliry</li>
@@ -748,8 +794,8 @@ obsession with progression to things you suck at
 </div>
 
 
-<div id="outline-container-orgb1672d6" class="outline-2">
-<h2 id="orgb1672d6"><span class="section-number-2">10.</span> Warmup</h2>
+<div id="outline-container-org062110e" class="outline-2">
+<h2 id="org062110e"><span class="section-number-2">10</span> Warmup</h2>
 <div class="outline-text-2" id="text-10">
 <ul class="org-ul">
 <li>Muscle mind connection</li>
@@ -762,8 +808,8 @@ Be calm and command your body wherever you are. feel the muscle mind connection.
 </p>
 </div>
 </div>
-<div id="outline-container-orga4296b6" class="outline-2">
-<h2 id="orga4296b6"><span class="section-number-2">11.</span> isolated</h2>
+<div id="outline-container-org5759749" class="outline-2">
+<h2 id="org5759749"><span class="section-number-2">11</span> isolated</h2>
 <div class="outline-text-2" id="text-11">
 <ul class="org-ul">
 <li>reverse fly 15</li>
@@ -772,12 +818,12 @@ Be calm and command your body wherever you are. feel the muscle mind connection.
 </div>
 </div>
 
-<div id="outline-container-org29ef601" class="outline-2">
-<h2 id="org29ef601"><span class="section-number-2">12.</span> REFORMS</h2>
+<div id="outline-container-org3597478" class="outline-2">
+<h2 id="org3597478"><span class="section-number-2">12</span> REFORMS</h2>
 <div class="outline-text-2" id="text-12">
 </div>
-<div id="outline-container-org0e6040a" class="outline-3">
-<h3 id="org0e6040a"><span class="section-number-3">12.1.</span> supporting muscle groups and restructure</h3>
+<div id="outline-container-org83ea452" class="outline-3">
+<h3 id="org83ea452"><span class="section-number-3">12.1</span> supporting muscle groups and restructure</h3>
 <div class="outline-text-3" id="text-12-1">
 <ul class="org-ul">
 <li>the other guy was hitting supoorting muscle groups</li>
@@ -785,8 +831,8 @@ Be calm and command your body wherever you are. feel the muscle mind connection.
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf6abb4b" class="outline-3">
-<h3 id="orgf6abb4b"><span class="section-number-3">12.2.</span> Sore stronger</h3>
+<div id="outline-container-orgfc178a0" class="outline-3">
+<h3 id="orgfc178a0"><span class="section-number-3">12.2</span> Sore stronger</h3>
 <div class="outline-text-3" id="text-12-2">
 <ul class="org-ul">
 <li>it has been a while since i felt the muscle get sore and then stronger. how can i make this happen more often</li>
@@ -796,8 +842,8 @@ Be calm and command your body wherever you are. feel the muscle mind connection.
 </div>
 
 
-<div id="outline-container-orgf6b74de" class="outline-2">
-<h2 id="orgf6b74de"><span class="section-number-2">13.</span> RDL</h2>
+<div id="outline-container-org6ab68c2" class="outline-2">
+<h2 id="org6ab68c2"><span class="section-number-2">13</span> RDL</h2>
 <div class="outline-text-2" id="text-13">
 <ul class="org-ul">
 <li>feel stretch from ground position</li>
@@ -815,9 +861,9 @@ Be calm and command your body wherever you are. feel the muscle mind connection.
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="author">Author: termux</p>
-<p class="date">Created: 2023-11-23 Thu 21:44</p>
-<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="author">Author: ychnh</p>
+<p class="date">Created: 2023-11-25 Sat 11:38</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>

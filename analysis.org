@@ -1,40 +1,46 @@
+#+BEGIN_COMMENT -*- mode: org -*-
+#+END_COMMENT
+#+STARTUP: showall
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://hychn.github.io/style.css" />
+#+OPTIONS: html-postamble:nil
+
 * epsilon - close to
 * Dont lose sight of forest because of trees
 * Look and figure out the conditions
 * Relax the hypothesis
 
 * 5.1 Riemann Integral
-** Precondition: assume f is bounded
-** Partition: Ordering
-** UL Riemann Sum $U(f,P)$, $L(f,P)$: Existance, Ordering, Converge
-** Continous => ULRS Converge
-** Examples of ULRS Converge
-** UL Integral $U\int_a^bf(x) dx$, $L\int_a^bf(x) dx$: Existance, Ordering, Converge
-** ULRS Converge <=> ULI Converge
+- Precondition: assume f is bounded
+- Partition: Ordering
+- UL Riemann Sum $U(f,P)$, $L(f,P)$: Existance, Ordering, Converge
+- Continous => ULRS Converge
+- Examples of ULRS Converge
+- UL Integral $U\int_a^bf(x) dx$, $L\int_a^bf(x) dx$: Existance, Ordering, Converge
+- ULRS Converge <=> ULI Converge
 * 5.2 Riemann Sums
-** Riemman Sum $S(f,P,t_j)$: Existance, Convergence
-** RS Converge <=> ULRS Converge Define all 3 as Rieman Integrable (Are the RS UL values equal?)
-** Linearity of RI $\int_a^b f(x)+g(x) = \int_a^b f(x) + \int_a^b g(x)$, $\int_a^b k*f(x) = k* \int_a^b f(x)$
-** Triangle Equality $\int_a^b f(x) = \int_a^c f(x) + \int_c^b f(x)$
-** Comparison $f(x) \leq g(x)$ => $\int_a^b f(x) \leq \int_a^b g(x)$
-** Product RI
-** Consider simple case $g(x)=1$ $f(x)\geq 0$
-** Mean Value Theorem Integral (g>0) $\int_a^b f(x)g(x)$ $= c*\int_a^b g(x)$
-** Mean Value Theorem Integral (g>0) $\int_a^b f(x)g(x) = m\int_a^c g(x) + M\int_c^b g(x)$
+- Riemman Sum $S(f,P,t_j)$: Existance, Convergence
+- RS Converge <=> ULRS Converge Define all 3 as Rieman Integrable (Are the RS UL values equal?)
+- Linearity of RI $\int_a^b f(x)+g(x) = \int_a^b f(x) + \int_a^b g(x)$, $\int_a^b k*f(x) = k* \int_a^b f(x)$
+- Triangle Equality $\int_a^b f(x) = \int_a^c f(x) + \int_c^b f(x)$
+- Comparison $f(x) \leq g(x)$ => $\int_a^b f(x) \leq \int_a^b g(x)$
+- Product RI
+- Consider simple case $g(x)=1$ $f(x)\geq 0$
+- Mean Value Theorem Integral (g>0) $\int_a^b f(x)g(x)$ $= c*\int_a^b g(x)$
+- Mean Value Theorem Integral (g>0) $\int_a^b f(x)g(x) = m\int_a^c g(x) + M\int_c^b g(x)$
 * 5.3 Fundamental Theorem
-** Fundamental Theorem $F(x) = \int_a^x f(t) dt$
-** Fundamental Theorem $\int_a^b f'(x) = f(b) - f(a)$
-** Hypothesis cannot be relaxed
-** Integration by Parts $f(b)g(b)-f(a)g(a) = \int_a^b f'(x)g(x) + \int_a^b f(x)g'(x)$
-** Change of Variables ??
-** Change of Variables for Continouse Integrand ??
+- Fundamental Theorem $F(x) = \int_a^x f(t) dt$
+- Fundamental Theorem $\int_a^b f'(x) = f(b) - f(a)$
+- Hypothesis cannot be relaxed
+- Integration by Parts $f(b)g(b)-f(a)g(a) = \int_a^b f'(x)g(x) + \int_a^b f(x)g'(x)$
+- Change of Variables ??
+- Change of Variables for Continouse Integrand ??
 * Improper Integral
-** Locally Integrable (a,b)
-** Improperly Integrable on (a,b) II$\lim\limits_{x \to a} \lim\limits_{y \to b} \int_x^y f(x)dx$
-** Integral equals Improper Integral
-** Change order of limits
-** Comparison Thm for Improper Integral
-** Absolutely Integrable on (a,b) := Locally Integrable, |f| improperly integrable on (a,b)
-** Conditionally Integrable on (a,b)
-** Absolutely Integrable on (a,b) => Improperly Integrable on (a,b)
+- Locally Integrable (a,b)
+- Improperly Integrable on (a,b) $\lim\limits_{x \to a} \lim\limits_{y \to b} \int_x^y f(x)dx$
+- Integral equals Improper Integral
+- Change order of limits
+- Comparison Thm for Improper Integral
+- Absolutely Integrable on (a,b) := Locally Integrable, |f| improperly integrable on (a,b)
+- Conditionally Integrable on (a,b)
+- Absolutely Integrable on (a,b) => Improperly Integrable on (a,b)
 * 5.4 Functions of Bounded Variation

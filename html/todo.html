@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-11-23 Thu 21:44 -->
+<!-- 2023-11-25 Sat 11:38 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
-<meta name="author" content="termux" />
-<meta name="generator" content="Org Mode" />
-<style>
-  #content { max-width: 60em; margin: auto; }
+<meta name="generator" content="Org mode" />
+<meta name="author" content="ychnh" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,9 +31,8 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #e6e6e6;
-    border-radius: 3px;
-    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -41,22 +40,22 @@
   }
   pre.src {
     position: relative;
-    overflow: auto;
+    overflow: visible;
+    padding-top: 1.2em;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    top: -8px;
-    right: 12px;
+    background-color: white;
+    top: -10px;
+    right: 10px;
     padding: 3px;
-    color: #555;
-    background-color: #f2f2f299;
+    border: 1px solid black;
   }
-  pre.src:hover:before { display: inline; margin-top: 14px;}
+  pre.src:hover:before { display: inline;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
-  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -191,102 +190,149 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
 </style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
 </head>
 <body>
-<div id="content" class="content">
-<div id="table-of-contents" role="doc-toc">
+<div id="content">
+<div id="table-of-contents">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents" role="doc-toc">
+<div id="text-table-of-contents">
 <ul>
-<li><a href="#org9d3f63c">1. Week</a>
+<li><a href="#orgf572a2d">1. Week</a>
 <ul>
-<li><a href="#orga943063">1.1. 0905 T ------</a></li>
-<li><a href="#orgd21455b">1.2. 0906 W ------</a></li>
-<li><a href="#orgd5ffaab">1.3. 0907 Th -----</a></li>
-<li><a href="#org7c566d9">1.4. 0908 F ------</a></li>
+<li><a href="#orgd530c7f">1.1. 0905 T ------</a></li>
+<li><a href="#org5c5cc12">1.2. 0906 W ------</a></li>
+<li><a href="#org5bdb40a">1.3. 0907 Th -----</a></li>
+<li><a href="#org535e5b0">1.4. 0908 F ------</a></li>
 </ul>
 </li>
-<li><a href="#org06fef48">2. Week</a>
+<li><a href="#orgf42b01d">2. Week</a>
 <ul>
-<li><a href="#orge3d7a62">2.1. 0911 M ------</a></li>
-<li><a href="#orgec90ad3">2.2. 0912 T ------</a></li>
-<li><a href="#org2fd2c71">2.3. 0913 W ------</a></li>
-<li><a href="#org0f47fb1">2.4. 0914 Th -----</a></li>
-<li><a href="#org2f6dd40">2.5. 0915 F ------</a></li>
+<li><a href="#org74dfa02">2.1. 0911 M ------</a></li>
+<li><a href="#org950686e">2.2. 0912 T ------</a></li>
+<li><a href="#org88910de">2.3. 0913 W ------</a></li>
+<li><a href="#org12de1ac">2.4. 0914 Th -----</a></li>
+<li><a href="#org88e48bf">2.5. 0915 F ------</a></li>
 </ul>
 </li>
-<li><a href="#orgcfed415">3. Week</a>
+<li><a href="#org29de9f6">3. Week</a>
 <ul>
-<li><a href="#orga5ddd22">3.1. 0900 M ------</a></li>
-<li><a href="#org46a815e">3.2. 0900 T ------</a></li>
-<li><a href="#org467ae3a">3.3. 0900 W ------</a></li>
-<li><a href="#orge441418">3.4. 0900 Th -----</a></li>
-<li><a href="#orgba95de7">3.5. 0900 F ------</a></li>
+<li><a href="#org8e33071">3.1. 0900 M ------</a></li>
+<li><a href="#org5ba43de">3.2. 0900 T ------</a></li>
+<li><a href="#orgc53b24a">3.3. 0900 W ------</a></li>
+<li><a href="#orgcd4cb18">3.4. 0900 Th -----</a></li>
+<li><a href="#org6c4932f">3.5. 0900 F ------</a></li>
 </ul>
 </li>
-<li><a href="#org12e0dc7">4. Values and Principals</a></li>
-<li><a href="#org9717b35">5. Todo</a></li>
-<li><a href="#org44cb764">6. Long Term Plans</a></li>
-<li><a href="#orgd88d476">7. Habits</a></li>
-<li><a href="#org80965ec">8. Groceries</a>
+<li><a href="#org3bdbdc5">4. Values and Principals</a></li>
+<li><a href="#org1b7400a">5. Todo</a></li>
+<li><a href="#org9ec6180">6. Long Term Plans</a></li>
+<li><a href="#orgfa3a9c3">7. Habits</a></li>
+<li><a href="#orge3ac929">8. Groceries</a>
 <ul>
-<li><a href="#orgcba8538">8.1. now</a></li>
-<li><a href="#org3e6c5f0">8.2. future</a></li>
+<li><a href="#orga58d2d6">8.1. now</a></li>
+<li><a href="#org5f50fbf">8.2. future</a></li>
 </ul>
 </li>
-<li><a href="#org5db139a">9. Plan</a>
+<li><a href="#orgffd8ad4">9. Plan</a>
 <ul>
-<li><a href="#org298bac4">9.1. why</a></li>
-<li><a href="#org09aeb39">9.2. what</a></li>
-<li><a href="#org84e3f21">9.3. indigestion</a></li>
-<li><a href="#org8bc739e">9.4. Learning 90 min</a></li>
-<li><a href="#org05c1b68">9.5. study</a></li>
-<li><a href="#orgceef916">9.6. set yourself in a forward path</a></li>
-<li><a href="#org79e52d8">9.7. decline into chaos</a></li>
-<li><a href="#org2f0c2d9">9.8. dont please other people</a></li>
-<li><a href="#org39d64fa">9.9. Anti-vision</a></li>
-<li><a href="#orge3def58">9.10. women decision acting on feelings</a></li>
-<li><a href="#org6d0845b">9.11. problem solutiok structure</a></li>
-<li><a href="#org91e4186">9.12. problem motivation</a></li>
-<li><a href="#org899fa07">9.13. What is reward?</a></li>
-<li><a href="#org0eb6e7e">9.14. Recovery, burnout</a></li>
-<li><a href="#org1aa6d23">9.15. be logical and plan ahead</a></li>
-<li><a href="#orgb7ef6f0">9.16. some hobby you can do mindlessly</a></li>
-<li><a href="#org781c2b7">9.17. calm thinking</a></li>
-<li><a href="#orgcc82860">9.18. Anger, Internal Motivation</a></li>
-<li><a href="#org1d548af">9.19. lessons</a></li>
-<li><a href="#org5cb3dad">9.20. time management</a></li>
-<li><a href="#org7c1f5fd">9.21. Do i need to stop gaming/pc all together?</a></li>
-<li><a href="#orgf6147a4">9.22. focus on the process</a></li>
-<li><a href="#org6582f72">9.23. subconcious awareness board</a></li>
-<li><a href="#orga785992">9.24. cardio</a></li>
-<li><a href="#org2615409">9.25. lifting</a></li>
-<li><a href="#org631415f">9.26. organization</a></li>
-<li><a href="#org6a46e46">9.27. Think positive</a></li>
-<li><a href="#orgf5a99c9">9.28. studying dizzy</a></li>
-<li><a href="#org8ac4fb0">9.29. Stress</a></li>
-<li><a href="#org4710af1">9.30. Todo</a></li>
-<li><a href="#org111903b">9.31. questions</a></li>
-<li><a href="#orgc18857d">9.32. Study habit</a></li>
-<li><a href="#org7146829">9.33. It is not I</a></li>
-<li><a href="#orge69e042">9.34. habits</a></li>
-<li><a href="#orge3c5e8a">9.35. stress</a></li>
-<li><a href="#org1cb5e0a">9.36. In the past i was motivated by</a></li>
-<li><a href="#org08b158f">9.37. excitement</a></li>
-<li><a href="#org05fcc8d">9.38. optimize your life</a></li>
+<li><a href="#org81a7f2e">9.1. why</a></li>
+<li><a href="#orgf4b222c">9.2. what</a></li>
+<li><a href="#org913f8f9">9.3. indigestion</a></li>
+<li><a href="#orgf8f7c86">9.4. Learning 90 min</a></li>
+<li><a href="#org0977f9f">9.5. study</a></li>
+<li><a href="#org6207978">9.6. set yourself in a forward path</a></li>
+<li><a href="#org57cafc6">9.7. decline into chaos</a></li>
+<li><a href="#orgc58e76d">9.8. dont please other people</a></li>
+<li><a href="#org9da9366">9.9. Anti-vision</a></li>
+<li><a href="#org5712f36">9.10. women decision acting on feelings</a></li>
+<li><a href="#orge6e5e67">9.11. problem solutiok structure</a></li>
+<li><a href="#orgdfd3941">9.12. problem motivation</a></li>
+<li><a href="#org735b610">9.13. What is reward?</a></li>
+<li><a href="#org47d9d4f">9.14. Recovery, burnout</a></li>
+<li><a href="#org9ed8d8e">9.15. be logical and plan ahead</a></li>
+<li><a href="#orgd2de0a2">9.16. some hobby you can do mindlessly</a></li>
+<li><a href="#org821e224">9.17. calm thinking</a></li>
+<li><a href="#org25beaca">9.18. Anger, Internal Motivation</a></li>
+<li><a href="#orgdb3cc89">9.19. lessons</a></li>
+<li><a href="#org92b7f0d">9.20. time management</a></li>
+<li><a href="#org0f0861c">9.21. Do i need to stop gaming/pc all together?</a></li>
+<li><a href="#org8241ece">9.22. focus on the process</a></li>
+<li><a href="#orgd22148b">9.23. subconcious awareness board</a></li>
+<li><a href="#org4941d64">9.24. cardio</a></li>
+<li><a href="#org3336fe9">9.25. lifting</a></li>
+<li><a href="#org706bac7">9.26. organization</a></li>
+<li><a href="#orgd8fc7d8">9.27. Think positive</a></li>
+<li><a href="#org1001af1">9.28. studying dizzy</a></li>
+<li><a href="#orga00f59c">9.29. Stress</a></li>
+<li><a href="#org4cca13d">9.30. Todo</a></li>
+<li><a href="#orge40a969">9.31. questions</a></li>
+<li><a href="#org5fcd66b">9.32. Study habit</a></li>
+<li><a href="#org4d94587">9.33. It is not I</a></li>
+<li><a href="#org7174fd9">9.34. habits</a></li>
+<li><a href="#org0e728ac">9.35. stress</a></li>
+<li><a href="#org3969f06">9.36. In the past i was motivated by</a></li>
+<li><a href="#org50af0fe">9.37. excitement</a></li>
+<li><a href="#orge71cb79">9.38. optimize your life</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org9d3f63c" class="outline-2">
-<h2 id="org9d3f63c"><span class="section-number-2">1.</span> Week</h2>
+<div id="outline-container-orgf572a2d" class="outline-2">
+<h2 id="orgf572a2d"><span class="section-number-2">1</span> Week</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-orga943063" class="outline-3">
-<h3 id="orga943063"><span class="section-number-3">1.1.</span> 0905 T ------</h3>
+<div id="outline-container-orgd530c7f" class="outline-3">
+<h3 id="orgd530c7f"><span class="section-number-3">1.1</span> 0905 T ------</h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
 <li>RANA HW 2</li>
@@ -294,41 +340,41 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd21455b" class="outline-3">
-<h3 id="orgd21455b"><span class="section-number-3">1.2.</span> 0906 W ------</h3>
+<div id="outline-container-org5c5cc12" class="outline-3">
+<h3 id="org5c5cc12"><span class="section-number-3">1.2</span> 0906 W ------</h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
 <li>NUMA HW 2</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd5ffaab" class="outline-3">
-<h3 id="orgd5ffaab"><span class="section-number-3">1.3.</span> 0907 Th -----</h3>
+<div id="outline-container-org5bdb40a" class="outline-3">
+<h3 id="org5bdb40a"><span class="section-number-3">1.3</span> 0907 Th -----</h3>
 <div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
 <li>PROB HW 3</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org7c566d9" class="outline-3">
-<h3 id="org7c566d9"><span class="section-number-3">1.4.</span> 0908 F ------</h3>
+<div id="outline-container-org535e5b0" class="outline-3">
+<h3 id="org535e5b0"><span class="section-number-3">1.4</span> 0908 F ------</h3>
 </div>
 </div>
 
-<div id="outline-container-org06fef48" class="outline-2">
-<h2 id="org06fef48"><span class="section-number-2">2.</span> Week</h2>
+<div id="outline-container-orgf42b01d" class="outline-2">
+<h2 id="orgf42b01d"><span class="section-number-2">2</span> Week</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orge3d7a62" class="outline-3">
-<h3 id="orge3d7a62"><span class="section-number-3">2.1.</span> 0911 M ------</h3>
+<div id="outline-container-org74dfa02" class="outline-3">
+<h3 id="org74dfa02"><span class="section-number-3">2.1</span> 0911 M ------</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>NUMA HW 3 2.3(2,5,7) 3.1(3,4,14,16)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgec90ad3" class="outline-3">
-<h3 id="orgec90ad3"><span class="section-number-3">2.2.</span> 0912 T ------</h3>
+<div id="outline-container-org950686e" class="outline-3">
+<h3 id="org950686e"><span class="section-number-3">2.2</span> 0912 T ------</h3>
 <div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li>RANA HW 3 2.4(3,4) 2.5(3,4,5)</li>
@@ -336,35 +382,35 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org2fd2c71" class="outline-3">
-<h3 id="org2fd2c71"><span class="section-number-3">2.3.</span> 0913 W ------</h3>
+<div id="outline-container-org88910de" class="outline-3">
+<h3 id="org88910de"><span class="section-number-3">2.3</span> 0913 W ------</h3>
 </div>
-<div id="outline-container-org0f47fb1" class="outline-3">
-<h3 id="org0f47fb1"><span class="section-number-3">2.4.</span> 0914 Th -----</h3>
+<div id="outline-container-org12de1ac" class="outline-3">
+<h3 id="org12de1ac"><span class="section-number-3">2.4</span> 0914 Th -----</h3>
 </div>
-<div id="outline-container-org2f6dd40" class="outline-3">
-<h3 id="org2f6dd40"><span class="section-number-3">2.5.</span> 0915 F ------</h3>
+<div id="outline-container-org88e48bf" class="outline-3">
+<h3 id="org88e48bf"><span class="section-number-3">2.5</span> 0915 F ------</h3>
 </div>
 </div>
 
-<div id="outline-container-orgcfed415" class="outline-2">
-<h2 id="orgcfed415"><span class="section-number-2">3.</span> Week</h2>
+<div id="outline-container-org29de9f6" class="outline-2">
+<h2 id="org29de9f6"><span class="section-number-2">3</span> Week</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-orga5ddd22" class="outline-3">
-<h3 id="orga5ddd22"><span class="section-number-3">3.1.</span> 0900 M ------</h3>
+<div id="outline-container-org8e33071" class="outline-3">
+<h3 id="org8e33071"><span class="section-number-3">3.1</span> 0900 M ------</h3>
 </div>
-<div id="outline-container-org46a815e" class="outline-3">
-<h3 id="org46a815e"><span class="section-number-3">3.2.</span> 0900 T ------</h3>
+<div id="outline-container-org5ba43de" class="outline-3">
+<h3 id="org5ba43de"><span class="section-number-3">3.2</span> 0900 T ------</h3>
 </div>
-<div id="outline-container-org467ae3a" class="outline-3">
-<h3 id="org467ae3a"><span class="section-number-3">3.3.</span> 0900 W ------</h3>
+<div id="outline-container-orgc53b24a" class="outline-3">
+<h3 id="orgc53b24a"><span class="section-number-3">3.3</span> 0900 W ------</h3>
 </div>
-<div id="outline-container-orge441418" class="outline-3">
-<h3 id="orge441418"><span class="section-number-3">3.4.</span> 0900 Th -----</h3>
+<div id="outline-container-orgcd4cb18" class="outline-3">
+<h3 id="orgcd4cb18"><span class="section-number-3">3.4</span> 0900 Th -----</h3>
 </div>
-<div id="outline-container-orgba95de7" class="outline-3">
-<h3 id="orgba95de7"><span class="section-number-3">3.5.</span> 0900 F ------</h3>
+<div id="outline-container-org6c4932f" class="outline-3">
+<h3 id="org6c4932f"><span class="section-number-3">3.5</span> 0900 F ------</h3>
 </div>
 </div>
 
@@ -372,8 +418,8 @@
 
 
 
-<div id="outline-container-org12e0dc7" class="outline-2">
-<h2 id="org12e0dc7"><span class="section-number-2">4.</span> Values and Principals</h2>
+<div id="outline-container-org3bdbdc5" class="outline-2">
+<h2 id="org3bdbdc5"><span class="section-number-2">4</span> Values and Principals</h2>
 <div class="outline-text-2" id="text-4">
 <ul class="org-ul">
 <li>Love the lord your God with all your heart, strength and soul</li>
@@ -421,16 +467,16 @@
 </div>
 
 
-<div id="outline-container-org9717b35" class="outline-2">
-<h2 id="org9717b35"><span class="section-number-2">5.</span> Todo</h2>
+<div id="outline-container-org1b7400a" class="outline-2">
+<h2 id="org1b7400a"><span class="section-number-2">5</span> Todo</h2>
 <div class="outline-text-2" id="text-5">
 <ul class="org-ul">
 <li>keep a list of open questions as you go thriught he courses</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org44cb764" class="outline-2">
-<h2 id="org44cb764"><span class="section-number-2">6.</span> Long Term Plans</h2>
+<div id="outline-container-org9ec6180" class="outline-2">
+<h2 id="org9ec6180"><span class="section-number-2">6</span> Long Term Plans</h2>
 <div class="outline-text-2" id="text-6">
 <ul class="org-ul">
 <li>relationship with God</li>
@@ -448,15 +494,15 @@
 </div>
 </div>
 
-<div id="outline-container-orgd88d476" class="outline-2">
-<h2 id="orgd88d476"><span class="section-number-2">7.</span> Habits</h2>
+<div id="outline-container-orgfa3a9c3" class="outline-2">
+<h2 id="orgfa3a9c3"><span class="section-number-2">7</span> Habits</h2>
 </div>
-<div id="outline-container-org80965ec" class="outline-2">
-<h2 id="org80965ec"><span class="section-number-2">8.</span> Groceries</h2>
+<div id="outline-container-orge3ac929" class="outline-2">
+<h2 id="orge3ac929"><span class="section-number-2">8</span> Groceries</h2>
 <div class="outline-text-2" id="text-8">
 </div>
-<div id="outline-container-orgcba8538" class="outline-3">
-<h3 id="orgcba8538"><span class="section-number-3">8.1.</span> now</h3>
+<div id="outline-container-orga58d2d6" class="outline-3">
+<h3 id="orga58d2d6"><span class="section-number-3">8.1</span> now</h3>
 <div class="outline-text-3" id="text-8-1">
 <ul class="org-ul">
 <li>lens solution</li>
@@ -465,8 +511,8 @@
 </div>
 </div>
 
-<div id="outline-container-org3e6c5f0" class="outline-3">
-<h3 id="org3e6c5f0"><span class="section-number-3">8.2.</span> future</h3>
+<div id="outline-container-org5f50fbf" class="outline-3">
+<h3 id="org5f50fbf"><span class="section-number-3">8.2</span> future</h3>
 <div class="outline-text-3" id="text-8-2">
 <ul class="org-ul">
 <li>eucslytpus ess oil vs handcream</li>
@@ -478,12 +524,12 @@
 </div>
 
 
-<div id="outline-container-org5db139a" class="outline-2">
-<h2 id="org5db139a"><span class="section-number-2">9.</span> Plan</h2>
+<div id="outline-container-orgffd8ad4" class="outline-2">
+<h2 id="orgffd8ad4"><span class="section-number-2">9</span> Plan</h2>
 <div class="outline-text-2" id="text-9">
 </div>
-<div id="outline-container-org298bac4" class="outline-3">
-<h3 id="org298bac4"><span class="section-number-3">9.1.</span> why</h3>
+<div id="outline-container-org81a7f2e" class="outline-3">
+<h3 id="org81a7f2e"><span class="section-number-3">9.1</span> why</h3>
 <div class="outline-text-3" id="text-9-1">
 <ul class="org-ul">
 <li>my parents follow their footsteps</li>
@@ -493,8 +539,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org09aeb39" class="outline-3">
-<h3 id="org09aeb39"><span class="section-number-3">9.2.</span> what</h3>
+<div id="outline-container-orgf4b222c" class="outline-3">
+<h3 id="orgf4b222c"><span class="section-number-3">9.2</span> what</h3>
 <div class="outline-text-3" id="text-9-2">
 <ul class="org-ul">
 <li>grow in the faith</li>
@@ -506,8 +552,8 @@
 </div>
 </div>
 
-<div id="outline-container-org84e3f21" class="outline-3">
-<h3 id="org84e3f21"><span class="section-number-3">9.3.</span> indigestion</h3>
+<div id="outline-container-org913f8f9" class="outline-3">
+<h3 id="org913f8f9"><span class="section-number-3">9.3</span> indigestion</h3>
 <div class="outline-text-3" id="text-9-3">
 <ul class="org-ul">
 <li>peace in God
@@ -520,8 +566,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org8bc739e" class="outline-3">
-<h3 id="org8bc739e"><span class="section-number-3">9.4.</span> Learning 90 min</h3>
+<div id="outline-container-orgf8f7c86" class="outline-3">
+<h3 id="orgf8f7c86"><span class="section-number-3">9.4</span> Learning 90 min</h3>
 <div class="outline-text-3" id="text-9-4">
 <ul class="org-ul">
 <li>5-10 adjustment</li>
@@ -531,8 +577,8 @@
 </div>
 </div>
 
-<div id="outline-container-org05c1b68" class="outline-3">
-<h3 id="org05c1b68"><span class="section-number-3">9.5.</span> study</h3>
+<div id="outline-container-org0977f9f" class="outline-3">
+<h3 id="org0977f9f"><span class="section-number-3">9.5</span> study</h3>
 <div class="outline-text-3" id="text-9-5">
 <ul class="org-ul">
 <li>5 times highlight what may be important
@@ -549,32 +595,32 @@
 </div>
 </div>
 
-<div id="outline-container-orgceef916" class="outline-3">
-<h3 id="orgceef916"><span class="section-number-3">9.6.</span> set yourself in a forward path</h3>
+<div id="outline-container-org6207978" class="outline-3">
+<h3 id="org6207978"><span class="section-number-3">9.6</span> set yourself in a forward path</h3>
 <div class="outline-text-3" id="text-9-6">
 <ul class="org-ul">
 <li>meditate</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org79e52d8" class="outline-3">
-<h3 id="org79e52d8"><span class="section-number-3">9.7.</span> decline into chaos</h3>
+<div id="outline-container-org57cafc6" class="outline-3">
+<h3 id="org57cafc6"><span class="section-number-3">9.7</span> decline into chaos</h3>
 <div class="outline-text-3" id="text-9-7">
 <ul class="org-ul">
 <li>if you do not create order for your life</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org2f0c2d9" class="outline-3">
-<h3 id="org2f0c2d9"><span class="section-number-3">9.8.</span> dont please other people</h3>
+<div id="outline-container-orgc58e76d" class="outline-3">
+<h3 id="orgc58e76d"><span class="section-number-3">9.8</span> dont please other people</h3>
 <div class="outline-text-3" id="text-9-8">
 <ul class="org-ul">
 <li>be yourself</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org39d64fa" class="outline-3">
-<h3 id="org39d64fa"><span class="section-number-3">9.9.</span> Anti-vision</h3>
+<div id="outline-container-org9da9366" class="outline-3">
+<h3 id="org9da9366"><span class="section-number-3">9.9</span> Anti-vision</h3>
 <div class="outline-text-3" id="text-9-9">
 <ul class="org-ul">
 <li>negative energy</li>
@@ -586,8 +632,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orge3def58" class="outline-3">
-<h3 id="orge3def58"><span class="section-number-3">9.10.</span> women decision acting on feelings</h3>
+<div id="outline-container-org5712f36" class="outline-3">
+<h3 id="org5712f36"><span class="section-number-3">9.10</span> women decision acting on feelings</h3>
 <div class="outline-text-3" id="text-9-10">
 <ul class="org-ul">
 <li>you act based on your feelings</li>
@@ -600,16 +646,16 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org6d0845b" class="outline-3">
-<h3 id="org6d0845b"><span class="section-number-3">9.11.</span> problem solutiok structure</h3>
+<div id="outline-container-orge6e5e67" class="outline-3">
+<h3 id="orge6e5e67"><span class="section-number-3">9.11</span> problem solutiok structure</h3>
 <div class="outline-text-3" id="text-9-11">
 <ul class="org-ul">
 <li>life guide</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org91e4186" class="outline-3">
-<h3 id="org91e4186"><span class="section-number-3">9.12.</span> problem motivation</h3>
+<div id="outline-container-orgdfd3941" class="outline-3">
+<h3 id="orgdfd3941"><span class="section-number-3">9.12</span> problem motivation</h3>
 <div class="outline-text-3" id="text-9-12">
 <ul class="org-ul">
 <li>reward the harder steps</li>
@@ -626,8 +672,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org899fa07" class="outline-3">
-<h3 id="org899fa07"><span class="section-number-3">9.13.</span> What is reward?</h3>
+<div id="outline-container-org735b610" class="outline-3">
+<h3 id="org735b610"><span class="section-number-3">9.13</span> What is reward?</h3>
 <div class="outline-text-3" id="text-9-13">
 <ul class="org-ul">
 <li>[andrew huberman](<a href="https://www.youtube.com/watch?v=FEuYRb4j1_M">https://www.youtube.com/watch?v=FEuYRb4j1_M</a>)</li>
@@ -637,8 +683,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org0eb6e7e" class="outline-3">
-<h3 id="org0eb6e7e"><span class="section-number-3">9.14.</span> Recovery, burnout</h3>
+<div id="outline-container-org47d9d4f" class="outline-3">
+<h3 id="org47d9d4f"><span class="section-number-3">9.14</span> Recovery, burnout</h3>
 <div class="outline-text-3" id="text-9-14">
 <ul class="org-ul">
 <li>Need to recover adrenaline
@@ -649,19 +695,19 @@
 </div>
 </div>
 
-<div id="outline-container-org1aa6d23" class="outline-3">
-<h3 id="org1aa6d23"><span class="section-number-3">9.15.</span> be logical and plan ahead</h3>
+<div id="outline-container-org9ed8d8e" class="outline-3">
+<h3 id="org9ed8d8e"><span class="section-number-3">9.15</span> be logical and plan ahead</h3>
 </div>
-<div id="outline-container-orgb7ef6f0" class="outline-3">
-<h3 id="orgb7ef6f0"><span class="section-number-3">9.16.</span> some hobby you can do mindlessly</h3>
+<div id="outline-container-orgd2de0a2" class="outline-3">
+<h3 id="orgd2de0a2"><span class="section-number-3">9.16</span> some hobby you can do mindlessly</h3>
 <div class="outline-text-3" id="text-9-16">
 <ul class="org-ul">
 <li>go through old notes and organize</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org781c2b7" class="outline-3">
-<h3 id="org781c2b7"><span class="section-number-3">9.17.</span> calm thinking</h3>
+<div id="outline-container-org821e224" class="outline-3">
+<h3 id="org821e224"><span class="section-number-3">9.17</span> calm thinking</h3>
 <div class="outline-text-3" id="text-9-17">
 <ul class="org-ul">
 <li>hold breathe exercise</li>
@@ -669,8 +715,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orgcc82860" class="outline-3">
-<h3 id="orgcc82860"><span class="section-number-3">9.18.</span> Anger, Internal Motivation</h3>
+<div id="outline-container-org25beaca" class="outline-3">
+<h3 id="org25beaca"><span class="section-number-3">9.18</span> Anger, Internal Motivation</h3>
 <div class="outline-text-3" id="text-9-18">
 <ul class="org-ul">
 <li>be angry at yourselr</li>
@@ -680,8 +726,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org1d548af" class="outline-3">
-<h3 id="org1d548af"><span class="section-number-3">9.19.</span> lessons</h3>
+<div id="outline-container-orgdb3cc89" class="outline-3">
+<h3 id="orgdb3cc89"><span class="section-number-3">9.19</span> lessons</h3>
 <div class="outline-text-3" id="text-9-19">
 <ul class="org-ul">
 <li>you always want what you dont have</li>
@@ -691,8 +737,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org5cb3dad" class="outline-3">
-<h3 id="org5cb3dad"><span class="section-number-3">9.20.</span> time management</h3>
+<div id="outline-container-org92b7f0d" class="outline-3">
+<h3 id="org92b7f0d"><span class="section-number-3">9.20</span> time management</h3>
 <div class="outline-text-3" id="text-9-20">
 <ul class="org-ul">
 <li>set deadlines for your goals</li>
@@ -704,8 +750,8 @@
 </div>
 </div>
 
-<div id="outline-container-org7c1f5fd" class="outline-3">
-<h3 id="org7c1f5fd"><span class="section-number-3">9.21.</span> Do i need to stop gaming/pc all together?</h3>
+<div id="outline-container-org0f0861c" class="outline-3">
+<h3 id="org0f0861c"><span class="section-number-3">9.21</span> Do i need to stop gaming/pc all together?</h3>
 <div class="outline-text-3" id="text-9-21">
 <ul class="org-ul">
 <li>i say i need pc for research and indie gamedev but it does more harm than good</li>
@@ -716,8 +762,8 @@
 </div>
 </div>
 
-<div id="outline-container-orgf6147a4" class="outline-3">
-<h3 id="orgf6147a4"><span class="section-number-3">9.22.</span> focus on the process</h3>
+<div id="outline-container-org8241ece" class="outline-3">
+<h3 id="org8241ece"><span class="section-number-3">9.22</span> focus on the process</h3>
 <div class="outline-text-3" id="text-9-22">
 <ul class="org-ul">
 <li>when running, thinking about end goal made it more difficult</li>
@@ -728,8 +774,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org6582f72" class="outline-3">
-<h3 id="org6582f72"><span class="section-number-3">9.23.</span> subconcious awareness board</h3>
+<div id="outline-container-orgd22148b" class="outline-3">
+<h3 id="orgd22148b"><span class="section-number-3">9.23</span> subconcious awareness board</h3>
 <div class="outline-text-3" id="text-9-23">
 <ul class="org-ul">
 <li>rpg-proto</li>
@@ -737,8 +783,8 @@
 </div>
 </div>
 
-<div id="outline-container-orga785992" class="outline-3">
-<h3 id="orga785992"><span class="section-number-3">9.24.</span> cardio</h3>
+<div id="outline-container-org4941d64" class="outline-3">
+<h3 id="org4941d64"><span class="section-number-3">9.24</span> cardio</h3>
 <div class="outline-text-3" id="text-9-24">
 <ul class="org-ul">
 <li>need it to improve lifts</li>
@@ -749,8 +795,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org2615409" class="outline-3">
-<h3 id="org2615409"><span class="section-number-3">9.25.</span> lifting</h3>
+<div id="outline-container-org3336fe9" class="outline-3">
+<h3 id="org3336fe9"><span class="section-number-3">9.25</span> lifting</h3>
 <div class="outline-text-3" id="text-9-25">
 <ul class="org-ul">
 <li>enjoy the process of lifting
@@ -762,8 +808,8 @@
 </div>
 </div>
 
-<div id="outline-container-org631415f" class="outline-3">
-<h3 id="org631415f"><span class="section-number-3">9.26.</span> organization</h3>
+<div id="outline-container-org706bac7" class="outline-3">
+<h3 id="org706bac7"><span class="section-number-3">9.26</span> organization</h3>
 <div class="outline-text-3" id="text-9-26">
 <ul class="org-ul">
 <li>bb<sub>panda</sub> project
@@ -775,8 +821,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org6a46e46" class="outline-3">
-<h3 id="org6a46e46"><span class="section-number-3">9.27.</span> Think positive</h3>
+<div id="outline-container-orgd8fc7d8" class="outline-3">
+<h3 id="orgd8fc7d8"><span class="section-number-3">9.27</span> Think positive</h3>
 <div class="outline-text-3" id="text-9-27">
 <ul class="org-ul">
 <li>Dont stress dont rush</li>
@@ -786,8 +832,8 @@
 </div>
 
 
-<div id="outline-container-orgf5a99c9" class="outline-3">
-<h3 id="orgf5a99c9"><span class="section-number-3">9.28.</span> studying dizzy</h3>
+<div id="outline-container-org1001af1" class="outline-3">
+<h3 id="org1001af1"><span class="section-number-3">9.28</span> studying dizzy</h3>
 <div class="outline-text-3" id="text-9-28">
 <ul class="org-ul">
 <li>write out a map of the project &amp; questions
@@ -801,8 +847,8 @@
 </div>
 </div>
 
-<div id="outline-container-org8ac4fb0" class="outline-3">
-<h3 id="org8ac4fb0"><span class="section-number-3">9.29.</span> Stress</h3>
+<div id="outline-container-orga00f59c" class="outline-3">
+<h3 id="orga00f59c"><span class="section-number-3">9.29</span> Stress</h3>
 <div class="outline-text-3" id="text-9-29">
 <ul class="org-ul">
 <li>Affects digestion and sleep</li>
@@ -815,8 +861,8 @@
 </div>
 
 
-<div id="outline-container-org4710af1" class="outline-3">
-<h3 id="org4710af1"><span class="section-number-3">9.30.</span> Todo</h3>
+<div id="outline-container-org4cca13d" class="outline-3">
+<h3 id="org4cca13d"><span class="section-number-3">9.30</span> Todo</h3>
 <div class="outline-text-3" id="text-9-30">
 <ul class="org-ul">
 <li>pdf bookmark app</li>
@@ -827,8 +873,8 @@
 
 
 
-<div id="outline-container-org111903b" class="outline-3">
-<h3 id="org111903b"><span class="section-number-3">9.31.</span> questions</h3>
+<div id="outline-container-orge40a969" class="outline-3">
+<h3 id="orge40a969"><span class="section-number-3">9.31</span> questions</h3>
 <div class="outline-text-3" id="text-9-31">
 <ul class="org-ul">
 <li>how do you measure if you are doing good job questioning? or if you need to adjust/improve?
@@ -841,8 +887,8 @@
 </div>
 </div>
 
-<div id="outline-container-orgc18857d" class="outline-3">
-<h3 id="orgc18857d"><span class="section-number-3">9.32.</span> Study habit</h3>
+<div id="outline-container-org5fcd66b" class="outline-3">
+<h3 id="org5fcd66b"><span class="section-number-3">9.32</span> Study habit</h3>
 <div class="outline-text-3" id="text-9-32">
 <ul class="org-ul">
 <li>learning and comfortable with the definitions</li>
@@ -876,8 +922,8 @@
 </div>
 
 
-<div id="outline-container-org7146829" class="outline-3">
-<h3 id="org7146829"><span class="section-number-3">9.33.</span> It is not I</h3>
+<div id="outline-container-org4d94587" class="outline-3">
+<h3 id="org4d94587"><span class="section-number-3">9.33</span> It is not I</h3>
 <div class="outline-text-3" id="text-9-33">
 <ul class="org-ul">
 <li>but by the grace of God</li>
@@ -887,8 +933,8 @@
 </div>
 </div>
 
-<div id="outline-container-orge69e042" class="outline-3">
-<h3 id="orge69e042"><span class="section-number-3">9.34.</span> habits</h3>
+<div id="outline-container-org7174fd9" class="outline-3">
+<h3 id="org7174fd9"><span class="section-number-3">9.34</span> habits</h3>
 <div class="outline-text-3" id="text-9-34">
 <ul class="org-ul">
 <li>write down my thoughts</li>
@@ -898,8 +944,8 @@
 </div>
 </div>
 
-<div id="outline-container-orge3c5e8a" class="outline-3">
-<h3 id="orge3c5e8a"><span class="section-number-3">9.35.</span> stress</h3>
+<div id="outline-container-org0e728ac" class="outline-3">
+<h3 id="org0e728ac"><span class="section-number-3">9.35</span> stress</h3>
 <div class="outline-text-3" id="text-9-35">
 <ul class="org-ul">
 <li>what bothers me</li>
@@ -909,8 +955,8 @@
 </div>
 </div>
 
-<div id="outline-container-org1cb5e0a" class="outline-3">
-<h3 id="org1cb5e0a"><span class="section-number-3">9.36.</span> In the past i was motivated by</h3>
+<div id="outline-container-org3969f06" class="outline-3">
+<h3 id="org3969f06"><span class="section-number-3">9.36</span> In the past i was motivated by</h3>
 <div class="outline-text-3" id="text-9-36">
 <ul class="org-ul">
 <li>extwrnal things</li>
@@ -922,8 +968,8 @@
 </div>
 
 
-<div id="outline-container-org08b158f" class="outline-3">
-<h3 id="org08b158f"><span class="section-number-3">9.37.</span> excitement</h3>
+<div id="outline-container-org50af0fe" class="outline-3">
+<h3 id="org50af0fe"><span class="section-number-3">9.37</span> excitement</h3>
 <div class="outline-text-3" id="text-9-37">
 <ul class="org-ul">
 <li>the ability to be excited about learning.</li>
@@ -946,8 +992,8 @@
 </div>
 </div>
 
-<div id="outline-container-org05fcc8d" class="outline-3">
-<h3 id="org05fcc8d"><span class="section-number-3">9.38.</span> optimize your life</h3>
+<div id="outline-container-orge71cb79" class="outline-3">
+<h3 id="orge71cb79"><span class="section-number-3">9.38</span> optimize your life</h3>
 <div class="outline-text-3" id="text-9-38">
 <ul class="org-ul">
 <li>to become who you want to be</li>
@@ -990,9 +1036,9 @@
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="author">Author: termux</p>
-<p class="date">Created: 2023-11-23 Thu 21:44</p>
-<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="author">Author: ychnh</p>
+<p class="date">Created: 2023-11-25 Sat 11:38</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>

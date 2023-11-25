@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-11-23 Thu 21:44 -->
+<!-- 2023-11-25 Sat 11:38 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
-<meta name="author" content="termux" />
-<meta name="generator" content="Org Mode" />
-<style>
-  #content { max-width: 60em; margin: auto; }
+<meta name="generator" content="Org mode" />
+<meta name="author" content="ychnh" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,9 +31,8 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #e6e6e6;
-    border-radius: 3px;
-    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -41,22 +40,22 @@
   }
   pre.src {
     position: relative;
-    overflow: auto;
+    overflow: visible;
+    padding-top: 1.2em;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    top: -8px;
-    right: 12px;
+    background-color: white;
+    top: -10px;
+    right: 10px;
     padding: 3px;
-    color: #555;
-    background-color: #f2f2f299;
+    border: 1px solid black;
   }
-  pre.src:hover:before { display: inline; margin-top: 14px;}
+  pre.src:hover:before { display: inline;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
-  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -191,69 +190,116 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
 </style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
 </head>
 <body>
-<div id="content" class="content">
-<div id="table-of-contents" role="doc-toc">
+<div id="content">
+<div id="table-of-contents">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents" role="doc-toc">
+<div id="text-table-of-contents">
 <ul>
-<li><a href="#orgf54a1a3">1. Routine</a>
+<li><a href="#org42815f4">1. Routine</a>
 <ul>
-<li><a href="#orgfb7d9a3">1.1. Read Ahead: Scouting ahead</a></li>
-<li><a href="#orgd607bd5">1.2. Understand a Topic</a></li>
-<li><a href="#org27e7fec">1.3. Qual Prep</a></li>
+<li><a href="#org0c17dd5">1.1. Read Ahead: Scouting ahead</a></li>
+<li><a href="#org630e7fc">1.2. Understand a Topic</a></li>
+<li><a href="#org82ecadc">1.3. Qual Prep</a></li>
 </ul>
 </li>
-<li><a href="#org4ec2df7">2. Asking Questions</a></li>
-<li><a href="#org5bc6ec4">3. Solving Questions</a></li>
-<li><a href="#org783bfd4">4. Reflections <code>========================================================</code></a></li>
-<li><a href="#orgcc30590">5. trust in the Lord</a></li>
-<li><a href="#org85e63f0">6. Problem solving</a></li>
-<li><a href="#org75655a2">7. Make the most of each encounter with an idea</a></li>
-<li><a href="#org6f9c26b">8. Practice in going in every direction: Problem &lt;-&gt; Motivation &lt;-&gt; work</a></li>
-<li><a href="#org276a9d2">9. Train of thought navigation</a></li>
-<li><a href="#orgb12b585">10. How to sit for long times</a></li>
-<li><a href="#orgaeaf66f">11. Need to develop isolating my mind to think very clearly about a specific setting</a></li>
-<li><a href="#org6087e81">12. Always ask yourself, how can I become effective, efficient at what I am doing?</a></li>
-<li><a href="#org87b240b">13. How to get a clear view of the situation</a></li>
-<li><a href="#org2314330">14. Treat each statement as alive, transforming at the adjustable parts</a></li>
-<li><a href="#orge6a0f50">15. Refine, Mininmize the essence of each idea you encounter</a></li>
-<li><a href="#org30079d2">16. Dealing with frustration</a></li>
-<li><a href="#orgc164f28">17. Note the key relationships you discover</a></li>
-<li><a href="#org74b8e0d">18. A particular view, a vista, a perspective: recognize abstractly what perspective it is?</a></li>
-<li><a href="#org4a44271">19. Some people do proofs to relax, to get excited</a></li>
-<li><a href="#org041eddb">20. Not getting lost. Confidence going down a path of thinking.</a></li>
-<li><a href="#org39ebb58">21. Stuck: confusing notation, misreading/misunderstanding</a></li>
-<li><a href="#org3233681">22. How can I think more on the fly?</a></li>
-<li><a href="#org230460e">23. Write the sub problems clearly</a></li>
-<li><a href="#org53317fe">24. Mathematics is an accumilation, not replacement</a></li>
-<li><a href="#org37223a5">25. Put the situation in your mind and see them manipulate form in your mind</a></li>
-<li><a href="#orgc4f1892">26. How can I remember small properties and traits of certain definitions?</a></li>
-<li><a href="#orgd07be4e">27. Look for questions, objectives, patterns that repeat</a></li>
-<li><a href="#orgec0f2d4">28. What is the minimal requirement?</a></li>
-<li><a href="#org702bc3e">29. Come to a conclusion after an encounter and a thinking session</a></li>
-<li><a href="#org0d577f9">30. Impress the significance of discoveries to remember</a></li>
-<li><a href="#org0f1a3af">31. Be confident in the tangible consequences, conclusions of your work</a></li>
-<li><a href="#org18606f0">32. Know it so well, almost like a fact</a></li>
-<li><a href="#org269b53e">33. Consider all of this as your training</a></li>
-<li><a href="#org48b2986">34. Work smart, from different angles</a></li>
-<li><a href="#org894483d">35. Ask yourself, do I understand this concept</a></li>
-<li><a href="#orgdf1150d">36. Good intuition, basic understanding, a correct idea, a rigourous proof</a></li>
-<li><a href="#orgdc04164">37. Maybe you need 1 small hint</a></li>
-<li><a href="#orgdf2b152">38. Developed to understand real life phenomina</a></li>
-<li><a href="#orge8f3634">39. Stick with 1 book in the beginning. It will prevent unneccesary confusion</a></li>
-<li><a href="#orgebad722">40. Some things I remember, somethings I cannot. What is the difference?</a></li>
-<li><a href="#org06b5fc9">41. How to get a clear view of the situation</a></li>
-<li><a href="#org29f2aae">42. Conserve your effort with writing</a></li>
-<li><a href="#org018429c">43. Draw a picture</a></li>
+<li><a href="#org11f780a">2. Asking Questions</a></li>
+<li><a href="#org0a04a3e">3. Solving Questions</a></li>
+<li><a href="#org6fe44fb">4. Reflections <code>========================================================</code></a></li>
+<li><a href="#orge143399">5. trust in the Lord</a></li>
+<li><a href="#orgfef4eb1">6. Problem solving</a></li>
+<li><a href="#orga51b6d2">7. Make the most of each encounter with an idea</a></li>
+<li><a href="#orgc0b6bbf">8. Practice in going in every direction: Problem &lt;-&gt; Motivation &lt;-&gt; work</a></li>
+<li><a href="#org7146bea">9. Train of thought navigation</a></li>
+<li><a href="#org9bd6b8e">10. How to sit for long times</a></li>
+<li><a href="#org6984b16">11. Need to develop isolating my mind to think very clearly about a specific setting</a></li>
+<li><a href="#org3846280">12. Always ask yourself, how can I become effective, efficient at what I am doing?</a></li>
+<li><a href="#org8880bf8">13. How to get a clear view of the situation</a></li>
+<li><a href="#orgb8e3a56">14. Treat each statement as alive, transforming at the adjustable parts</a></li>
+<li><a href="#org3033f0b">15. Refine, Mininmize the essence of each idea you encounter</a></li>
+<li><a href="#org7947081">16. Dealing with frustration</a></li>
+<li><a href="#orgc0032c9">17. Note the key relationships you discover</a></li>
+<li><a href="#org24e53f9">18. A particular view, a vista, a perspective: recognize abstractly what perspective it is?</a></li>
+<li><a href="#orgdaf1fb8">19. Some people do proofs to relax, to get excited</a></li>
+<li><a href="#orga0d69d6">20. Not getting lost. Confidence going down a path of thinking.</a></li>
+<li><a href="#org1c1dd4e">21. Stuck: confusing notation, misreading/misunderstanding</a></li>
+<li><a href="#org5930888">22. How can I think more on the fly?</a></li>
+<li><a href="#org407b66d">23. Write the sub problems clearly</a></li>
+<li><a href="#org422d4a0">24. Mathematics is an accumilation, not replacement</a></li>
+<li><a href="#org7ab3250">25. Put the situation in your mind and see them manipulate form in your mind</a></li>
+<li><a href="#orgca262b1">26. How can I remember small properties and traits of certain definitions?</a></li>
+<li><a href="#orga5ad97d">27. Look for questions, objectives, patterns that repeat</a></li>
+<li><a href="#org6f99824">28. What is the minimal requirement?</a></li>
+<li><a href="#orgca6f907">29. Come to a conclusion after an encounter and a thinking session</a></li>
+<li><a href="#org93a2972">30. Impress the significance of discoveries to remember</a></li>
+<li><a href="#org7f5abf5">31. Be confident in the tangible consequences, conclusions of your work</a></li>
+<li><a href="#org289d896">32. Know it so well, almost like a fact</a></li>
+<li><a href="#org7e947df">33. Consider all of this as your training</a></li>
+<li><a href="#org4bff3de">34. Work smart, from different angles</a></li>
+<li><a href="#org3d2fbe6">35. Ask yourself, do I understand this concept</a></li>
+<li><a href="#orgc1318c9">36. Good intuition, basic understanding, a correct idea, a rigourous proof</a></li>
+<li><a href="#org6f478b8">37. Maybe you need 1 small hint</a></li>
+<li><a href="#orgcfd7fc6">38. Developed to understand real life phenomina</a></li>
+<li><a href="#org35e5cda">39. Stick with 1 book in the beginning. It will prevent unneccesary confusion</a></li>
+<li><a href="#orgd565d08">40. Some things I remember, somethings I cannot. What is the difference?</a></li>
+<li><a href="#org4d33893">41. How to get a clear view of the situation</a></li>
+<li><a href="#orga84a9e1">42. Conserve your effort with writing</a></li>
+<li><a href="#org53aa0ee">43. Draw a picture</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf54a1a3" class="outline-2">
-<h2 id="orgf54a1a3"><span class="section-number-2">1.</span> Routine</h2>
+<div id="outline-container-org42815f4" class="outline-2">
+<h2 id="org42815f4"><span class="section-number-2">1</span> Routine</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li>Clearly define what it means to finish a task
@@ -272,8 +318,8 @@
 </div>
 
 
-<div id="outline-container-orgfb7d9a3" class="outline-3">
-<h3 id="orgfb7d9a3"><span class="section-number-3">1.1.</span> Read Ahead: Scouting ahead</h3>
+<div id="outline-container-org0c17dd5" class="outline-3">
+<h3 id="org0c17dd5"><span class="section-number-3">1.1</span> Read Ahead: Scouting ahead</h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
 <li>Build outline</li>
@@ -281,8 +327,8 @@
 </div>
 </div>
 
-<div id="outline-container-orgd607bd5" class="outline-3">
-<h3 id="orgd607bd5"><span class="section-number-3">1.2.</span> Understand a Topic</h3>
+<div id="outline-container-org630e7fc" class="outline-3">
+<h3 id="org630e7fc"><span class="section-number-3">1.2</span> Understand a Topic</h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
 <li>Read</li>
@@ -294,8 +340,8 @@
 </div>
 </div>
 
-<div id="outline-container-org27e7fec" class="outline-3">
-<h3 id="org27e7fec"><span class="section-number-3">1.3.</span> Qual Prep</h3>
+<div id="outline-container-org82ecadc" class="outline-3">
+<h3 id="org82ecadc"><span class="section-number-3">1.3</span> Qual Prep</h3>
 <div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
 <li>Solve problems</li>
@@ -304,22 +350,22 @@
 </div>
 </div>
 
-<div id="outline-container-org4ec2df7" class="outline-2">
-<h2 id="org4ec2df7"><span class="section-number-2">2.</span> Asking Questions</h2>
+<div id="outline-container-org11f780a" class="outline-2">
+<h2 id="org11f780a"><span class="section-number-2">2</span> Asking Questions</h2>
 </div>
-<div id="outline-container-org5bc6ec4" class="outline-2">
-<h2 id="org5bc6ec4"><span class="section-number-2">3.</span> Solving Questions</h2>
-</div>
-
-
-
-
-<div id="outline-container-org783bfd4" class="outline-2">
-<h2 id="org783bfd4"><span class="section-number-2">4.</span> Reflections <code>========================================================</code></h2>
+<div id="outline-container-org0a04a3e" class="outline-2">
+<h2 id="org0a04a3e"><span class="section-number-2">3</span> Solving Questions</h2>
 </div>
 
-<div id="outline-container-orgcc30590" class="outline-2">
-<h2 id="orgcc30590"><span class="section-number-2">5.</span> trust in the Lord</h2>
+
+
+
+<div id="outline-container-org6fe44fb" class="outline-2">
+<h2 id="org6fe44fb"><span class="section-number-2">4</span> Reflections <code>========================================================</code></h2>
+</div>
+
+<div id="outline-container-orge143399" class="outline-2">
+<h2 id="orge143399"><span class="section-number-2">5</span> trust in the Lord</h2>
 <div class="outline-text-2" id="text-5">
 <ul class="org-ul">
 <li>Peace be with you</li>
@@ -330,8 +376,8 @@
 </div>
 </div>
 
-<div id="outline-container-org85e63f0" class="outline-2">
-<h2 id="org85e63f0"><span class="section-number-2">6.</span> Problem solving</h2>
+<div id="outline-container-orgfef4eb1" class="outline-2">
+<h2 id="orgfef4eb1"><span class="section-number-2">6</span> Problem solving</h2>
 <div class="outline-text-2" id="text-6">
 <ul class="org-ul">
 <li>Does it make sense, is it reasonable?</li>
@@ -342,8 +388,8 @@
 </div>
 
 
-<div id="outline-container-org75655a2" class="outline-2">
-<h2 id="org75655a2"><span class="section-number-2">7.</span> Make the most of each encounter with an idea</h2>
+<div id="outline-container-orga51b6d2" class="outline-2">
+<h2 id="orga51b6d2"><span class="section-number-2">7</span> Make the most of each encounter with an idea</h2>
 <div class="outline-text-2" id="text-7">
 <ul class="org-ul">
 <li>You cannot learn everything but when given an opportunity to look at an idea</li>
@@ -353,8 +399,8 @@
 </div>
 </div>
 
-<div id="outline-container-org6f9c26b" class="outline-2">
-<h2 id="org6f9c26b"><span class="section-number-2">8.</span> Practice in going in every direction: Problem &lt;-&gt; Motivation &lt;-&gt; work</h2>
+<div id="outline-container-orgc0b6bbf" class="outline-2">
+<h2 id="orgc0b6bbf"><span class="section-number-2">8</span> Practice in going in every direction: Problem &lt;-&gt; Motivation &lt;-&gt; work</h2>
 <div class="outline-text-2" id="text-8">
 <ul class="org-ul">
 <li>This will help you increase in speed</li>
@@ -362,8 +408,8 @@
 </div>
 </div>
 
-<div id="outline-container-org276a9d2" class="outline-2">
-<h2 id="org276a9d2"><span class="section-number-2">9.</span> Train of thought navigation</h2>
+<div id="outline-container-org7146bea" class="outline-2">
+<h2 id="org7146bea"><span class="section-number-2">9</span> Train of thought navigation</h2>
 <div class="outline-text-2" id="text-9">
 <ul class="org-ul">
 <li>quickly test your idea? before spending too much time on it?
@@ -377,8 +423,8 @@
 </div>
 </div>
 
-<div id="outline-container-orgb12b585" class="outline-2">
-<h2 id="orgb12b585"><span class="section-number-2">10.</span> How to sit for long times</h2>
+<div id="outline-container-org9bd6b8e" class="outline-2">
+<h2 id="org9bd6b8e"><span class="section-number-2">10</span> How to sit for long times</h2>
 <div class="outline-text-2" id="text-10">
 <ul class="org-ul">
 <li>Support spine with core and glutes and hamstring</li>
@@ -388,8 +434,8 @@
 </div>
 </div>
 
-<div id="outline-container-orgaeaf66f" class="outline-2">
-<h2 id="orgaeaf66f"><span class="section-number-2">11.</span> Need to develop isolating my mind to think very clearly about a specific setting</h2>
+<div id="outline-container-org6984b16" class="outline-2">
+<h2 id="org6984b16"><span class="section-number-2">11</span> Need to develop isolating my mind to think very clearly about a specific setting</h2>
 <div class="outline-text-2" id="text-11">
 <ul class="org-ul">
 <li>Without assumptions</li>
@@ -398,12 +444,12 @@
 </div>
 </div>
 
-<div id="outline-container-org6087e81" class="outline-2">
-<h2 id="org6087e81"><span class="section-number-2">12.</span> Always ask yourself, how can I become effective, efficient at what I am doing?</h2>
+<div id="outline-container-org3846280" class="outline-2">
+<h2 id="org3846280"><span class="section-number-2">12</span> Always ask yourself, how can I become effective, efficient at what I am doing?</h2>
 </div>
 
-<div id="outline-container-org87b240b" class="outline-2">
-<h2 id="org87b240b"><span class="section-number-2">13.</span> How to get a clear view of the situation</h2>
+<div id="outline-container-org8880bf8" class="outline-2">
+<h2 id="org8880bf8"><span class="section-number-2">13</span> How to get a clear view of the situation</h2>
 <div class="outline-text-2" id="text-13">
 <ul class="org-ul">
 <li>brain works better at manipulating things looking at a clear view</li>
@@ -412,19 +458,19 @@
 </div>
 </div>
 
-<div id="outline-container-org2314330" class="outline-2">
-<h2 id="org2314330"><span class="section-number-2">14.</span> Treat each statement as alive, transforming at the adjustable parts</h2>
+<div id="outline-container-orgb8e3a56" class="outline-2">
+<h2 id="orgb8e3a56"><span class="section-number-2">14</span> Treat each statement as alive, transforming at the adjustable parts</h2>
 </div>
-<div id="outline-container-orge6a0f50" class="outline-2">
-<h2 id="orge6a0f50"><span class="section-number-2">15.</span> Refine, Mininmize the essence of each idea you encounter</h2>
-</div>
-
-<div id="outline-container-org30079d2" class="outline-2">
-<h2 id="org30079d2"><span class="section-number-2">16.</span> Dealing with frustration</h2>
+<div id="outline-container-org3033f0b" class="outline-2">
+<h2 id="org3033f0b"><span class="section-number-2">15</span> Refine, Mininmize the essence of each idea you encounter</h2>
 </div>
 
-<div id="outline-container-orgc164f28" class="outline-2">
-<h2 id="orgc164f28"><span class="section-number-2">17.</span> Note the key relationships you discover</h2>
+<div id="outline-container-org7947081" class="outline-2">
+<h2 id="org7947081"><span class="section-number-2">16</span> Dealing with frustration</h2>
+</div>
+
+<div id="outline-container-orgc0032c9" class="outline-2">
+<h2 id="orgc0032c9"><span class="section-number-2">17</span> Note the key relationships you discover</h2>
 <div class="outline-text-2" id="text-17">
 <ul class="org-ul">
 <li>Treat them as signficant discoveries</li>
@@ -432,12 +478,12 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org74b8e0d" class="outline-2">
-<h2 id="org74b8e0d"><span class="section-number-2">18.</span> A particular view, a vista, a perspective: recognize abstractly what perspective it is?</h2>
+<div id="outline-container-org24e53f9" class="outline-2">
+<h2 id="org24e53f9"><span class="section-number-2">18</span> A particular view, a vista, a perspective: recognize abstractly what perspective it is?</h2>
 </div>
 
-<div id="outline-container-org4a44271" class="outline-2">
-<h2 id="org4a44271"><span class="section-number-2">19.</span> Some people do proofs to relax, to get excited</h2>
+<div id="outline-container-orgdaf1fb8" class="outline-2">
+<h2 id="orgdaf1fb8"><span class="section-number-2">19</span> Some people do proofs to relax, to get excited</h2>
 <div class="outline-text-2" id="text-19">
 <ul class="org-ul">
 <li>If you master it, it becomes trivial and not exciting</li>
@@ -450,8 +496,8 @@
 </div>
 </div>
 
-<div id="outline-container-org041eddb" class="outline-2">
-<h2 id="org041eddb"><span class="section-number-2">20.</span> Not getting lost. Confidence going down a path of thinking.</h2>
+<div id="outline-container-orga0d69d6" class="outline-2">
+<h2 id="orga0d69d6"><span class="section-number-2">20</span> Not getting lost. Confidence going down a path of thinking.</h2>
 <div class="outline-text-2" id="text-20">
 <ul class="org-ul">
 <li>make your thoughts and conclusions precise.</li>
@@ -463,8 +509,8 @@
 </div>
 </div>
 
-<div id="outline-container-org39ebb58" class="outline-2">
-<h2 id="org39ebb58"><span class="section-number-2">21.</span> Stuck: confusing notation, misreading/misunderstanding</h2>
+<div id="outline-container-org1c1dd4e" class="outline-2">
+<h2 id="org1c1dd4e"><span class="section-number-2">21</span> Stuck: confusing notation, misreading/misunderstanding</h2>
 <div class="outline-text-2" id="text-21">
 <ul class="org-ul">
 <li>by writing it down you can practice your memory of the statement</li>
@@ -483,12 +529,12 @@
 
 
 
-<div id="outline-container-org3233681" class="outline-2">
-<h2 id="org3233681"><span class="section-number-2">22.</span> How can I think more on the fly?</h2>
+<div id="outline-container-org5930888" class="outline-2">
+<h2 id="org5930888"><span class="section-number-2">22</span> How can I think more on the fly?</h2>
 </div>
 
-<div id="outline-container-org230460e" class="outline-2">
-<h2 id="org230460e"><span class="section-number-2">23.</span> Write the sub problems clearly</h2>
+<div id="outline-container-org407b66d" class="outline-2">
+<h2 id="org407b66d"><span class="section-number-2">23</span> Write the sub problems clearly</h2>
 <div class="outline-text-2" id="text-23">
 <ul class="org-ul">
 <li>starting point, idea, motivation</li>
@@ -496,8 +542,8 @@
 </div>
 </div>
 
-<div id="outline-container-org53317fe" class="outline-2">
-<h2 id="org53317fe"><span class="section-number-2">24.</span> Mathematics is an accumilation, not replacement</h2>
+<div id="outline-container-org422d4a0" class="outline-2">
+<h2 id="org422d4a0"><span class="section-number-2">24</span> Mathematics is an accumilation, not replacement</h2>
 <div class="outline-text-2" id="text-24">
 <ul class="org-ul">
 <li>Strong foundation, broader</li>
@@ -506,12 +552,12 @@
 </div>
 </div>
 
-<div id="outline-container-org37223a5" class="outline-2">
-<h2 id="org37223a5"><span class="section-number-2">25.</span> Put the situation in your mind and see them manipulate form in your mind</h2>
+<div id="outline-container-org7ab3250" class="outline-2">
+<h2 id="org7ab3250"><span class="section-number-2">25</span> Put the situation in your mind and see them manipulate form in your mind</h2>
 </div>
 
-<div id="outline-container-orgc4f1892" class="outline-2">
-<h2 id="orgc4f1892"><span class="section-number-2">26.</span> How can I remember small properties and traits of certain definitions?</h2>
+<div id="outline-container-orgca262b1" class="outline-2">
+<h2 id="orgca262b1"><span class="section-number-2">26</span> How can I remember small properties and traits of certain definitions?</h2>
 <div class="outline-text-2" id="text-26">
 <ul class="org-ul">
 <li>Where should I commit them in memory? probably following the definition</li>
@@ -520,31 +566,31 @@
 </div>
 
 
-<div id="outline-container-orgd07be4e" class="outline-2">
-<h2 id="orgd07be4e"><span class="section-number-2">27.</span> Look for questions, objectives, patterns that repeat</h2>
+<div id="outline-container-orga5ad97d" class="outline-2">
+<h2 id="orga5ad97d"><span class="section-number-2">27</span> Look for questions, objectives, patterns that repeat</h2>
 </div>
 
-<div id="outline-container-orgec0f2d4" class="outline-2">
-<h2 id="orgec0f2d4"><span class="section-number-2">28.</span> What is the minimal requirement?</h2>
+<div id="outline-container-org6f99824" class="outline-2">
+<h2 id="org6f99824"><span class="section-number-2">28</span> What is the minimal requirement?</h2>
 </div>
 
-<div id="outline-container-org702bc3e" class="outline-2">
-<h2 id="org702bc3e"><span class="section-number-2">29.</span> Come to a conclusion after an encounter and a thinking session</h2>
+<div id="outline-container-orgca6f907" class="outline-2">
+<h2 id="orgca6f907"><span class="section-number-2">29</span> Come to a conclusion after an encounter and a thinking session</h2>
 </div>
 
-<div id="outline-container-org0d577f9" class="outline-2">
-<h2 id="org0d577f9"><span class="section-number-2">30.</span> Impress the significance of discoveries to remember</h2>
+<div id="outline-container-org93a2972" class="outline-2">
+<h2 id="org93a2972"><span class="section-number-2">30</span> Impress the significance of discoveries to remember</h2>
 </div>
-<div id="outline-container-org0f1a3af" class="outline-2">
-<h2 id="org0f1a3af"><span class="section-number-2">31.</span> Be confident in the tangible consequences, conclusions of your work</h2>
-</div>
-
-<div id="outline-container-org18606f0" class="outline-2">
-<h2 id="org18606f0"><span class="section-number-2">32.</span> Know it so well, almost like a fact</h2>
+<div id="outline-container-org7f5abf5" class="outline-2">
+<h2 id="org7f5abf5"><span class="section-number-2">31</span> Be confident in the tangible consequences, conclusions of your work</h2>
 </div>
 
-<div id="outline-container-org269b53e" class="outline-2">
-<h2 id="org269b53e"><span class="section-number-2">33.</span> Consider all of this as your training</h2>
+<div id="outline-container-org289d896" class="outline-2">
+<h2 id="org289d896"><span class="section-number-2">32</span> Know it so well, almost like a fact</h2>
+</div>
+
+<div id="outline-container-org7e947df" class="outline-2">
+<h2 id="org7e947df"><span class="section-number-2">33</span> Consider all of this as your training</h2>
 <div class="outline-text-2" id="text-33">
 <ul class="org-ul">
 <li>What if I drop 1 condition, what can I conclude</li>
@@ -555,31 +601,31 @@
 </div>
 
 
-<div id="outline-container-org48b2986" class="outline-2">
-<h2 id="org48b2986"><span class="section-number-2">34.</span> Work smart, from different angles</h2>
+<div id="outline-container-org4bff3de" class="outline-2">
+<h2 id="org4bff3de"><span class="section-number-2">34</span> Work smart, from different angles</h2>
 </div>
-<div id="outline-container-org894483d" class="outline-2">
-<h2 id="org894483d"><span class="section-number-2">35.</span> Ask yourself, do I understand this concept</h2>
-</div>
-
-<div id="outline-container-orgdf1150d" class="outline-2">
-<h2 id="orgdf1150d"><span class="section-number-2">36.</span> Good intuition, basic understanding, a correct idea, a rigourous proof</h2>
+<div id="outline-container-org3d2fbe6" class="outline-2">
+<h2 id="org3d2fbe6"><span class="section-number-2">35</span> Ask yourself, do I understand this concept</h2>
 </div>
 
-<div id="outline-container-orgdc04164" class="outline-2">
-<h2 id="orgdc04164"><span class="section-number-2">37.</span> Maybe you need 1 small hint</h2>
+<div id="outline-container-orgc1318c9" class="outline-2">
+<h2 id="orgc1318c9"><span class="section-number-2">36</span> Good intuition, basic understanding, a correct idea, a rigourous proof</h2>
+</div>
+
+<div id="outline-container-org6f478b8" class="outline-2">
+<h2 id="org6f478b8"><span class="section-number-2">37</span> Maybe you need 1 small hint</h2>
 </div>
 
 
-<div id="outline-container-orgdf2b152" class="outline-2">
-<h2 id="orgdf2b152"><span class="section-number-2">38.</span> Developed to understand real life phenomina</h2>
+<div id="outline-container-orgcfd7fc6" class="outline-2">
+<h2 id="orgcfd7fc6"><span class="section-number-2">38</span> Developed to understand real life phenomina</h2>
 </div>
-<div id="outline-container-orge8f3634" class="outline-2">
-<h2 id="orge8f3634"><span class="section-number-2">39.</span> Stick with 1 book in the beginning. It will prevent unneccesary confusion</h2>
+<div id="outline-container-org35e5cda" class="outline-2">
+<h2 id="org35e5cda"><span class="section-number-2">39</span> Stick with 1 book in the beginning. It will prevent unneccesary confusion</h2>
 </div>
 
-<div id="outline-container-orgebad722" class="outline-2">
-<h2 id="orgebad722"><span class="section-number-2">40.</span> Some things I remember, somethings I cannot. What is the difference?</h2>
+<div id="outline-container-orgd565d08" class="outline-2">
+<h2 id="orgd565d08"><span class="section-number-2">40</span> Some things I remember, somethings I cannot. What is the difference?</h2>
 <div class="outline-text-2" id="text-40">
 <ul class="org-ul">
 <li>The significance is not impressed on you</li>
@@ -591,8 +637,8 @@
 </div>
 
 
-<div id="outline-container-org06b5fc9" class="outline-2">
-<h2 id="org06b5fc9"><span class="section-number-2">41.</span> How to get a clear view of the situation</h2>
+<div id="outline-container-org4d33893" class="outline-2">
+<h2 id="org4d33893"><span class="section-number-2">41</span> How to get a clear view of the situation</h2>
 <div class="outline-text-2" id="text-41">
 <ul class="org-ul">
 <li>brain works better at manipulating things looking at a clear view</li>
@@ -601,17 +647,17 @@
 </div>
 </div>
 
-<div id="outline-container-org29f2aae" class="outline-2">
-<h2 id="org29f2aae"><span class="section-number-2">42.</span> Conserve your effort with writing</h2>
+<div id="outline-container-orga84a9e1" class="outline-2">
+<h2 id="orga84a9e1"><span class="section-number-2">42</span> Conserve your effort with writing</h2>
 </div>
-<div id="outline-container-org018429c" class="outline-2">
-<h2 id="org018429c"><span class="section-number-2">43.</span> Draw a picture</h2>
+<div id="outline-container-org53aa0ee" class="outline-2">
+<h2 id="org53aa0ee"><span class="section-number-2">43</span> Draw a picture</h2>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="author">Author: termux</p>
-<p class="date">Created: 2023-11-23 Thu 21:44</p>
-<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="author">Author: ychnh</p>
+<p class="date">Created: 2023-11-25 Sat 11:38</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>

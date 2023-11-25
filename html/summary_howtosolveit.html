@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-11-23 Thu 21:44 -->
+<!-- 2023-11-25 Sat 11:38 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
-<meta name="author" content="termux" />
-<meta name="generator" content="Org Mode" />
-<style>
-  #content { max-width: 60em; margin: auto; }
+<meta name="generator" content="Org mode" />
+<meta name="author" content="ychnh" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,9 +31,8 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #e6e6e6;
-    border-radius: 3px;
-    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -41,22 +40,22 @@
   }
   pre.src {
     position: relative;
-    overflow: auto;
+    overflow: visible;
+    padding-top: 1.2em;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    top: -8px;
-    right: 12px;
+    background-color: white;
+    top: -10px;
+    right: 10px;
     padding: 3px;
-    color: #555;
-    background-color: #f2f2f299;
+    border: 1px solid black;
   }
-  pre.src:hover:before { display: inline; margin-top: 14px;}
+  pre.src:hover:before { display: inline;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
-  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -191,36 +190,83 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
 </style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
 </head>
 <body>
-<div id="content" class="content">
-<div id="table-of-contents" role="doc-toc">
+<div id="content">
+<div id="table-of-contents">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents" role="doc-toc">
+<div id="text-table-of-contents">
 <ul>
-<li><a href="#orgc8d6f91">1. points to improve</a></li>
-<li><a href="#orgfde2fa2">2. ahas</a></li>
-<li><a href="#org9a9ff87">3. Personal Notes</a>
+<li><a href="#orge786246">1. points to improve</a></li>
+<li><a href="#orgf8c4417">2. ahas</a></li>
+<li><a href="#org3c60bd4">3. Personal Notes</a>
 <ul>
-<li><a href="#org748df93">3.1. Getting Acquainted</a></li>
-<li><a href="#org043f7f5">3.2. Working for Better Understanding</a></li>
-<li><a href="#org3012ce4">3.3. Devising a plan</a></li>
-<li><a href="#orgd43e345">3.4. Carrying out the plan</a></li>
-<li><a href="#org1cd51a1">3.5. Looking Back</a></li>
+<li><a href="#orgfd80eb3">3.1. Getting Acquainted</a></li>
+<li><a href="#org68a8b6a">3.2. Working for Better Understanding</a></li>
+<li><a href="#orgbfad25e">3.3. Devising a plan</a></li>
+<li><a href="#org0d9bc9b">3.4. Carrying out the plan</a></li>
+<li><a href="#org547df2d">3.5. Looking Back</a></li>
 </ul>
 </li>
-<li><a href="#orgfe7116e">4. How to Solve it List</a>
+<li><a href="#org2393a27">4. How to Solve it List</a>
 <ul>
-<li><a href="#org86340e4">4.1. Understand problem</a></li>
-<li><a href="#org98f1fdb">4.2. Devising a plan</a></li>
-<li><a href="#orgb0de170">4.3. Carrying out the plan</a></li>
-<li><a href="#org2070e4b">4.4. Looking back</a></li>
+<li><a href="#org629c350">4.1. Understand problem</a></li>
+<li><a href="#orgf9a3c12">4.2. Devising a plan</a></li>
+<li><a href="#orgebc4b0f">4.3. Carrying out the plan</a></li>
+<li><a href="#orgf88802b">4.4. Looking back</a></li>
 </ul>
 </li>
-<li><a href="#org97f4413">5. Quotes I like</a></li>
-<li><a href="#org2b036ec">6. ESC</a></li>
+<li><a href="#org0157206">5. Quotes I like</a></li>
+<li><a href="#orgb8f2e2d">6. ESC</a></li>
 </ul>
 </div>
 </div>
@@ -228,8 +274,8 @@
 Here is a subset of the how to solve it list, to focus on things I need to work on. like workout notes.
 If also gives good mentality and values and expectations to have at each step.
 </p>
-<div id="outline-container-orgc8d6f91" class="outline-2">
-<h2 id="orgc8d6f91"><span class="section-number-2">1.</span> points to improve</h2>
+<div id="outline-container-orge786246" class="outline-2">
+<h2 id="orge786246"><span class="section-number-2">1</span> points to improve</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li>what are some of your favorite questions? when were they useful?</li>
@@ -243,8 +289,8 @@ If also gives good mentality and values and expectations to have at each step.
 </ul>
 </div>
 </div>
-<div id="outline-container-orgfde2fa2" class="outline-2">
-<h2 id="orgfde2fa2"><span class="section-number-2">2.</span> ahas</h2>
+<div id="outline-container-orgf8c4417" class="outline-2">
+<h2 id="orgf8c4417"><span class="section-number-2">2</span> ahas</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>consider various sides of principal components and see if there are connections</li>
@@ -252,12 +298,12 @@ If also gives good mentality and values and expectations to have at each step.
 </div>
 </div>
 
-<div id="outline-container-org9a9ff87" class="outline-2">
-<h2 id="org9a9ff87"><span class="section-number-2">3.</span> Personal Notes</h2>
+<div id="outline-container-org3c60bd4" class="outline-2">
+<h2 id="org3c60bd4"><span class="section-number-2">3</span> Personal Notes</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-org748df93" class="outline-3">
-<h3 id="org748df93"><span class="section-number-3">3.1.</span> Getting Acquainted</h3>
+<div id="outline-container-orgfd80eb3" class="outline-3">
+<h3 id="orgfd80eb3"><span class="section-number-3">3.1</span> Getting Acquainted</h3>
 <div class="outline-text-3" id="text-3-1">
 <ul class="org-ul">
 <li>visualize problem as a whole as clearly and vividly</li>
@@ -272,8 +318,8 @@ If also gives good mentality and values and expectations to have at each step.
 </div>
 </div>
 
-<div id="outline-container-org043f7f5" class="outline-3">
-<h3 id="org043f7f5"><span class="section-number-3">3.2.</span> Working for Better Understanding</h3>
+<div id="outline-container-org68a8b6a" class="outline-3">
+<h3 id="org68a8b6a"><span class="section-number-3">3.2</span> Working for Better Understanding</h3>
 <div class="outline-text-3" id="text-3-2">
 <ul class="org-ul">
 <li>(Be more patient, impress it on your min)</li>
@@ -290,8 +336,8 @@ If also gives good mentality and values and expectations to have at each step.
 </div>
 </div>
 
-<div id="outline-container-org3012ce4" class="outline-3">
-<h3 id="org3012ce4"><span class="section-number-3">3.3.</span> Devising a plan</h3>
+<div id="outline-container-orgbfad25e" class="outline-3">
+<h3 id="orgbfad25e"><span class="section-number-3">3.3</span> Devising a plan</h3>
 <div class="outline-text-3" id="text-3-3">
 <ul class="org-ul">
 <li>(When memory seems responsive, Manage, try various sides, be enduring, be patient, be grateful)</li>
@@ -326,8 +372,8 @@ If also gives good mentality and values and expectations to have at each step.
 </div>
 </div>
 
-<div id="outline-container-orgd43e345" class="outline-3">
-<h3 id="orgd43e345"><span class="section-number-3">3.4.</span> Carrying out the plan</h3>
+<div id="outline-container-org0d9bc9b" class="outline-3">
+<h3 id="org0d9bc9b"><span class="section-number-3">3.4</span> Carrying out the plan</h3>
 <div class="outline-text-3" id="text-3-4">
 <ul class="org-ul">
 <li>(Need to be more through here)</li>
@@ -341,8 +387,8 @@ If also gives good mentality and values and expectations to have at each step.
 </div>
 </div>
 
-<div id="outline-container-org1cd51a1" class="outline-3">
-<h3 id="org1cd51a1"><span class="section-number-3">3.5.</span> Looking Back</h3>
+<div id="outline-container-org547df2d" class="outline-3">
+<h3 id="org547df2d"><span class="section-number-3">3.5</span> Looking Back</h3>
 <div class="outline-text-3" id="text-3-5">
 <ul class="org-ul">
 <li>(Need to focus here, have value)</li>
@@ -358,12 +404,12 @@ If also gives good mentality and values and expectations to have at each step.
 </div>
 
 
-<div id="outline-container-orgfe7116e" class="outline-2">
-<h2 id="orgfe7116e"><span class="section-number-2">4.</span> How to Solve it List</h2>
+<div id="outline-container-org2393a27" class="outline-2">
+<h2 id="org2393a27"><span class="section-number-2">4</span> How to Solve it List</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-org86340e4" class="outline-3">
-<h3 id="org86340e4"><span class="section-number-3">4.1.</span> Understand problem</h3>
+<div id="outline-container-org629c350" class="outline-3">
+<h3 id="org629c350"><span class="section-number-3">4.1</span> Understand problem</h3>
 <div class="outline-text-3" id="text-4-1">
 <ul class="org-ul">
 <li>What is the unknown, data, condition?</li>
@@ -380,8 +426,8 @@ If also gives good mentality and values and expectations to have at each step.
 </div>
 </div>
 
-<div id="outline-container-org98f1fdb" class="outline-3">
-<h3 id="org98f1fdb"><span class="section-number-3">4.2.</span> Devising a plan</h3>
+<div id="outline-container-orgf9a3c12" class="outline-3">
+<h3 id="orgf9a3c12"><span class="section-number-3">4.2</span> Devising a plan</h3>
 <div class="outline-text-3" id="text-4-2">
 <ul class="org-ul">
 <li>Find the connection between the data and the unknown</li>
@@ -427,8 +473,8 @@ If also gives good mentality and values and expectations to have at each step.
 </div>
 </div>
 
-<div id="outline-container-orgb0de170" class="outline-3">
-<h3 id="orgb0de170"><span class="section-number-3">4.3.</span> Carrying out the plan</h3>
+<div id="outline-container-orgebc4b0f" class="outline-3">
+<h3 id="orgebc4b0f"><span class="section-number-3">4.3</span> Carrying out the plan</h3>
 <div class="outline-text-3" id="text-4-3">
 <ul class="org-ul">
 <li>Carrying out your plan of the solution.</li>
@@ -439,8 +485,8 @@ If also gives good mentality and values and expectations to have at each step.
 </div>
 </div>
 
-<div id="outline-container-org2070e4b" class="outline-3">
-<h3 id="org2070e4b"><span class="section-number-3">4.4.</span> Looking back</h3>
+<div id="outline-container-orgf88802b" class="outline-3">
+<h3 id="orgf88802b"><span class="section-number-3">4.4</span> Looking back</h3>
 <div class="outline-text-3" id="text-4-4">
 <ul class="org-ul">
 <li>Can you check the result?</li>
@@ -454,8 +500,8 @@ If also gives good mentality and values and expectations to have at each step.
 </div>
 
 
-<div id="outline-container-org97f4413" class="outline-2">
-<h2 id="org97f4413"><span class="section-number-2">5.</span> Quotes I like</h2>
+<div id="outline-container-org0157206" class="outline-2">
+<h2 id="org0157206"><span class="section-number-2">5</span> Quotes I like</h2>
 <div class="outline-text-2" id="text-5">
 <ul class="org-ul">
 <li>solving problem is practical skill
@@ -471,8 +517,8 @@ If also gives good mentality and values and expectations to have at each step.
 
 
 
-<div id="outline-container-org2b036ec" class="outline-2">
-<h2 id="org2b036ec"><span class="section-number-2">6.</span> ESC</h2>
+<div id="outline-container-orgb8f2e2d" class="outline-2">
+<h2 id="orgb8f2e2d"><span class="section-number-2">6</span> ESC</h2>
 <div class="outline-text-2" id="text-6">
 <ul class="org-ul">
 <li>what is unknown</li>
@@ -491,9 +537,9 @@ If also gives good mentality and values and expectations to have at each step.
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="author">Author: termux</p>
-<p class="date">Created: 2023-11-23 Thu 21:44</p>
-<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="author">Author: ychnh</p>
+<p class="date">Created: 2023-11-25 Sat 11:38</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
