@@ -1,8 +1,3 @@
-#+BEGIN_COMMENT -*- mode: org -*-
-#+END_COMMENT
-#+STARTUP: showall
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://hychn.github.io/style.css" />
-#+OPTIONS: html-postamble:nil
 
 * epsilon - close to
 * Dont lose sight of forest because of trees
