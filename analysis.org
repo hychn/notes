@@ -60,4 +60,3 @@
 - f cont. H compact => f(H) compact
 - H compact => Sup Inf in H
 
-
