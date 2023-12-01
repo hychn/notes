@@ -14,7 +14,8 @@ Relax the hypothesis
 - ULRS Converge <=> ULI Converge
 ** Riemann Sums
 - Riemman Sum $S(f,P,t_j)$: Existance, Convergence
-- RS Converge <=> ULRS Converge Define all 3 as Rieman Integrable (Are the RS UL values equal?
+- RS Converge <=> ULRS Converge 
+  - Define all 3 as Rieman Integrable (Are the RS UL values equal?
 - Linearity of RI $\int_a^b f(x)+g(x) = \int_a^b f(x) + \int_a^b g(x)$, $\int_a^b k*f(x) = k* \int_a^b f(x)$
 - Triangle Equality $\int_a^b f(x) = \int_a^c f(x) + \int_c^b f(x)$
 - Comparison $f(x) \leq g(x)$ => $\int_a^b f(x) \leq \int_a^b g(x)$
