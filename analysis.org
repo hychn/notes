@@ -1,9 +1,3 @@
-epsilon - close to
-Dont lose sight of forest because of trees
-Look and figure out the conditions
-Relax the hypothesis
-
-
 * Riemann Integral
 ** Riemann Integral
 - Precondition: assume f is bounded
@@ -54,3 +48,8 @@ Relax the hypothesis
 - f cont. H compact => f(H) compact
 - H compact => Sup Inf in H
 
+* j
+epsilon - close to
+Dont lose sight of forest because of trees
+Look and figure out the conditions
+Relax the hypothesis
