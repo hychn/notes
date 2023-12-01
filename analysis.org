@@ -9,7 +9,8 @@
 * Look and figure out the conditions
 * Relax the hypothesis
 
-* 5.1 Riemann Integral
+* Riemann Integral
+** Riemann Integral
 - Precondition: assume f is bounded
 - Partition: Ordering
 - UL Riemann Sum $U(f,P)$, $L(f,P)$: Existance, Ordering, Converge
@@ -17,7 +18,7 @@
 - Examples of ULRS Converge
 - UL Integral $U\int_a^bf(x) dx$, $L\int_a^bf(x) dx$: Existance, Ordering, Converge
 - ULRS Converge <=> ULI Converge
-* 5.2 Riemann Sums
+** Riemann Sums
 - Riemman Sum $S(f,P,t_j)$: Existance, Convergence
 - RS Converge <=> ULRS Converge Define all 3 as Rieman Integrable (Are the RS UL values equal?
 - Linearity of RI $\int_a^b f(x)+g(x) = \int_a^b f(x) + \int_a^b g(x)$, $\int_a^b k*f(x) = k* \int_a^b f(x)$
@@ -27,14 +28,14 @@
 - Consider simple case $g(x)=1$ $f(x)\geq 0$
 - Mean Value Theorem Integral (g>0) $\int_a^b f(x)g(x)$ $= c*\int_a^b g(x)$
 - Mean Value Theorem Integral (g>0) $\int_a^b f(x)g(x) = m\int_a^c g(x) + M\int_c^b g(x)$
-* 5.3 Fundamental Theorem
+** Fundamental Theorem
 - Fundamental Theorem $F(x) = \int_a^x f(t) dt$
 - Fundamental Theorem $\int_a^b f'(x) = f(b) - f(a)$
 - Hypothesis cannot be relaxed
 - Integration by Parts $f(b)g(b)-f(a)g(a) = \int_a^b f'(x)g(x) + \int_a^b f(x)g'(x)$
 - Change of Variables ??
 - Change of Variables for Continouse Integrand ??
-* Improper Integral
+** Improper Integral
 - Locally Integrable (a,b)
 - Improperly Integrable on (a,b) $\lim\limits_{x \to a} \lim\limits_{y \to b} \int_x^y f(x)dx$
 - Integral equals Improper Integral
@@ -43,4 +44,19 @@
 - Absolutely Integrable on (a,b) := Locally Integrable, |f| improperly integrable on (a,b)
 - Conditionally Integrable on (a,b)
 - Absolutely Integrable on (a,b) => Improperly Integrable on (a,b)
-* 5.4 Functions of Bounded Variation
+** Functions of Bounded Variation
+
+
+* Metric Space
+- Metric
+  - Linear ordering
+- Open Closed Set
+- Seq. Characterization of Closed
+- continous function
+- f cont, O => open F(O)
+- Compact Set
+- Compact <=> Closed and Bounded
+- f cont. H compact => f(H) compact
+- H compact => Sup Inf in H
+
+
