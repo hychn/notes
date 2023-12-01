@@ -1,4 +1,4 @@
-
+  
 * epsilon - close to
 * Dont lose sight of forest because of trees
 * Look and figure out the conditions
