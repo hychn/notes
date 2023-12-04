@@ -51,6 +51,7 @@
 - Start from scratch. Try to understand the problem better.
 - Keep track of key variables and symbolically simplify
   - When doing calculations/ looking for right connection,
+- Work with minimal statements
 - Throw away unfounded assumptions
 - The problem may be out of your reach.
 
