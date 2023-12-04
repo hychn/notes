@@ -9,51 +9,71 @@
 - Once you have an heuristic that works, it is relaxing, like sewing - Russian Undergrad
 - Revisit and improve your solutions, understanding, and methods.
 - Hyper, deep, relaxed focus
+- Accept the frustration and difficulty. You are challenged. This is required for improvement.
+- Work for consistency
+- Spend more time doing
 
 * Heuristic
-- Narrow the search space w/ a strong observation
-  - Where could the problem be? It must be here, o.w. everything is trivial
+- Write and understand the problem. What are you given?
+- What the question is asking? What is going on?
+
+- Consider equivalent forms of conclusions and hypothesis
+- Consider other implications to conclusion
+- Look over all the tools ( Everything in book, questions, earlier problems)
 
 - Simple low depth first
 - Work with conclusion & hypothesis
 - Go to definitions
-- Examples that work and don't work.
+- Examples that work and don't work. What works? What doesn't work?
+  - Essential examples?
 - Draw a picture
-- Sketch out your idea, see where the problems could be
+- Sketch out your idea, see where the problems could be.
+- Solve an easier, simpler problem
+- Contrapositive? Contradiction?
+- Is there something that when given, makes the problem easier?
 
-- Consider equivalent forms of conclusions and hypothesis
-- Consider other implications to conclusion
-
-- What the question is asking
-- A feeling/reasons that you are going in a right direction
-  - Otherwise you will get lost and lose alot of time.
-- Ask what you need.
+- Know why an approach will not work well
+- Narrow the search space w/ a strong observation
+  - Where could the problem be? It must be here, o.w. everything is trivial
+  
+- Be aware of all the parameters of the problem.
+- A feeling/reasons that you are going in a right direction. Otherwise you will get lost and lose alot of time.
 - What do you need to find? Can you define, guess it?
 
 - Be very careful at each step. Dont rule out something true.
+** Hard problems
+- Dig deep into the objects you are working with
 
 * Stuck/Messy/Lost
 - When you are stuck, this is where you can grow
-- The problem may be out of your reach.
+- If an idea you have is not working: Can you prove that it doesn't work? A counter example?
 - If there is a mistake, try again from scratch and check each step carefully.
-- Throw away unfounded assumptions
 - Start from scratch. Try to understand the problem better.
 - Keep track of key variables and symbolically simplify
   - When doing calculations/ looking for right connection,
+- Throw away unfounded assumptions
+- The problem may be out of your reach.
 
 * Advice
 - You need to do alot of problems - feng
 - You should read different references
 
 * Study Method
-- Initial quick sowing the seeds
-  - what is the big idea?
-  - ask questions, answer them
-  - guess what comes next
+- Goal: Understand intuitively and be able to do problems
+- Initial brief sowing the seeds
+  - What they do, what do they require?
+  - Big idea, what is it?
+  - Ask questions, answer them
+  - Guess what comes next
+  - Look for a summary/video/lecture/other reference
 - Theorems: look over them
-  - what they do
-  - what do they require?
-  - see key steps, dont get lost in calculation
+  - 20 min reading sessions, WRITE/UNDERLINE to focus
+  - INTUITION, MOTIVATION, why is each step taken?
+  - Drop a condition, Converse?
+  - Independent cases? Simplest cases?
+  - Find simple, essential examples
+  - Ask questions, answer them
+  - See Key steps, dont get lost in calculation
 - Problem: read and try to solve
   - look over the theorems, see how it can apply
   - make your own problems
@@ -62,6 +82,10 @@
   - State the essential? 1 sentence?
   - Can you write it shorter?
   - Extract modular, commonly used ideas.
+  - Reconstruct from an outline.
+  - Use examples to help remember.
+  - Make the understanding trivial?
 - Work for a better understanding - Liu
   - Not complete or perfect
   - Balance and repeat the processes.
+  - Come back to it later and improve/answer
