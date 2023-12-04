@@ -1,3 +1,67 @@
 - old theorem. can you rediscover path to conclusion?
 - what are my strengths?
-  - asking questions
+  - asking questions, 
+  
+
+* Mentality
+- Your joy comes from Christ. Nothing else on earth can provide it.
+- If it is true, there must be a solution
+- Once you have an heuristic that works, it is relaxing, like sewing - Russian Undergrad
+- Revisit and improve your solutions, understanding, and methods.
+- Hyper, deep, relaxed focus
+
+* Heuristic
+- Narrow the search space w/ a strong observation
+  - Where could the problem be? It must be here, o.w. everything is trivial
+
+- Simple low depth first
+- Work with conclusion & hypothesis
+- Go to definitions
+- Examples that work and don't work.
+- Draw a picture
+- Sketch out your idea, see where the problems could be
+
+- Consider equivalent forms of conclusions and hypothesis
+- Consider other implications to conclusion
+
+- What the question is asking
+- A feeling/reasons that you are going in a right direction
+  - Otherwise you will get lost and lose alot of time.
+- Ask what you need.
+- What do you need to find? Can you define, guess it?
+
+- Be very careful at each step. Dont rule out something true.
+
+* Stuck/Messy/Lost
+- When you are stuck, this is where you can grow
+- The problem may be out of your reach.
+- If there is a mistake, try again from scratch and check each step carefully.
+- Throw away unfounded assumptions
+- Start from scratch. Try to understand the problem better.
+- Keep track of key variables and symbolically simplify
+  - When doing calculations/ looking for right connection,
+
+* Advice
+- You need to do alot of problems - feng
+- You should read different references
+
+* Study Method
+- Initial quick sowing the seeds
+  - what is the big idea?
+  - ask questions, answer them
+  - guess what comes next
+- Theorems: look over them
+  - what they do
+  - what do they require?
+  - see key steps, dont get lost in calculation
+- Problem: read and try to solve
+  - look over the theorems, see how it can apply
+  - make your own problems
+- Summarize & Review
+  - Go over what you should know.
+  - State the essential? 1 sentence?
+  - Can you write it shorter?
+  - Extract modular, commonly used ideas.
+- Work for a better understanding - Liu
+  - Not complete or perfect
+  - Balance and repeat the processes.
