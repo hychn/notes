@@ -1,7 +1,9 @@
 - old theorem. can you rediscover path to conclusion?
 - what are my strengths?
   - asking questions, 
-  
+* a
+** b
+*** proof of detail
 
 * Mentality
 - Your joy comes from Christ. Nothing else on earth can provide it.
@@ -16,16 +18,19 @@
 * Heuristic
 - Write and understand the problem. What are you given?
 - What the question is asking? What is going on?
+- Occams razor: try the simple first
 
-- Consider equivalent forms of conclusions and hypothesis
-- Consider other implications to conclusion
-- Look over all the tools ( Everything in book, questions, earlier problems)
+- !Consider equivalent forms of conclusions and hypothesis
+- ! Consider other implications to conclusion
+- !! Look over all the tools ( All the theorems, easier problems, all the material)
+  - concise, comprehensive list
 
 - Simple low depth first
 - Work with conclusion & hypothesis
 - Go to definitions
 - Examples that work and don't work. What works? What doesn't work?
   - Essential examples?
+  - skeptical
 - Draw a picture
 - Sketch out your idea, see where the problems could be.
 - Solve an easier, simpler problem
