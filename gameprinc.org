@@ -1,0 +1,20 @@
+* dont invalidate player progress
+- tova armor requires prev bis to used
+
+
+* dynamic combat
+** claim: tab combat is not trival in open world
+- difficult to kite forever
+- take damage continously
+** claim: dynamic combat is not trivalized in open world
+- elden ring
+  - limited mobility
+  - multiple enemies
+  - need to identify safe opening to attack
+- hld
+  - giant crystal
+  - bird monster
+- running away is an option
+
+** claim: combat is non trivial in a bounded space
+- no trival kiting in 1 direction because bounded

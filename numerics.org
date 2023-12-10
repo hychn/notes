@@ -1,0 +1,23 @@
+method & error estimation
+* 6 Approximating Functions
+** Poly Interpolation
+- polynomial interpolation
+- !! and exist of n deg poly. for n+1 distinct $x_i$
+- newton form $p(x)=y_0+c(x-x_0)+c(x-x_0)(x-x_1)$
+- lagrange form $\sum{y_i l_i(x)}$ $l_i(x_i) =1$ $l_i(x_j)=0$ 
+- ?? poly. inter. error $f(x)-p(x)=\dfrac{1}{n+1} f^{n+1}(z_x) \prod_{i=0}^{n}{(x-x_i)$
+- runge function $\dfrac{1}{1+x^2}$. n equi node error -> inf
+- non equidistant nodes. Chebychev
+** Divided difference
+- derivation
+** Hermite Interpolation
+- interpolte n+1 condition with deg poly
+- lagrange derivation
+** 6.8 Least Sq.
+- ?? Cauchy Schwarz
+- ?? Exist Best Approx: Extreme Value thm
+- ?? Char Best Approx g is best approx <=> $f-g \bot G$
+- ?? Thm on Construction
+- ?? Bessels Inequal
+
+
