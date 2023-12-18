@@ -1,11 +1,31 @@
+
+
+* id, table management
+- item, actio , buff
+- separate listdict.py generated from def
+* half slope vs unit slope?
+- slopes are not a big part of the game. they are mostly bridges btw flat areas
+- snaller unit? slope is still same
+* verticality and combat
+- consider it as part of open world/exploration
+- mobs do not fall off
+- have specific area for combat
+- can players fall off? WOW
+
+* infernal
+- solving a wave: melee ranged
+
+
 * dont invalidate player progress
 - tova armor requires prev bis to used
 
 
 * dynamic combat
+
 ** claim: tab combat is not trival in open world
 - difficult to kite forever
 - take damage continously
+- running away is an option most of the time (as long as not running into more enemies)
 ** claim: dynamic combat is not trivalized in open world
 - elden ring
   - limited mobility
@@ -14,7 +34,30 @@
 - hld
   - giant crystal
   - bird monster
-- running away is an option
+- running away is an option (even when running into more enemies) why? can we prevent it?
+
+* itemization spell effect
+- take from lol
 
 ** claim: combat is non trivial in a bounded space
 - no trival kiting in 1 direction because bounded
+
+** claim: kiting in single direction devalues world space
+
+* value
+- position
+- distance
+- currency
+- resource
+- time
+
+
+- serializable
+* combat spell system
+- hp
+- stamina
+- manage delta with buff
+* inventory crafting system
+- stacking
+- combining
+

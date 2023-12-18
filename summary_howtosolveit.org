@@ -57,6 +57,7 @@ If also gives good mentality and values and expectations to have at each step.
 + divide small steps and big steps
 + What can I gain by doing so?
   + A presentation of the solution each step which is correct beyond doubt.
++ Stuck: know when and why the plan doesnt work
 
 ** Looking Back
 + (Need to focus here, have value)
