@@ -63,5 +63,6 @@ Relax the hypothesis
 
 
 * Convergence in Rn
-#attr_org: :width 300
+*** A
 [[./rnri.jpg]]
+
