@@ -61,3 +61,6 @@ Relax the hypothesis
 - f cont. H compact => f(H) compact
 - H compact => Sup Inf in H
 
+
+* Convergence in Rn
+[[./rnri.jpg]]
