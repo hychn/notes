@@ -54,9 +54,16 @@ https://gizmo199.itch.io/hooded-drifter-8-directional-sprite
 
 - serializable
 * combat spell system
+- less is more
 - hp
-- stamina
+- stamina (sprint)
+- combo points?
+- parry
 - manage delta with buff
+- internal character skill, (more you do, better you get)
+- rest buff, Comfort level
+- food buff, decrease over time, only 3 active
+- equip,draw,release,deliver,recover
 * inventory crafting system
 - stacking
 - combining
