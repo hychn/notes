@@ -1,0 +1,161 @@
+* Variables of Play
+time (short 6s, medium 1m, long 10m)
+entity
+  position
+  resource
+    hp
+    energy
+    combo
+    armor
+    item/consume
+    cooldown
+    de/buff
+    
+HP=RED
+ENERGY=YELLOW
+COOLDOWN=WHITE
+ARMOR=GREEN
+    
+** Variable Interaction
+Auto: Cooldown, Energy
+Combat: HP, Item, Combo, De/Buff
+Manage/Scavenge: Item, De/Buff
+
+** Changing of a Variable
+value 
+  change: + - * ^
+  rate_of_change:
+  range: max,min
+  range: max,min (soft)
+
+** Examples
+
+As you can see a variety of things can affect these values
+
+Char
+  health: 3/3
+  armor: 4
+  energy: 5/5
+  combo: 0/5
+  items: 0/15
+  de/buff: poison, tired
+ 
+
+POSITION
+  walk: costs time
+    item: shoes, food may increase speed
+  dash: costs energy/combo. sudden movement along xy direction
+  mount: costs gasoline
+  enemy force field: prevents you from moving too far away
+  enemy force field: prevents you from moving too close
+  glide: normal move but slows z fall
+  grapple hook: sudden force along xyz direction
+  
+HP
+  item: (potion) heals you. cooldown.
+  item: (bandage) heals hp over time. on use. cannot move.
+  enemy damage:
+  you damage enemy:
+  debuff: (poison) slowly ticks hp
+
+ENERGY
+  buff: (food) gives more energy regen
+  buff: (well-rested) gives more energy regen/max energy
+  
+COMBO
+  cooldown: (attack) enemy gives a combo point
+  
+COOLDOWN
+  item: (equip) Cooldown reduction. Mage hat
+  
+
+
+* Items 
+** Raw Food
+*** HP(RED)
+   . Berry
+   . Fruit
+   . Melon
+   . Squash
+   . Meat
+   . Fish
+*** ENG(YELLOW)
+*** CD(GREEN)
+** Raw Material
+  . Wood
+  . Copper
+  . Iron 
+  . Charcoal
+  . Diamond
+  . Silver
+  . Gold
+  . Petrol
+** Tools
+  . Pick
+  . Axe
+  . Hoe
+  . Bicycle
+  . Grappling Hook
+** Weapon
+*** Melee
+   .Dagger
+   .Short Sword
+   .Long Sword
+   .Rapier
+   .Axe
+   .Spear
+   .Great Sword
+*** Ranged
+   . Bow
+   . Pistol
+   . SMG
+   . Shotgun
+   . Bolt rifle
+   . Gatling Gun
+   . Rocket Launcher
+** Armor
+*** Head
+   . Cloth Hood
+   . Leather Hood
+   . Plate Copper/Iron/Steel Helm
+*** Body
+   . Leather Armor
+   . Mail Copper/Iron/Steel Armor
+   . Plate Copper/Iron/Steel Armor
+*** Foot
+   . Jordans Shoe: Double Jump
+** Trinkets
+  . Ring of Speed: Walk Faster
+** Consumes
+  . 
+* Structures
+ . Kitchen
+ . Forge
+ . Anvil
+ . Workbench
+ . Bed
+ . Planter
+
+
+* DND Combat rules
+Initiative:
+    At the start of combat, each character rolls a d20 and adds their Dexterity modifier to determine their initiative order.
+Actions:
+    On their turn, each character can take one action, one bonus action (if applicable), and move up to their movement speed. Actions include attacking, casting spells, using items, or performing other actions specified by the rules.
+    
+Attack Roll:
+    To make a melee or ranged attack, the player rolls a d20 and adds their proficiency bonus (if proficient with the weapon) and relevant ability modifier (e.g., Strength for melee attacks, Dexterity for ranged attacks). If the result equals or exceeds the target's Armor Class (AC), the attack hits.
+Damage Roll:
+    If the attack hits, the player rolls the weapon's damage dice (e.g., 1d8 for a longsword) and adds any relevant ability modifier (e.g., Strength for melee attacks). Additionally, bonuses from magical weapons or other effects may apply.
+Defensive Actions:
+    Characters can take defensive actions such as Dodge (granting advantage on Dexterity saving throws), Disengage (allowing movement without provoking opportunity attacks), or Parry (using a reaction to reduce damage from an incoming attack).
+Consumables:
+    Characters can use consumable items such as healing potions, buff potions, or scrolls as actions during combat. Each item specifies its effects and any action required to use it.
+Magical Abilities:
+    Characters can cast spells or use magical abilities, consuming spell slots or other resources as specified by their class or character abilities. Spells and abilities have varying effects, ranges, and durations.
+Special Actions:
+    Some characters may have special abilities or feats that grant additional actions, bonus attacks, or other benefits during combat. These actions are specified by the rules or character abilities.
+Status Effects:
+    Certain attacks, spells, or abilities may inflict status effects such as poisoned, stunned, or restrained. These effects impose penalties or restrictions on affected characters, as specified by the rules or effects.
+Environmental Factors:
+    The battlefield may include terrain features, obstacles, hazards, or cover that affect combat. Characters can interact with these elements to gain tactical advantages or hinder enemies.

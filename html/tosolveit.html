@@ -239,28 +239,6 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
-</script>
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content">
@@ -268,113 +246,163 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgac409fd">1. Riemann Integral</a>
+<li><a href="#org7361efd">1. Mentality</a></li>
+<li><a href="#org3661cfe">2. Heuristic</a>
 <ul>
-<li><a href="#org7301181">1.1. Riemann Integral</a></li>
-<li><a href="#org4c63c67">1.2. Riemann Sums</a></li>
-<li><a href="#org83eefa4">1.3. Fundamental Theorem</a></li>
-<li><a href="#orgbe5d71c">1.4. Improper Integral</a></li>
-<li><a href="#org65c5cce">1.5. Functions of Bounded Variation</a></li>
+<li><a href="#org7f5d9ab">2.1. Hard problems</a></li>
 </ul>
 </li>
-<li><a href="#org97c1159">2. Metric Space</a></li>
+<li><a href="#org05c2178">3. Stuck/Messy/Lost</a></li>
+<li><a href="#org144f26b">4. Advice</a></li>
+<li><a href="#orgb8707c1">5. Study Method</a></li>
 </ul>
 </div>
 </div>
-<p>
-epsilon - close to
-Dont lose sight of forest because of trees
-Look and figure out the conditions
-Relax the hypothesis
-</p>
-
-<div id="outline-container-orgac409fd" class="outline-2">
-<h2 id="orgac409fd"><span class="section-number-2">1</span> Riemann Integral</h2>
-<div class="outline-text-2" id="text-1">
-</div>
-<div id="outline-container-org7301181" class="outline-3">
-<h3 id="org7301181"><span class="section-number-3">1.1</span> Riemann Integral</h3>
-<div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
-<li>Precondition: assume f is bounded</li>
-<li>Partition: Ordering</li>
-<li>UL Riemann Sum \(U(f,P)\), \(L(f,P)\): Existance, Ordering, Converge</li>
-<li>Continous =&gt; ULRS Converge</li>
-<li>Examples of ULRS Converge</li>
-<li>UL Integral \(U\int_a^bf(x) dx\), \(L\int_a^bf(x) dx\): Existance, Ordering, Converge</li>
-<li>ULRS Converge &lt;=&gt; ULI Converge</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-org4c63c67" class="outline-3">
-<h3 id="org4c63c67"><span class="section-number-3">1.2</span> Riemann Sums</h3>
-<div class="outline-text-3" id="text-1-2">
+<li>old theorem. can you rediscover path to conclusion?</li>
+<li>what are my strengths?
 <ul class="org-ul">
-<li>Riemman Sum \(S(f,P,t_j)\): Existance, Convergence</li>
-<li>RS Converge &lt;=&gt; ULRS Converge 
-<ul class="org-ul">
-<li>Define all 3 as Rieman Integrable (Are the RS UL values equal?</li>
+<li>asking questions,</li>
 </ul></li>
-<li>Linearity of RI \(\int_a^b f(x)+g(x) = \int_a^b f(x) + \int_a^b g(x)\), \(\int_a^b k*f(x) = k* \int_a^b f(x)\)</li>
-<li>Triangle Equality \(\int_a^b f(x) = \int_a^c f(x) + \int_c^b f(x)\)</li>
-<li>Comparison \(f(x) \leq g(x)\) =&gt; \(\int_a^b f(x) \leq \int_a^b g(x)\)</li>
-<li>Product RI</li>
-<li>Consider simple case \(g(x)=1\) \(f(x)\geq 0\)</li>
-<li>Mean Value Theorem Integral (g&gt;0) \(\int_a^b f(x)g(x)\) \(= c*\int_a^b g(x)\)</li>
-<li>Mean Value Theorem Integral (g&gt;0) \(\int_a^b f(x)g(x) = m\int_a^c g(x) + M\int_c^b g(x)\)</li>
 </ul>
-</div>
-</div>
-<div id="outline-container-org83eefa4" class="outline-3">
-<h3 id="org83eefa4"><span class="section-number-3">1.3</span> Fundamental Theorem</h3>
-<div class="outline-text-3" id="text-1-3">
+
+
+<div id="outline-container-org7361efd" class="outline-2">
+<h2 id="org7361efd"><span class="section-number-2">1</span> Mentality</h2>
+<div class="outline-text-2" id="text-1">
 <ul class="org-ul">
-<li>Fundamental Theorem \(F(x) = \int_a^x f(t) dt\)</li>
-<li>Fundamental Theorem \(\int_a^b f'(x) = f(b) - f(a)\)</li>
-<li>Hypothesis cannot be relaxed</li>
-<li>Integration by Parts \(f(b)g(b)-f(a)g(a) = \int_a^b f'(x)g(x) + \int_a^b f(x)g'(x)\)</li>
-<li>Change of Variables ??</li>
-<li>Change of Variables for Continouse Integrand ??</li>
+<li>Your joy comes from Christ. Nothing else on earth can provide it.</li>
+<li>If it is true, there must be a solution</li>
+<li>Once you have an heuristic that works, it is relaxing, like sewing - Russian Undergrad</li>
+<li>Revisit and improve your solutions, understanding, and methods.</li>
+<li>Hyper, deep, relaxed focus</li>
+<li>Accept the frustration and difficulty. You are challenged. This is required for improvement.</li>
+<li>Work for consistency</li>
+<li>Spend more time doing</li>
 </ul>
-</div>
-</div>
-<div id="outline-container-orgbe5d71c" class="outline-3">
-<h3 id="orgbe5d71c"><span class="section-number-3">1.4</span> Improper Integral</h3>
-<div class="outline-text-3" id="text-1-4">
-<ul class="org-ul">
-<li>Locally Integrable (a,b)</li>
-<li>Improperly Integrable on (a,b) \(\lim\limits_{x \to a} \lim\limits_{y \to b} \int_x^y f(x)dx\)</li>
-<li>Integral equals Improper Integral</li>
-<li>Change order of limits</li>
-<li>Comparison Thm for Improper Integral</li>
-<li>Absolutely Integrable on (a,b) := Locally Integrable, |f| improperly integrable on (a,b)</li>
-<li>Conditionally Integrable on (a,b)</li>
-<li>Absolutely Integrable on (a,b) =&gt; Improperly Integrable on (a,b)</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-org65c5cce" class="outline-3">
-<h3 id="org65c5cce"><span class="section-number-3">1.5</span> Functions of Bounded Variation</h3>
 </div>
 </div>
 
-
-<div id="outline-container-org97c1159" class="outline-2">
-<h2 id="org97c1159"><span class="section-number-2">2</span> Metric Space</h2>
+<div id="outline-container-org3661cfe" class="outline-2">
+<h2 id="org3661cfe"><span class="section-number-2">2</span> Heuristic</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
-<li>Metric
+<li>Write and understand the problem. What are you given?</li>
+<li>What the question is asking? What is going on?</li>
+
+<li>Consider equivalent forms of conclusions and hypothesis</li>
+<li>Consider other implications to conclusion</li>
+<li>Look over all the tools ( Everything in book, questions, earlier problems)</li>
+
+<li>Simple low depth first</li>
+<li>Work with conclusion &amp; hypothesis</li>
+<li>Go to definitions</li>
+<li>Examples that work and don't work. What works? What doesn't work?
 <ul class="org-ul">
-<li>Linear ordering</li>
+<li>Essential examples?</li>
 </ul></li>
-<li>Open Closed Set</li>
-<li>Seq. Characterization of Closed</li>
-<li>continous function</li>
-<li>f cont, O =&gt; open F(O)</li>
-<li>Compact Set</li>
-<li>Compact &lt;=&gt; Closed and Bounded</li>
-<li>f cont. H compact =&gt; f(H) compact</li>
-<li>H compact =&gt; Sup Inf in H</li>
+<li>Draw a picture</li>
+<li>Sketch out your idea, see where the problems could be.</li>
+<li>Solve an easier, simpler problem</li>
+<li>Contrapositive? Contradiction?</li>
+<li>Is there something that when given, makes the problem easier?</li>
+
+<li>Know why an approach will not work well</li>
+<li>Narrow the search space w/ a strong observation
+<ul class="org-ul">
+<li>Where could the problem be? It must be here, o.w. everything is trivial</li>
+</ul></li>
+
+<li>Be aware of all the parameters of the problem.</li>
+<li>A feeling/reasons that you are going in a right direction. Otherwise you will get lost and lose alot of time.</li>
+<li>What do you need to find? Can you define, guess it?</li>
+
+<li>Be very careful at each step. Dont rule out something true.</li>
+</ul>
+</div>
+<div id="outline-container-org7f5d9ab" class="outline-3">
+<h3 id="org7f5d9ab"><span class="section-number-3">2.1</span> Hard problems</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>Dig deep into the objects you are working with</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org05c2178" class="outline-2">
+<h2 id="org05c2178"><span class="section-number-2">3</span> Stuck/Messy/Lost</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li>When you are stuck, this is where you can grow</li>
+<li>If an idea you have is not working: Can you prove that it doesn't work? A counter example?</li>
+<li>If there is a mistake, try again from scratch and check each step carefully.</li>
+<li>Start from scratch. Try to understand the problem better.</li>
+<li>Keep track of key variables and symbolically simplify
+<ul class="org-ul">
+<li>When doing calculations/ looking for right connection,</li>
+</ul></li>
+<li>Work with minimal statements</li>
+<li>Throw away unfounded assumptions</li>
+<li>The problem may be out of your reach.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org144f26b" class="outline-2">
+<h2 id="org144f26b"><span class="section-number-2">4</span> Advice</h2>
+<div class="outline-text-2" id="text-4">
+<ul class="org-ul">
+<li>You need to do alot of problems - feng</li>
+<li>You should read different references</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb8707c1" class="outline-2">
+<h2 id="orgb8707c1"><span class="section-number-2">5</span> Study Method</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>Goal: Understand intuitively and be able to do problems</li>
+<li>Initial brief sowing the seeds
+<ul class="org-ul">
+<li>What they do, what do they require?</li>
+<li>Big idea, what is it?</li>
+<li>Ask questions, answer them</li>
+<li>Guess what comes next</li>
+<li>Look for a summary/video/lecture/other reference</li>
+</ul></li>
+<li>Theorems: look over them
+<ul class="org-ul">
+<li>20 min reading sessions, WRITE/UNDERLINE to focus</li>
+<li>INTUITION, MOTIVATION, why is each step taken?</li>
+<li>Drop a condition, Converse?</li>
+<li>Independent cases? Simplest cases?</li>
+<li>Find simple, essential examples</li>
+<li>Ask questions, answer them</li>
+<li>See Key steps, dont get lost in calculation</li>
+</ul></li>
+<li>Problem: read and try to solve
+<ul class="org-ul">
+<li>look over the theorems, see how it can apply</li>
+<li>make your own problems</li>
+</ul></li>
+<li>Summarize &amp; Review
+<ul class="org-ul">
+<li>Go over what you should know.</li>
+<li>State the essential? 1 sentence?</li>
+<li>Can you write it shorter?</li>
+<li>Extract modular, commonly used ideas.</li>
+<li>Reconstruct from an outline.</li>
+<li>Use examples to help remember.</li>
+<li>Make the understanding trivial?</li>
+</ul></li>
+<li>Work for a better understanding - Liu
+<ul class="org-ul">
+<li>Not complete or perfect</li>
+<li>Balance and repeat the processes.</li>
+<li>Come back to it later and improve/answer</li>
+</ul></li>
 </ul>
 </div>
 </div>
