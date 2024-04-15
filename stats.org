@@ -1,3 +1,17 @@
-** Variance
+* Properties of Distributions
+Sum of k Pois($\lambda$) is Pois($k\lambda$)
+** Properties Variance
+- $Var(c) = 0$
+- $Var(aX+bY) = a^2Var(X)+b^2Var(Y)$
 ** Complete
 ** Sufficient
+- Sufficient Statistic is a statistic that captures all the info about parameter 
+
+*** Neyman Factorization Theorem
+  - A way to find sufficient statistic
+
+
+A function of complete sufficient is complete sufficient?
+
+** Thm 7.4.1
+
