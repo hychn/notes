@@ -1,3 +1,6 @@
 * Galois
+** *Crucial Prop.* extension of base field isomorphism to field extension
+Let $\sigma : F_1 \rightarrow F_2$ an isomorphism and $p_1(x)$ min poly of $\alpha_1$. Let $p_2(x):=p_1(x)^\sigma$, min poly of $\alpha_2$. Then we can extend to an isomorphism $\overline\sigma: F_1(\alpha_1) \rightarrow F_2(\alpha_2)$
+A special case is that a field extension of any element is identical
 ** *Definition.* Gal(K\F) is called *Galois* if |Gal(K\F)| = [K:F]
-** *Characterization of Galois.* Let $K=F(\alpha)$, p(x) min poly of $\alpha$ over F
+** *Characterization of Galois.* Let $K=F(\alpha)$, p(x) deg d min poly of $\alpha$ over F. Gal(K\F) is Galois iff p(x) has d distinct roots in K.

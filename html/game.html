@@ -246,175 +246,336 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org44c45d5">1. Mentality</a></li>
-<li><a href="#org3d0b40b">2. Heuristic</a>
+<li><a href="#orga586b30">1. Variables of Play</a>
 <ul>
-<li><a href="#org18e690e">2.1. Hard problems</a></li>
+<li><a href="#org025fa48">1.1. Variable Interaction</a></li>
+<li><a href="#org3fcdbd8">1.2. Changing of a Variable</a></li>
+<li><a href="#org188dbe8">1.3. Examples</a></li>
 </ul>
 </li>
-<li><a href="#org2238919">3. Stuck/Messy/Lost</a></li>
-<li><a href="#org392d065">4. Advice</a></li>
-<li><a href="#org3a11c15">5. Study Method</a></li>
+<li><a href="#org32bc7c6">2. Items</a>
+<ul>
+<li><a href="#org6e03035">2.1. Raw Food</a>
+<ul>
+<li><a href="#org9496c6e">2.1.1. HP(RED)</a></li>
+<li><a href="#org322d8ae">2.1.2. ENG(YELLOW)</a></li>
+<li><a href="#orgc26d485">2.1.3. CD(GREEN)</a></li>
+</ul>
+</li>
+<li><a href="#orge7203e3">2.2. Raw Material</a></li>
+<li><a href="#orgb356741">2.3. Tools</a></li>
+<li><a href="#org273c52c">2.4. Weapon</a>
+<ul>
+<li><a href="#org2af8800">2.4.1. Melee</a></li>
+<li><a href="#org274d632">2.4.2. Ranged</a></li>
+</ul>
+</li>
+<li><a href="#orga5cb8a0">2.5. Armor</a>
+<ul>
+<li><a href="#org49aed12">2.5.1. Head</a></li>
+<li><a href="#orgb8ba2d8">2.5.2. Body</a></li>
+<li><a href="#org6ad1362">2.5.3. Foot</a></li>
+</ul>
+</li>
+<li><a href="#org8f3405f">2.6. Trinkets</a></li>
+<li><a href="#org481dba2">2.7. Consumes</a></li>
+</ul>
+</li>
+<li><a href="#org28c1c9c">3. Structures</a></li>
+<li><a href="#orgaf45440">4. DND Combat rules</a></li>
 </ul>
 </div>
 </div>
-<ul class="org-ul">
-<li>old theorem. can you rediscover path to conclusion?</li>
-<li>what are my strengths?
-<ul class="org-ul">
-<li>asking questions,</li>
-</ul></li>
-</ul>
-
-<div id="outline-container-org44c45d5" class="outline-2">
-<h2 id="org44c45d5"><span class="section-number-2">1</span> Mentality</h2>
+<div id="outline-container-orga586b30" class="outline-2">
+<h2 id="orga586b30"><span class="section-number-2">1</span> Variables of Play</h2>
 <div class="outline-text-2" id="text-1">
-<ul class="org-ul">
-<li>Your joy comes from Christ. Nothing else on earth can provide it.</li>
-<li>If it is true, there must be a solution</li>
-<li>Once you have an heuristic that works, it is relaxing, like sewing - Russian Undergrad</li>
-<li>Revisit and improve your solutions, understanding, and methods.</li>
-<li>Hyper, deep, relaxed focus</li>
-<li>Accept the frustration and difficulty. You are challenged. This is required for improvement.</li>
-<li>Work for consistency</li>
-<li>Spend more time doing</li>
-</ul>
+<p>
+time (short 6s, medium 1m, long 10m)
+entity
+  position
+  resource
+    hp
+    energy
+    combo
+    armor
+    item/consume
+    cooldown
+    de/buff
+</p>
+
+<p>
+HP=RED
+ENERGY=YELLOW
+COOLDOWN=WHITE
+ARMOR=GREEN
+</p>
+</div>
+
+<div id="outline-container-org025fa48" class="outline-3">
+<h3 id="org025fa48"><span class="section-number-3">1.1</span> Variable Interaction</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Auto: Cooldown, Energy
+Combat: HP, Item, Combo, De/Buff
+Manage/Scavenge: Item, De/Buff
+</p>
 </div>
 </div>
 
-<div id="outline-container-org3d0b40b" class="outline-2">
-<h2 id="org3d0b40b"><span class="section-number-2">2</span> Heuristic</h2>
+<div id="outline-container-org3fcdbd8" class="outline-3">
+<h3 id="org3fcdbd8"><span class="section-number-3">1.2</span> Changing of a Variable</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+value 
+  change: + - * ^
+  rate<sub>of</sub><sub>change</sub>:
+  range: max,min
+  range: max,min (soft)
+</p>
+</div>
+</div>
+
+<div id="outline-container-org188dbe8" class="outline-3">
+<h3 id="org188dbe8"><span class="section-number-3">1.3</span> Examples</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+As you can see a variety of things can affect these values
+</p>
+
+<p>
+Char
+  health: 3/3
+  armor: 4
+  energy: 5/5
+  combo: 0/5
+  items: 0/15
+  de/buff: poison, tired
+</p>
+
+
+<p>
+POSITION
+  walk: costs time
+    item: shoes, food may increase speed
+  dash: costs energy/combo. sudden movement along xy direction
+  mount: costs gasoline
+  enemy force field: prevents you from moving too far away
+  enemy force field: prevents you from moving too close
+  glide: normal move but slows z fall
+  grapple hook: sudden force along xyz direction
+</p>
+
+<p>
+HP
+  item: (potion) heals you. cooldown.
+  item: (bandage) heals hp over time. on use. cannot move.
+  enemy damage:
+  you damage enemy:
+  debuff: (poison) slowly ticks hp
+</p>
+
+<p>
+ENERGY
+  buff: (food) gives more energy regen
+  buff: (well-rested) gives more energy regen/max energy
+</p>
+
+<p>
+COMBO
+  cooldown: (attack) enemy gives a combo point
+</p>
+
+<p>
+COOLDOWN
+  item: (equip) Cooldown reduction. Mage hat
+</p>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-org32bc7c6" class="outline-2">
+<h2 id="org32bc7c6"><span class="section-number-2">2</span> Items</h2>
 <div class="outline-text-2" id="text-2">
-<ul class="org-ul">
-<li>can you simplify this list?</li>
-
-<li>Start from the definitions</li>
-<li>Work from conclusion, connect with hypothesis
-<ul class="org-ul">
-<li>What intermediate step can give conclusion?</li>
-</ul></li>
-
-<li>Write and understand the problem. What are you given?</li>
-<li>What the question is asking? What is going on?</li>
-<li>Occams razor: try the simple first</li>
-
-<li>!! Consider situations that lead to conclusion</li>
-<li>!! Look over all the tools ( All the theorems, easier problems, all the material)</li>
-<li>!Consider equivalent forms of conclusions and hypothesis
-<ul class="org-ul">
-<li>concise, comprehensive list</li>
-</ul></li>
-
-<li>Simple low depth first</li>
-<li>Examples that work and don't work. What works? What doesn't work?
-<ul class="org-ul">
-<li>Essential examples?</li>
-<li>skeptical</li>
-</ul></li>
-<li>Draw a picture</li>
-<li>Sketch out your idea, see where the problems could be.</li>
-<li>Solve an easier, simpler problem</li>
-<li>Contrapositive? Contradiction?</li>
-<li>Is there something that when given, makes the problem easier?</li>
-
-<li>Know why an approach will not work well</li>
-<li>Narrow the search space w/ a strong observation
-<ul class="org-ul">
-<li>Where could the problem be? It must be here, o.w. everything is trivial</li>
-</ul></li>
-
-<li>Be aware of all the parameters of the problem.</li>
-<li>A feeling/reasons that you are going in a right direction. Otherwise you will get lost and lose alot of time.</li>
-<li>What do you need to find? Can you define, guess it?</li>
-
-<li>Be very careful at each step. Dont rule out something true.</li>
-</ul>
 </div>
-<div id="outline-container-org18e690e" class="outline-3">
-<h3 id="org18e690e"><span class="section-number-3">2.1</span> Hard problems</h3>
+<div id="outline-container-org6e03035" class="outline-3">
+<h3 id="org6e03035"><span class="section-number-3">2.1</span> Raw Food</h3>
 <div class="outline-text-3" id="text-2-1">
-<ul class="org-ul">
-<li>Dig deep into the objects you are working with</li>
-</ul>
+</div>
+<div id="outline-container-org9496c6e" class="outline-4">
+<h4 id="org9496c6e"><span class="section-number-4">2.1.1</span> HP(RED)</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<p>
+. Berry
+. Fruit
+. Melon
+. Squash
+. Meat
+. Fish
+</p>
+</div>
+</div>
+<div id="outline-container-org322d8ae" class="outline-4">
+<h4 id="org322d8ae"><span class="section-number-4">2.1.2</span> ENG(YELLOW)</h4>
+</div>
+<div id="outline-container-orgc26d485" class="outline-4">
+<h4 id="orgc26d485"><span class="section-number-4">2.1.3</span> CD(GREEN)</h4>
+</div>
+</div>
+<div id="outline-container-orge7203e3" class="outline-3">
+<h3 id="orge7203e3"><span class="section-number-3">2.2</span> Raw Material</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+. Wood
+. Copper
+. Iron 
+. Charcoal
+. Diamond
+. Silver
+. Gold
+. Petrol
+</p>
+</div>
+</div>
+<div id="outline-container-orgb356741" class="outline-3">
+<h3 id="orgb356741"><span class="section-number-3">2.3</span> Tools</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+. Pick
+. Axe
+. Hoe
+. Bicycle
+. Grappling Hook
+</p>
+</div>
+</div>
+<div id="outline-container-org273c52c" class="outline-3">
+<h3 id="org273c52c"><span class="section-number-3">2.4</span> Weapon</h3>
+<div class="outline-text-3" id="text-2-4">
+</div>
+<div id="outline-container-org2af8800" class="outline-4">
+<h4 id="org2af8800"><span class="section-number-4">2.4.1</span> Melee</h4>
+<div class="outline-text-4" id="text-2-4-1">
+<p>
+.Dagger
+.Short Sword
+.Long Sword
+.Rapier
+.Axe
+.Spear
+.Great Sword
+</p>
+</div>
+</div>
+<div id="outline-container-org274d632" class="outline-4">
+<h4 id="org274d632"><span class="section-number-4">2.4.2</span> Ranged</h4>
+<div class="outline-text-4" id="text-2-4-2">
+<p>
+. Bow
+. Pistol
+. SMG
+. Shotgun
+. Bolt rifle
+. Gatling Gun
+. Rocket Launcher
+</p>
 </div>
 </div>
 </div>
-
-<div id="outline-container-org2238919" class="outline-2">
-<h2 id="org2238919"><span class="section-number-2">3</span> Stuck/Messy/Lost</h2>
+<div id="outline-container-orga5cb8a0" class="outline-3">
+<h3 id="orga5cb8a0"><span class="section-number-3">2.5</span> Armor</h3>
+<div class="outline-text-3" id="text-2-5">
+</div>
+<div id="outline-container-org49aed12" class="outline-4">
+<h4 id="org49aed12"><span class="section-number-4">2.5.1</span> Head</h4>
+<div class="outline-text-4" id="text-2-5-1">
+<p>
+. Cloth Hood
+. Leather Hood
+. Plate Copper/Iron/Steel Helm
+</p>
+</div>
+</div>
+<div id="outline-container-orgb8ba2d8" class="outline-4">
+<h4 id="orgb8ba2d8"><span class="section-number-4">2.5.2</span> Body</h4>
+<div class="outline-text-4" id="text-2-5-2">
+<p>
+. Leather Armor
+. Mail Copper/Iron/Steel Armor
+. Plate Copper/Iron/Steel Armor
+</p>
+</div>
+</div>
+<div id="outline-container-org6ad1362" class="outline-4">
+<h4 id="org6ad1362"><span class="section-number-4">2.5.3</span> Foot</h4>
+<div class="outline-text-4" id="text-2-5-3">
+<p>
+. Jordans Shoe: Double Jump
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org8f3405f" class="outline-3">
+<h3 id="org8f3405f"><span class="section-number-3">2.6</span> Trinkets</h3>
+<div class="outline-text-3" id="text-2-6">
+<p>
+. Ring of Speed: Walk Faster
+</p>
+</div>
+</div>
+<div id="outline-container-org481dba2" class="outline-3">
+<h3 id="org481dba2"><span class="section-number-3">2.7</span> Consumes</h3>
+<div class="outline-text-3" id="text-2-7">
+<p>
+. 
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org28c1c9c" class="outline-2">
+<h2 id="org28c1c9c"><span class="section-number-2">3</span> Structures</h2>
 <div class="outline-text-2" id="text-3">
-<ul class="org-ul">
-<li>When you are stuck, this is where you can grow</li>
-<li>If an idea you have is not working: Can you prove that it doesn't work? A counter example?</li>
-<li>If there is a mistake, try again from scratch and check each step carefully.</li>
-<li>Start from scratch. Try to understand the problem better.</li>
-<li>Keep track of key variables and symbolically simplify
-<ul class="org-ul">
-<li>When doing calculations/ looking for right connection,</li>
-</ul></li>
-<li>Work with minimal statements</li>
-<li>Throw away unfounded assumptions</li>
-<li>The problem may be out of your reach.</li>
-</ul>
+<p>
+. Kitchen
+. Forge
+. Anvil
+. Workbench
+. Bed
+. Planter
+</p>
 </div>
 </div>
 
-<div id="outline-container-org392d065" class="outline-2">
-<h2 id="org392d065"><span class="section-number-2">4</span> Advice</h2>
+
+<div id="outline-container-orgaf45440" class="outline-2">
+<h2 id="orgaf45440"><span class="section-number-2">4</span> DND Combat rules</h2>
 <div class="outline-text-2" id="text-4">
-<ul class="org-ul">
-<li>You need to do alot of problems - feng</li>
-<li>You should read different references</li>
-</ul>
-</div>
-</div>
+<p>
+Initiative:
+    At the start of combat, each character rolls a d20 and adds their Dexterity modifier to determine their initiative order.
+Actions:
+    On their turn, each character can take one action, one bonus action (if applicable), and move up to their movement speed. Actions include attacking, casting spells, using items, or performing other actions specified by the rules.
+</p>
 
-<div id="outline-container-org3a11c15" class="outline-2">
-<h2 id="org3a11c15"><span class="section-number-2">5</span> Study Method</h2>
-<div class="outline-text-2" id="text-5">
-<ul class="org-ul">
-<li>Goal: Understand intuitively and be able to do problems</li>
-<li>Initial brief sowing the seeds
-<ul class="org-ul">
-<li>What they do, what do they require?</li>
-<li>Big idea, what is it?</li>
-<li>! Ask questions, answer them</li>
-<li>Guess what comes next</li>
-<li>Look for a summary/video/lecture/other reference</li>
-</ul></li>
-<li>Theorems: look over them
-<ul class="org-ul">
-<li>20 min reading sessions, WRITE/UNDERLINE to focus</li>
-<li>INTUITION, MOTIVATION, why is each step taken?</li>
-<li>Drop a condition, Converse?</li>
-<li>Independent cases? Simplest cases?</li>
-<li>Find simple, essential examples</li>
-<li>Ask questions, answer them</li>
-<li>See Key steps, dont get lost in calculation</li>
-</ul></li>
-<li>Problem: read and try to solve
-<ul class="org-ul">
-<li>look over the theorems, see how it can apply</li>
-<li>make your own problems</li>
-<li>summarize 1 line</li>
-</ul></li>
-<li>Summarize &amp; Review
-<ul class="org-ul">
-<li>Go over what you should know (problems, theorems, examples)</li>
-<li>State the essential? 1 line?</li>
-<li>Can you write it shorter?</li>
-<li>Extract modular, commonly used ideas.</li>
-<li>Reconstruct from an outline.</li>
-<li>Use examples to help remember.</li>
-<li>Make the understanding trivial?</li>
-</ul></li>
-<li>Work for a better understanding - Liu
-<ul class="org-ul">
-<li>Not complete or perfect</li>
-<li>Balance and repeat the processes.</li>
-<li>Come back to it later and improve/answer</li>
-</ul></li>
-</ul>
+<p>
+Attack Roll:
+    To make a melee or ranged attack, the player rolls a d20 and adds their proficiency bonus (if proficient with the weapon) and relevant ability modifier (e.g., Strength for melee attacks, Dexterity for ranged attacks). If the result equals or exceeds the target's Armor Class (AC), the attack hits.
+Damage Roll:
+    If the attack hits, the player rolls the weapon's damage dice (e.g., 1d8 for a longsword) and adds any relevant ability modifier (e.g., Strength for melee attacks). Additionally, bonuses from magical weapons or other effects may apply.
+Defensive Actions:
+    Characters can take defensive actions such as Dodge (granting advantage on Dexterity saving throws), Disengage (allowing movement without provoking opportunity attacks), or Parry (using a reaction to reduce damage from an incoming attack).
+Consumables:
+    Characters can use consumable items such as healing potions, buff potions, or scrolls as actions during combat. Each item specifies its effects and any action required to use it.
+Magical Abilities:
+    Characters can cast spells or use magical abilities, consuming spell slots or other resources as specified by their class or character abilities. Spells and abilities have varying effects, ranges, and durations.
+Special Actions:
+    Some characters may have special abilities or feats that grant additional actions, bonus attacks, or other benefits during combat. These actions are specified by the rules or character abilities.
+Status Effects:
+    Certain attacks, spells, or abilities may inflict status effects such as poisoned, stunned, or restrained. These effects impose penalties or restrictions on affected characters, as specified by the rules or effects.
+Environmental Factors:
+    The battlefield may include terrain features, obstacles, hazards, or cover that affect combat. Characters can interact with these elements to gain tactical advantages or hinder enemies.
+</p>
 </div>
 </div>
 </div>

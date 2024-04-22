@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-03-02 Sat 12:40 -->
+<!-- 2024-04-22 Mon 10:03 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -268,16 +268,31 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgac409fd">1. Riemann Integral</a>
+<li><a href="#org237d796">1. Sequences</a>
 <ul>
-<li><a href="#org7301181">1.1. Riemann Integral</a></li>
-<li><a href="#org4c63c67">1.2. Riemann Sums</a></li>
-<li><a href="#org83eefa4">1.3. Fundamental Theorem</a></li>
-<li><a href="#orgbe5d71c">1.4. Improper Integral</a></li>
-<li><a href="#org65c5cce">1.5. Functions of Bounded Variation</a></li>
+<li><a href="#orgd5ade27">1.1. Cauchy</a></li>
 </ul>
 </li>
-<li><a href="#org97c1159">2. Metric Space</a></li>
+<li><a href="#orgb2dcaea">2. Riemann Integral</a>
+<ul>
+<li><a href="#orgfc25b98">2.1. Riemann Integral</a></li>
+<li><a href="#orgae0c4ff">2.2. Riemann Sums</a></li>
+<li><a href="#org412473e">2.3. Fundamental Theorem</a></li>
+<li><a href="#org89490c3">2.4. Improper Integral</a></li>
+<li><a href="#orge91f117">2.5. Functions of Bounded Variation</a></li>
+</ul>
+</li>
+<li><a href="#org2d0cb64">3. Series</a></li>
+<li><a href="#org657e646">4. Metric Space</a></li>
+<li><a href="#org2e35a37">5. Convergence in Rn</a>
+<ul>
+<li>
+<ul>
+<li><a href="#org0ce9d5e">5.0.1. A</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -288,13 +303,26 @@ Look and figure out the conditions
 Relax the hypothesis
 </p>
 
-<div id="outline-container-orgac409fd" class="outline-2">
-<h2 id="orgac409fd"><span class="section-number-2">1</span> Riemann Integral</h2>
+<div id="outline-container-org237d796" class="outline-2">
+<h2 id="org237d796"><span class="section-number-2">1</span> Sequences</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org7301181" class="outline-3">
-<h3 id="org7301181"><span class="section-number-3">1.1</span> Riemann Integral</h3>
+<div id="outline-container-orgd5ade27" class="outline-3">
+<h3 id="orgd5ade27"><span class="section-number-3">1.1</span> Cauchy</h3>
 <div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>Cauchy:= sequence clustering somewhere</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb2dcaea" class="outline-2">
+<h2 id="orgb2dcaea"><span class="section-number-2">2</span> Riemann Integral</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgfc25b98" class="outline-3">
+<h3 id="orgfc25b98"><span class="section-number-3">2.1</span> Riemann Integral</h3>
+<div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>Precondition: assume f is bounded</li>
 <li>Partition: Ordering</li>
@@ -306,9 +334,9 @@ Relax the hypothesis
 </ul>
 </div>
 </div>
-<div id="outline-container-org4c63c67" class="outline-3">
-<h3 id="org4c63c67"><span class="section-number-3">1.2</span> Riemann Sums</h3>
-<div class="outline-text-3" id="text-1-2">
+<div id="outline-container-orgae0c4ff" class="outline-3">
+<h3 id="orgae0c4ff"><span class="section-number-3">2.2</span> Riemann Sums</h3>
+<div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li>Riemman Sum \(S(f,P,t_j)\): Existance, Convergence</li>
 <li>RS Converge &lt;=&gt; ULRS Converge 
@@ -325,9 +353,9 @@ Relax the hypothesis
 </ul>
 </div>
 </div>
-<div id="outline-container-org83eefa4" class="outline-3">
-<h3 id="org83eefa4"><span class="section-number-3">1.3</span> Fundamental Theorem</h3>
-<div class="outline-text-3" id="text-1-3">
+<div id="outline-container-org412473e" class="outline-3">
+<h3 id="org412473e"><span class="section-number-3">2.3</span> Fundamental Theorem</h3>
+<div class="outline-text-3" id="text-2-3">
 <ul class="org-ul">
 <li>Fundamental Theorem \(F(x) = \int_a^x f(t) dt\)</li>
 <li>Fundamental Theorem \(\int_a^b f'(x) = f(b) - f(a)\)</li>
@@ -338,9 +366,9 @@ Relax the hypothesis
 </ul>
 </div>
 </div>
-<div id="outline-container-orgbe5d71c" class="outline-3">
-<h3 id="orgbe5d71c"><span class="section-number-3">1.4</span> Improper Integral</h3>
-<div class="outline-text-3" id="text-1-4">
+<div id="outline-container-org89490c3" class="outline-3">
+<h3 id="org89490c3"><span class="section-number-3">2.4</span> Improper Integral</h3>
+<div class="outline-text-3" id="text-2-4">
 <ul class="org-ul">
 <li>Locally Integrable (a,b)</li>
 <li>Improperly Integrable on (a,b) \(\lim\limits_{x \to a} \lim\limits_{y \to b} \int_x^y f(x)dx\)</li>
@@ -353,15 +381,25 @@ Relax the hypothesis
 </ul>
 </div>
 </div>
-<div id="outline-container-org65c5cce" class="outline-3">
-<h3 id="org65c5cce"><span class="section-number-3">1.5</span> Functions of Bounded Variation</h3>
+<div id="outline-container-orge91f117" class="outline-3">
+<h3 id="orge91f117"><span class="section-number-3">2.5</span> Functions of Bounded Variation</h3>
 </div>
 </div>
 
 
-<div id="outline-container-org97c1159" class="outline-2">
-<h2 id="org97c1159"><span class="section-number-2">2</span> Metric Space</h2>
-<div class="outline-text-2" id="text-2">
+
+<div id="outline-container-org2d0cb64" class="outline-2">
+<h2 id="org2d0cb64"><span class="section-number-2">3</span> Series</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li>if \(b_n \rightarrow b\) then average converge to b</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org657e646" class="outline-2">
+<h2 id="org657e646"><span class="section-number-2">4</span> Metric Space</h2>
+<div class="outline-text-2" id="text-4">
 <ul class="org-ul">
 <li>Metric
 <ul class="org-ul">
@@ -378,10 +416,27 @@ Relax the hypothesis
 </ul>
 </div>
 </div>
+
+
+<div id="outline-container-org2e35a37" class="outline-2">
+<h2 id="org2e35a37"><span class="section-number-2">5</span> Convergence in Rn</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org0ce9d5e" class="outline-4">
+<h4 id="org0ce9d5e"><span class="section-number-4">5.0.1</span> A</h4>
+<div class="outline-text-4" id="text-5-0-1">
+
+<div class="figure">
+<p><img src="./rnri.jpg" alt="rnri.jpg" />
+</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: ychnh</p>
-<p class="date">Created: 2024-03-02 Sat 12:40</p>
+<p class="date">Created: 2024-04-22 Mon 10:03</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

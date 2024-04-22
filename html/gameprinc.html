@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-04-22 Mon 10:04 -->
+<!-- 2024-04-22 Mon 10:03 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -242,73 +242,191 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<ul class="org-ul">
-<li>watch your life and doctrine closely. persevere in them because if you do you will save yourself and you're hearers. 1 Tim 4:16</li>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org9b33dd2">1. id, table management</a></li>
+<li><a href="#orgce9aa0b">2. half slope vs unit slope?</a></li>
+<li><a href="#org663af5b">3. verticality and combat</a></li>
+<li><a href="#orgd517d35">4. infernal</a></li>
+<li><a href="#orgfeda634">5. dont invalidate player progress</a></li>
+<li><a href="#org24c7490">6. dynamic combat</a>
+<ul>
+<li><a href="#orgd7ba989">6.1. claim: tab combat is not trival in open world</a></li>
+<li><a href="#orgea00f47">6.2. claim: dynamic combat is not trivalized in open world</a></li>
+</ul>
+</li>
+<li><a href="#orgcec6353">7. itemization spell effect</a>
+<ul>
+<li><a href="#orgdf9e092">7.1. claim: combat is non trivial in a bounded space</a></li>
+<li><a href="#org5173eb4">7.2. claim: kiting in single direction devalues world space</a></li>
+</ul>
+</li>
+<li><a href="#org6db9f27">8. value</a></li>
+<li><a href="#org41bf8c3">9. combat spell system</a></li>
+<li><a href="#org6d9c90d">10. inventory crafting system</a></li>
+</ul>
+</div>
+</div>
+<p>
+<a href="https://gizmo199.itch.io/hooded-drifter-8-directional-sprite">https://gizmo199.itch.io/hooded-drifter-8-directional-sprite</a>
+</p>
 
-<li>when stuck.
+<div id="outline-container-org9b33dd2" class="outline-2">
+<h2 id="org9b33dd2"><span class="section-number-2">1</span> id, table management</h2>
+<div class="outline-text-2" id="text-1">
 <ul class="org-ul">
-<li>!!! recall everything you know related to what you are trying to do</li>
-<li>get desperate</li>
-<li>carefully examine the relationships that are true and potentially maybe useful</li>
-<li>sketch/try concrete/rough examples that work and see what you need
+<li>item, actio , buff</li>
+<li>separate listdict.py generated from def</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgce9aa0b" class="outline-2">
+<h2 id="orgce9aa0b"><span class="section-number-2">2</span> half slope vs unit slope?</h2>
+<div class="outline-text-2" id="text-2">
 <ul class="org-ul">
-<li>wishful thinking</li>
-</ul></li>
-<li>dont get too attached to one particular starting point
+<li>slopes are not a big part of the game. they are mostly bridges btw flat areas</li>
+<li>snaller unit? slope is still same</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org663af5b" class="outline-2">
+<h2 id="org663af5b"><span class="section-number-2">3</span> verticality and combat</h2>
+<div class="outline-text-2" id="text-3">
 <ul class="org-ul">
-<li>look over other situations</li>
-</ul></li>
-<li>ask yourself what you look to do
-<ul class="org-ul">
-<li>we need a lower bound so&#x2026;</li>
-</ul></li>
-<li>remember the problem and what you are trying to do</li>
-</ul></li>
+<li>consider it as part of open world/exploration</li>
+<li>mobs do not fall off</li>
+<li>have specific area for combat</li>
+<li>can players fall off? WOW</li>
+</ul>
+</div>
+</div>
 
-<li>qual goals
+<div id="outline-container-orgd517d35" class="outline-2">
+<h2 id="orgd517d35"><span class="section-number-2">4</span> infernal</h2>
+<div class="outline-text-2" id="text-4">
 <ul class="org-ul">
-<li>search, discover solution the idea proficient  effectively</li>
-<li>be able to write the solution, efficiently</li>
-</ul></li>
+<li>solving a wave: melee ranged</li>
+</ul>
+</div>
+</div>
 
-<li>write it many times to remember 
-<ul class="org-ul">
-<li>this may also mean the problem</li>
-<li>the theorem</li>
-<li>to gain more awareness</li>
-<li>committed to memory without fear of losing it</li>
-</ul></li>
 
-<li>generator filter explorer model of problem solving</li>
-<li>generator depends on past experiences
+<div id="outline-container-orgfeda634" class="outline-2">
+<h2 id="orgfeda634"><span class="section-number-2">5</span> dont invalidate player progress</h2>
+<div class="outline-text-2" id="text-5">
 <ul class="org-ul">
-<li>can you intensely create past experiences as you solve the problem</li>
-<li>how can you create quality past experiences?</li>
-</ul></li>
-<li>discover facts or general truths that can help guide your filter
-<ul class="org-ul">
-<li>discover logical paths to the solution to help your filter (knowing this must lead to the solution)</li>
-</ul></li>
+<li>tova armor requires prev bis to used</li>
+</ul>
+</div>
+</div>
 
-<li>remove the stress preventing your filter of ideas from coming through 
+
+<div id="outline-container-org24c7490" class="outline-2">
+<h2 id="org24c7490"><span class="section-number-2">6</span> dynamic combat</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-orgd7ba989" class="outline-3">
+<h3 id="orgd7ba989"><span class="section-number-3">6.1</span> claim: tab combat is not trival in open world</h3>
+<div class="outline-text-3" id="text-6-1">
 <ul class="org-ul">
-<li>me no math me dum dumb</li>
-<li>self confidence</li>
+<li>difficult to kite forever</li>
+<li>take damage continously</li>
+<li>running away is an option most of the time (as long as not running into more enemies)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgea00f47" class="outline-3">
+<h3 id="orgea00f47"><span class="section-number-3">6.2</span> claim: dynamic combat is not trivalized in open world</h3>
+<div class="outline-text-3" id="text-6-2">
+<ul class="org-ul">
+<li>elden ring
+<ul class="org-ul">
+<li>limited mobility</li>
+<li>multiple enemies</li>
+<li>need to identify safe opening to attack</li>
 </ul></li>
+<li>hld
+<ul class="org-ul">
+<li>giant crystal</li>
+<li>bird monster</li>
+</ul></li>
+<li>running away is an option (even when running into more enemies) why? can we prevent it?</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgcec6353" class="outline-2">
+<h2 id="orgcec6353"><span class="section-number-2">7</span> itemization spell effect</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>take from lol</li>
+</ul>
+</div>
+
+<div id="outline-container-orgdf9e092" class="outline-3">
+<h3 id="orgdf9e092"><span class="section-number-3">7.1</span> claim: combat is non trivial in a bounded space</h3>
+<div class="outline-text-3" id="text-7-1">
+<ul class="org-ul">
+<li>no trival kiting in 1 direction because bounded</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5173eb4" class="outline-3">
+<h3 id="org5173eb4"><span class="section-number-3">7.2</span> claim: kiting in single direction devalues world space</h3>
+</div>
+</div>
+
+<div id="outline-container-org6db9f27" class="outline-2">
+<h2 id="org6db9f27"><span class="section-number-2">8</span> value</h2>
+<div class="outline-text-2" id="text-8">
+<ul class="org-ul">
+<li>position</li>
+<li>distance</li>
+<li>currency</li>
+<li>resource</li>
+<li>time</li>
 </ul>
 
 
 <ul class="org-ul">
-<li>find sufficient problems to help you train</li>
-<li>practice searching</li>
-<li>practice combining what you know</li>
-<li>reduce the problem to a simple problem</li>
-<li>try some examples</li>
+<li>serializable</li>
 </ul>
+</div>
+</div>
+<div id="outline-container-org41bf8c3" class="outline-2">
+<h2 id="org41bf8c3"><span class="section-number-2">9</span> combat spell system</h2>
+<div class="outline-text-2" id="text-9">
+<ul class="org-ul">
+<li>less is more</li>
+<li>hp</li>
+<li>stamina (sprint)</li>
+<li>combo points?</li>
+<li>parry</li>
+<li>manage delta with buff</li>
+<li>internal character skill, (more you do, better you get)</li>
+<li>rest buff, Comfort level</li>
+<li>food buff, decrease over time, only 3 active</li>
+<li>equip,draw,release,deliver,recover</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6d9c90d" class="outline-2">
+<h2 id="org6d9c90d"><span class="section-number-2">10</span> inventory crafting system</h2>
+<div class="outline-text-2" id="text-10">
+<ul class="org-ul">
+<li>stacking</li>
+<li>combining</li>
+</ul>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: ychnh</p>
-<p class="date">Created: 2024-04-22 Mon 10:04</p>
+<p class="date">Created: 2024-04-22 Mon 10:03</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
