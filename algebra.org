@@ -1,14 +1,46 @@
+If it is true, how can you get there?
+First aim for consistency. Then try for speed. - CPS on TOA
+
+Let's see, is there a just a numerical reason why that would be true? - Kats
+on n|m => p^n-1 | p^m-1
+Lets see, why is it so compliated? $n = \sum_{d|n} I_d(x)$. Think in terms of groups, just use properties of groups to show it is true.()
+These guys are the total collection of elements that are the elements of order x st x|n in $G=Z_n$
+
+See how it fails and why it fails, it should suggest how to correct it.
+
 * Galois
+** *Sufficient Cond. for Existance of Primitive*
+Let $Q \subseteq F$ or $|F|<\infty$. If $|K:F|<\infty$ then $K=F(\alpha)$
 ** *Remark.*
 An automorphism fixing F takes root a $f(x)\in F[x]$ to another root.
-Let F be a field. Let $K_1$ $K_2$ be field extensions of F.
+In a primitive field extension, the behavior of $\alpha$ completely describes the behavior of F
+An homomorphism describes the structure between two algebraic sets
+An isomorphism says the structure is the same.
+If an isomorphism maps generators of one 
+
+Let $F \subseteq K_1$ $F \subseteq K_2$. If $K_1$ is completely described by roots of a single polynomial, and 
+
 ** *Crucial Prop.* extension of base field isomorphism to field extension
 Let $\sigma : F_1 \rightarrow F_2$ an isomorphism and $p_1(x)$ min poly of $\alpha_1$. Let $p_2(x):=p_1(x)^\sigma$, min poly of $\alpha_2$. Then we can extend to an isomorphism $\overline\sigma: F_1(\alpha_1) \rightarrow F_2(\alpha_2)$
-A special case is that a field extension of any element is identicau If a root of an irreducible poly is in K, then all the roots are in K.
+A special case is that a field extension of any element is identical
+** *Corollary.* Let K be splitting field. If a root of an irreducible poly is in K, then all the roots are in K.
 Let K be splitting field for f(x). If p(x) is an irreducible polynomial that has a root in K, then all the roots of p(x) are in K.
 The proof is very interesting. 
 
-
 ** *Definition.* Gal(K\F) is called *Galois* if |Gal(K\F)| = [K:F]
 ** *Characterization of Galois.* Let $K=F(\alpha)$, p(x) deg d min poly of $\alpha$ over F. Gal(K\F) is Galois iff p(x) has d distinct roots in K.
-Intuition: Because roots of p(x) go to roots of p(x0, you need the full set of automorphisms
+Intuition: Because roots of p(x) go to roots of p(x), you need the full set of automorphisms
+(Example) of when it fails and how it fails
+** TFAE: Let $Q \subset F$. Then TFAE (a) K is Galois over F (b) K is splitting field of p(x) over F. (c) K is splitting field of some $f(x)\in F[x]$ over 
+
+** !!!!
+** *When is Finite Field Extension Galois.*
+If $|F|<\infty$ (Char(F)=p) ($|K:F| < \infty$ then K is Galois over F 
+
+pf: K primitive. $K=F(\alpha)$. Let p(x) = irreducible poly of K.
+find irreducible poly with deg d=|K:F| distinct roots.
+
+$f(x) = x^{p^d-1}-x$ contains $p^d$ distinct roots
+p(x) divides f(x) since it is minimal. (Here we can extend/ relate the roots with division)
+
+
