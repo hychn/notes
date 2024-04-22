@@ -1,0 +1,3 @@
+* Galois
+** Def:
+** Characterization of Gal
