@@ -8,6 +8,7 @@ These guys are the total collection of elements that are the elements of order x
 
 See how it fails and why it fails, it should suggest how to correct it.
 
+
 * Galois
 ** *Sufficient Cond. for Existance of Primitive*
 Let $Q \subseteq F$ or $|F|<\infty$. If $|K:F|<\infty$ then $K=F(\alpha)$
@@ -32,7 +33,6 @@ The proof is very interesting.
 Intuition: Because roots of p(x) go to roots of p(x), you need the full set of automorphisms
 (Example) of when it fails and how it fails
 ** TFAE: Let $Q \subset F$. Then TFAE (a) K is Galois over F (b) K is splitting field of p(x) over F. (c) K is splitting field of some $f(x)\in F[x]$ over 
-
 ** !!!!
 ** *When is Finite Field Extension Galois.*
 If $|F|<\infty$ (Char(F)=p) ($|K:F| < \infty$ then K is Galois over F 
@@ -42,5 +42,19 @@ find irreducible poly with deg d=|K:F| distinct roots.
 
 $f(x) = x^{p^d-1}-x$ contains $p^d$ distinct roots
 p(x) divides f(x) since it is minimal. (Here we can extend/ relate the roots with division)
+
+
+** *Definition.* Fixed field of an automorphism or a collection of automorphism.
+$K^\sigma := \{k | \sigma(k)=k\}$ $K^H := \{k | \sigma(k)=k, \forall \sigma \in H \}$
+** Galois Correspondence Thm.
+*** Let $F \subseteq K$ be finite galois extention.
+*** There is a 1-1 correspondence btw $H \subseteq Gal(K/F)$ and intermediate fields $F \subseteq E \subseteq K$
+The correspondnce is given by $H \rightarrow K^H \rightarrow Gal(K/K^H)=H$
+?: I understand H is contained in Gal(K/K^H), since the maps in H fix K^H. But why can't it be more?
+The correspondence is given by $E \rightarrow Gal(K/E) \rightarrow K^{Gal(K/E)} = E$
+?: I understand that E is contained in $K^{Gal(K/E)}$ since the maps in Gal(K/E) already fix E but why can't it be more?
+*** If $ H \leftrightarrow E$ corresond, then [G:H]=[E:F]
+*** K is Galois over any intermediate field E
+*** E Galois over F iff Gal(K/E) is normal in Gal(K/F) in which case $Gal(E/F) \cong \dfrac{Gal(K/F)}{Gal(K/E)}$
 
 
