@@ -1,6 +1,14 @@
 * Galois
+** *Remark.*
+An automorphism fixing F takes root a $f(x)\in F[x]$ to another root.
+Let F be a field. Let $K_1$ $K_2$ be field extensions of F.
 ** *Crucial Prop.* extension of base field isomorphism to field extension
 Let $\sigma : F_1 \rightarrow F_2$ an isomorphism and $p_1(x)$ min poly of $\alpha_1$. Let $p_2(x):=p_1(x)^\sigma$, min poly of $\alpha_2$. Then we can extend to an isomorphism $\overline\sigma: F_1(\alpha_1) \rightarrow F_2(\alpha_2)$
-A special case is that a field extension of any element is identical
+A special case is that a field extension of any element is identicau If a root of an irreducible poly is in K, then all the roots are in K.
+Let K be splitting field for f(x). If p(x) is an irreducible polynomial that has a root in K, then all the roots of p(x) are in K.
+The proof is very interesting. 
+
+
 ** *Definition.* Gal(K\F) is called *Galois* if |Gal(K\F)| = [K:F]
 ** *Characterization of Galois.* Let $K=F(\alpha)$, p(x) deg d min poly of $\alpha$ over F. Gal(K\F) is Galois iff p(x) has d distinct roots in K.
+Intuition: Because roots of p(x) go to roots of p(x0, you need the full set of automorphisms
