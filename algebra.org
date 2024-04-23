@@ -10,8 +10,17 @@ See how it fails and why it fails, it should suggest how to correct it.
 
 
 * Galois
+
+** If the degree of the extension is finite, 
+** Sums and Product of Algebraic Elements are Algebraic
+** Transitivity of Algebraic
+** Construction of Algebraic Closure
+
 ** *Sufficient Cond. for Existance of Primitive*
 Let $Q \subseteq F$ or $|F|<\infty$. If $|K:F|<\infty$ then $K=F(\alpha)$
+** [C] *Characterization of finitely many intermediate fields*
+K$|F|=\infty$ $[K:F]<\infty$ then primitive element iff there are only finitely many intermediate fields $F \subset E \subset K$
+
 ** *Remark.*
 An automorphism fixing F takes root a $f(x)\in F[x]$ to another root.
 In a primitive field extension, the behavior of $\alpha$ completely describes the behavior of F
