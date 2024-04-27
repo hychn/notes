@@ -8,7 +8,8 @@ on $n|m \iff p^n-1 | p^m-1$
 
 * Galois
 
-** *DEF* Let $F \subseteq K$
+** *DEF* Let $F \subseteq K$. $\alpha \in K$ is *algebraic* if there is $f(x)\in F[x]$ s.t. $\f(\alpha)=0$
+** *DEF* Let $F \subseteq K$. K *algebraic* algebraic if 
 ** If the degree of the extension is finite, it simple
 ** If the degree of the extension is finite, it is algebraic
 ** Sums and Product of Algebraic Elements are Algebraic
