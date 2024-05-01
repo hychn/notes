@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-04-22 Mon 10:03 -->
+<!-- 2024-04-30 Tue 21:26 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -193,6 +193,7 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
+<link rel="stylesheet" type="text/css" href="https://hychn.github.io/style.css" />
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -264,44 +265,218 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#org2057175">1. Galois</a>
-<ul>
-<li><a href="#orgb998e65">1.1. <b>Crucial Prop.</b></a></li>
-<li><a href="#org216f3af">1.2. <b>Definition.</b> Gal(K\F) is called <b>Galois</b> if |Gal(K\F)| = [K:F]</a></li>
-<li><a href="#org89b5650">1.3. <b>Characterization of Galois.</b> Let \(K=F(\alpha)\), p(x) deg d min poly of \(\alpha\) over F. Gal(K\F) is Galois iff p(x) has d distinct roots in K.</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-org2057175" class="outline-2">
-<h2 id="org2057175"><span class="section-number-2">1</span> Galois</h2>
+
+
+<div id="outline-container-orgd90a4e4" class="outline-2">
+<h2 id="orgd90a4e4"><span class="section-number-2">1</span> Quotes</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-orgb998e65" class="outline-3">
-<h3 id="orgb998e65"><span class="section-number-3">1.1</span> <b>Crucial Prop.</b></h3>
-<div class="outline-text-3" id="text-1-1">
+<div id="outline-container-org9c644b2" class="outline-3">
+<h3 id="org9c644b2"><span class="section-number-3">1.1</span> If it is true, how can you get there?</h3>
+</div>
+<div id="outline-container-org9ca52c4" class="outline-3">
+<h3 id="org9ca52c4"><span class="section-number-3">1.2</span> First aim for consistency. Then try for speed. - CPS on TOA</h3>
+</div>
+<div id="outline-container-org95cf128" class="outline-3">
+<h3 id="org95cf128"><span class="section-number-3">1.3</span> Let's see, is there a just a numerical reason why that would be true? - Kats</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+on \(n|m \iff p^n-1 | p^m-1\)
+</p>
+</div>
+</div>
+<div id="outline-container-orgd368f79" class="outline-3">
+<h3 id="orgd368f79"><span class="section-number-3">1.4</span> Lets see, why is it so compliated? \(n = \sum_{d|n} I_d(x)\). Can you use the inherent properties of multiplication (groups) to show it is true? These guys are the total collection of elements that are the elements of order x st x|n in \(G=Z_n\)</h3>
+</div>
+<div id="outline-container-org3991d65" class="outline-3">
+<h3 id="org3991d65"><span class="section-number-3">1.5</span> See how it fails and why it fails, it should suggest how to correct it.</h3>
+</div>
+</div>
+
+<div id="outline-container-org9fbcf5c" class="outline-2">
+<h2 id="org9fbcf5c"><span class="section-number-2">2</span> Galois</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org79eca70" class="outline-3">
+<h3 id="org79eca70"><span class="section-number-3">2.1</span> <b>PROP</b> \(GCD(f(x), f'(x) )=1 \iff\) \(f(x), f'(x)\) have no roots in common \(\iff\) f(x) has distinct roots in its splitting field</h3>
+</div>
+<div id="outline-container-org2aee601" class="outline-3">
+<h3 id="org2aee601"><span class="section-number-3">2.2</span> <b>COR</b> \(f(x)\) irreducible \(\implies\) \(f(x)\) has distinct roots in its splitting field</h3>
+</div>
+<div id="outline-container-orga327a7b" class="outline-3">
+<h3 id="orga327a7b"><span class="section-number-3">2.3</span> <b>DEF</b> Let \(F \subseteq K\). \(\alpha \in K\) is <b>algebraic</b> over F if there is \(f(x)\in F[x]\) s.t. \(f(\alpha)=0\)</h3>
+</div>
+<div id="outline-container-org59ada37" class="outline-3">
+<h3 id="org59ada37"><span class="section-number-3">2.4</span> <b>RMK</b> Determinant trick: for \(\alpha \in K\) gives a polynomial over the base field st \(f(\alpha)=0\)</h3>
+</div>
+<div id="outline-container-org56ecf45" class="outline-3">
+<h3 id="org56ecf45"><span class="section-number-3">2.5</span> <b>DEF</b> Let \(F \subseteq K\). K is an <b>algebraic extension</b> if all elements of K are algebraic over F</h3>
+</div>
+<div id="outline-container-org27e1157" class="outline-3">
+<h3 id="org27e1157"><span class="section-number-3">2.6</span> <b>PROP</b> Let \(F \subseteq K\). \(\alpha \in K\) is algebraic iff \([F(\alpha):F] < \infty\)</h3>
+<div class="outline-text-3" id="text-2-6">
+<p>
+&lt;= If the degree of simple extension is finite, can use determinant trick.
+=&gt; If \(\alpha\) is algebraic, there is a minimal poly in F. So the extension to \(F(\alpha)\) is finite.
+Intuively it says that finite degree extensions are by their nature, algebraic objects. And the reason closely tied to determinants.
+</p>
+</div>
+</div>
+<div id="outline-container-org135f871" class="outline-3">
+<h3 id="org135f871"><span class="section-number-3">2.7</span> <b>COR</b> Finite degree extension is algebraic</h3>
+<div class="outline-text-3" id="text-2-7">
+<p>
+Let \(F \subseteq K\) Take any \(\gamma \in K\). Consider \(F(\gamma) \subseteq K\). It is finite degree extension, so it is algebraic. 
+</p>
+</div>
+</div>
+<div id="outline-container-org45c3ecd" class="outline-3">
+<h3 id="org45c3ecd"><span class="section-number-3">2.8</span> <b>PROP</b> Sufficient condition for simple extension.</h3>
+<div class="outline-text-3" id="text-2-8">
+<p>
+Let \(Q \subseteq F\) or \(|F| < \infty\). If the degree of the extension is finite, it simple
+ETS show that \(F \subseteq F(u,v)\) is simple.
+Case A B
+A \(Q \subseteq F\) in order for \(u+\lambda v\) to not be primitive, \(\lambda\) must satistfy conditions dependent on roots of minimal poly for \(u\) and \(v\). Since F infinite, this is not possible.
+B \(F\) finite. The \(K\) is cyclic due to gp theory fact. (If \(x^n=1\) has at most n soln. for all n, the G is cyclic. Check Kat's Notes)
+</p>
+</div>
+</div>
+<div id="outline-container-orgfe47bd4" class="outline-3">
+<h3 id="orgfe47bd4"><span class="section-number-3">2.9</span> <b>QUES</b> Find an example of a finite extension that is not simple</h3>
+</div>
+<div id="outline-container-orgf08b5f4" class="outline-3">
+<h3 id="orgf08b5f4"><span class="section-number-3">2.10</span> Sums and product of algebraic elements are algebraic</h3>
+</div>
+<div id="outline-container-org41b080c" class="outline-3">
+<h3 id="org41b080c"><span class="section-number-3">2.11</span> Transitivity of Algebraic</h3>
+<div class="outline-text-3" id="text-2-11">
+<p>
+\(F \subseteq E \subseteq K\). K algebraic over E and E algebraic over F then K algebraic over F
+</p>
+</div>
+</div>
+<div id="outline-container-orgb40ee73" class="outline-3">
+<h3 id="orgb40ee73"><span class="section-number-3">2.12</span> Construction of Algebraic Closure</h3>
+<div class="outline-text-3" id="text-2-12">
+<p>
+Let \(Q \subseteq F\) or \(|F|<\infty\). If \(|K:F|<\infty\) then \(K=F(\alpha)\)
+</p>
+</div>
+</div>
+<div id="outline-container-org1ebe57d" class="outline-3">
+<h3 id="org1ebe57d"><span class="section-number-3">2.13</span> <b>PROP</b> Characterization of finitely many intermediate fields (4-8)</h3>
+<div class="outline-text-3" id="text-2-13">
+<p>
+Let \(F \subseteq K\) with \(|F|=\infty\) \([K:F]<\infty\)
+Then the extension is simple iff there are only finitely many intermediate fields \(F \subset E \subset K\)
+-&gt; if the extension is simple, there is a minimal poly of \(\alpha\) p(x) over F.
+Take any intermediate field \(E\) and consider min poly of \(\alpha\) over E
+&lt;- ETS for \(F \subseteq F(u,v)\) has finitely many intermediate fields.
+</p>
+</div>
+</div>
+<div id="outline-container-org2f33f21" class="outline-3">
+<h3 id="org2f33f21"><span class="section-number-3">2.14</span> <b>Remark.</b></h3>
+<div class="outline-text-3" id="text-2-14">
+<p>
+An automorphism fixing F takes root a \(f(x)\in F[x]\) to another root.
+In a primitive field extension, the behavior of \(\alpha\) completely describes the behavior of F
+An homomorphism describes the structure between two algebraic sets
+An isomorphism says the structure is the same.
+If an isomorphism maps generators of one 
+Let \(F \subseteq K_1\) \(F \subseteq K_2\). If \(K_1\) is completely described by roots of a single polynomial, and 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7bb5246" class="outline-3">
+<h3 id="org7bb5246"><span class="section-number-3">2.15</span> <b>Crucial Prop</b> extension of base field isomorphism to a simple field extension isomorphism</h3>
+<div class="outline-text-3" id="text-2-15">
 <p>
 Let \(\sigma : F_1 \rightarrow F_2\) an isomorphism and \(p_1(x)\) min poly of \(\alpha_1\). Let \(p_2(x):=p_1(x)^\sigma\), min poly of \(\alpha_2\). Then we can extend to an isomorphism \(\overline\sigma: F_1(\alpha_1) \rightarrow F_2(\alpha_2)\)
 A special case is that a field extension of any element is identical
 </p>
 </div>
 </div>
-<div id="outline-container-org216f3af" class="outline-3">
-<h3 id="org216f3af"><span class="section-number-3">1.2</span> <b>Definition.</b> Gal(K\F) is called <b>Galois</b> if |Gal(K\F)| = [K:F]</h3>
+<div id="outline-container-org94ec39d" class="outline-3">
+<h3 id="org94ec39d"><span class="section-number-3">2.16</span> <b>COR</b> Let K be splitting field. If a root of an irreducible poly is in K, then all the roots are in K.</h3>
+<div class="outline-text-3" id="text-2-16">
+<p>
+Let K be splitting field for f(x). If p(x) is an irreducible polynomial that has a root in K, then all the roots of p(x) are in K.
+The proof is very interesting. 
+</p>
 </div>
-<div id="outline-container-org89b5650" class="outline-3">
-<h3 id="org89b5650"><span class="section-number-3">1.3</span> <b>Characterization of Galois.</b> Let \(K=F(\alpha)\), p(x) deg d min poly of \(\alpha\) over F. Gal(K\F) is Galois iff p(x) has d distinct roots in K.</h3>
+</div>
+
+<div id="outline-container-org7faadc5" class="outline-3">
+<h3 id="org7faadc5"><span class="section-number-3">2.17</span> <b>DEF</b> Gal(K\F) is called <b>Galois</b> if |Gal(K\F)| = [K:F]</h3>
+</div>
+<div id="outline-container-org1c1e243" class="outline-3">
+<h3 id="org1c1e243"><span class="section-number-3">2.18</span> <b>Characterization of Galois.</b> Let \(K=F(\alpha)\), p(x) deg d min poly of \(\alpha\) over F. Gal(K\F) is Galois iff p(x) has d distinct roots in K.</h3>
+<div class="outline-text-3" id="text-2-18">
+<p>
+Intuition: Because roots of p(x) go to roots under a \(\sigma \in Gal(K/F)\), you need the full set of automorphisms
+Conversely, the distinct roots give rise to the full set of automoprhisms
+(Example) of when it fails and how it fails, \(\mathbb{Z}_2\) consider \(x^2-1\).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org26f045e" class="outline-3">
+<h3 id="org26f045e"><span class="section-number-3">2.19</span> TFAE: Let \(Q \subset F\). Then TFAE (a) K is Galois over F (b) K is splitting field of p(x) over F. (c) K is splitting field of some \(f(x)\in F[x]\) over</h3>
+</div>
+<div id="outline-container-org0740cbd" class="outline-3">
+<h3 id="org0740cbd"><span class="section-number-3">2.20</span> <b>When is Finite Field Extension Galois.</b></h3>
+<div class="outline-text-3" id="text-2-20">
+<p>
+If \(|F|<\infty\) (Char(F)=p) (\(|K:F| < \infty\) then K is Galois over F 
+Since \(K=F(\alpha)\), use the characterization fo Galois. Show that p(x), the minimal poly for \(\alpha\) 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org969db59" class="outline-3">
+<h3 id="org969db59"><span class="section-number-3">2.21</span> <b>Definition.</b> Fixed field of an automorphism or a collection of automorphism.</h3>
+<div class="outline-text-3" id="text-2-21">
+<p>
+\(K^\sigma := \{k | \sigma(k)=k\}\) \(K^H := \{k | \sigma(k)=k, \forall \sigma \in H \}\)
+</p>
+</div>
+</div>
+<div id="outline-container-orgbd56b95" class="outline-3">
+<h3 id="orgbd56b95"><span class="section-number-3">2.22</span> Galois Correspondence Thm.</h3>
+<div class="outline-text-3" id="text-2-22">
+</div>
+<div id="outline-container-org56cad20" class="outline-4">
+<h4 id="org56cad20">Let \(F \subseteq K\) be finite galois extention.</h4>
+</div>
+<div id="outline-container-org89fb344" class="outline-4">
+<h4 id="org89fb344">There is a 1-1 correspondence btw \(H \subseteq Gal(K/F)\) and intermediate fields \(F \subseteq E \subseteq K\)</h4>
+<div class="outline-text-4" id="text-org89fb344">
+<p>
+The correspondnce is given by \(H \rightarrow K^H \rightarrow Gal(K/K^H)=H\)
+?: I understand H is contained in Gal(K/K<sup>H</sup>), since the maps in H fix K<sup>H</sup>. But why can't it be more?
+The correspondence is given by \(E \rightarrow Gal(K/E) \rightarrow K^{Gal(K/E)} = E\)
+?: I understand that E is contained in \(K^{Gal(K/E)}\) since the maps in Gal(K/E) already fix E but why can't it be more?
+</p>
+</div>
+</div>
+<div id="outline-container-org3765196" class="outline-4">
+<h4 id="org3765196">If \(H \leftrightarrow E\) corresond, then [G:H]=[E:F]</h4>
+</div>
+<div id="outline-container-orgfaaecd5" class="outline-4">
+<h4 id="orgfaaecd5">K is Galois over any intermediate field E</h4>
+</div>
+<div id="outline-container-org6934bdc" class="outline-4">
+<h4 id="org6934bdc">E Galois over F iff Gal(K/E) is normal in Gal(K/F) in which case \(Gal(E/F) \cong \dfrac{Gal(K/F)}{Gal(K/E)}\)</h4>
+</div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: ychnh</p>
-<p class="date">Created: 2024-04-22 Mon 10:03</p>
+<p class="date">Created: 2024-04-30 Tue 21:26</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

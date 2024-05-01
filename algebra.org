@@ -1,3 +1,8 @@
+#+OPTIONS: toc:nil
+#+OPTIONS: num:2
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://hychn.github.io/style.css" />
+
+
 * Quotes
 ** If it is true, how can you get there?
 ** First aim for consistency. Then try for speed. - CPS on TOA
@@ -9,7 +14,7 @@ on $n|m \iff p^n-1 | p^m-1$
 * Galois
 ** *PROP* $GCD(f(x), f'(x) )=1 \iff$ $f(x), f'(x)$ have no roots in common $\iff$ f(x) has distinct roots in its splitting field
 ** *COR* $f(x)$ irreducible $\implies$ $f(x)$ has distinct roots in its splitting field
-** *DEF* Let $F \subseteq K$. $\alpha \in K$ is *algebraic* over F if there is $f(x)\in F[x]$ s.t. $\f(\alpha)=0$
+** *DEF* Let $F \subseteq K$. $\alpha \in K$ is *algebraic* over F if there is $f(x)\in F[x]$ s.t. $f(\alpha)=0$
 ** *RMK* Determinant trick: for $\alpha \in K$ gives a polynomial over the base field st $f(\alpha)=0$
 ** *DEF* Let $F \subseteq K$. K is an *algebraic extension* if all elements of K are algebraic over F
 ** *PROP* Let $F \subseteq K$. $\alpha \in K$ is algebraic iff $[F(\alpha):F] < \infty$

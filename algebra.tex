@@ -1,0 +1,142 @@
+% Created 2024-04-30 Tue 21:29
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\setcounter{secnumdepth}{2}
+\author{ychnh}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={ychnh},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 27.1 (Org mode 9.3)}, 
+ pdflang={English}}
+\begin{document}
+
+
+
+\section{Quotes}
+\label{sec:org6c1edcb}
+\subsection{If it is true, how can you get there?}
+\label{sec:orgbe2f326}
+\subsection{First aim for consistency. Then try for speed. - CPS on TOA}
+\label{sec:orgd167be9}
+\subsection{Let's see, is there a just a numerical reason why that would be true? - Kats}
+\label{sec:orgfc57ed0}
+on \(n|m \iff p^n-1 | p^m-1\)
+\subsection{Lets see, why is it so compliated? \(n = \sum_{d|n} I_d(x)\). Can you use the inherent properties of multiplication (groups) to show it is true? These guys are the total collection of elements that are the elements of order x st x|n in \(G=Z_n\)}
+\label{sec:orgdd36cd8}
+\subsection{See how it fails and why it fails, it should suggest how to correct it.}
+\label{sec:org50238ce}
+
+\section{Galois}
+\label{sec:org6140f42}
+\subsection{\textbf{PROP} \(GCD(f(x), f'(x) )=1 \iff\) \(f(x), f'(x)\) have no roots in common \(\iff\) f(x) has distinct roots in its splitting field}
+\label{sec:orgcd95308}
+\subsection{\textbf{COR} \(f(x)\) irreducible \(\implies\) \(f(x)\) has distinct roots in its splitting field}
+\label{sec:org7bebe0d}
+\subsection{\textbf{DEF} Let \(F \subseteq K\). \(\alpha \in K\) is \textbf{algebraic} over F if there is \(f(x)\in F[x]\) s.t. \(f(\alpha)=0\)}
+\label{sec:org7a4899c}
+\subsection{\textbf{RMK} Determinant trick: for \(\alpha \in K\) gives a polynomial over the base field st \(f(\alpha)=0\)}
+\label{sec:orgb74d53c}
+\subsection{\textbf{DEF} Let \(F \subseteq K\). K is an \textbf{algebraic extension} if all elements of K are algebraic over F}
+\label{sec:org8764f90}
+\subsection{\textbf{PROP} Let \(F \subseteq K\). \(\alpha \in K\) is algebraic iff \([F(\alpha):F] < \infty\)}
+\label{sec:org5bc486f}
+<= If the degree of simple extension is finite, can use determinant trick.
+=> If \(\alpha\) is algebraic, there is a minimal poly in F. So the extension to \(F(\alpha)\) is finite.
+Intuively it says that finite degree extensions are by their nature, algebraic objects. And the reason closely tied to determinants.
+\subsection{\textbf{COR} Finite degree extension is algebraic}
+\label{sec:org30c6c3c}
+Let \(F \subseteq K\) Take any \(\gamma \in K\). Consider \(F(\gamma) \subseteq K\). It is finite degree extension, so it is algebraic. 
+\subsection{\textbf{PROP} Sufficient condition for simple extension.}
+\label{sec:org5a3fde3}
+Let \(Q \subseteq F\) or \(|F| < \infty\). If the degree of the extension is finite, it simple
+ETS show that \(F \subseteq F(u,v)\) is simple.
+Case A B
+A \(Q \subseteq F\) in order for \(u+\lambda v\) to not be primitive, \(\lambda\) must satistfy conditions dependent on roots of minimal poly for \(u\) and \(v\). Since F infinite, this is not possible.
+B \(F\) finite. The \(K\) is cyclic due to gp theory fact. (If \(x^n=1\) has at most n soln. for all n, the G is cyclic. Check Kat's Notes)
+\subsection{\textbf{QUES} Find an example of a finite extension that is not simple}
+\label{sec:orgc2a51bb}
+\subsection{Sums and product of algebraic elements are algebraic}
+\label{sec:org77fac7f}
+\subsection{Transitivity of Algebraic}
+\label{sec:orgb4e1113}
+\(F \subseteq E \subseteq K\). K algebraic over E and E algebraic over F then K algebraic over F
+\subsection{Construction of Algebraic Closure}
+\label{sec:org4d04e23}
+Let \(Q \subseteq F\) or \(|F|<\infty\). If \(|K:F|<\infty\) then \(K=F(\alpha)\)
+\subsection{\textbf{PROP} Characterization of finitely many intermediate fields (4-8)}
+\label{sec:org4eabb3b}
+Let \(F \subseteq K\) with \(|F|=\infty\) \([K:F]<\infty\)
+Then the extension is simple iff there are only finitely many intermediate fields \(F \subset E \subset K\)
+-> if the extension is simple, there is a minimal poly of \(\alpha\) p(x) over F.
+Take any intermediate field \(E\) and consider min poly of \(\alpha\) over E
+<- ETS for \(F \subseteq F(u,v)\) has finitely many intermediate fields.
+\subsection{\textbf{Remark.}}
+\label{sec:orgd9d0472}
+An automorphism fixing F takes root a \(f(x)\in F[x]\) to another root.
+In a primitive field extension, the behavior of \(\alpha\) completely describes the behavior of F
+An homomorphism describes the structure between two algebraic sets
+An isomorphism says the structure is the same.
+If an isomorphism maps generators of one 
+Let \(F \subseteq K_1\) \(F \subseteq K_2\). If \(K_1\) is completely described by roots of a single polynomial, and 
+
+\subsection{\textbf{Crucial Prop} extension of base field isomorphism to a simple field extension isomorphism}
+\label{sec:orgce4c1ba}
+Let \(\sigma : F_1 \rightarrow F_2\) an isomorphism and \(p_1(x)\) min poly of \(\alpha_1\). Let \(p_2(x):=p_1(x)^\sigma\), min poly of \(\alpha_2\). Then we can extend to an isomorphism \(\overline\sigma: F_1(\alpha_1) \rightarrow F_2(\alpha_2)\)
+A special case is that a field extension of any element is identical
+\subsection{\textbf{COR} Let K be splitting field. If a root of an irreducible poly is in K, then all the roots are in K.}
+\label{sec:org5afed12}
+Let K be splitting field for f(x). If p(x) is an irreducible polynomial that has a root in K, then all the roots of p(x) are in K.
+The proof is very interesting. 
+
+\subsection{\textbf{DEF} Gal(K\F) is called \textbf{Galois} if |Gal(K\F)| = [K:F]}
+\label{sec:org8d32724}
+\subsection{\textbf{Characterization of Galois.} Let \(K=F(\alpha)\), p(x) deg d min poly of \(\alpha\) over F. Gal(K\F) is Galois iff p(x) has d distinct roots in K.}
+\label{sec:org3bbb12d}
+Intuition: Because roots of p(x) go to roots under a \(\sigma \in Gal(K/F)\), you need the full set of automorphisms
+Conversely, the distinct roots give rise to the full set of automoprhisms
+(Example) of when it fails and how it fails, \(\mathbb{Z}_2\) consider \(x^2-1\).
+
+\subsection{TFAE: Let \(Q \subset F\). Then TFAE (a) K is Galois over F (b) K is splitting field of p(x) over F. (c) K is splitting field of some \(f(x)\in F[x]\) over}
+\label{sec:org99768f8}
+\subsection{\textbf{When is Finite Field Extension Galois.}}
+\label{sec:org4f87351}
+If \(|F|<\infty\) (Char(F)=p) (\(|K:F| < \infty\) then K is Galois over F 
+Since \(K=F(\alpha)\), use the characterization fo Galois. Show that p(x), the minimal poly for \(\alpha\) 
+
+\subsection{\textbf{Definition.} Fixed field of an automorphism or a collection of automorphism.}
+\label{sec:org0b81004}
+\(K^\sigma := \{k | \sigma(k)=k\}\) \(K^H := \{k | \sigma(k)=k, \forall \sigma \in H \}\)
+\subsection{Galois Correspondence Thm.}
+\label{sec:orgbd3f4a1}
+\subsubsection*{Let \(F \subseteq K\) be finite galois extention.}
+\label{sec:orgbb8e6bf}
+\subsubsection*{There is a 1-1 correspondence btw \(H \subseteq Gal(K/F)\) and intermediate fields \(F \subseteq E \subseteq K\)}
+\label{sec:orgbc0e02a}
+The correspondnce is given by \(H \rightarrow K^H \rightarrow Gal(K/K^H)=H\)
+?: I understand H is contained in Gal(K/K\textsuperscript{H}), since the maps in H fix K\textsuperscript{H}. But why can't it be more?
+The correspondence is given by \(E \rightarrow Gal(K/E) \rightarrow K^{Gal(K/E)} = E\)
+?: I understand that E is contained in \(K^{Gal(K/E)}\) since the maps in Gal(K/E) already fix E but why can't it be more?
+\subsubsection*{If \(H \leftrightarrow E\) corresond, then [G:H]=[E:F]}
+\label{sec:org7f41fa3}
+\subsubsection*{K is Galois over any intermediate field E}
+\label{sec:org9efcd34}
+\subsubsection*{E Galois over F iff Gal(K/E) is normal in Gal(K/F) in which case \(Gal(E/F) \cong \dfrac{Gal(K/F)}{Gal(K/E)}\)}
+\label{sec:org8766d97}
+\end{document}
