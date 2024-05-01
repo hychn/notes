@@ -7,3 +7,4 @@ for org_file in algebra.org; do
   echo "Exported $org_file to $html_file"
 done
 
+#wkhtmltopdf

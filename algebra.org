@@ -1,7 +1,8 @@
 #+OPTIONS: toc:nil
 #+OPTIONS: num:2
+#+AUTHOR: 
+#+CREATED: 
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://hychn.github.io/style.css" />
-
 
 * Quotes
 ** If it is true, how can you get there?
@@ -10,6 +11,7 @@
 on $n|m \iff p^n-1 | p^m-1$
 ** Lets see, why is it so compliated? $n = \sum_{d|n} I_d(x)$. Can you use the inherent properties of multiplication (groups) to show it is true? These guys are the total collection of elements that are the elements of order x st x|n in $G=Z_n$
 ** See how it fails and why it fails, it should suggest how to correct it.
+
 
 * Galois
 ** *PROP* $GCD(f(x), f'(x) )=1 \iff$ $f(x), f'(x)$ have no roots in common $\iff$ f(x) has distinct roots in its splitting field
