@@ -3,15 +3,195 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-04-30 Tue 21:38 -->
+<!-- 2024-05-01 Wed 22:27 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
 <meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
 
-
-
-<link rel="stylesheet" type="text/css" href="./style.css" />
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -83,55 +263,57 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
+<link rel="stylesheet" type="text/css" href="./style.css" /> <div style="position: fixed; top: 0; right: 0; width: 70px; height: 20px; background-color: #f0f0f0;"> <p class="date">Toggle</p> </div>
 
-<div id="outline-container-orgf009851" class="outline-2">
-<h2 id="orgf009851"><span class="section-number-2">1</span> Quotes</h2>
+<div id="outline-container-org95e7fbf" class="outline-2">
+<h2 id="org95e7fbf"><span class="section-number-2">1</span> Quotes</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org2b7cecd" class="outline-3">
-<h3 id="org2b7cecd"><span class="section-number-3">1.1</span> If it is true, how can you get there?</h3>
+<div id="outline-container-orgdcdf953" class="outline-3">
+<h3 id="orgdcdf953"><span class="section-number-3">1.1</span> If it is true, how can you get there?</h3>
 </div>
-<div id="outline-container-org163f583" class="outline-3">
-<h3 id="org163f583"><span class="section-number-3">1.2</span> First aim for consistency. Then try for speed. - CPS on TOA</h3>
+<div id="outline-container-org3287db2" class="outline-3">
+<h3 id="org3287db2"><span class="section-number-3">1.2</span> First aim for consistency. Then try for speed. - CPS on TOA</h3>
 </div>
-<div id="outline-container-org317587c" class="outline-3">
-<h3 id="org317587c"><span class="section-number-3">1.3</span> Let's see, is there a just a numerical reason why that would be true? - Kats</h3>
+<div id="outline-container-org6f4f79c" class="outline-3">
+<h3 id="org6f4f79c"><span class="section-number-3">1.3</span> Let's see, is there a just a numerical reason why that would be true? - Kats</h3>
 <div class="outline-text-3" id="text-1-3">
 <p>
 on \(n|m \iff p^n-1 | p^m-1\)
 </p>
 </div>
 </div>
-<div id="outline-container-org62ed40c" class="outline-3">
-<h3 id="org62ed40c"><span class="section-number-3">1.4</span> Lets see, why is it so compliated? \(n = \sum_{d|n} I_d(x)\). Can you use the inherent properties of multiplication (groups) to show it is true? These guys are the total collection of elements that are the elements of order x st x|n in \(G=Z_n\)</h3>
+<div id="outline-container-org8edf76d" class="outline-3">
+<h3 id="org8edf76d"><span class="section-number-3">1.4</span> Lets see, why is it so compliated? \(n = \sum_{d|n} I_d(x)\). Can you use the inherent properties of multiplication (groups) to show it is true? These guys are the total collection of elements that are the elements of order x st x|n in \(G=Z_n\)</h3>
 </div>
-<div id="outline-container-org03af541" class="outline-3">
-<h3 id="org03af541"><span class="section-number-3">1.5</span> See how it fails and why it fails, it should suggest how to correct it.</h3>
+<div id="outline-container-org2a3c807" class="outline-3">
+<h3 id="org2a3c807"><span class="section-number-3">1.5</span> See how it fails and why it fails, it should suggest how to correct it.</h3>
 </div>
 </div>
 
 
-<div id="outline-container-org2324bf6" class="outline-2">
-<h2 id="org2324bf6"><span class="section-number-2">2</span> Galois</h2>
+
+<div id="outline-container-org532deee" class="outline-2">
+<h2 id="org532deee"><span class="section-number-2">2</span> Galois</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgb51a0d4" class="outline-3">
-<h3 id="orgb51a0d4"><span class="section-number-3">2.1</span> <b>PROP</b> \(GCD(f(x), f'(x) )=1 \iff\) \(f(x), f'(x)\) have no roots in common \(\iff\) f(x) has distinct roots in its splitting field</h3>
+<div id="outline-container-org518e952" class="outline-3">
+<h3 id="org518e952"><span class="section-number-3">2.1</span> PRP Let \(f(x) \in F[x]\) TFAE \(GCD(f(x), f'(x) )=1 \iff\) \(f(x), f'(x)\) have no roots in common \(\iff\) f(x) has distinct roots in its splitting field</h3>
 </div>
-<div id="outline-container-orgb1b40ff" class="outline-3">
-<h3 id="orgb1b40ff"><span class="section-number-3">2.2</span> <b>COR</b> \(f(x)\) irreducible \(\implies\) \(f(x)\) has distinct roots in its splitting field</h3>
+<div id="outline-container-org0c4cd6a" class="outline-3">
+<h3 id="org0c4cd6a"><span class="section-number-3">2.2</span> COR \(f(x)\) irreducible \(\implies\) \(f(x)\) has distinct roots in its splitting field</h3>
 </div>
-<div id="outline-container-org568e03e" class="outline-3">
-<h3 id="org568e03e"><span class="section-number-3">2.3</span> <b>DEF</b> Let \(F \subseteq K\). \(\alpha \in K\) is <b>algebraic</b> over F if there is \(f(x)\in F[x]\) s.t. \(f(\alpha)=0\)</h3>
+<div id="outline-container-orga352b69" class="outline-3">
+<h3 id="orga352b69"><span class="section-number-3">2.3</span> DEF Let \(F \subseteq K\). \(\alpha \in K\) is <b>algebraic</b> over F if there is \(f(x)\in F[x]\) s.t. \(f(\alpha)=0\)</h3>
 </div>
-<div id="outline-container-org4cf0f93" class="outline-3">
-<h3 id="org4cf0f93"><span class="section-number-3">2.4</span> <b>RMK</b> Determinant trick: for \(\alpha \in K\) gives a polynomial over the base field st \(f(\alpha)=0\)</h3>
+<div id="outline-container-org2276e54" class="outline-3">
+<h3 id="org2276e54"><span class="section-number-3">2.4</span> RMK Determinant trick: for \(\alpha \in K\) gives a polynomial over the base field st \(f(\alpha)=0\)</h3>
 </div>
-<div id="outline-container-org4eb0f92" class="outline-3">
-<h3 id="org4eb0f92"><span class="section-number-3">2.5</span> <b>DEF</b> Let \(F \subseteq K\). K is an <b>algebraic extension</b> if all elements of K are algebraic over F</h3>
+<div id="outline-container-org75eeff0" class="outline-3">
+<h3 id="org75eeff0"><span class="section-number-3">2.5</span> DEF Let \(F \subseteq K\). K is an <b>algebraic extension</b> if all elements of K are algebraic over F</h3>
 </div>
-<div id="outline-container-org4517345" class="outline-3">
-<h3 id="org4517345"><span class="section-number-3">2.6</span> <b>PROP</b> Let \(F \subseteq K\). \(\alpha \in K\) is algebraic iff \([F(\alpha):F] < \infty\)</h3>
+<div id="outline-container-org5f31728" class="outline-3">
+<h3 id="org5f31728"><span class="section-number-3">2.6</span> PRP Let \(F \subseteq K\). \(\alpha \in K\) is algebraic iff \([F(\alpha):F] < \infty\)</h3>
 <div class="outline-text-3" id="text-2-6">
 <p>
 &lt;= If the degree of simple extension is finite, can use determinant trick.
@@ -140,16 +322,16 @@ Intuively it says that finite degree extensions are by their nature, algebraic o
 </p>
 </div>
 </div>
-<div id="outline-container-org4c8d610" class="outline-3">
-<h3 id="org4c8d610"><span class="section-number-3">2.7</span> <b>COR</b> Finite degree extension is algebraic</h3>
+<div id="outline-container-orgcff7cfe" class="outline-3">
+<h3 id="orgcff7cfe"><span class="section-number-3">2.7</span> COR Finite degree extension is algebraic</h3>
 <div class="outline-text-3" id="text-2-7">
 <p>
 Let \(F \subseteq K\) Take any \(\gamma \in K\). Consider \(F(\gamma) \subseteq K\). It is finite degree extension, so it is algebraic. 
 </p>
 </div>
 </div>
-<div id="outline-container-org72585db" class="outline-3">
-<h3 id="org72585db"><span class="section-number-3">2.8</span> <b>PROP</b> Sufficient condition for simple extension.</h3>
+<div id="outline-container-orgf3cb6b9" class="outline-3">
+<h3 id="orgf3cb6b9"><span class="section-number-3">2.8</span> PRP Sufficient condition for simple extension.</h3>
 <div class="outline-text-3" id="text-2-8">
 <p>
 Let \(Q \subseteq F\) or \(|F| < \infty\). If the degree of the extension is finite, it simple
@@ -160,30 +342,30 @@ B \(F\) finite. The \(K\) is cyclic due to gp theory fact. (If \(x^n=1\) has at 
 </p>
 </div>
 </div>
-<div id="outline-container-org47f5828" class="outline-3">
-<h3 id="org47f5828"><span class="section-number-3">2.9</span> <b>QUES</b> Find an example of a finite extension that is not simple</h3>
+<div id="outline-container-orge82d5c5" class="outline-3">
+<h3 id="orge82d5c5"><span class="section-number-3">2.9</span> ??? Find an example of a finite extension that is not simple</h3>
 </div>
-<div id="outline-container-org0e78878" class="outline-3">
-<h3 id="org0e78878"><span class="section-number-3">2.10</span> Sums and product of algebraic elements are algebraic</h3>
+<div id="outline-container-org79f0099" class="outline-3">
+<h3 id="org79f0099"><span class="section-number-3">2.10</span> Sums and product of algebraic elements are algebraic</h3>
 </div>
-<div id="outline-container-org959a02a" class="outline-3">
-<h3 id="org959a02a"><span class="section-number-3">2.11</span> Transitivity of Algebraic</h3>
+<div id="outline-container-org3678585" class="outline-3">
+<h3 id="org3678585"><span class="section-number-3">2.11</span> Transitivity of Algebraic</h3>
 <div class="outline-text-3" id="text-2-11">
 <p>
 \(F \subseteq E \subseteq K\). K algebraic over E and E algebraic over F then K algebraic over F
 </p>
 </div>
 </div>
-<div id="outline-container-org68c64ac" class="outline-3">
-<h3 id="org68c64ac"><span class="section-number-3">2.12</span> Construction of Algebraic Closure</h3>
+<div id="outline-container-org2c388ef" class="outline-3">
+<h3 id="org2c388ef"><span class="section-number-3">2.12</span> Construction of Algebraic Closure</h3>
 <div class="outline-text-3" id="text-2-12">
 <p>
 Let \(Q \subseteq F\) or \(|F|<\infty\). If \(|K:F|<\infty\) then \(K=F(\alpha)\)
 </p>
 </div>
 </div>
-<div id="outline-container-org5f058fe" class="outline-3">
-<h3 id="org5f058fe"><span class="section-number-3">2.13</span> <b>PROP</b> Characterization of finitely many intermediate fields (4-8)</h3>
+<div id="outline-container-org546309f" class="outline-3">
+<h3 id="org546309f"><span class="section-number-3">2.13</span> PRP Characterization of finitely many intermediate fields (4-8)</h3>
 <div class="outline-text-3" id="text-2-13">
 <p>
 Let \(F \subseteq K\) with \(|F|=\infty\) \([K:F]<\infty\)
@@ -194,8 +376,8 @@ Take any intermediate field \(E\) and consider min poly of \(\alpha\) over E
 </p>
 </div>
 </div>
-<div id="outline-container-org427b3c1" class="outline-3">
-<h3 id="org427b3c1"><span class="section-number-3">2.14</span> <b>Remark.</b></h3>
+<div id="outline-container-org377c041" class="outline-3">
+<h3 id="org377c041"><span class="section-number-3">2.14</span> REM</h3>
 <div class="outline-text-3" id="text-2-14">
 <p>
 An automorphism fixing F takes root a \(f(x)\in F[x]\) to another root.
@@ -208,8 +390,8 @@ Let \(F \subseteq K_1\) \(F \subseteq K_2\). If \(K_1\) is completely described 
 </div>
 </div>
 
-<div id="outline-container-org81a783e" class="outline-3">
-<h3 id="org81a783e"><span class="section-number-3">2.15</span> <b>Crucial Prop</b> extension of base field isomorphism to a simple field extension isomorphism</h3>
+<div id="outline-container-org0e52096" class="outline-3">
+<h3 id="org0e52096"><span class="section-number-3">2.15</span> Crucial Prop extension of base field isomorphism to a simple field extension isomorphism</h3>
 <div class="outline-text-3" id="text-2-15">
 <p>
 Let \(\sigma : F_1 \rightarrow F_2\) an isomorphism and \(p_1(x)\) min poly of \(\alpha_1\). Let \(p_2(x):=p_1(x)^\sigma\), min poly of \(\alpha_2\). Then we can extend to an isomorphism \(\overline\sigma: F_1(\alpha_1) \rightarrow F_2(\alpha_2)\)
@@ -217,8 +399,8 @@ A special case is that a field extension of any element is identical
 </p>
 </div>
 </div>
-<div id="outline-container-org2330634" class="outline-3">
-<h3 id="org2330634"><span class="section-number-3">2.16</span> <b>COR</b> Let K be splitting field. If a root of an irreducible poly is in K, then all the roots are in K.</h3>
+<div id="outline-container-orge38bd95" class="outline-3">
+<h3 id="orge38bd95"><span class="section-number-3">2.16</span> COR Let K be splitting field. If a root of an irreducible poly is in K, then all the roots are in K.</h3>
 <div class="outline-text-3" id="text-2-16">
 <p>
 Let K be splitting field for f(x). If p(x) is an irreducible polynomial that has a root in K, then all the roots of p(x) are in K.
@@ -227,11 +409,11 @@ The proof is very interesting.
 </div>
 </div>
 
-<div id="outline-container-org4496fec" class="outline-3">
-<h3 id="org4496fec"><span class="section-number-3">2.17</span> <b>DEF</b> Gal(K\F) is called <b>Galois</b> if |Gal(K\F)| = [K:F]</h3>
+<div id="outline-container-orgd7d830a" class="outline-3">
+<h3 id="orgd7d830a"><span class="section-number-3">2.17</span> DEF Gal(K\F) is called <b>Galois</b> if |Gal(K\F)| = [K:F]</h3>
 </div>
-<div id="outline-container-org727c5f2" class="outline-3">
-<h3 id="org727c5f2"><span class="section-number-3">2.18</span> <b>Characterization of Galois.</b> Let \(K=F(\alpha)\), p(x) deg d min poly of \(\alpha\) over F. Gal(K\F) is Galois iff p(x) has d distinct roots in K.</h3>
+<div id="outline-container-org32de122" class="outline-3">
+<h3 id="org32de122"><span class="section-number-3">2.18</span> THM Characterization of Galois. Let \(K=F(\alpha)\), p(x) deg d min poly of \(\alpha\) over F. Gal(K\F) is Galois iff p(x) has d distinct roots in K.</h3>
 <div class="outline-text-3" id="text-2-18">
 <p>
 Intuition: Because roots of p(x) go to roots under a \(\sigma \in Gal(K/F)\), you need the full set of automorphisms
@@ -241,11 +423,11 @@ Conversely, the distinct roots give rise to the full set of automoprhisms
 </div>
 </div>
 
-<div id="outline-container-org41885ee" class="outline-3">
-<h3 id="org41885ee"><span class="section-number-3">2.19</span> TFAE: Let \(Q \subset F\). Then TFAE (a) K is Galois over F (b) K is splitting field of p(x) over F. (c) K is splitting field of some \(f(x)\in F[x]\) over</h3>
+<div id="outline-container-org7bfe01f" class="outline-3">
+<h3 id="org7bfe01f"><span class="section-number-3">2.19</span> TFAE: Let \(Q \subset F\). Then TFAE (a) K is Galois over F (b) K is splitting field of p(x) over F. (c) K is splitting field of some \(f(x)\in F[x]\) over</h3>
 </div>
-<div id="outline-container-org536e550" class="outline-3">
-<h3 id="org536e550"><span class="section-number-3">2.20</span> <b>When is Finite Field Extension Galois.</b></h3>
+<div id="outline-container-org19e5fed" class="outline-3">
+<h3 id="org19e5fed"><span class="section-number-3">2.20</span> THM When is Finite Field Extension Galois.*</h3>
 <div class="outline-text-3" id="text-2-20">
 <p>
 If \(|F|<\infty\) (Char(F)=p) (\(|K:F| < \infty\) then K is Galois over F 
@@ -254,24 +436,24 @@ Since \(K=F(\alpha)\), use the characterization fo Galois. Show that p(x), the m
 </div>
 </div>
 
-<div id="outline-container-orgbcc1d56" class="outline-3">
-<h3 id="orgbcc1d56"><span class="section-number-3">2.21</span> <b>Definition.</b> Fixed field of an automorphism or a collection of automorphism.</h3>
+<div id="outline-container-org2688be2" class="outline-3">
+<h3 id="org2688be2"><span class="section-number-3">2.21</span> DEF Fixed field of an automorphism or a collection of automorphism.</h3>
 <div class="outline-text-3" id="text-2-21">
 <p>
 \(K^\sigma := \{k | \sigma(k)=k\}\) \(K^H := \{k | \sigma(k)=k, \forall \sigma \in H \}\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgc44d0d8" class="outline-3">
-<h3 id="orgc44d0d8"><span class="section-number-3">2.22</span> Galois Correspondence Thm.</h3>
+<div id="outline-container-orgeb29d4e" class="outline-3">
+<h3 id="orgeb29d4e"><span class="section-number-3">2.22</span> THM Galois Correspondence Thm.</h3>
 <div class="outline-text-3" id="text-2-22">
 </div>
-<div id="outline-container-org44aa396" class="outline-4">
-<h4 id="org44aa396">Let \(F \subseteq K\) be finite galois extention.</h4>
+<div id="outline-container-orgfd243b6" class="outline-4">
+<h4 id="orgfd243b6">Let \(F \subseteq K\) be finite galois extention.</h4>
 </div>
-<div id="outline-container-org0f69f04" class="outline-4">
-<h4 id="org0f69f04">There is a 1-1 correspondence btw \(H \subseteq Gal(K/F)\) and intermediate fields \(F \subseteq E \subseteq K\)</h4>
-<div class="outline-text-4" id="text-org0f69f04">
+<div id="outline-container-org596f75d" class="outline-4">
+<h4 id="org596f75d">There is a 1-1 correspondence btw \(H \subseteq Gal(K/F)\) and intermediate fields \(F \subseteq E \subseteq K\)</h4>
+<div class="outline-text-4" id="text-org596f75d">
 <p>
 The correspondnce is given by \(H \rightarrow K^H \rightarrow Gal(K/K^H)=H\)
 ?: I understand H is contained in Gal(K/K<sup>H</sup>), since the maps in H fix K<sup>H</sup>. But why can't it be more?
@@ -280,71 +462,28 @@ The correspondence is given by \(E \rightarrow Gal(K/E) \rightarrow K^{Gal(K/E)}
 </p>
 </div>
 </div>
-<div id="outline-container-org5ebf56a" class="outline-4">
-<h4 id="org5ebf56a">If \(H \leftrightarrow E\) corresond, then [G:H]=[E:F]</h4>
+<div id="outline-container-org0d4993c" class="outline-4">
+<h4 id="org0d4993c">If \(H \leftrightarrow E\) corresond, then [G:H]=[E:F]</h4>
 </div>
-<div id="outline-container-org4dc56b2" class="outline-4">
-<h4 id="org4dc56b2">K is Galois over any intermediate field E</h4>
+<div id="outline-container-orgc9fe9aa" class="outline-4">
+<h4 id="orgc9fe9aa">K is Galois over any intermediate field E</h4>
 </div>
-<div id="outline-container-orgebff911" class="outline-4">
-<h4 id="orgebff911">E Galois over F iff Gal(K/E) is normal in Gal(K/F) in which case \(Gal(E/F) \cong \dfrac{Gal(K/F)}{Gal(K/E)}\)</h4>
+<div id="outline-container-org5323982" class="outline-4">
+<h4 id="org5323982">E Galois over F iff Gal(K/E) is normal in Gal(K/F) in which case \(Gal(E/F) \cong \dfrac{Gal(K/F)}{Gal(K/E)}\)</h4>
+</div>
+</div>
+
+<div id="outline-container-org9102914" class="outline-3">
+<h3 id="org9102914"><span class="section-number-3">2.23</span> THM Inverse Galois Let G be a finite gp. Then \(\exists F \subseteq K\) s.t. \(Gal(K/F) \cong G\)</h3>
+<div class="outline-text-3" id="text-2-23">
+<script src="script.js"></script>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2024-04-30 Tue 21:38</p>
+<p class="date">Created: 2024-05-01 Wed 22:27</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
-
-
-<script>
-function toggle() {
-  const headers = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
-  headers.forEach(header => {
-    //initially hide
-    content = header.nextElementSibling;
-    if (content != null) {
-      if (content.style.display === 'none') {
-        content.style.display = 'block'; // Show the content
-      } else {
-        content.style.display = 'none'; // Hide the content
-      }
-    }
-  });
-}
-
-toggle();
-
-const dates = document.querySelectorAll('.date');
-dates.forEach(date => {
-  date.addEventListener('click', function() {
-    toggle();
-  });
-});
-</script>
-
-<script>
-  // Get all header elements
-  const headers = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
-
-  // Add click event listener to each header
-  headers.forEach(header => {
- 
-    header.addEventListener('click', function() {
-      // Display an alert message with the text content of the clicked header
-      //alert("Clicked on: " + header.tagName + " - " + header.textContent);
-      content = header.nextElementSibling;
-      
-      if (content.style.display === 'none') {
-        content.style.display = 'block'; // Show the content
-      } else {
-        content.style.display = 'none'; // Hide the content
-      }
-    });
-  });
-</script>
-
 </body>
 </html>
-

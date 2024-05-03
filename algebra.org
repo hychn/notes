@@ -1,8 +1,7 @@
-#+OPTIONS: toc:nil
-#+OPTIONS: num:2
-#+AUTHOR: 
-#+CREATED: 
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./style.css" />
+#+OPTIONS: toc:nil, num:2
+#+AUTHOR:
+#+CREATED:
+#+HTML: <link rel="stylesheet" type="text/css" href="./style.css" /> <div style="position: fixed; top: 0; right: 0; width: 70px; height: 20px; background-color: #f0f0f0;"> <p class="date">Toggle</p> </div>
 
 * Quotes
 ** If it is true, how can you get there?
@@ -15,18 +14,18 @@ on $n|m \iff p^n-1 | p^m-1$
 
 
 * Galois
-** PRP Let $f(x) \in F[x]$ TFAE $GCD(f(x), f'(x) )=1 \iff$ $f(x), f'(x)$ have no roots in common $\iff$ f(x) has distinct roots in its splitting field
-** COR $f(x)$ irreducible $\implies$ $f(x)$ has distinct roots in its splitting field
-** DEF Let $F \subseteq K$. $\alpha \in K$ is *algebraic* over F if there is $f(x)\in F[x]$ s.t. $f(\alpha)=0$
-** RMK Determinant trick: for $\alpha \in K$ gives a polynomial over the base field st $f(\alpha)=0$
-** DEF Let $F \subseteq K$. K is an *algebraic extension* if all elements of K are algebraic over F
-** PRP Let $F \subseteq K$. $\alpha \in K$ is algebraic iff $[F(\alpha):F] < \infty$
+** *PRP* Let $f(x) \in F[x]$ TFAE $GCD(f(x), f'(x) )=1 \iff$ $f(x), f'(x)$ have no roots in common $\iff$ f(x) has distinct roots in its splitting field
+** *COR $f(x)$ irreducible $\implies$ $f(x)$ has distinct roots in its splitting field
+** *DEF Let $F \subseteq K$. $\alpha \in K$ is *algebraic* over F if there is $f(x)\in F[x]$ s.t. $f(\alpha)=0$
+** *RMK Determinant trick: for $\alpha \in K$ gives a polynomial over the base field st $f(\alpha)=0$
+** *DEF Let $F \subseteq K$. K is an *algebraic extension* if all elements of K are algebraic over F
+** *PRP* Let $F \subseteq K$. $\alpha \in K$ is algebraic iff $[F(\alpha):F] < \infty$
    <= If the degree of simple extension is finite, can use determinant trick.
    => If $\alpha$ is algebraic, there is a minimal poly in F. So the extension to $F(\alpha)$ is finite.
    Intuively it says that finite degree extensions are by their nature, algebraic objects. And the reason closely tied to determinants.
-** COR Finite degree extension is algebraic
+** *COR* Finite degree extension is algebraic
    Let $F \subseteq K$ Take any $\gamma \in K$. Consider $F(\gamma) \subseteq K$. It is finite degree extension, so it is algebraic. 
-** PRP Sufficient condition for simple extension.
+** *PRP* Sufficient condition for simple extension.
    Let $Q \subseteq F$ or $|F| < \infty$. If the degree of the extension is finite, it simple
    ETS show that $F \subseteq F(u,v)$ is simple.
    Case A B
@@ -38,13 +37,13 @@ on $n|m \iff p^n-1 | p^m-1$
 $F \subseteq E \subseteq K$. K algebraic over E and E algebraic over F then K algebraic over F
 ** Construction of Algebraic Closure
    Let $Q \subseteq F$ or $|F|<\infty$. If $|K:F|<\infty$ then $K=F(\alpha)$
-** PRP Characterization of finitely many intermediate fields (4-8)
+** *PRP* Characterization of finitely many intermediate fields (4-8)
    Let $F \subseteq K$ with $|F|=\infty$ $[K:F]<\infty$
    Then the extension is simple iff there are only finitely many intermediate fields $F \subset E \subset K$
    -> if the extension is simple, there is a minimal poly of $\alpha$ p(x) over F.
    Take any intermediate field $E$ and consider min poly of $\alpha$ over E
    <- ETS for $F \subseteq F(u,v)$ has finitely many intermediate fields.
-** REM
+** *REM*
    An automorphism fixing F takes root a $f(x)\in F[x]$ to another root.
    In a primitive field extension, the behavior of $\alpha$ completely describes the behavior of F
    An homomorphism describes the structure between two algebraic sets
@@ -55,24 +54,24 @@ $F \subseteq E \subseteq K$. K algebraic over E and E algebraic over F then K al
 ** Crucial Prop extension of base field isomorphism to a simple field extension isomorphism
    Let $\sigma : F_1 \rightarrow F_2$ an isomorphism and $p_1(x)$ min poly of $\alpha_1$. Let $p_2(x):=p_1(x)^\sigma$, min poly of $\alpha_2$. Then we can extend to an isomorphism $\overline\sigma: F_1(\alpha_1) \rightarrow F_2(\alpha_2)$
    A special case is that a field extension of any element is identical
-** COR Let K be splitting field. If a root of an irreducible poly is in K, then all the roots are in K.
+** *COR Let K be splitting field. If a root of an irreducible poly is in K, then all the roots are in K.
    Let K be splitting field for f(x). If p(x) is an irreducible polynomial that has a root in K, then all the roots of p(x) are in K.
    The proof is very interesting. 
 
-** DEF Gal(K\F) is called *Galois* if |Gal(K\F)| = [K:F]
-** THM Characterization of Galois. Let $K=F(\alpha)$, p(x) deg d min poly of $\alpha$ over F. Gal(K\F) is Galois iff p(x) has d distinct roots in K.
+** *DEF* Gal(K\F) is called *Galois* if |Gal(K\F)| = [K:F]
+** *THM* Characterization of Galois. Let $K=F(\alpha)$, p(x) deg d min poly of $\alpha$ over F. Gal(K\F) is Galois iff p(x) has d distinct roots in K.
    Intuition: Because roots of p(x) go to roots under a $\sigma \in Gal(K/F)$, you need the full set of automorphisms
    Conversely, the distinct roots give rise to the full set of automoprhisms
    (Example) of when it fails and how it fails, $\mathbb{Z}_2$ consider $x^2-1$.
 
-** TFAE: Let $Q \subset F$. Then TFAE (a) K is Galois over F (b) K is splitting field of p(x) over F. (c) K is splitting field of some $f(x)\in F[x]$ over 
-** THM When is Finite Field Extension Galois.*
+** *TFAE* Let $Q \subset F$. Then TFAE (a) K is Galois over F (b) K is splitting field of p(x) over F. (c) K is splitting field of some $f(x)\in F[x]$ over 
+** *THM* When is Finite Field Extension Galois.*
    If $|F|<\infty$ (Char(F)=p) ($|K:F| < \infty$ then K is Galois over F 
    Since $K=F(\alpha)$, use the characterization fo Galois. Show that p(x), the minimal poly for $\alpha$ 
 
-** DEF Fixed field of an automorphism or a collection of automorphism.
+** *DEF Fixed field of an automorphism or a collection of automorphism.
    $K^\sigma := \{k | \sigma(k)=k\}$ $K^H := \{k | \sigma(k)=k, \forall \sigma \in H \}$
-** THM Galois Correspondence Thm.
+** *THM* Galois Correspondence Thm.
 *** Let $F \subseteq K$ be finite galois extention.
 *** There is a 1-1 correspondence btw $H \subseteq Gal(K/F)$ and intermediate fields $F \subseteq E \subseteq K$
     The correspondnce is given by $H \rightarrow K^H \rightarrow Gal(K/K^H)=H$
@@ -83,4 +82,6 @@ $F \subseteq E \subseteq K$. K algebraic over E and E algebraic over F then K al
 *** K is Galois over any intermediate field E
 *** E Galois over F iff Gal(K/E) is normal in Gal(K/F) in which case $Gal(E/F) \cong \dfrac{Gal(K/F)}{Gal(K/E)}$
 
-** THM Inverse Galois Let G be a finite gp. Then $\exists F \subseteq K$ s.t. $Gal(K/F) \cong G$  
+** *THM* Inverse Galois Let G be a finite gp. Then $\exists F \subseteq K$ s.t. $Gal(K/F) \cong G$  
+
+#+HTML: <script src="script.js"></script>

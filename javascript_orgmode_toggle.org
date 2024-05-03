@@ -1,3 +1,11 @@
+#+BEGIN_EXPORT html
+<script>function toggle(){const e=document.querySelectorAll('h1, h2, h3, h4, h5, h6');e.forEach(e=>{content=e.nextElementSibling,null!==content&&(content.style.display='none'===content.style.display?'block':'none')})}toggle();const e=document.querySelectorAll('.date');e.forEach(e=>{e.addEventListener('click',function(){toggle()})});</script>
+<script>const headers=document.querySelectorAll('h1, h2, h3, h4, h5, h6');headers.forEach(header=>{header.addEventListener('click',function(){content=header.nextElementSibling,null!==content&&(content.style.display='none'===content.style.display?'block':'none')})});</script>
+#+END_EXPORT
+
+
+
+
 
 <script>
 function toggle() {
@@ -44,5 +52,22 @@ dates.forEach(date => {
       }
     });
   });
+</script>
+
+
+
+
+
+
+
+
+<script>
+
+const dates = document.querySelectorAll('.date');
+dates.forEach(date => {
+  date.addEventListener('click', function() {
+    alert('hi')
+  });
+});
 </script>
 
