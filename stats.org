@@ -30,22 +30,20 @@ $P_\theta(X=x|T(X)=T(x)) = \dfrac{P_\theta(X=x \land T(X)=T(x))}{P_\theta(T(X)=T
   - $f(x|\theta)/q(T(x)|\theta) = g(T(x)|\theta)h(x)/q(T(x)|\theta) =  g(T(X)|\theta)h(x)/ (\sum_{y|T(y)=T(x)} f(y|\theta))$ $ = $
 
 
-** *Examples*
-*** Neyman Factorization Theorem
-  - A way to find sufficient statistic
-
+** *Remark.* A Sufficient statistic is not unique. So how can we *7.3 Evaluate Estimators?*
+If $T(X)$ is sufficient, then $r(T(X))$ is also sufficient for any 1-1 function $r$.
 A function of complete sufficient is complete sufficient?
-
-
 * 7.2 Methods of Finding Estimators
-** MLE Estimatior (p316)
-$\hat{t} = max_t(t|x) = \max_t \prod_{i=n}^{n}f(x_i|t)$
-where $t = t_1, ..., t_n$ and 
-
+* 7.2.1 MLE Estimator
+- (7.2.2 p316) $\hat{t} = max_t(t|x) = \max_t \prod_{i=n}^{n}f(x_i|t)$ where $t = t_1, ..., t_n$ and $x = x_1,...,x_m$
+* 7.2.2 Bayes Estimator
+- (7.2.3 p324)
 
 * 7.3 Methods of Evaluating Estimators
-
-
+* 7.3.1 MSE
+* 7.3.2 Best Unbiased Estimators
+* 7.3.3 Sufficient and Unbiasedness
+** D
 * Complete
 * Thm 7.4.1
 * Extra
