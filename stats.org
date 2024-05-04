@@ -39,7 +39,10 @@ A function of complete sufficient is complete sufficient?
 
 * 7.2 Methods of Finding Estimators
 ** MLE Estimatior (p316)
-$max_\th(p|x) = \max_\th \prod_{i=n}^{n}f(x_i|\th) =$
+$\hat{t} = max_t(t|x) = \max_t \prod_{i=n}^{n}f(x_i|t)$
+where $t = t_1, ..., t_n$ and 
+
+
 * 7.3 Methods of Evaluating Estimators
 
 
