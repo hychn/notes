@@ -1,13 +1,13 @@
 #+OPTIONS: toc:nil, num:2
 #+AUTHOR:
 #+HTML: <link rel="stylesheet" type="text/css" href="./style.css" /> <div style="position: fixed; top: 0; right: 0; width: 70px; height: 20px; background-color: #f0f0f0;"> <p class="date">Toggle</p> </div>
-  
-* Principles of Data Reduction
+
+* 6.2 Principles of Data Reduction
 1. *Sufficiency Principle.* Data reduction that do not discard important information about $\theta$
 2. *Likely Principle.* Describes a function of the parameter determined by the observed sample, contains all the information about $\theta$ that is available form the sample.
 3. *Equivariance Principle.* Data reduction that prserves important features of model.
 
-** Sufficiency
+* 6.2.1 Sufficiency
 ** *Introduction.*
 - Any statistic $T(X)$ defines a form of data reduction or data summary.
 - The statistic partitions the sample space so that $x~y$ if $T(x)=T(y)$
@@ -35,6 +35,13 @@ $P_\theta(X=x|T(X)=T(x)) = \dfrac{P_\theta(X=x \land T(X)=T(x))}{P_\theta(T(X)=T
   - A way to find sufficient statistic
 
 A function of complete sufficient is complete sufficient?
+
+
+* 7.2 Methods of Finding Estimators
+** MLE Estimatior (p316)
+$max_\th(p|x) = \max_\th \prod_{i=n}^{n}f(x_i|\th) =$
+* 7.3 Methods of Evaluating Estimators
+
 
 * Complete
 * Thm 7.4.1
