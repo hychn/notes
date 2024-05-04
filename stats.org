@@ -14,7 +14,7 @@
 * 6.2.1 Sufficiency
 ** *Introduction.*
 - Any statistic $T(X)$ defines a form of data reduction or data summary.
-- The statistic partitions the sample space so that $x~y$ if $T(x)=T(y)$
+- The statistic partitions the sample space so that $x~y$ if $T(x) = T(y)$
 - Sufficient Statistic is a statistic that captures all the info about parameter 
 - If T(X) is sufficient statistic, any inference about $\theta$ should depend on the sample X only through T(X)
 - That is, if x and y are two sample points s.t. $T(x)=T(y)$, then the inference about $\theta$ should be the same whether $X=x$ or $X=y$ is observed.
