@@ -62,5 +62,5 @@ Sum of k Pois($\lambda$) is Pois($k\lambda$)
 * END
 #+HTML: <script src="script.js"></script>
 
-$ test$
+  $test$   
 
