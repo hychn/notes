@@ -1,17 +1,51 @@
-* Properties of Distributions
+#+OPTIONS: toc:nil, num:2
+#+AUTHOR:
+#+HTML: <link rel="stylesheet" type="text/css" href="./style.css" /> <div style="position: fixed; top: 0; right: 0; width: 70px; height: 20px; background-color: #f0f0f0;"> <p class="date">Toggle</p> </div>
+  
+* Principles of Data Reduction
+1. *Sufficiency Principle.* Data reduction that do not discard important information about $\theta$
+2. *Likely Principle.* Describes a function of the parameter determined by the observed sample, contains all the information about $\theta$ that is available form the sample.
+3. *Equivariance Principle.* Data reduction that prserves important features of model.
+
+** Sufficiency
+** *Introduction.*
+- Any statistic $T(X)$ defines a form of data reduction or data summary.
+- The statistic partitions the sample space so that $x~y$ if $T(x)=T(y)$
+- Sufficient Statistic is a statistic that captures all the info about parameter 
+- If T(X) is sufficient statistic, any inference about $\theta$ should depend on the sample X only through T(X)
+- That is, if x and y are two sample points s.t. $T(x)=T(y)$, then the inference about $\theta$ should be the same whether $X=x$ or $X=y$ is observed.
+- *Didn't understand.* Casella p273 gives a brief 'idea' behind why a sufficent statistic computes the same $\theta$ But I don't quite get what it is saying.
+
+** *Definition.* A statistic $T(X)$ is _sufficient_ for $\theta$ if conditional distribution of sample X given T(X) doesn't depend on $\theta$
+ In the discrete case,
+We wish to consider the conditional probability that $P_\theta(X=x|T(X)=T(x))$
+$P_\theta(X=x|T(X)=T(x)) = P(X=x|T(X)=T(x))$
+** *Key Observation.* As a consequence of the definition, $T(X)$ is sufficient iff  $P_\theta(X=x|T(X)=T(x)) = P_\theta(X=x)/P_\theta(T(X)=T(x))$ doesn't depend on $\theta$, 
+$P_\theta(X=x|T(X)=T(x)) = \dfrac{P_\theta(X=x \land T(X)=T(x))}{P_\theta(T(X)=T(x))} = \dfrac{P_\theta(X=x)}{P_\theta(T(X)=T(x))}$ 
+
+** *Theorem.* Let $p(x|\theta)$ is joint pdf/pmf of X and $q(t|\theta)$ is pdf/pmf of T(X). If the ratio $p(x|\theta)/q(T(x)|\theta)$ is a constant function of $\theta$ then T(X) is sufficient statistic.
+** *Factorization Theorem.* Generalization. $T(X)$ is a sufficient statistic iff there exists $g(t|\theta)$, $h(x)$ such that $f(x|\theta) = g(T(x)|\theta)h(x)$.
+- $=>$ Direction is clear. If it is sufficient, the ratio that doesn't depend on theta can be written as desired factorization
+- $<=$ Goal: show $f(x|\theta)/q(T(x)|\theta)$ doesn't depend on theta. Use the given factorization
+  - $f(x|\theta)/q(T(x)|\theta) = g(T(x)|\theta)h(x)/q(T(x)|\theta) =  g(T(X)|\theta)h(x)/ (\sum_{y|T(y)=T(x)} f(y|\theta))$ $ = $
+
+
+** *Examples*
+*** Neyman Factorization Theorem
+  - A way to find sufficient statistic
+
+A function of complete sufficient is complete sufficient?
+
+* Complete
+* Thm 7.4.1
+* Extra
+** Properties of Distributions
 Sum of k Pois($\lambda$) is Pois($k\lambda$)
 ** Properties Variance
 - $Var(c) = 0$
 - $Var(aX+bY) = a^2Var(X)+b^2Var(Y)$
-** Complete
-** Sufficient
-- Sufficient Statistic is a statistic that captures all the info about parameter 
-
-*** Neyman Factorization Theorem
-  - A way to find sufficient statistic
 
 
-A function of complete sufficient is complete sufficient?
 
-** Thm 7.4.1
-
+* END
+#+HTML: <script src="script.js"></script>

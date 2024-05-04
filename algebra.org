@@ -2,6 +2,7 @@
 #+AUTHOR:
 #+HTML: <link rel="stylesheet" type="text/css" href="./style.css" /> <div style="position: fixed; top: 0; right: 0; width: 70px; height: 20px; background-color: #f0f0f0;"> <p class="date">Toggle</p> </div>
 
+
 * *Group Theory*
 - Primary concerned with structures of groups. Simple, Subgroups
 - Structure of Finite Abelian Groups?
@@ -88,9 +89,6 @@ $F \subseteq E \subseteq K$. K algebraic over E and E algebraic over F then K al
 - on $n|m \iff p^n-1 | p^m-1$
 ** Lets see, why is it so compliated? $n = \sum_{d|n} I_d(x)$. Can you use the inherent properties of multiplication (groups) to show it is true? These guys are the total collection of elements that are the elements of order x st x|n in $G=Z_n$
 ** See how it fails and why it fails, it should suggest how to correct it.
-
-
-
 
 * END
 #+HTML: <script src="script.js"></script>
