@@ -6,12 +6,12 @@
 # after-save-hook: org-preview-latex-fragment
 # end:
 
-* *6.2 Principles of Data Reduction*
+* /*6.2 Principles of Data Reduction*/
 - *Sufficiency Principle.* Data reduction that do not discard important information about $\theta$
 - *Likely Principle.* Describes a function of the parameter determined by the observed sample, contains all the information about $\theta$ that is available form the sample.
 - *Equivariance Principle.* Data reduction that prserves important features of model.
 
-* 6.2.2 Sufficiency
+* /6.2.2 Sufficiency/
 ** *Introduction.*
 - Any statistic $T(X)$ defines a form of data reduction or data summary.
 - The statistic partitions the sample space so that $x~y$ if $T(x) = T(y)$
@@ -56,30 +56,41 @@ Most of these proofs we will show for pmf to show the intuition.
   - $T'(x)=T'(y)$ implies $\dfrac{f(x|\theta)}{f(y|\theta}$ = $\dfrac{g(T'(x)|\theta)h(x)}{g(T'(y)|\theta)h(y)}$ = $h(x)/h(y)$ implies $T(x)=T(y)$
 ** *Examples.* Normal minimal sufficient statistic.
 - Hard p281
-* 6.2.3 Ancillary Statistics
+* /6.2.3 Ancillary Statistics/
 ** *Definition* $S(X)$ is a statistic whose distribution does not depend on $\theta$ is called _ancillary_.
 
 ** *Examples.* p282
-* 6.2.4 Sufficient, Ancillary, and Complete Statistics
+* /6.2.4 Sufficient, Ancillary, and Complete Statistics/
 ** *Key Question.* What is relation between ancillary statistic and minimally sufficient statistic?
 - Intuitively ancillary statistic not related to minimally sufficient statistic since it should remove all extraneous information about $\theta$. However, this is not the case.
 ** *Defintion.* $T(X)$ is called a _complete statistic_ if $\forall \theta E_{\theta}[g(T)]=0$ $\implies$ $g \equiv 0$ a.e.
-Let $f(t|\theta)$ a family of pmf/pdf for $T(X)$. The family is called complete if $\forall \theta E_{\theta}[g(T)]=0$ $\implies$ $\forall \theta P_{\theta}(g(T)=0)=1$.
-Notice that completeness is s property of a family of prob. distributions, not of a particular distribution. For example, if X has a n(0,1) distribution, then defining g(x)=x, we have that $Eg(X)=EX =0$. But the function g(x)=x satisfies P(g(x)=0)=P(X=0)=0, not 1. However, this is a particular distrubtion, not a family of distrubtions. If X has a $n(\theta,1)$ distribution, $-\infty < \theta < \infty$, we shall see that no function of X, except one that is 0 with probability 1 for all $\theta$, satistfies $E_{\theta}[g(X)=0]$ for all $\theta$. Thus, the family of $n(\theta,1)$ distributions, $-\infty < \theta < \infty$.
+- Let $f(t|\theta)$ a family of pmf/pdf for $T(X)$. The family is called complete if $\forall \theta E_{\theta}[g(T)]=0$ $\implies$ $\forall \theta P_{\theta}(g(T)=0)=1$.
+- Notice that completeness is s property of a family of prob. distributions, not of a particular distribution. For example, if X has a n(0,1) distribution, then defining g(x)=x, we have that $Eg(X)=EX =0$. But the function g(x)=x satisfies P(g(x)=0)=P(X=0)=0, not 1. However, this is a particular distrubtion, not a family of distrubtions. If X has a $n(\theta,1)$ distribution, $-\infty < \theta < \infty$, we shall see that no function of X, except one that is 0 with probability 1 for all $\theta$, satistfies $E_{\theta}[g(X)=0]$ for all $\theta$. Thus, the family of $n(\theta,1)$ distributions, $-\infty < \theta < \infty$.
 ** *Examples.* p285
+- /Binomial complete sufficient statistic/ T has binonomial(n,p) distribution $p \in (0,1)$. Let g be a function s.t. $E_p[g(T)]=0$.
+  - $E_p[g(T)]=\sum_{t=0} g(t)(n t) p^t (1-p)^{n-t}$ $\implies$ $g(t)=0$.
+- /Uniform complete sufficient statistic/ $X_1, ..., X_n$ be iid $uniform(0,\theta)$ observations, $0<\theta <\infty$. Using an argument similar to that in ex. 6.2.8, we see that $T(X) = max_i X_i$ is a sufficient statistic and by thm 5.4.4, the pdf of $T(X)$ is $f(t|\theta)=nt^{n-1}\theta^{-n}$. Supose $g(t)$ is a function satisfying $E_\theta[g(T)]=0 \forall \theta$. Since $E_\theta[g(T)]$ is constant as a function of $\theta$, its derivative with respect to $\theta$ is 0. Thus we have that $0=\dfrac{d}{d\theta} E_\theta[g(T)]$ = $\dfrac{d}{d\theta} \int_{0}^{\theta} g(t) nt^{n-1}\theta^{-n} dt$.
+** *Basu's Theorem.* If $T(X)$ is complete and minimal sufficient statistic, then $T(X)$ is independent of every ancillary statistic.
+- Let $S(X)$ be an ancillary statistic.
+- To show $S(X)$ and $T(X)$ independent, we need to show $P(S(X)=s |T(X)=t) = P(S(X)=s)$
+-
+** *Theorem.* If a minimal sufficient statistic exists, then any complete statistic is also minimal sufficient.
+ 
 
-* 6.2.4 Likelyhood Principle
-* *7.2 Methods of Finding Estimators*
-* 7.2.1 MLE Estimator
+
+
+* /6.2.4 Likelyhood Principle/
+* /*7.2 Methods of Finding Estimators*/
+* /7.2.1 MLE Estimator/
 -  $\hat{t} = max_t(t|x) = \max_t \prod_{i=n}^{n}f(x_i|t)$ where $t = t_1, ..., t_n$ and $x = x_1,...,x_m$
-* 7.2.2 Bayes Estimator
+* /7.2.2 Bayes Estimator/
 - (7.2.3 p324)
 
 
-* *7.3 Methods of Evaluating Estimators*
-* 7.3.1 MSE
-* 7.3.2 Best Unbiased Estimators
-* 7.3.3 Sufficient and Unbiasedness
+* /7.3 Methods of Evaluating Estimators/
+* /7.3.1 MSE/
+* /7.3.2 Best Unbiased Estimators/
+* /7.3.3 Sufficient and Unbiasedness/
 * Complete
 * Thm 7.4.1
 * Extra
