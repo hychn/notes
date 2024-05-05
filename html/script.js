@@ -13,7 +13,6 @@ function toggle() {
   });
 }
 
-toggle();
 
 const dates = document.querySelectorAll('.date');
 dates.forEach(date => {
@@ -39,3 +38,5 @@ headers.forEach(header => {
   });
 });
 
+// TODO Make this to actually run after MathJax finishes loading and adjusting the spaces.
+setTimeout(function(){toggle()}, 1000);

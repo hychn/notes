@@ -1,6 +1,6 @@
 * Fri 5-3
-Stats review chapter & problems
-Algebra Takehome Bonus/Writeup
++Stats review chapter & problems+
++Algebra Takehome Bonus/Writeup+
 
 * Sat 5-4
 Stats review chapter & problems
@@ -29,5 +29,23 @@ Algebra Review
 *Numerical Final*
 
 
-Algebra Review
+
+* Stats Review
+[7.1 Measure Quality of Estimator]
++[7.2 Suffnt]+
+[7.3 Prop. Suffnt Stat]
+[7.4 Completeness Uniquness]
+[7.5 Exp. Class of Dist.] 
+[7.6 Func. of Param]
+[7.7 Case of Several Parameters]
+[7.8 Min Suffnt & Ancillary Stat]
+[7.9 Suff. Complete, Independence]
+[8.1 Most Pwr Test]
+[8.2 Unif. Most Pwr Test]
+[8.3 Likely Ratio Test]
+[11.1 Bayesian Procedure]
+[11.2  More Bayesian Ideas]
+[11.3 Gibbs Sampler]
+
+* Algebra Review
 +1+ 2 3 4 5 6 +7+ +8+ 9 10 BP1  BP2

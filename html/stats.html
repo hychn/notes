@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-05-04 Sat 09:51 -->
+<!-- 2024-05-04 Sat 21:17 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -265,31 +265,27 @@ for the JavaScript code in this tag.
 <div id="content">
 <link rel="stylesheet" type="text/css" href="./style.css" /> <div style="position: fixed; top: 0; right: 0; width: 70px; height: 20px; background-color: #f0f0f0;"> <p class="date">Toggle</p> </div>
 
-<p>
-\(\def\th{{\theta}}\)
-</p>
-
-<div id="outline-container-org40fba6e" class="outline-2">
-<h2 id="org40fba6e"><span class="section-number-2">1</span> 6.2 Principles of Data Reduction</h2>
-<div class="outline-text-2" id="text-1">
-<ol class="org-ol">
+<div id="outline-container-orgf4c4d1e" class="outline-2">
+<h2 id="orgf4c4d1e"><b>6.2 Principles of Data Reduction</b></h2>
+<div class="outline-text-2" id="text-orgf4c4d1e">
+<ul class="org-ul">
 <li><b>Sufficiency Principle.</b> Data reduction that do not discard important information about \(\theta\)</li>
 <li><b>Likely Principle.</b> Describes a function of the parameter determined by the observed sample, contains all the information about \(\theta\) that is available form the sample.</li>
 <li><b>Equivariance Principle.</b> Data reduction that prserves important features of model.</li>
-</ol>
+</ul>
 </div>
 </div>
 
-<div id="outline-container-org2fcc131" class="outline-2">
-<h2 id="org2fcc131"><span class="section-number-2">2</span> 6.2.1 Sufficiency</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-orga77bcbf" class="outline-2">
+<h2 id="orga77bcbf">6.2.2 Sufficiency</h2>
+<div class="outline-text-2" id="text-orga77bcbf">
 </div>
-<div id="outline-container-org05d9ab6" class="outline-3">
-<h3 id="org05d9ab6"><span class="section-number-3">2.1</span> <b>Introduction.</b></h3>
-<div class="outline-text-3" id="text-2-1">
+<div id="outline-container-orgadea284" class="outline-3">
+<h3 id="orgadea284"><b>Introduction.</b></h3>
+<div class="outline-text-3" id="text-orgadea284">
 <ul class="org-ul">
 <li>Any statistic \(T(X)\) defines a form of data reduction or data summary.</li>
-<li>The statistic partitions the sample space so that \(x~y\) if \(T(x)=T(y)\)</li>
+<li>The statistic partitions the sample space so that \(x~y\) if \(T(x) = T(y)\)</li>
 <li>Sufficient Statistic is a statistic that captures all the info about parameter</li>
 <li>If T(X) is sufficient statistic, any inference about \(\theta\) should depend on the sample X only through T(X)</li>
 <li>That is, if x and y are two sample points s.t. \(T(x)=T(y)\), then the inference about \(\theta\) should be the same whether \(X=x\) or \(X=y\) is observed.</li>
@@ -298,9 +294,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org1258541" class="outline-3">
-<h3 id="org1258541"><span class="section-number-3">2.2</span> <b>Definition.</b> A statistic \(T(X)\) is <span class="underline">sufficient</span> for \(\theta\) if conditional distribution of sample X given T(X) doesn't depend on \(\theta\)</h3>
-<div class="outline-text-3" id="text-2-2">
+<div id="outline-container-org0e4a470" class="outline-3">
+<h3 id="org0e4a470"><b>Definition.</b> A statistic \(T(X)\) is <span class="underline">sufficient</span> for \(\theta\) if conditional distribution of sample X given T(X) doesn't depend on \(\theta\)</h3>
+<div class="outline-text-3" id="text-org0e4a470">
 <p>
  In the discrete case,
 We wish to consider the conditional probability that \(P_\theta(X=x|T(X)=T(x))\)
@@ -308,91 +304,182 @@ We wish to consider the conditional probability that \(P_\theta(X=x|T(X)=T(x))\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgf3b9be0" class="outline-3">
-<h3 id="orgf3b9be0"><span class="section-number-3">2.3</span> <b>Key Observation.</b> As a consequence of the definition, \(T(X)\) is sufficient iff  \(P_\theta(X=x|T(X)=T(x)) = P_\theta(X=x)/P_\theta(T(X)=T(x))\) doesn't depend on \(\theta\),</h3>
-<div class="outline-text-3" id="text-2-3">
+<div id="outline-container-org2562d80" class="outline-3">
+<h3 id="org2562d80"><b>Key Observation.</b> As a consequence of the definition, \(T(X)\) is sufficient iff \(P_\theta(X=x|T(X)=T(x)) = P_\theta(X=x)/P_\theta(T(X)=T(x))\) doesn't depend on \(\theta\).</h3>
+<div class="outline-text-3" id="text-org2562d80">
 <p>
 \(P_\theta(X=x|T(X)=T(x)) = \dfrac{P_\theta(X=x \land T(X)=T(x))}{P_\theta(T(X)=T(x))} = \dfrac{P_\theta(X=x)}{P_\theta(T(X)=T(x))}\) 
 </p>
 </div>
 </div>
 
-<div id="outline-container-org555ac29" class="outline-3">
-<h3 id="org555ac29"><span class="section-number-3">2.4</span> <b>Theorem.</b> Let \(p(x|\theta)\) is joint pdf/pmf of X and \(q(t|\theta)\) is pdf/pmf of T(X). If the ratio \(p(x|\theta)/q(T(x)|\theta)\) is a constant function of \(\theta\) then T(X) is sufficient statistic.</h3>
+<div id="outline-container-orgf685c8c" class="outline-3">
+<h3 id="orgf685c8c"><b>Theorem.</b> Let \(p(x|\theta)\) is joint pdf/pmf of X and \(q(t|\theta)\) is pdf/pmf of T(X). If the ratio \(p(x|\theta)/q(T(x)|\theta)\) is a constant function of \(\theta\) then T(X) is sufficient statistic.</h3>
 </div>
-<div id="outline-container-org5a70b65" class="outline-3">
-<h3 id="org5a70b65"><span class="section-number-3">2.5</span> <b>Factorization Theorem.</b> Generalization. \(T(X)\) is a sufficient statistic iff there exists \(g(t|\theta)\), \(h(x)\) such that \(f(x|\theta) = g(T(x)|\theta)h(x)\).</h3>
-<div class="outline-text-3" id="text-2-5">
+<div id="outline-container-org0f2a706" class="outline-3">
+<h3 id="org0f2a706"><b>Factorization Theorem.</b> Generalization. \(T(X)\) is a sufficient statistic iff there exists \(g(t|\theta)\), \(h(x)\) such that \(f(x|\theta) = g(T(x)|\theta)h(x)\).</h3>
+<div class="outline-text-3" id="text-org0f2a706">
+<p>
+Most of these proofs we will show for pmf to show the intuition.
+</p>
 <ul class="org-ul">
 <li>\(=>\) Direction is clear. If it is sufficient, the ratio that doesn't depend on theta can be written as desired factorization</li>
-<li>\(<=\) Goal: show \(f(x|\theta)/q(T(x)|\theta)\) doesn't depend on theta. Use the given factorization
+<li>\(<=\) Goal: show \(f(x|\theta)/q(T(x)|\theta)\) doesn't depend on theta. Use the given factorization</li>
+<li>\(f(x|\theta)/q(T(x)|\theta)\) = \(\dfrac{g(T(x)|\theta)h(x)}{q(T(x)|\theta)}\) = \(\dfrac{g(T(x)|\theta)h(x)}{(\sum_{y|T(y)=T(x)} f(y|\theta))}\) = \(\dfrac{g(T(x)|\theta)h(x)}{(\sum_{y|T(y)=T(x)} g(T(y)|\theta)h(y)}\) = \(\dfrac{g(T(x)|\theta)h(x)}{g(T(x)|\theta)(\sum_{y|T(y)=T(x)} h(y)}\) = \(\dfrac{h(x)}{\sum_{y|T(y)=T(x)} h(y)}\).</li>
+<li>The pmf of \(T(x)\) has a factor of \(g(T(x)|\theta)\)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3ffaadb" class="outline-3">
+<h3 id="org3ffaadb"><b>Examples.</b></h3>
+</div>
+<div id="outline-container-orgd541ea4" class="outline-3">
+<h3 id="orgd541ea4"><b>Remark.</b> A Sufficient statistic is not unique.</h3>
+<div class="outline-text-3" id="text-orgd541ea4">
 <ul class="org-ul">
-<li>\(f(x|\theta)/q(T(x)|\theta) = g(T(x)|\theta)h(x)/q(T(x)|\theta) =  g(T(X)|\theta)h(x)/ (\sum_{y|T(y)=T(x)} f(y|\theta))\) $ = $</li>
+<li>If \(T(X)\) is sufficient, then \(r(T(X))\) is also sufficient for any 1-1 function \(r\).</li>
+<li>A function of complete sufficient is complete sufficient?</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc97834b" class="outline-3">
+<h3 id="orgc97834b"><b>Definition.</b> We say \(T(X)\) is a <span class="underline">minimally sufficient</span> estimator for \(\theta\). if \(T'(X)\) is a sufficient estimator of \(\theta\) then \(T(X)\) is a function of \(T`(X)\)</h3>
+<div class="outline-text-3" id="text-orgc97834b">
+<ul class="org-ul">
+<li>This is saying \(T(X)\) has minimal amount of information neccessary to be sufficient. And that other sufficient estimators contain extraneous information.</li>
+<li>Clearly, \(b(x)\) is a function of \(id(x)\) or \(g(x)\) for any invertible function \(g\). (\(b(x) = b(g^-1(g(x)))\))</li>
+<li>When \(a(x) = a(y) \implies b(x)=b(y)\), this means any partial inverse \(a^{-1}(x)\) will make \(b(x)=b(y)=b(a^{-1}(a(x)))\). So \(b(x)\) is a function of \(a(x)\).</li>
+<li>"When a loses information, b doesn't care. So b can be written as a function of a."</li>
+<li>Conversely, it is clear when \(b(x)\) is function of \(a(x)\), \(a(x) = a(y) \implies b(x)=b(y)\).</li>
+<li>Consider the equivalence class formed by \(a(x)\) and \(b(x)\). \(C_{a(x)}= \{ . | a(.)=a(x) \}\).
+<ul class="org-ul">
+<li>If \(b(x)\) is a function of \(a(x)\), then \(C_{a(x)} \subseteq C_{b(x)}\).</li>
+<li>So the partitions of \(b(x)\) is coarser than \(a(x)\)</li>
+</ul></li>
+<li>From the perspective 'b(x) function of a(x) \(\implies\) \(C_{a(x)} \subseteq C_{b(x)}\)' the minimally sufficient statistic \(T(X)\) is the function whose partition of the space \(X\) is most coarse.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org073661d" class="outline-3">
+<h3 id="org073661d"><b>Theorem.</b> Let \(f(x|\theta)\) be pmf/pdf of sample \(X\). Suppose \(\exists T(X)\) s.t. \(f(x|\theta)/f(y|\theta)\) is constant as function of \(\theta\) iff \(T(x)=T(y)\). Then \(T(X)\) is minimal sufficient statistic.</h3>
+<div class="outline-text-3" id="text-org073661d">
+<ul class="org-ul">
+<li><i>T(X)</i> is sufficient statistic. Need to show f(x|&theta;) = g(T(x)|&theta;)h(x)
+<ul class="org-ul">
+<li>\(T(x) = T(\bar{x})\) implies \(f(x|\theta)\) = \(f(\bar{x}|\theta)h(x,\bar{x})\) = \(f(T(x)|\theta)h(x)\) implies \(T(x)\) is sufficient.</li>
+</ul></li>
+<li><i>T(X)</i> is minimal sufficient. Let \(T'(x)\) be another sufficient stat. We want to show \(T(X)\) is a function of \(T'(X)\). Which will be shown if \(f(x|\theta)/f(y|\theta)\) is a constant function of \(\theta\).
+<ul class="org-ul">
+<li>\(T'(x)=T'(y)\) implies \(\dfrac{f(x|\theta)}{f(y|\theta}\) = \(\dfrac{g(T'(x)|\theta)h(x)}{g(T'(y)|\theta)h(y)}\) = \(h(x)/h(y)\) implies \(T(x)=T(y)\)</li>
 </ul></li>
 </ul>
 </div>
 </div>
-
-
-<div id="outline-container-org0417cfd" class="outline-3">
-<h3 id="org0417cfd"><span class="section-number-3">2.6</span> <b>Examples</b></h3>
-<div class="outline-text-3" id="text-2-6">
-</div>
-<div id="outline-container-org7d689b1" class="outline-4">
-<h4 id="org7d689b1">Neyman Factorization Theorem</h4>
-<div class="outline-text-4" id="text-org7d689b1">
+<div id="outline-container-org024c89b" class="outline-3">
+<h3 id="org024c89b"><b>Examples.</b> Normal minimal sufficient statistic.</h3>
+<div class="outline-text-3" id="text-org024c89b">
 <ul class="org-ul">
-<li>A way to find sufficient statistic</li>
+<li>Hard p281</li>
 </ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org6d82d28" class="outline-2">
+<h2 id="org6d82d28">6.2.3 Ancillary Statistics</h2>
+<div class="outline-text-2" id="text-org6d82d28">
+</div>
+<div id="outline-container-org1ca95a4" class="outline-3">
+<h3 id="org1ca95a4"><b>Definition</b> \(S(X)\) is a statistic whose distribution does not depend on \(\theta\) is called <span class="underline">ancillary</span>.</h3>
+</div>
 
+<div id="outline-container-org544d5b5" class="outline-3">
+<h3 id="org544d5b5"><b>Examples.</b> p282</h3>
+</div>
+</div>
+<div id="outline-container-orgb914073" class="outline-2">
+<h2 id="orgb914073">6.2.4 Sufficient, Ancillary, and Complete Statistics</h2>
+<div class="outline-text-2" id="text-orgb914073">
+</div>
+<div id="outline-container-orga6a670f" class="outline-3">
+<h3 id="orga6a670f"><b>Key Question.</b> What is relation between ancillary statistic and minimally sufficient statistic?</h3>
+<div class="outline-text-3" id="text-orga6a670f">
+<ul class="org-ul">
+<li>Intuitively ancillary statistic not related to minimally sufficient statistic since it should remove all extraneous information about \(\theta\). However, this is not the case.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org198153a" class="outline-3">
+<h3 id="org198153a"><b>Defintion.</b> \(T(X)\) is called a <span class="underline">complete statistic</span> if \(\forall \theta E_{\theta}[g(T)]=0\) \(\implies\) \(g \equiv 0\) a.e.</h3>
+<div class="outline-text-3" id="text-org198153a">
 <p>
-A function of complete sufficient is complete sufficient?
+Let \(f(t|\theta)\) a family of pmf/pdf for \(T(X)\). The family is called complete if \(\forall \theta E_{\theta}[g(T)]=0\) \(\implies\) \(\forall \theta P_{\theta}(g(T)=0)=1\).
+Notice that completeness is s property of a family of prob. distributions, not of a particular distribution. For example, if X has a n(0,1) distribution, then defining g(x)=x, we have that \(Eg(X)=EX =0\). But the function g(x)=x satisfies P(g(x)=0)=P(X=0)=0, not 1. However, this is a particular distrubtion, not a family of distrubtions. If X has a \(n(\theta,1)\) distribution, \(-\infty < \theta < \infty\), we shall see that no function of X, except one that is 0 with probability 1 for all \(\theta\), satistfies \(E_{\theta}[g(X)=0]\) for all \(\theta\). Thus, the family of \(n(\theta,1)\) distributions, \(-\infty < \theta < \infty\).
 </p>
 </div>
 </div>
+<div id="outline-container-org07d6b89" class="outline-3">
+<h3 id="org07d6b89"><b>Examples.</b> p285</h3>
+</div>
+</div>
+
+<div id="outline-container-orgdac78db" class="outline-2">
+<h2 id="orgdac78db">6.2.4 Likelyhood Principle</h2>
+</div>
+<div id="outline-container-org67f9f9d" class="outline-2">
+<h2 id="org67f9f9d"><b>7.2 Methods of Finding Estimators</b></h2>
+</div>
+<div id="outline-container-orgd6195f1" class="outline-2">
+<h2 id="orgd6195f1">7.2.1 MLE Estimator</h2>
+<div class="outline-text-2" id="text-orgd6195f1">
+<ul class="org-ul">
+<li>\(\hat{t} = max_t(t|x) = \max_t \prod_{i=n}^{n}f(x_i|t)\) where \(t = t_1, ..., t_n\) and \(x = x_1,...,x_m\)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9065ee1" class="outline-2">
+<h2 id="org9065ee1">7.2.2 Bayes Estimator</h2>
+<div class="outline-text-2" id="text-org9065ee1">
+<ul class="org-ul">
+<li>(7.2.3 p324)</li>
+</ul>
 </div>
 </div>
 
 
-<div id="outline-container-orgfda26e3" class="outline-2">
-<h2 id="orgfda26e3"><span class="section-number-2">3</span> 7.2 Methods of Finding Estimators</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-org120faa3" class="outline-2">
+<h2 id="org120faa3"><b>7.3 Methods of Evaluating Estimators</b></h2>
 </div>
-<div id="outline-container-orga10bdb3" class="outline-3">
-<h3 id="orga10bdb3"><span class="section-number-3">3.1</span> MLE Estimatior (p316)</h3>
-<div class="outline-text-3" id="text-3-1">
-<p>
-\(max_\tht(p|x) = \max_\th \prod_{i=n}^{n}f(x_i|\th) =\)
-</p>
+<div id="outline-container-orgf25abff" class="outline-2">
+<h2 id="orgf25abff">7.3.1 MSE</h2>
 </div>
+<div id="outline-container-orgf0281cb" class="outline-2">
+<h2 id="orgf0281cb">7.3.2 Best Unbiased Estimators</h2>
 </div>
+<div id="outline-container-orgbd5f7f6" class="outline-2">
+<h2 id="orgbd5f7f6">7.3.3 Sufficient and Unbiasedness</h2>
 </div>
-<div id="outline-container-orgc61d6d1" class="outline-2">
-<h2 id="orgc61d6d1"><span class="section-number-2">4</span> 7.3 Methods of Evaluating Estimators</h2>
+<div id="outline-container-org9bd4ab2" class="outline-2">
+<h2 id="org9bd4ab2">Complete</h2>
 </div>
-
-
-<div id="outline-container-org47f733f" class="outline-2">
-<h2 id="org47f733f"><span class="section-number-2">5</span> Complete</h2>
+<div id="outline-container-orgc6ce7c7" class="outline-2">
+<h2 id="orgc6ce7c7">Thm 7.4.1</h2>
 </div>
-<div id="outline-container-org0b9dc68" class="outline-2">
-<h2 id="org0b9dc68"><span class="section-number-2">6</span> Thm 7.4.1</h2>
+<div id="outline-container-orge7f15af" class="outline-2">
+<h2 id="orge7f15af">Extra</h2>
+<div class="outline-text-2" id="text-orge7f15af">
 </div>
-<div id="outline-container-orgeb31237" class="outline-2">
-<h2 id="orgeb31237"><span class="section-number-2">7</span> Extra</h2>
-<div class="outline-text-2" id="text-7">
-</div>
-<div id="outline-container-org1779c89" class="outline-3">
-<h3 id="org1779c89"><span class="section-number-3">7.1</span> Properties of Distributions</h3>
-<div class="outline-text-3" id="text-7-1">
+<div id="outline-container-orgf16be2c" class="outline-3">
+<h3 id="orgf16be2c">Properties of Distributions</h3>
+<div class="outline-text-3" id="text-orgf16be2c">
 <p>
 Sum of k Pois(\(\lambda\)) is Pois(\(k\lambda\))
 </p>
 </div>
 </div>
-<div id="outline-container-orgd5c9479" class="outline-3">
-<h3 id="orgd5c9479"><span class="section-number-3">7.2</span> Properties Variance</h3>
-<div class="outline-text-3" id="text-7-2">
+<div id="outline-container-org210df18" class="outline-3">
+<h3 id="org210df18">Properties Variance</h3>
+<div class="outline-text-3" id="text-org210df18">
 <ul class="org-ul">
 <li>\(Var(c) = 0\)</li>
 <li>\(Var(aX+bY) = a^2Var(X)+b^2Var(Y)\)</li>
@@ -403,15 +490,19 @@ Sum of k Pois(\(\lambda\)) is Pois(\(k\lambda\))
 
 
 
-<div id="outline-container-org1d74467" class="outline-2">
-<h2 id="org1d74467"><span class="section-number-2">8</span> END</h2>
-<div class="outline-text-2" id="text-8">
+<div id="outline-container-orgd0883ec" class="outline-2">
+<h2 id="orgd0883ec">END</h2>
+<div class="outline-text-2" id="text-orgd0883ec">
 <script src="script.js"></script>
+
+<p>
+\(test\)   
+</p>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2024-05-04 Sat 09:51</p>
+<p class="date">Created: 2024-05-04 Sat 21:17</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

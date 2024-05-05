@@ -1,4 +1,4 @@
-#+OPTIONS: toc:nil, num:2
+#+OPTIONS: toc:nil, num:0
 #+AUTHOR:
 #+HTML: <link rel="stylesheet" type="text/css" href="./style.css" /> <div style="position: fixed; top: 0; right: 0; width: 70px; height: 20px; background-color: #f0f0f0;"> <p class="date">Toggle</p> </div>
 
@@ -28,9 +28,9 @@ Primary concerned with when are rings UFDs? And why are they not UFDs?
    Case A B
    A $Q \subseteq F$ in order for $u+\lambda v$ to not be primitive, $\lambda$ must satistfy conditions dependent on roots of minimal poly for $u$ and $v$. Since F infinite, this is not possible.
    B $F$ finite. The $K$ is cyclic due to gp theory fact. (If $x^n=1$ has at most n soln. for all n, the G is cyclic. Check Kat's Notes)
-** /Example./ Find an example of a finite extension that is not simple
-** Sums and product of algebraic elements are algebraic
-** Transitivity of Algebraic Fields
+** *Example.* Find an example of a finite extension that is not simple
+** *Theorem.* Sums and product of algebraic elements are algebraic
+** *Theorem.* Transitivity of Algebraic Fields
 $F \subseteq E \subseteq K$. K algebraic over E and E algebraic over F then K algebraic over F
 ** *Theorem.* Existence of Algebraic Closure
    Let $Q \subseteq F$ or $|F|<\infty$. If $|K:F|<\infty$ then $K=F(\alpha)$
@@ -57,7 +57,7 @@ $F \subseteq E \subseteq K$. K algebraic over E and E algebraic over F then K al
    The proof is very interesting. 
 
 ** *Defintion.* Gal(K\F) is called *Galois* if |Gal(K\F)| = [K:F]
-** *Theorem.* Char of Galois. Let $K=F(\alpha)$, p(x) deg d min poly of $\alpha$ over F. Gal(K\F) is Galois iff p(x) has d distinct roots in K.
+** *Theorem.* Characterization of Galois Extension. Let $K=F(\alpha)$, p(x) deg d min poly of $\alpha$ over F. Gal(K\F) is Galois iff p(x) has d distinct roots in K.
    Intuition: Because roots of p(x) go to roots under a $\sigma \in Gal(K/F)$, you need the full set of automorphisms
    Conversely, the distinct roots give rise to the full set of automoprhisms
    (Example) of when it fails and how it fails, $\mathbb{Z}_2$ consider $x^2-

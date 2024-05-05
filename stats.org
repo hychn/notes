@@ -1,4 +1,4 @@
-#+OPTIONS: toc:nil, num:2
+#+OPTIONS: toc:nil, num:0
 #+AUTHOR:
 #+HTML: <link rel="stylesheet" type="text/css" href="./style.css" /> <div style="position: fixed; top: 0; right: 0; width: 70px; height: 20px; background-color: #f0f0f0;"> <p class="date">Toggle</p> </div>
 
@@ -6,12 +6,12 @@
 # after-save-hook: org-preview-latex-fragment
 # end:
 
-* 6.2 Principles of Data Reduction
-1. *Sufficiency Principle.* Data reduction that do not discard important information about $\theta$
-2. *Likely Principle.* Describes a function of the parameter determined by the observed sample, contains all the information about $\theta$ that is available form the sample.
-3. *Equivariance Principle.* Data reduction that prserves important features of model.
+* *6.2 Principles of Data Reduction*
+- *Sufficiency Principle.* Data reduction that do not discard important information about $\theta$
+- *Likely Principle.* Describes a function of the parameter determined by the observed sample, contains all the information about $\theta$ that is available form the sample.
+- *Equivariance Principle.* Data reduction that prserves important features of model.
 
-* 6.2.1 Sufficiency
+* 6.2.2 Sufficiency
 ** *Introduction.*
 - Any statistic $T(X)$ defines a form of data reduction or data summary.
 - The statistic partitions the sample space so that $x~y$ if $T(x) = T(y)$
@@ -24,30 +24,62 @@
  In the discrete case,
 We wish to consider the conditional probability that $P_\theta(X=x|T(X)=T(x))$
 $P_\theta(X=x|T(X)=T(x)) = P(X=x|T(X)=T(x))$
-** *Key Observation.* As a consequence of the definition, $T(X)$ is sufficient iff  $P_\theta(X=x|T(X)=T(x)) = P_\theta(X=x)/P_\theta(T(X)=T(x))$ doesn't depend on $\theta$, 
+** *Key Observation.* As a consequence of the definition, $T(X)$ is sufficient iff $P_\theta(X=x|T(X)=T(x)) = P_\theta(X=x)/P_\theta(T(X)=T(x))$ doesn't depend on $\theta$. 
 $P_\theta(X=x|T(X)=T(x)) = \dfrac{P_\theta(X=x \land T(X)=T(x))}{P_\theta(T(X)=T(x))} = \dfrac{P_\theta(X=x)}{P_\theta(T(X)=T(x))}$ 
 
 ** *Theorem.* Let $p(x|\theta)$ is joint pdf/pmf of X and $q(t|\theta)$ is pdf/pmf of T(X). If the ratio $p(x|\theta)/q(T(x)|\theta)$ is a constant function of $\theta$ then T(X) is sufficient statistic.
 ** *Factorization Theorem.* Generalization. $T(X)$ is a sufficient statistic iff there exists $g(t|\theta)$, $h(x)$ such that $f(x|\theta) = g(T(x)|\theta)h(x)$.
+Most of these proofs we will show for pmf to show the intuition.
 - $=>$ Direction is clear. If it is sufficient, the ratio that doesn't depend on theta can be written as desired factorization
 - $<=$ Goal: show $f(x|\theta)/q(T(x)|\theta)$ doesn't depend on theta. Use the given factorization
-  - $f(x|\theta)/q(T(x)|\theta) = g(T(x)|\theta)h(x)/q(T(x)|\theta) =  g(T(X)|\theta)h(x)/ (\sum_{y|T(y)=T(x)} f(y|\theta))$ $ = $
+- $f(x|\theta)/q(T(x)|\theta)$ = $\dfrac{g(T(x)|\theta)h(x)}{q(T(x)|\theta)}$ = $\dfrac{g(T(x)|\theta)h(x)}{(\sum_{y|T(y)=T(x)} f(y|\theta))}$ = $\dfrac{g(T(x)|\theta)h(x)}{(\sum_{y|T(y)=T(x)} g(T(y)|\theta)h(y)}$ = $\dfrac{g(T(x)|\theta)h(x)}{g(T(x)|\theta)(\sum_{y|T(y)=T(x)} h(y)}$ = $\dfrac{h(x)}{\sum_{y|T(y)=T(x)} h(y)}$. 
+- The pmf of $T(x)$ has a factor of $g(T(x)|\theta)$
 
+** *Examples.*
+** *Remark.* A Sufficient statistic is not unique.
+- If $T(X)$ is sufficient, then $r(T(X))$ is also sufficient for any 1-1 function $r$.
+- A function of complete sufficient is complete sufficient?
+** *Definition.* We say $T(X)$ is a _minimally sufficient_ estimator for $\theta$. if $T'(X)$ is a sufficient estimator of $\theta$ then $T(X)$ is a function of $T`(X)$
+- This is saying $T(X)$ has minimal amount of information neccessary to be sufficient. And that other sufficient estimators contain extraneous information.
+- Clearly, $b(x)$ is a function of $id(x)$ or $g(x)$ for any invertible function $g$. ($b(x) = b(g^-1(g(x)))$)
+- When $a(x) = a(y) \implies b(x)=b(y)$, this means any partial inverse $a^{-1}(x)$ will make $b(x)=b(y)=b(a^{-1}(a(x)))$. So $b(x)$ is a function of $a(x)$.
+- "When a loses information, b doesn't care. So b can be written as a function of a."
+- Conversely, it is clear when $b(x)$ is function of $a(x)$, $a(x) = a(y) \implies b(x)=b(y)$.
+- Consider the equivalence class formed by $a(x)$ and $b(x)$. $C_{a(x)}= \{ . | a(.)=a(x) \}$.
+  - If $b(x)$ is a function of $a(x)$, then $C_{a(x)} \subseteq C_{b(x)}$.
+  - So the partitions of $b(x)$ is coarser than $a(x)$
+- From the perspective 'b(x) function of a(x) $\implies$ $C_{a(x)} \subseteq C_{b(x)}$' the minimally sufficient statistic $T(X)$ is the function whose partition of the space $X$ is most coarse.
+** *Theorem.* Let $f(x|\theta)$ be pmf/pdf of sample $X$. Suppose $\exists T(X)$ s.t. $f(x|\theta)/f(y|\theta)$ is constant as function of $\theta$ iff $T(x)=T(y)$. Then $T(X)$ is minimal sufficient statistic.
+- /T(X)/ is sufficient statistic. Need to show f(x|\theta) = g(T(x)|\theta)h(x)
+  - $T(x) = T(\bar{x})$ implies $f(x|\theta)$ = $f(\bar{x}|\theta)h(x,\bar{x})$ = $f(T(x)|\theta)h(x)$ implies $T(x)$ is sufficient.
+- /T(X)/ is minimal sufficient. Let $T'(x)$ be another sufficient stat. We want to show $T(X)$ is a function of $T'(X)$. Which will be shown if $f(x|\theta)/f(y|\theta)$ is a constant function of $\theta$.
+  - $T'(x)=T'(y)$ implies $\dfrac{f(x|\theta)}{f(y|\theta}$ = $\dfrac{g(T'(x)|\theta)h(x)}{g(T'(y)|\theta)h(y)}$ = $h(x)/h(y)$ implies $T(x)=T(y)$
+** *Examples.* Normal minimal sufficient statistic.
+- Hard p281
+* 6.2.3 Ancillary Statistics
+** *Definition* $S(X)$ is a statistic whose distribution does not depend on $\theta$ is called _ancillary_.
 
-** *Remark.* A Sufficient statistic is not unique. So how can we *7.3 Evaluate Estimators?*
-If $T(X)$ is sufficient, then $r(T(X))$ is also sufficient for any 1-1 function $r$.
-A function of complete sufficient is complete sufficient?
-* 7.2 Methods of Finding Estimators
+** *Examples.* p282
+* 6.2.4 Sufficient, Ancillary, and Complete Statistics
+** *Key Question.* What is relation between ancillary statistic and minimally sufficient statistic?
+- Intuitively ancillary statistic not related to minimally sufficient statistic since it should remove all extraneous information about $\theta$. However, this is not the case.
+** *Defintion.* $T(X)$ is called a _complete statistic_ if $\forall \theta E_{\theta}[g(T)]=0$ $\implies$ $g \equiv 0$ a.e.
+Let $f(t|\theta)$ a family of pmf/pdf for $T(X)$. The family is called complete if $\forall \theta E_{\theta}[g(T)]=0$ $\implies$ $\forall \theta P_{\theta}(g(T)=0)=1$.
+Notice that completeness is s property of a family of prob. distributions, not of a particular distribution. For example, if X has a n(0,1) distribution, then defining g(x)=x, we have that $Eg(X)=EX =0$. But the function g(x)=x satisfies P(g(x)=0)=P(X=0)=0, not 1. However, this is a particular distrubtion, not a family of distrubtions. If X has a $n(\theta,1)$ distribution, $-\infty < \theta < \infty$, we shall see that no function of X, except one that is 0 with probability 1 for all $\theta$, satistfies $E_{\theta}[g(X)=0]$ for all $\theta$. Thus, the family of $n(\theta,1)$ distributions, $-\infty < \theta < \infty$.
+** *Examples.* p285
+
+* 6.2.4 Likelyhood Principle
+* *7.2 Methods of Finding Estimators*
 * 7.2.1 MLE Estimator
-- (7.2.2 p316) $\hat{t} = max_t(t|x) = \max_t \prod_{i=n}^{n}f(x_i|t)$ where $t = t_1, ..., t_n$ and $x = x_1,...,x_m$
+-  $\hat{t} = max_t(t|x) = \max_t \prod_{i=n}^{n}f(x_i|t)$ where $t = t_1, ..., t_n$ and $x = x_1,...,x_m$
 * 7.2.2 Bayes Estimator
 - (7.2.3 p324)
 
-* 7.3 Methods of Evaluating Estimators
+
+* *7.3 Methods of Evaluating Estimators*
 * 7.3.1 MSE
 * 7.3.2 Best Unbiased Estimators
 * 7.3.3 Sufficient and Unbiasedness
-** D
 * Complete
 * Thm 7.4.1
 * Extra

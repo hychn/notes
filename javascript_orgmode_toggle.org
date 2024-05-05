@@ -23,6 +23,7 @@ function toggle() {
   });
 }
 
+
 toggle();
 
 const dates = document.querySelectorAll('.date');
