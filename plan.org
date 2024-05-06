@@ -53,6 +53,7 @@ Algebra Review
 
 * Algebra Review
 +1+ +2+ +3+ +4+ 5 6Han +7+ +8+ 9Han 10NotDone BP1  BP2NotDone(Relatedto10)
+
 - BP1 (i) is irreducible because two functions a(x)b(x) = t^p-x^p with a = (t^n + ... + x^i), b =  (t^m + ... + x^j) 
 needs more detail idea is to show that if x^   i in base field, x is in base field.
 - BP1 (iii) since it any element of Gal(K\F) fix the base field, it must map roots of
@@ -60,7 +61,6 @@ t^p-x^p = (t-x)^p to roots and t^p-y^p = (t-y)^p to roots. And this will complet
 So x can only go to x and y can only go to y.
 
 TOMM:
-  write revision for 3, 4, 8
   write 5
 
 
