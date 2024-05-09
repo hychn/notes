@@ -75,18 +75,12 @@ Most of these proofs we will show for pmf to show the intuition.
 - To show $S(X)$ and $T(X)$ independent, we need to show $P(S(X)=s |T(X)=t) = P(S(X)=s)$
 -
 ** *Theorem.* If a minimal sufficient statistic exists, then any complete statistic is also minimal sufficient.
- 
-
-
-
 * /6.2.4 Likelyhood Principle/
 * /*7.2 Methods of Finding Estimators*/
 * /7.2.1 MLE Estimator/
 -  $\hat{t} = max_t(t|x) = \max_t \prod_{i=n}^{n}f(x_i|t)$ where $t = t_1, ..., t_n$ and $x = x_1,...,x_m$
 * /7.2.2 Bayes Estimator/
 - (7.2.3 p324)
-
-
 * /7.3 Methods of Evaluating Estimators/
 * /7.3.1 MSE/
 * /7.3.2 Best Unbiased Estimators/
