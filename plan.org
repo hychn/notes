@@ -22,24 +22,8 @@ Probabilty Qual 8-22
 |8-18.15| | | | | | | |
 
 
-* Measure Theory
-- 76 pages - 6 pages per week
-** CH0 Prologue
-*** 0.1 Language of Set Theory
-*** 0.2 Orderings
-*** 0.3 Cardinality
-*** 0.4 Well Ordered Sets
-*** 0.5 Extended Real Numbres
-*** 0.6 Metric Spaces
-** CH1 Basis for Measure
-** CH2 Integration
-** CH3 Signed Measure (Derivative Long-Hard)
-** CH4 Point Set Topology (READ)
-** CH5 Functional Analysis
-** CH6 $L^p$ space
-HW1 1.2.4 1.3.6 1.3.8 1.4.17 1.4.18 1.4.23
-MIDTERM 1: 1,2,3,4,5,6
-HW2 2.4.38 2.4.39 2.4.44 2.5.49 3.1.2 3.1.3 3.2.8 3.2.9
+
+
 * Probability Review Qual
 - Probability
   - Rieman Stiljes Integral
@@ -56,16 +40,34 @@ HW2 2.4.38 2.4.39 2.4.44 2.5.49 3.1.2 3.1.3 3.2.8 3.2.9
   - 8.2 Uniformly Most Powerful Test
   - 11.1 Bayesian Statistics
   - 11.2 More Bayesian Ideas
-* Combinatorics
+* Measure Theory
+- 76 pages - 6 pages per week
+** CH0 Prologue
+*** 0.1 Language of Set Theory
+*** 0.2 Orderings
+*** 0.3 Cardinality
+*** 0.4 Well Ordered Sets
+*** 0.5 Extended Real Numbres
+*** 0.6 Metric Spaces
+** CH1 Basis for Measure
+** CH2 Integration
+** CH3 Signed Measure (Derivative Long-Hard)
+** CH4 Point Set Topology (READ)
+** CH5 Functional Analysis
+** CH6 $L^p$ space
+HW1 1.2.4 1.3.6 1.3.8 1.4.17 1.4.18 1.4.23
+MIDTERM: 1,2,3,4,5,6
+HW2 2.4.38 2.4.39 2.4.44 2.5.49 3.1.2 3.1.3 3.2.8 3.2.9
+FINAL: 1,2,3,4,5,6
+
 * Module Theory
 - 14 x MWF
 - 5 HW
 - Dummit Foote
 * Algebraic Topology
 
-
-
 * Minor 
+** Combinatorics
 ** Solvability
 - Lecture 3, 4, 5, 6
 ** Algebra
