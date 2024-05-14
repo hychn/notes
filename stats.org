@@ -2,10 +2,6 @@
 #+AUTHOR:
 #+HTML: <link rel="stylesheet" type="text/css" href="./style.css" /> <div style="position: fixed; top: 0; right: 0; width: 70px; height: 20px; background-color: #f0f0f0;"> <p class="date">Toggle</p> </div>
 
-# Local variables:
-# after-save-hook: org-preview-latex-fragment
-# end:
-
 * /*6.2 Principles of Data Reduction*/
 - *Sufficiency Principle.* Data reduction that do not discard important information about $\theta$
 - *Likely Principle.* Describes a function of the parameter determined by the observed sample, contains all the information about $\theta$ that is available form the sample.
@@ -98,6 +94,3 @@ Sum of k Pois($\lambda$) is Pois($k\lambda$)
 
 * END
 #+HTML: <script src="script.js"></script>
-
-  $test$   
-
