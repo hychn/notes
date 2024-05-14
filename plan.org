@@ -1,67 +1,80 @@
-* Fri 5-3
-+Stats review chapter & problems+
-+Algebra Takehome Bonus/Writeup+
+Interesting principles, do the minimal of what is most important
+Daily Summaries
 
-* Sat 5-4
-+Stats review chapter & problems+
-+Algebra Takehome Proofread+
-+Algebra Review+
+Algebra Qual 8-21
+Probabilty Qual 8-22
 
-* Sun 5-5
-Stats review chapter & problems
-+Algebra Takehome Proofread+
-+Algebra Review+
-
-* Mon 5-6
-Stats review chapter & problems
-Algebra Review
-
-* Tue 5-7
-Stats review chapter & problems
-Algebra Review
-
-* Wed 5-8
-*Algebra Final 10:30-1*
-*Statistics Final 1:30-4*
-
-* Thr 5-9
-+*Numerical Final*+
-*Statistics Takehome 12:00*
-
-* Fri 5-10
-*Algebra Takehome* 5pm
+|SUMMER |S|M|T|W|T|F|S|
+|5-12.01|X|X| | | | | |
+|5-19.02| | | | | | | |
+|5-26.03| | | | | | | |
+|6-02.04| | | | | | | |
+|6-09.05| | | | | | | |
+|6-16.06| | | | | | | |
+|6-23.07| | | | | | | |
+|6-30.08| | | | | | | |
+|7-07.09| | | | | | | |
+|7-14.10| | | | | | | |
+|7-21.11| | | | | | | |
+|7-28.12| | | | | | | |
+|8-04.13| | | | | | | |
+|8-11.14| | | | | | | |
+|8-18.15| | | | | | | |
 
 
-* Stats Review
-[7.1 Measure Quality of Estimator]
-+[7.2 Suffnt]+
-[7.3 Prop. Suffnt Stat]
-[7.4 Completeness Uniquness]
-[7.5 Exp. Class of Dist.] 
-[7.6 Func. of Param]
-[7.7 Case of Several Parameters]
-[7.8 Min Suffnt & Ancillary Stat]
-[7.9 Suff. Complete, Independence]
+* Measure Theory
+- 76 pages - 6 pages per week
+** CH0 Prologue
+*** 0.1 Language of Set Theory
+*** 0.2 Orderings
+*** 0.3 Cardinality
+*** 0.4 Well Ordered Sets
+*** 0.5 Extended Real Numbres
+*** 0.6 Metric Spaces
+** CH1 Basis for Measure
+** CH2 Integration
+** CH3 Signed Measure (Derivative Long-Hard)
+** CH4 Point Set Topology (READ)
+** CH5 Functional Analysis
+** CH6 $L^p$ space
+HW1 1.2.4 1.3.6 1.3.8 1.4.17 1.4.18 1.4.23
+MIDTERM 1: 1,2,3,4,5,6
+HW2 2.4.38 2.4.39 2.4.44 2.5.49 3.1.2 3.1.3 3.2.8 3.2.9
+* Probability Review Qual
+- Probability
+  - Rieman Stiljes Integral
+  - Conditional Distribution, Conditional Expectation
+  - Transformation of Variables (Jacobian)
+  - Slutsky Theorem (CLT, LLN)
+  - Borel Cantelli Lemma
+- Statistics
+  - 6.2 RC Lowerbound and Efficiency
+  - 6.3 Likely Ratio Test
+  - 7.1 Sufficiency, Minimal Sufficieny
+  - 7.4 Minimal Variance Unbiased Estimator
+  - 8.1 Most Powerful Test
+  - 8.2 Uniformly Most Powerful Test
+  - 11.1 Bayesian Statistics
+  - 11.2 More Bayesian Ideas
+* Combinatorics
+* Module Theory
+- 14 x MWF
+- 5 HW
+- Dummit Foote
+* Algebraic Topology
 
-[8.1 Most Pwr Test]
-[8.2 Unif. Most Pwr Test]
-[8.3 Likely Ratio Test]
 
-[11.1 Bayesian Procedure]
-[11.2  More Bayesian Ideas]
-[11.3 Gibbs Sampler]
 
-* Algebra Review
-+1+ +2+ +3+ +4+ 5 6Han +7+ +8+ 9Han 10NotDone BP1  BP2NotDone(Relatedto10)
-
-- BP1 (i) is irreducible because two functions a(x)b(x) = t^p-x^p with a = (t^n + ... + x^i), b =  (t^m + ... + x^j) 
-needs more detail idea is to show that if x^   i in base field, x is in base field.
-- BP1 (iii) since it any element of Gal(K\F) fix the base field, it must map roots of
-t^p-x^p = (t-x)^p to roots and t^p-y^p = (t-y)^p to roots. And this will completely determine the map since x, y are generators of K.
-So x can only go to x and y can only go to y.
-
-TOMM:
-  write 5
+* Minor 
+** Solvability
+- Lecture 3, 4, 5, 6
+** Algebra
+- Review R UFD => R[X] UFD Proof.
+- Summarize Field Theory Notes
+- Review Cauchy's Thm, Sylow Thm
+- Compare my solutions with professor's solutions
+** Lin Algebra
+- Read on Free time
 
 
 
