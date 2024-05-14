@@ -21,7 +21,14 @@ Probabilty Qual 8-22
 |8-11.14| | | | | | | |
 |8-18.15| | | | | | | |
 
+Schedule
+| Sun | Mon | Tue | Wed | Thr | Fri | Sat |
+|     |PROB |STAT |PROB |STAT |PROB |STAT |
+|     |Anlys|ATOP |ANLYS|ATOP |ANLYS|ATOP |
+|     |Alg  |     |ALG  |     |ALG  |     |
 
+
+* MAIN_________________________________________________
 * Probability Review Qual
 - Probability
   - Rieman Stiljes Integral
@@ -64,18 +71,19 @@ FINAL: 1,2,3,4,5,6
 - 5 HW
 - Dummit Foote
 * Algebraic Topology
-
-* Minor 
-** Combinatorics
-** Solvability
+* MINOR________________________________________________
+* Combinatorics
+* Solvability
 - Lecture 3, 4, 5, 6
-** Algebra
+* Algebra
 - Review R UFD => R[X] UFD Proof.
 - Summarize Field Theory Notes
 - Review Cauchy's Thm, Sylow Thm
 - Compare my solutions with professor's solutions
-** Lin Algebra
+* Lin Algebra
 - Read on Free time
 
 
 
+
+* Problem Book Analysis
