@@ -22,7 +22,6 @@ Probabilty Qual 8-22
 |8-18.15| | | | | | | |
 
 
-
 * Probability Review Qual
 - Probability
   - Rieman Stiljes Integral
