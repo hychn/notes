@@ -1,0 +1,55 @@
+# PROBABILITY
+
+* Distributions 
+- specific<general
+- Bernoulli<Binom
+* Arthmetic properties of distributions
+- sum of normal, bernoulli, poision, exp, geometric
+- X~N(0,1) X^2~Chisq
+
+
+* Properties of Conditional Expectation
+* Properties of Variance
+
+* Def Different Modes of convergnece
+* Implication between different modes of convergence
+* Markov Inequality
+* Chebychev Inequality
+* Jensen's Inequality
+* Borel Cantelli Lemma
+
+* Strong Law of Large Numbers
+* Weak Law of Large Numbers
+* Central Limit Thm
+* Slutsky's Thm
+* Variation of Slutsky's Thm
+
+# STATISTICS
+* Exponential Family
+* Defs
+  - Random Sample
+  - Likelihood 
+  - Statistic
+  - MLE
+  - Sample Mean, Sample Variance
+  - Unbiased Estimator
+  - Sufficient
+  - Consistent 
+  - Strongly Consistent
+  - Efficiency
+  - Complete Statistic
+  
+* Uniqueness of MLE
+* 1-1 Function of Suff stat is sufficient
+* cont function of consistent stat is consistent
+* Cramer Rao Lower Bound
+* Factorization Characterization for Sufficent Statistic
+* Exponential Family Sufficent and Complete Statistic
+* MVUE THM
+
+* Def: Bias, MSE
+
+* Bayesian Statistics
+* Uniformly Most Powerful Test
+* Neyman-Pearson
+
